@@ -9,6 +9,8 @@ TrigAprFilters:{
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   aprHighPStopTargMultiTrkPS: { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+   aprLowPMultiHelixPS: { module_type: PrescaleEvent
+      eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
   aprHighPStopTargHSFilter: {
     module_type: "HelixFilter"
