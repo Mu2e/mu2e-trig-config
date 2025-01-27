@@ -56,7 +56,7 @@ TrigAprProducers : {
   aprHighPStopTargMultiTrkTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprLowPStopTargMultiHelixTriggerInfoMerger: {
+  aprLowPMultiHelixTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
   aprHelixTriggerInfoMerger: {
