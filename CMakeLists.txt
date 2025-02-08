@@ -34,3 +34,4 @@ install_fhicl(SUBDIRS core/filters   SUBDIRNAME mu2e-trig-config/core/filters)
 install(DIRECTORY data DESTINATION ${CMAKE_INSTALL_DATAROOTDIR})
 install(DIRECTORY python DESTINATION .)
 
+cet_script(python/generateMenuFromJSON.py)
