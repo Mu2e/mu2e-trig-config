@@ -88,7 +88,7 @@ TrigCstFilters:{
     debugLevel: 0
     minNStrawHits : 6
     minFracStrawHits : 0.75
-    maxTheta : 1 
+    maxTheta : 1
     minNPanelStereo : 5
   }
 

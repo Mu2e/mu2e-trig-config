@@ -294,7 +294,7 @@ TrigAprFilters:{
       maxAbsLambda: 500
       maxChi2PhiZ: 8
       maxChi2XY: 8
-      maxD0: 600. 
+      maxD0: 600.
       maxMomentum: 2000
       maxNLoops: 30
       minAbsLambda: 50

@@ -28,7 +28,7 @@ for m in menus:
         muse_b_dir = os.environ['MUSE_BUILD_DIR']
         menu_file  = muse_w_dir+'/mu2e_trig_config/data/{}.json'.format(m)
         out_dir    = muse_b_dir+'/mu2e_trig_config'
-        sources, targets, command = generateMenuFromJSON.generateOffline(menu_file, 
+        sources, targets, command = generateMenuFromJSON.generateOffline(menu_file,
                                                                          evt,
                                                                          out_dir,
                                                                          False,

@@ -11,7 +11,7 @@ TrigCalFilters:{
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   caloHitRecN0SourcePS : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-      
+
   caloFastCosmicFilter: {
     CaloClusterModuleLabel: "CaloClusterFast"
     InnerRadius: 460
@@ -67,7 +67,7 @@ TrigCalFilters:{
     diagLevel: 0
     module_type: "CaloClusterCounterFilter"
   }
-  
+
   caloHitRecN0SourceFilter: {
       caloDigiCollection: "CaloDigiMaker"
       maxCaloEnergy: -1

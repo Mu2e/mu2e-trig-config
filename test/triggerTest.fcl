@@ -50,4 +50,3 @@ physics.trigger_paths : [@sequence::Trig_physMenu.trigger_paths]
 #include "mu2e_trig_config/core/trigDigiInputsEpilog.fcl"
 #include "Production/Validation/database.fcl"
 #include "Production/JobConfig/reco/drop_trigger.fcl"
-

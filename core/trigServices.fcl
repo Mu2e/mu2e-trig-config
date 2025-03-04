@@ -12,7 +12,7 @@ Trigger : {
             {
                # a destination which will react to
                # messages of ERROR or WARNING or
-               # INFO severity, but not DEBUG severity                                      
+               # INFO severity, but not DEBUG severity
                # LogPrint.
                # (INFO severity is LogInfo or LogVerbatim).
                log:      {
@@ -57,7 +57,7 @@ Trigger : {
                      INFO : { limit : 0 }
                   } # end categories
                }
-               
+
          }
          GeometryService            : {
             inputFile           : "Offline/Mu2eG4/geom/geom_common.txt"
