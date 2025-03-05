@@ -26,8 +26,8 @@ for m in menus:
     for evt in evtModes:
         muse_w_dir = os.environ['MUSE_WORK_DIR']
         muse_b_dir = os.environ['MUSE_BUILD_DIR']
-        menu_file  = muse_w_dir+'/mu2e_trig_config/data/{}.json'.format(m)
-        out_dir    = muse_b_dir+'/mu2e_trig_config'
+        menu_file  = muse_w_dir+'/mu2e-trig-config/data/{}.json'.format(m)
+        out_dir    = muse_b_dir+'/mu2e-trig-config'
         sources, targets, command = generateMenuFromJSON.generateOffline(menu_file,
                                                                          evt,
                                                                          out_dir,
