@@ -336,8 +336,6 @@ TrigAprFilters:{
         requireCaloCluster: false
       },
       { #cuts for downstreeam e-plus
-        doParticleTypeCheck: false
-        doZPropDirCheck: true
         fitdirection: @local::FitDir.downstream
         fitparticle: @local::Particle.eplus
         maxChi2DOF: 20
