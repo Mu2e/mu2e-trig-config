@@ -1,4 +1,4 @@
-# mu2e_trig_config
+# mu2e-trig-config
 This package houses the configuration files used to run the art executables in the TDAQ system. The package also includes a python script used to generate the configuration files for the TDAQ art jobs starting from a single JSON file.
 
 ## core
@@ -23,4 +23,4 @@ This directory houses the following scripts:
  It is also possible to process a customized trigger-menu json file by using the option `-mf`. 
 
 An example of command line is the following: 
-`python mu2e_trig_config/python/generateMenuFromJSON.py -mf mu2e_trig_config/data/physMenu.json -o gen -evtMode all`
+`python mu2e-trig-config/python/generateMenuFromJSON.py -mf mu2e-trig-config/data/physMenu.json -o gen -evtMode all`

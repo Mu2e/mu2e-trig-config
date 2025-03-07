@@ -3,10 +3,10 @@
 
 # Process the example data-like digi file
 NEVENTS=-1
-DATAFILE="mu2e_trig_config/ci/data_files.txt"
+DATAFILE="mu2e-trig-config/ci/data_files.txt"
 LOGFILE="local_trigger_results.log"
-REFERENCE="mu2e_trig_config/ci/reference_log_file.log"
-mu2e -c mu2e_trig_config/test/triggerTest.fcl -S ${DATAFILE} -n ${NEVENTS} >| ${LOGFILE}
+REFERENCE="mu2e-trig-config/ci/reference_log_file.log"
+mu2e -c mu2e-trig-config/test/triggerTest.fcl -S ${DATAFILE} -n ${NEVENTS} >| ${LOGFILE}
 STATUS=$?
 
 # Add the log to the stdout report
@@ -19,6 +19,6 @@ if [ $STATUS -ne 0 ]; then
 fi
 
 # Compare the log file to an example log file
-python mu2e_trig_config/ci/check_trigger_results.py ${LOGFILE} ${REFERENCE}
+python mu2e-trig-config/ci/check_trigger_results.py ${LOGFILE} ${REFERENCE}
 STATUS=$?
 exit $STATUS

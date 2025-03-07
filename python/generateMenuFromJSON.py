@@ -220,9 +220,9 @@ def generateOffline(menuFile, evtMode, outdir, doIt=False, verbose=False):
         if verbose:
             print ("running in Muse mode ")
         os.chdir(os.environ['MUSE_WORK_DIR'])
-        srcDir = "mu2e_trig_config/"
+        srcDir = "mu2e-trig-config/"
         # like "build/sl7-prof-e20/Offline/"
-        outDir = os.environ['MUSE_BUILD_BASE']+"/mu2e_trig_config/"
+        outDir = os.environ['MUSE_BUILD_BASE']+"/mu2e-trig-config/"
     else:
         # when we run from SConscript, the owd is the python subdir
         # but all file name are relative to Offline, so go there
