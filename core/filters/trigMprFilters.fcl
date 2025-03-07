@@ -56,13 +56,11 @@ TrigMprFilters:{
 
   mprDeHighPStopTargKSFilter: {
     module_type: "KalSeedFilter"
-    kalSeedCollection: "TTMprKSFDe"
+    kalSeedCollections: [ "TTMprKSFDe" ]
     KalSeedCuts : [
       { #cuts for doesntream e-minus
         fitdirection: @local::FitDir.downstream
-        fitparticle: 11
-        doParticleTypeCheck: true
-        doZPropDirCheck: true
+        fitparticle: @local::Particle.eminus
         maxChi2DOF: 20
         maxD0: 200
         maxMomErr: 10
@@ -72,15 +70,12 @@ TrigMprFilters:{
         minFitCons: -1
         minMomentum: 80
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       },
       {
         fitdirection: @local::FitDir.downstream
-        fitparticle: -11
-        doParticleTypeCheck: true
-        doZPropDirCheck: true
+        fitparticle: @local::Particle.eplus
         maxChi2DOF: 20
         maxD0: 200
         maxMomErr: 10
@@ -90,7 +85,6 @@ TrigMprFilters:{
         minFitCons: -1
         minMomentum: 70
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       }
