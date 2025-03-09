@@ -11,7 +11,7 @@ TrigRecoSequences:{
    calPrepareHits     : [ CaloHitMakerFast ]
    calReco            : [ CaloHitMakerFast, CaloClusterFast ]
    #
-   artFragmentsGen    : [ artFragFromDTCEvents ]
+   dtcAndCFOEventsGen : [ processDTCAndCFOEvents ]
 }
 
 END_PROLOG

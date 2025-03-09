@@ -3,7 +3,7 @@ BEGIN_PROLOG
 TrigTrkProducers : {
   TTmakeSH: {
     diagLevel: 0
-    module_type: "StrawHitRecoFromFragments"
+    module_type: "ComboHitsFromDataDecoders"
     printLevel : 0
     FitType : 5
     UseCalorimeter : false
