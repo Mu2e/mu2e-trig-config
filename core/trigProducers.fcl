@@ -2,22 +2,22 @@
 # this file includes all the prolog needed to run the reconstruction
 # at the trigger level and the filters used to make the trigger decision
 #------------------------------------------------------------------------------
-#include "Offline/TrkPatRec/fcl/Particle.fcl"
 #include "Offline/TrkHitReco/fcl/prolog.fcl"
 #include "Offline/Mu2eKinKal/fcl/prolog.fcl"
 #include "Offline/TrkReco/fcl/prolog.fcl"
 #include "Offline/TrkPatRec/fcl/prolog.fcl"
 #include "Offline/CalPatRec/fcl/prolog.fcl"
+#include "Offline/TrkReco/fcl/Particle.fcl"
 
-#include "mu2e_trig_config/core/producers/trigDAQProducers.fcl"
-#include "mu2e_trig_config/core/producers/trigCalProducers.fcl"
-#include "mu2e_trig_config/core/producers/trigTrkProducers.fcl"
-#include "mu2e_trig_config/core/producers/mu2eKinKalTrigger.fcl"
-#include "mu2e_trig_config/core/producers/trigTprProducers.fcl"
-#include "mu2e_trig_config/core/producers/trigCprProducers.fcl"
-#include "mu2e_trig_config/core/producers/trigAprProducers.fcl"
-#include "mu2e_trig_config/core/producers/trigMprProducers.fcl"
-#include "mu2e_trig_config/core/producers/trigCstProducers.fcl"
+#include "mu2e-trig-config/core/producers/trigDAQProducers.fcl"
+#include "mu2e-trig-config/core/producers/trigCalProducers.fcl"
+#include "mu2e-trig-config/core/producers/trigTrkProducers.fcl"
+#include "mu2e-trig-config/core/producers/mu2eKinKalTrigger.fcl"
+#include "mu2e-trig-config/core/producers/trigTprProducers.fcl"
+#include "mu2e-trig-config/core/producers/trigCprProducers.fcl"
+#include "mu2e-trig-config/core/producers/trigAprProducers.fcl"
+#include "mu2e-trig-config/core/producers/trigMprProducers.fcl"
+#include "mu2e-trig-config/core/producers/trigCstProducers.fcl"
 
 BEGIN_PROLOG
 

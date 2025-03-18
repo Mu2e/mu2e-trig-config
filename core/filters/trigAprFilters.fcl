@@ -59,14 +59,12 @@ TrigAprFilters:{
     timeClusterCollection: "TTTZClusterFinder"
   }
   aprHighPStopTargKSFilter: {
-    kalSeedCollection: "TTAprKSF"
+    kalSeedCollections: [ "TTAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
       { #cuts for downstreeam e-minus
-        doParticleTypeCheck: false
-        doZPropDirCheck: true
         fitdirection: @local::FitDir.downstream
-        fitparticle: 11
+        fitparticle: @local::Particle.eminus
         maxChi2DOF: 20
         maxD0: 200
         maxMomErr: 10
@@ -76,15 +74,12 @@ TrigAprFilters:{
         minFitCons: -1
         minMomentum: 80
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       },
       {#cuts for downstreeam e-plus
-        doParticleTypeCheck: false
-        doZPropDirCheck: true
         fitdirection: @local::FitDir.downstream
-        fitparticle: -11
+        fitparticle: @local::Particle.eplus
         maxChi2DOF: 20
         maxD0: 200
         maxMomErr: 10
@@ -94,7 +89,6 @@ TrigAprFilters:{
         minFitCons: -1
         minMomentum: 70
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       }
@@ -150,14 +144,12 @@ TrigAprFilters:{
     timeClusterCollection: "TTTZClusterFinder"
   }
   aprHighPKSFilter: {
-    kalSeedCollection: "TTAprKSF"
+    kalSeedCollections: [ "TTAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
       { #cuts for downstreeam e-minus
-        doParticleTypeCheck: false
-        doZPropDirCheck: true
         fitdirection: @local::FitDir.downstream
-        fitparticle: 11
+        fitparticle: @local::Particle.eminus
         maxChi2DOF: 20
         maxD0: 600
         maxMomErr: 10
@@ -167,15 +159,12 @@ TrigAprFilters:{
         minFitCons: -1
         minMomentum: 80
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       },
       {#cuts for downstreeam e-plus
-        doParticleTypeCheck: false
-        doZPropDirCheck: true
         fitdirection: @local::FitDir.downstream
-        fitparticle: -11
+        fitparticle: @local::Particle.eplus
         maxChi2DOF: 20
         maxD0: 600
         maxMomErr: 10
@@ -185,7 +174,6 @@ TrigAprFilters:{
         minFitCons: -1
         minMomentum: 70
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       }
@@ -242,14 +230,12 @@ TrigAprFilters:{
     timeClusterCollection: "TTTZClusterFinder"
   }
   aprLowPStopTargKSFilter: {
-    kalSeedCollection: "TTAprKSF"
+    kalSeedCollections: [ "TTAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
       { #cuts for downstreeam e-minus
-        doParticleTypeCheck: false
-        doZPropDirCheck: true
         fitdirection: @local::FitDir.downstream
-        fitparticle: 11
+        fitparticle: @local::Particle.eminus
         maxChi2DOF: 20
         maxD0: 200
         maxMomErr: 10
@@ -259,15 +245,12 @@ TrigAprFilters:{
         minFitCons: -1
         minMomentum: 50
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       },
       {#cuts for downstreeam e-plus
-        doParticleTypeCheck: false
-        doZPropDirCheck: true
         fitdirection: @local::FitDir.downstream
-        fitparticle: -11
+        fitparticle: @local::Particle.eplus
         maxChi2DOF: 20
         maxD0: 200
         maxMomErr: 10
@@ -277,7 +260,6 @@ TrigAprFilters:{
         minFitCons: -1
         minMomentum: 50
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       }
@@ -334,15 +316,13 @@ TrigAprFilters:{
     timeClusterCollection: "TTTZClusterFinder"
   }
   aprLowPStopTargMultiTrkKSFilter: {
-    kalSeedCollection: "TTAprKSF"
+    kalSeedCollections: [ "TTAprKSF" ]
     module_type: "KalSeedFilter"
     minNTrks: 2
     KalSeedCuts : [
       { #cuts for downstreeam e-minus
-        doParticleTypeCheck: false
-        doZPropDirCheck: true
         fitdirection: @local::FitDir.downstream
-        fitparticle: 11
+        fitparticle: @local::Particle.eminus
         maxChi2DOF: 20
         maxD0: 600.
         maxMomErr: 10
@@ -352,15 +332,12 @@ TrigAprFilters:{
         minFitCons: -1
         minMomentum: 80
         minNStrawHits: 12
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       },
       { #cuts for downstreeam e-plus
-        doParticleTypeCheck: false
-        doZPropDirCheck: true
         fitdirection: @local::FitDir.downstream
-        fitparticle: -11
+        fitparticle: @local::Particle.eplus
         maxChi2DOF: 20
         maxD0: 600 #150
         maxMomErr: 10
@@ -370,7 +347,6 @@ TrigAprFilters:{
         minFitCons: -1
         minMomentum: 80
         minNStrawHits: 12
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       }

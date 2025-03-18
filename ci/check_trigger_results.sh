@@ -1,12 +1,18 @@
 #! /bin/bash
 # Compare a local trigger log to a reference log file
 
+# Check the trigger directory name for the old style
+TRIGDIR="mu2e-trig-config/"
+if [ ! -d ${TRIGDIR} ]; then
+    TRIGDIR="mu2e_trig_config/"
+fi
+
 # Process the example data-like digi file
 NEVENTS=-1
-DATAFILE="mu2e_trig_config/ci/data_files.txt"
+DATAFILE="${TRIGDIR}ci/data_files.txt"
 LOGFILE="local_trigger_results.log"
-REFERENCE="mu2e_trig_config/ci/reference_log_file.log"
-mu2e -c mu2e_trig_config/test/triggerTest.fcl -S ${DATAFILE} -n ${NEVENTS} >| ${LOGFILE}
+REFERENCE="${TRIGDIR}ci/reference_log_file.log"
+mu2e -c ${TRIGDIR}test/triggerTest.fcl -S ${DATAFILE} -n ${NEVENTS} >| ${LOGFILE}
 STATUS=$?
 
 # Add the log to the stdout report
@@ -19,6 +25,6 @@ if [ $STATUS -ne 0 ]; then
 fi
 
 # Compare the log file to an example log file
-python mu2e_trig_config/ci/check_trigger_results.py ${LOGFILE} ${REFERENCE}
+python ${TRIGDIR}ci/check_trigger_results.py ${LOGFILE} ${REFERENCE}
 STATUS=$?
 exit $STATUS

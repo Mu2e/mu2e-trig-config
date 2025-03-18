@@ -61,14 +61,12 @@ TrigCprFilters:{
     timeClusterCollection: "TTCalTimePeakFinder"
   }
   cprDeHighPStopTargKSFilter: {
-    kalSeedCollection: "TTCalSeedFitDe"
+    kalSeedCollections: [ "TTCalSeedFitDe" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
       { #cuts for downstreeam e-minus
         fitdirection: @local::FitDir.downstream
-        fitparticle: 11
-        doParticleTypeCheck: true
-        doZPropDirCheck: true
+        fitparticle: @local::Particle.eminus
         maxChi2DOF: 20
         maxD0: 200
         maxMomErr: 10
@@ -78,15 +76,12 @@ TrigCprFilters:{
         minFitCons: -1
         minMomentum: 80
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       },
       { #cuts for downstream e-plus
         fitdirection: @local::FitDir.downstream
-        fitparticle: -11
-        doParticleTypeCheck: true
-        doZPropDirCheck: true
+        fitparticle: @local::Particle.eplus
         maxChi2DOF: 20
         maxD0: 200
         maxMomErr: 10
@@ -96,7 +91,6 @@ TrigCprFilters:{
         minFitCons: -1
         minMomentum: 70
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       }
@@ -152,14 +146,12 @@ TrigCprFilters:{
     timeClusterCollection: "TTCalTimePeakFinder"
   }
   cprDeHighPKSFilter: {
-    kalSeedCollection: "TTCalSeedFitDe"
+    kalSeedCollections: [ "TTCalSeedFitDe" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
       { #cuts for downstreeam e-minus
         fitdirection: @local::FitDir.downstream
-        fitparticle: 11
-        doParticleTypeCheck: true
-        doZPropDirCheck: true
+        fitparticle: @local::Particle.eminus
         maxChi2DOF: 20
         maxD0: 600
         maxMomErr: 10
@@ -169,15 +161,12 @@ TrigCprFilters:{
         minFitCons: -1
         minMomentum: 80
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       },
       { #cuts for downstream e-plus
         fitdirection: @local::FitDir.downstream
-        fitparticle: -11
-        doParticleTypeCheck: true
-        doZPropDirCheck: true
+        fitparticle: @local::Particle.eplus
         maxChi2DOF: 20
         maxD0: 600
         maxMomErr: 10
@@ -187,7 +176,6 @@ TrigCprFilters:{
         minFitCons: -1
         minMomentum: 70
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       }
@@ -243,14 +231,12 @@ TrigCprFilters:{
     timeClusterCollection: "TTCalTimePeakFinder"
   }
   cprDeLowPStopTargKSFilter: {
-    kalSeedCollection: "TTCalSeedFitDe"
+    kalSeedCollections: [ "TTCalSeedFitDe" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
       { #cuts for downstream e-minus
         fitdirection: @local::FitDir.downstream
-        fitparticle: 11
-        doParticleTypeCheck: true
-        doZPropDirCheck: true
+        fitparticle: @local::Particle.eminus
         maxChi2DOF: 20
         maxD0: 200
         maxMomErr: 10
@@ -260,15 +246,12 @@ TrigCprFilters:{
         minFitCons: -1
         minMomentum: 50
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       },
       { #cuts for downstream e-plus
         fitdirection: @local::FitDir.downstream
-        fitparticle: -11
-        doParticleTypeCheck: true
-        doZPropDirCheck: true
+        fitparticle: @local::Particle.eplus
         maxChi2DOF: 20
         maxD0: 200
         maxMomErr: 10
@@ -278,7 +261,6 @@ TrigCprFilters:{
         minFitCons: -1
         minMomentum: 50
         minNStrawHits: 15
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       }

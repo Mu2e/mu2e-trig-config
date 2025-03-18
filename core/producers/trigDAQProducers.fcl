@@ -1,13 +1,12 @@
 BEGIN_PROLOG
 
 TrigDAQProducers : {
-  artFragFromDTCEvents: {
+  processDTCAndCFOEvents: {
     diagLevel: 0
     makeCRVFrag: 0
     makeCaloFrag: 1
-    makeSTMFrag: 0
     makeTrkFrag: 1
-    module_type: "ArtFragmentsFromDTCEvents"
+    module_type: "ProcessDTCAndCFOEvents"
   }
 
   binaryOutput: {

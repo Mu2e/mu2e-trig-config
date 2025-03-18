@@ -30,7 +30,8 @@ def fill_results(f, verbose = 0):
                                                                         timing_info[3], timing_info[3], nevents))
             continue
         # Check if it's the timing information for the art fragment from DTC module, for a reference timing
-        if len(words) == 7 and 'artFragFromDTCEvents' in words[0] and len(reference_timing_info) == 0:
+        is_ref = len(words) == 7 and ('artFragFromDTCEvents' in words[0] or 'processDTCAndCFOEvents' in words[0])
+        if is_ref and len(reference_timing_info) == 0:
             #             [min, avg, max, median, rms]
             reference_timing_info = [float(words[index]) for index in range(1,6)]
             if verbose > 0:
