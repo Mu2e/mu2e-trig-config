@@ -405,7 +405,7 @@ TrigAprFilters:{
     timeClusterCollection: "TTTZClusterFinder"
   }
   aprLowPMultiHelixKSFilter: {
-    kalSeedCollection: ["TTAprKSF"]
+    kalSeedCollections: ["TTAprKSF"]
     module_type: "KalSeedFilter"
     minNTrks: 2
     KalSeedCuts : [
