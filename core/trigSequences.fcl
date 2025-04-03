@@ -190,7 +190,7 @@ TrigTrkPaths:{
       TTTZClusterFinder, aprHighPStopTargMultiTrkTCFilter, TTAprHelixFinder, TTAprHelixMerger,
       aprHighPStopTargMultiTrkHSFilter, TTAprKSF, aprHighPStopTargMultiTrkKSFilter, aprHighPStopTargMultiTrkTriggerInfoMerger ]
 
-   apr_lowP_multiHelix       : [ @sequence::TrigRecoSequences.artFragmentsGen,
+   apr_lowP_multiHelix       : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
       aprLowPMultiHelixPS, @sequence::TrigRecoSequences.calReco,
       @sequence::TrigRecoSequences.trkPrepareHits,
       TTTZClusterFinder, aprLowPMultiHelixTCFilter, TTAprHelixFinder, TTAprHelixMerger,
