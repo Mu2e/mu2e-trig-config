@@ -7,7 +7,9 @@ TrigAprFilters:{
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   aprHighPPS               : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  aprLowPStopTargMultiTrkPS: { module_type: PrescaleEvent
+  aprHighPStopTargMultiTrkPS: { module_type: PrescaleEvent
+      eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+   aprLowPMultiHelixPS: { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
   aprHighPStopTargHSFilter: {
@@ -266,7 +268,7 @@ TrigAprFilters:{
     ]
   }
 
-  aprLowPStopTargMultiTrkHSFilter: {
+  aprHighPStopTargMultiTrkHSFilter: {
     helixSeedCollection: "TTAprHelixMerger"
     module_type: "HelixFilter"
     minNHelices: 2
@@ -309,13 +311,13 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  aprLowPStopTargMultiTrkTCFilter: {
+  aprHighPStopTargMultiTrkTCFilter: {
     minNStrawHits: 10
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TTTZClusterFinder"
   }
-  aprLowPStopTargMultiTrkKSFilter: {
+  aprHighPStopTargMultiTrkKSFilter: {
     kalSeedCollections: [ "TTAprKSF" ]
     module_type: "KalSeedFilter"
     minNTrks: 2
@@ -352,6 +354,94 @@ TrigAprFilters:{
       }
     ]
   }
+
+  aprLowPMultiHelixHSFilter: {
+    helixSeedCollection: "TTAprHelixMerger"
+    module_type: "HelixFilter"
+    minNHelices: 2
+    posHelicitySelection : {
+      configured: true
+      doHelicityCheck: true
+      maxAbsLambda: 500
+      maxChi2PhiZ: 8
+      maxChi2XY: 8
+      maxD0: 600
+      maxMomentum: 2000
+      maxNLoops: 30
+      minAbsLambda: 50
+      minD0: -600
+      minHitRatio: 4e-1
+      minMomentum: 50
+      minNLoops: 0
+      minNStrawHits: 15
+      minPt: 0
+      prescaleUsingD0Phi: false
+      requireCaloCluster: false
+    }
+    negHelicitySelection : {
+      configured: true
+      doHelicityCheck: true
+      maxAbsLambda: 500
+      maxChi2PhiZ: 8
+      maxChi2XY: 8
+      maxD0: 600
+      maxMomentum: 2000
+      maxNLoops: 30
+      minAbsLambda: 50
+      minD0: -600
+      minHitRatio: 4e-1
+      minMomentum: 50
+      minNLoops: 0
+      minNStrawHits: 15
+      minPt: 0
+      prescaleUsingD0Phi: false
+      requireCaloCluster: false
+    }
+  }
+  aprLowPMultiHelixTCFilter: {
+    minNStrawHits: 10
+    module_type: "TimeClusterFilter"
+    requireCaloCluster: false
+    timeClusterCollection: "TTTZClusterFinder"
+  }
+  aprLowPMultiHelixKSFilter: {
+    kalSeedCollection: ["TTAprKSF"]
+    module_type: "KalSeedFilter"
+    minNTrks: 2
+    KalSeedCuts : [
+      { #cuts for downstreeam e-minus
+        fitdirection: @local::FitDir.downstream
+        fitparticle: @local::Particle.eminus
+        maxChi2DOF: 20
+        maxD0: 600
+        maxMomErr: 10
+        maxMomentum: 2000
+        maxTanDip: 100
+        minD0: -600
+        minFitCons: -1
+        minMomentum: 50
+        minNStrawHits: 12
+        minTanDip: 0
+        requireCaloCluster: false
+      },
+      { #cuts for downstreeam e-plus
+        fitdirection: @local::FitDir.downstream
+        fitparticle: @local::Particle.eplus
+        maxChi2DOF: 20
+        maxD0: 600
+        maxMomErr: 10
+        maxMomentum:2000
+        maxTanDip: 100
+        minD0: -600
+        minFitCons: -1
+        minMomentum: 50
+        minNStrawHits: 12
+        minTanDip: 0
+        requireCaloCluster: false
+      }
+    ]
+  }
+
 
   #aprHelix filters
   aprHelixHSFilter: {

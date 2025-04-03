@@ -104,8 +104,16 @@
                                ]
         },
 
-         "apr_lowP_stopTarg_multiTrk"   : {
+         "apr_highP_stopTarg_multiTrk"   : {
             "bit" : 191 ,
+            "enabled": 1,
+            "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
+                                {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }
+                               ]
+         },
+
+	"apr_lowP_multiHelix"   : {
+            "bit" : 192 ,
             "enabled": 1,
             "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
                                 {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }
