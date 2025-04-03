@@ -405,15 +405,13 @@ TrigAprFilters:{
     timeClusterCollection: "TTTZClusterFinder"
   }
   aprLowPMultiHelixKSFilter: {
-    kalSeedCollection: "TTAprKSF"
+    kalSeedCollection: ["TTAprKSF"]
     module_type: "KalSeedFilter"
     minNTrks: 2
     KalSeedCuts : [
       { #cuts for downstreeam e-minus
-        doParticleTypeCheck: false
-        doZPropDirCheck: true
-        fitdirection: 0
-        fitparticle: 11
+        fitdirection: @local::FitDir.downstream
+        fitparticle: @local::Particle.eminus
         maxChi2DOF: 20
         maxD0: 600
         maxMomErr: 10
@@ -423,15 +421,12 @@ TrigAprFilters:{
         minFitCons: -1
         minMomentum: 50
         minNStrawHits: 12
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       },
       { #cuts for downstreeam e-plus
-        doParticleTypeCheck: false
-        doZPropDirCheck: true
-        fitdirection: 0
-        fitparticle: -11
+        fitdirection: @local::FitDir.downstream
+        fitparticle: @local::Particle.eplus
         maxChi2DOF: 20
         maxD0: 600
         maxMomErr: 10
@@ -441,7 +436,6 @@ TrigAprFilters:{
         minFitCons: -1
         minMomentum: 50
         minNStrawHits: 12
-        minT0: 0
         minTanDip: 0
         requireCaloCluster: false
       }
