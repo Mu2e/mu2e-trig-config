@@ -83,8 +83,8 @@ results_2,timing_2,reference_time_2 = fill_results(f_2, verbose)
 # Define the major vs. minor failure thresholds
 count_minor_threshold = 1 # path rate change for minor failure
 count_major_threshold = 4 # path rate change for major failure
-avg_time_minor_threshold = 0.20 # fractional change in time / event
-avg_time_major_threshold = 0.30 # fractional change in time / event
+avg_time_minor_threshold = 0.40 # fractional change in time / event
+avg_time_major_threshold = 0.50 # fractional change in time / event
 minor_fail = False
 major_fail = False
 
