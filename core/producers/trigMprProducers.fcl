@@ -53,6 +53,7 @@ TrigMprProducers : {
     }
     UsePDGCharge     : false
     FitDirection     : @local::FitDir.downstream
+    PrioritizeCaloHits : true
   }
 
   mprDeHighPStopTargTriggerInfoMerger: {
