@@ -3,7 +3,6 @@ BEGIN_PROLOG
 TrigAprProducers : {
   TTTZClusterFinder : { @table::CalPatRec.producers.TZClusterFinder
     chCollLabel                : "TTflagPH"
-    chCollLabel2               : "TTmakeSH"
     ccCollLabel                : "CaloClusterFast"
   }
 
