@@ -118,6 +118,14 @@
                                ]
         },
 
+        "apr_ue_highP"   : {
+            "bit" : 185,
+            "enabled": 1,
+            "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
+                                {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }
+                               ]
+        },
+
         "apr_lowP_stopTarg"   : {
             "bit" : 190 ,
             "enabled": 1,
