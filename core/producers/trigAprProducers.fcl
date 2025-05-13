@@ -3,7 +3,6 @@ BEGIN_PROLOG
 TrigAprProducers : {
   TTTZClusterFinder : { @table::CalPatRec.producers.TZClusterFinder
     chCollLabel                : "TTflagPH"
-    chCollLabel2               : "TTmakeSH"
     ccCollLabel                : "CaloClusterFast"
   }
 
@@ -45,6 +44,22 @@ TrigAprProducers : {
     PrioritizeCaloHits : true
   }
 
+  TTAprUeKSF: {
+    module_type : LoopHelixFit
+    MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
+    KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
+    FitSettings      : { @table::Mu2eKinKalTrigger.SEEDFIT }
+    ExtensionSettings: { @table::Mu2eKinKalTrigger.SEEDEXT }
+    ModuleSettings   : {
+      @table::Mu2eKinKalTrigger.LOOPHELIX
+      FitParticle : @local::Particle.eminus
+      HelixSeedCollections   : [ "TTAprHelixMerger" ]
+    }
+    UsePDGCharge     : false
+    FitDirection     : @local::FitDir.upstream
+    PrioritizeCaloHits : true
+  }
+
   aprHighPStopTargTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
@@ -58,6 +73,9 @@ TrigAprProducers : {
     module_type: "MergeTriggerInfo"
   }
   aprLowPMultiHelixTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  aprUeHighPTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
   aprHelixTriggerInfoMerger: {

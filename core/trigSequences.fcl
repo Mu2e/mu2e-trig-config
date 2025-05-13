@@ -212,7 +212,14 @@ TrigTrkPaths:{
       @sequence::TrigRecoSequences.trkPrepareHits,
       TTTZClusterFinder ]
 
-   aprHelix          : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
+  apr_ue_highP                     : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
+      aprUeHighPPS, @sequence::TrigRecoSequences.calReco,
+      @sequence::TrigRecoSequences.trkPrepareHits,
+      TTTZClusterFinder, aprUeHighPTCFilter,
+      TTAprHelixFinder, TTAprHelixMerger, aprUeHighPHSFilter,
+      TTAprUeKSF, aprUeHighPKSFilter, aprUeHighPTriggerInfoMerger ]
+
+  aprHelix          : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
       aprLowPStopTargPS, @sequence::TrigRecoSequences.calReco,
       @sequence::TrigRecoSequences.trkPrepareHits,
       TTTZClusterFinder, aprHelixTCFilter, TTAprHelixFinder, TTAprHelixMerger,
