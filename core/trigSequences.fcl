@@ -43,14 +43,14 @@ TrigTrkPaths:{
                                     TTtimeClusterFinderUe, tprHelixUeTCFilter, TThelixFinderUe,
                                     TTHelixMergerUe, tprHelixUeHSFilter, tprHelixUeTriggerInfoMerger ]
     #   calibration with DIO-Michel form Inner Proton Absorber
-    tpr_HlxDe_30p_ipaPhi        : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
+    tpr_HlxDe_30p_IPAPhi        : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
                                     tprHelixDeIpaPhiScaledPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
                                     TTtimeClusterFinder, tprHelixDeIpaPhiScaledTCFilter, TThelixFinder,
                                     TTHelixMergerDe, tprHelixDeIpaPhiScaledHSFilter,
                                     tprHelixDeIpaPhiScaledTriggerInfoMerger  ]
     #    beam monitoring using the e- from the DIO in the IPA
-    tpr_HlxDe_30p_ipa           : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
+    tpr_HlxDe_30p_IPA           : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
                                     tprHelixDeIpaPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
                                     TTtimeClusterFinder, tprHelixDeIpaTCFilter, TThelixFinder,
