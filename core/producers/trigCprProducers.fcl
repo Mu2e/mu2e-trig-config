@@ -243,7 +243,6 @@ TrigCprProducers : {
       }
       UsePDGCharge     : false
       FitDirection     : @local::FitDir.downstream
-      PrioritizeCaloHits : true
    }
 
    cprDeHighPStopTargTriggerInfoMerger: {

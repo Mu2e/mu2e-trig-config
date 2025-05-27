@@ -42,7 +42,6 @@ TrigAprProducers : {
     }
     UsePDGCharge     : false
     FitDirection     : @local::FitDir.downstream
-    PrioritizeCaloHits : true
   }
 
   TTAprUeKSF: {
@@ -58,7 +57,6 @@ TrigAprProducers : {
     }
     UsePDGCharge     : false
     FitDirection     : @local::FitDir.upstream
-    PrioritizeCaloHits : true
   }
 
   aprHighPStopTargTriggerInfoMerger: {

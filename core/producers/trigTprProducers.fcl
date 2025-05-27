@@ -187,7 +187,6 @@ TrigTprProducers : {
     }
     UsePDGCharge     : false
     FitDirection     : @local::FitDir.downstream
-    PrioritizeCaloHits : true
   }
 
   TTKSFUe: {
@@ -203,7 +202,6 @@ TrigTprProducers : {
     }
     UsePDGCharge     : false
     FitDirection     : @local::FitDir.upstream
-    PrioritizeCaloHits : true
   }
 
   TThelixFinderUe: {
