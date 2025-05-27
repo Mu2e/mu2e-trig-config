@@ -60,22 +60,22 @@ TrigAprProducers : {
     FitDirection     : @local::FitDir.upstream
   }
 
-  aprHighPStopTargTriggerInfoMerger: {
+  aprTrk80m70pD0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprHighPTriggerInfoMerger: {
+  aprTrk80m70pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprLowPStopTargTriggerInfoMerger: {
+  aprTrk50D0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprHighPStopTargMultiTrkTriggerInfoMerger: {
+  aprTrk80m70pD0200MultiTrkTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprLowPMultiHelixTriggerInfoMerger: {
+  aprTrk50MultiHelixTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprUeHighPTriggerInfoMerger: {
+  aprTrkUe80m70pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
   aprHelixTriggerInfoMerger: {

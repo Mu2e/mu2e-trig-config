@@ -55,7 +55,7 @@ TrigMprProducers : {
     FitDirection     : @local::FitDir.downstream
   }
 
-  mprDeHighPStopTargTriggerInfoMerger: {
+  mprTrkDe80m70pD0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
 }

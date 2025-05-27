@@ -1,10 +1,10 @@
 BEGIN_PROLOG
 
 TrigMprFilters:{
-  mprDeHighPStopTargPS  : { module_type: PrescaleEvent
+  mprTrkDe80m70pD0200PS  : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
-  mprDeHighPStopTargHSFilter: {
+  mprTrkDe80m70pD0200HSFilter: {
     module_type: "HelixFilter"
     helixSeedCollection: "TTMprHelixMergerDe"
     posHelicitySelection : {
@@ -47,14 +47,14 @@ TrigMprFilters:{
     }
   }
 
-  mprDeHighPStopTargTCFilter: {
+  mprTrkDe80m70pD0200TCFilter: {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TTtimeClusterFinder"
   }
 
-  mprDeHighPStopTargKSFilter: {
+  mprTrkDe80m70pD0200KSFilter: {
     module_type: "KalSeedFilter"
     kalSeedCollections: [ "TTMprKSFDe" ]
     KalSeedCuts : [

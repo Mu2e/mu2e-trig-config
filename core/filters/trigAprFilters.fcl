@@ -1,20 +1,20 @@
 BEGIN_PROLOG
 
 TrigAprFilters:{
-  aprLowPStopTargPS        : { module_type: PrescaleEvent
+  aprTrk50D0200PS        : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  aprHighPStopTargPS       : { module_type: PrescaleEvent
+  aprTrk80m70pD0200PS       : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  aprHighPPS               : { module_type: PrescaleEvent
+  aprTrk80m70pPS               : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  aprHighPStopTargMultiTrkPS: { module_type: PrescaleEvent
+  aprTrk80m70pD0200MultiTrkPS: { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-   aprLowPMultiHelixPS: { module_type: PrescaleEvent
+   aprTrk50MultiHelixPS: { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  aprUeHighPPS             : { module_type: PrescaleEvent
+  aprTrkUe80m70pPS             : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
-  aprHighPStopTargHSFilter: {
+  aprTrk80m70pD0200HSFilter: {
     module_type: "HelixFilter"
     helixSeedCollection: "TTAprHelixMerger"
     posHelicitySelection : {
@@ -56,13 +56,13 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  aprHighPStopTargTCFilter : {
+  aprTrk80m70pD0200TCFilter : {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TTTZClusterFinder"
   }
-  aprHighPStopTargKSFilter: {
+  aprTrk80m70pD0200KSFilter: {
     kalSeedCollections: [ "TTAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
@@ -99,7 +99,7 @@ TrigAprFilters:{
     ]
   }
 
-  aprHighPHSFilter: {
+  aprTrk80m70pHSFilter: {
     module_type: "HelixFilter"
     helixSeedCollection: "TTAprHelixMerger"
     posHelicitySelection : {
@@ -141,13 +141,13 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  aprHighPTCFilter : {
+  aprTrk80m70pTCFilter : {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TTTZClusterFinder"
   }
-  aprHighPKSFilter: {
+  aprTrk80m70pKSFilter: {
     kalSeedCollections: [ "TTAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
@@ -185,7 +185,7 @@ TrigAprFilters:{
   }
 
   #upstream track trigger filters
-  aprUeHighPHSFilter: {
+  aprTrkUe80m70pHSFilter: {
     module_type: "HelixFilter"
     helixSeedCollection: "TTAprHelixMerger"
     posHelicitySelection : {
@@ -227,13 +227,13 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  aprUeHighPTCFilter : {
+  aprTrkUe80m70pTCFilter : {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TTTZClusterFinder"
   }
-  aprUeHighPKSFilter: {
+  aprTrkUe80m70pKSFilter: {
     kalSeedCollections: [ "TTAprUeKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
@@ -271,7 +271,7 @@ TrigAprFilters:{
   }
 
   #apr lowP filters
-  aprLowPStopTargHSFilter: {
+  aprTrk50D0200HSFilter: {
     module_type: "HelixFilter"
     helixSeedCollection: "TTAprHelixMerger"
     posHelicitySelection : {
@@ -313,13 +313,13 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  aprLowPStopTargTCFilter: {
+  aprTrk50D0200TCFilter: {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TTTZClusterFinder"
   }
-  aprLowPStopTargKSFilter: {
+  aprTrk50D0200KSFilter: {
     kalSeedCollections: [ "TTAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
@@ -356,7 +356,7 @@ TrigAprFilters:{
     ]
   }
 
-  aprHighPStopTargMultiTrkHSFilter: {
+  aprTrk80m70pD0200MultiTrkHSFilter: {
     helixSeedCollection: "TTAprHelixMerger"
     module_type: "HelixFilter"
     minNHelices: 2
@@ -399,13 +399,13 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  aprHighPStopTargMultiTrkTCFilter: {
+  aprTrk80m70pD0200MultiTrkTCFilter: {
     minNStrawHits: 10
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TTTZClusterFinder"
   }
-  aprHighPStopTargMultiTrkKSFilter: {
+  aprTrk80m70pD0200MultiTrkKSFilter: {
     kalSeedCollections: [ "TTAprKSF" ]
     module_type: "KalSeedFilter"
     minNTrks: 2
@@ -443,7 +443,7 @@ TrigAprFilters:{
     ]
   }
 
-  aprLowPMultiHelixHSFilter: {
+  aprTrk50MultiHelixHSFilter: {
     helixSeedCollection: "TTAprHelixMerger"
     module_type: "HelixFilter"
     minNHelices: 2
@@ -486,13 +486,13 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  aprLowPMultiHelixTCFilter: {
+  aprTrk50MultiHelixTCFilter: {
     minNStrawHits: 10
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TTTZClusterFinder"
   }
-  aprLowPMultiHelixKSFilter: {
+  aprTrk50MultiHelixKSFilter: {
     kalSeedCollections: ["TTAprKSF"]
     module_type: "KalSeedFilter"
     minNTrks: 2

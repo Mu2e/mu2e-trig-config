@@ -245,13 +245,13 @@ TrigCprProducers : {
       FitDirection     : @local::FitDir.downstream
    }
 
-   cprDeHighPStopTargTriggerInfoMerger: {
+   cprTrkDe80m70pD0200TriggerInfoMerger: {
       module_type: "MergeTriggerInfo"
    }
-   cprDeHighPTriggerInfoMerger: {
+   cprTrkDe80m70pTriggerInfoMerger: {
       module_type: "MergeTriggerInfo"
    }
-   cprDeLowPStopTargTriggerInfoMerger: {
+   cprTrkDe50D0200TriggerInfoMerger: {
       module_type: "MergeTriggerInfo"
    }
    cprHelixDeTriggerInfoMerger: {

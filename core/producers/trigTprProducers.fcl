@@ -329,25 +329,25 @@ TrigTprProducers : {
     targetconsistent_init: false
   }
 
-  tprDeHighPStopTargTriggerInfoMerger: {
+  tprTrkDe80m70pD0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprDeHighPTriggerInfoMerger: {
+  tprTrkDe80m70pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprDeLowPStopTargTriggerInfoMerger: {
+  tprTrkDe50D0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprHelixDeIpaPhiScaledTriggerInfoMerger: {
+  tprHlxDe30pIPAPhiTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprHelixDeIpaTriggerInfoMerger: {
+  tprHlxDe30pIPATriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprHelixDeTriggerInfoMerger: {
+  tprHlxDe70m50pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprHelixUeTriggerInfoMerger: {
+  tprHlxUe50m30pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
 }
