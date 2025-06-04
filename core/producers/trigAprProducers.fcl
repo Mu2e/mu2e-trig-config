@@ -14,6 +14,7 @@ TrigAprProducers : {
     maxEDepAvg              : @local::TrigTrkProducers.TTHelixFinderParams.maxEDepAvg
     maxNHitsRatio           : 1.5
     doEDepFlag              : true
+    eDepFlagThresh          : 0.003
   }
 
   TTAprHelixMerger: {
