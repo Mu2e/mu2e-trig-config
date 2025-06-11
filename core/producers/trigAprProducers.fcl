@@ -3,7 +3,6 @@ BEGIN_PROLOG
 TrigAprProducers : {
   TTTZClusterFinder : { @table::CalPatRec.producers.TZClusterFinder
     chCollLabel                : "TTflagPH"
-    chCollLabel2               : "TTmakeSH"
     ccCollLabel                : "CaloClusterFast"
   }
 
@@ -14,6 +13,8 @@ TrigAprProducers : {
     minNHelixComboHits      : 10
     maxEDepAvg              : @local::TrigTrkProducers.TTHelixFinderParams.maxEDepAvg
     maxNHitsRatio           : 1.5
+    doEDepFlag              : true
+    eDepFlagThresh          : 0.003
   }
 
   TTAprHelixMerger: {
