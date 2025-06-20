@@ -20,7 +20,7 @@ TrigTrkProducers : {
    }
 
    TTmakeSH: {
-     @local::TTmakeSHFromDigi 
+     @local::TTmakeSHFromDigi
      StrawDigiCollectionTag : "TTmakeSD"
    }
 
