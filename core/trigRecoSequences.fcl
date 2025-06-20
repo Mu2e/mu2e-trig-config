@@ -10,8 +10,6 @@ TrigRecoSequences:{
    #calorimeter reco
    calPrepareHits     : [ CaloHitMakerFast ]
    calReco            : [ CaloHitMakerFast, CaloClusterFast ]
-   #
-   dtcAndCFOEventsGen : [ processDTCAndCFOEvents ]
 }
 
 END_PROLOG

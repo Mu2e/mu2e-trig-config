@@ -1,14 +1,6 @@
 BEGIN_PROLOG
 
 TrigDAQProducers : {
-  processDTCAndCFOEvents: {
-    diagLevel: 0
-    makeCRVFrag: 0
-    makeCaloFrag: 1
-    makeTrkFrag: 1
-    module_type: "ProcessDTCAndCFOEvents"
-  }
-
   binaryOutput: {
     #      module_type     : BinaryPacketsFromDataBlocks
     module_type     : ArtBinaryPacketsFromDigis
