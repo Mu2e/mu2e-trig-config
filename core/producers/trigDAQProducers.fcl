@@ -1,6 +1,12 @@
 BEGIN_PROLOG
 
 TrigDAQProducers : {
+  processCFOData : {
+    module_type : EventHeaderFromCFOFragment
+    cfoTag : "CFOBoardReader"
+    diagLevel : 0
+  }
+
   binaryOutput: {
     #      module_type     : BinaryPacketsFromDataBlocks
     module_type     : ArtBinaryPacketsFromDigis

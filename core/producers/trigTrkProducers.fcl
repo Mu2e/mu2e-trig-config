@@ -1,49 +1,13 @@
 BEGIN_PROLOG
 
 TrigTrkProducers : {
-  TTmakeSH: {
-    diagLevel: 0
-    module_type: "ComboHitsFromDataDecoders"
-    printLevel : 0
-    FitType : 5
-    UseCalorimeter : false
-    clusterDt : 100
-    minimumEnergy : 0.0
-    maximumEnergy : 0.0035
-    minimumRho   : 0.
-    maximumRho   : 800.
-    crossTalkEnergy : 0.007
-    crossTalkMinimumTime : -1
-    crossTalkMaximumTime : 100
-    MinimumTime : 500
-    MaximumTime : 2000
-    MinimumTimeOffSpill : 0
-    MaximumTimeOffSpill : 100000
-    FilterHits : true
-    WriteStrawHitCollection : false
-    FlagCrossTalk : false
-    CaloClusterCollectionTag : "notNow"
-    ProtonBunchTimeTag : "EWMProducer"
-    TrackerDataDecoderTag : "artFragFromDTCEvents"
-
-   }
-   TTmakePH: {
-      @table::TrkHitReco.producers.makePH
-      TestFlag   : false # not needed, since TTmakeSH is filtering
-      FilterHits : false
-      MinimumTimeOffSpill : 0
-      MinimumTimeOffSpill : 100000
-      ComboHitCollection    : "TTmakeSH"
-      StrawHitSelectionBits : []
-      StrawHitMask          : []
-   }
-   # combine panel hits in a station
-   TTmakeSTH : {
-      @table::TrkHitReco.producers.makeSTH
-      TestFlag           : false
-      FilterHits         : true
-      ComboHitCollection : "TTmakePH"
-   }
+  TTmakeSD: {
+    module_type: StrawDigisFromArtdaqFragments
+    diagLevel : 0
+    debugLevel : 0
+    saveWaveforms : false
+    missingDTCHeaders : false
+  }
 
    TTmakeSHFromDigi: {
       @table::TrkHitReco.producers.makeSH
@@ -54,6 +18,31 @@ TrigTrkProducers : {
       WriteStrawHitCollection : false
       StrawDigiADCWaveformCollectionTag : "notUsed"
    }
+
+   TTmakeSH: {
+     @local::TTmakeSHFromDigi 
+     StrawDigiCollectionTag : "TTmakeSD"
+   }
+
+   TTmakePH: {
+      @table::TrkHitReco.producers.makePH
+      TestFlag   : false # not needed, since TTmakeSH is filtering
+      FilterHits : false
+      MinimumTimeOffSpill : 0
+      MinimumTimeOffSpill : 100000
+      ComboHitCollection    : "TTmakeSH"
+      StrawHitSelectionBits : []
+      StrawHitMask          : []
+   }
+
+   # combine panel hits in a station
+   TTmakeSTH : {
+      @table::TrkHitReco.producers.makeSTH
+      TestFlag           : false
+      FilterHits         : true
+      ComboHitCollection : "TTmakePH"
+   }
+
    TTflagBkgHits: {
       @table::TrkHitReco.producers.FlagBkgHits
       ComboHitCollection   : "TTmakeSTH"
