@@ -7,20 +7,38 @@ TrigTrkProducers : {
     debugLevel : 0
     saveWaveforms : false
     missingDTCHeaders : false
+    geography : [
+      {
+        minnesota: "MN998"
+        plane: 0
+        panel: 0
+      },
+      {
+        minnesota: "MN999"
+        plane: 0
+        panel: 1
+        }
+    ]
   }
 
    TTmakeSHFromDigi: {
-      @table::TrkHitReco.producers.makeSH
-      MinimumTimeOffSpill : 0
-      MaximumTimeOffSpill : 100000
-      FitType                 : 5
-      FilterHits              : true
-      WriteStrawHitCollection : false
-      StrawDigiADCWaveformCollectionTag : "notUsed"
+     @table::TrkHitReco.producers.makeSH
+     MinimumTimeOffSpill : 0
+     MaximumTimeOffSpill : 100000
+     FitType                 : 5
+     FilterHits              : true
+     WriteStrawHitCollection : false
+     StrawDigiADCWaveformCollectionTag : "notUsed"
    }
 
    TTmakeSH: {
-     @local::TTmakeSHFromDigi
+     @table::TrkHitReco.producers.makeSH
+     MinimumTimeOffSpill : 0
+     MaximumTimeOffSpill : 100000
+     FitType                 : 5
+     FilterHits              : true
+     WriteStrawHitCollection : false
+     StrawDigiADCWaveformCollectionTag : "notUsed"
      StrawDigiCollectionTag : "TTmakeSD"
    }
 
