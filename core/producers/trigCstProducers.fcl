@@ -37,32 +37,16 @@ TrigCstProducers : {
     module_type: "CosmicTrackFinder"
   }
   CstLineFinder: {
+    @table::CosmicReco.producers.LineFinder
     ComboHitCollection: "TTOmakePH"
-    NSteps: 0
-    NTSteps: 0
-    StepSize: 5e-1
     TimeClusterCollection: "CstSimpleTimeCluster"
     maxDOCA: 10
     minPeak: 10
-    module_type: "LineFinder"
-    t0offset: 0
-    MaxPairs: 500
   }
   CstSimpleTimeCluster: {
+    @table::CosmicReco.producers.SimpleTimeCluster
     ComboHitCollection: "TTOmakePH"
     TestFlag: false
-    module_type: "SimpleTimeCluster"
-    HitSelectionBits  : []
-    HitBackgroundBits : ["Background","Noisy","Dead"]
-    debugLevel : 0
-    minNStrawHits : 2
-    minNPanels : 1
-    TimeWindow : 100
-    useTimeWindow : false
-    TimeStep : 20
-    useTimeStep : true
-    UseOnlyOnePanel : false
-    UseOnlyOnePlane : false
   }
 
   cstTimeClusterTriggerInfoMerger: {
