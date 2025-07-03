@@ -8,7 +8,7 @@
 
     "trigger_paths" : {
 
-        "mprDe_highP_stopTarg": {
+        "mpr_TrkDe_80m70p_D0200": {
             "bit" : 210 ,
             "enabled": 1,
             "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
@@ -16,35 +16,35 @@
                                ]
         },
 
-        "tprDe_highP_stopTarg": {
+        "tpr_TrkDe_80m70p_D0200": {
             "bit" : 100 ,
             "enabled": 1,
             "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
                                 {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }
                                ]
         } ,
-        "tprDe_lowP_stopTarg" : {
+        "tpr_TrkDe_50_D0200" : {
             "bit": 110 ,
             "enabled": 1,
             "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ]},
                                 {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }]
         },
 
-        "tprHelixDe_ipa" : {
+        "tpr_HlxDe_30p_IPA" : {
             "bit" : 120 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":1000, "streams": [ "physics_main", "dqm_trigger" ]},
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }]
         },
 
-        "tprHelixDe_ipa_phiScaled" : {
+        "tpr_HlxDe_30p_IPAPhi" : {
             "bit" : 121 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":1000, "streams": [ "physics_main", "dqm_trigger" ]},
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }]
         },
 
-        "tprHelixDe" : {
+        "tpr_HlxDe_70m50p" : {
             "bit" : 130 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":10000, "streams": [ "physics_main", "dqm_trigger" ]},
@@ -52,14 +52,14 @@
         },
 
 
-        "tprHelixUe" : {
+        "tpr_HlxUe_50m30p" : {
             "bit" : 131 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":10000, "streams": [ "physics_main", "dqm_trigger" ]},
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }]
         },
 
-        "cprDe_highP_stopTarg": {
+        "cpr_TrkDe_80m70p_D0200": {
             "bit" : 150 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ]},
@@ -67,28 +67,28 @@
         },
 
 
-        "cprDe_lowP_stopTarg" : {
+        "cpr_TrkDe_50_D0200" : {
             "bit" : 160,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ]},
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]         }]
         },
 
-        "cprHelixDe" : {
+        "cpr_HlxDe_50" : {
             "bit" : 170 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":10000, "streams": [ "physics_main", "dqm_trigger" ]},
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]         }]
         },
 
-        "cprHelixUe" : {
+        "cpr_HlxUe_40" : {
             "bit" : 171,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":10000, "streams": [ "physics_main", "dqm_trigger" ]},
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]         }]
         },
 
-        "apr_highP_stopTarg"   : {
+        "apr_TrkDe_80m70p_D0200"   : {
             "bit" : 180 ,
             "enabled": 1,
             "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
@@ -96,7 +96,7 @@
                                ]
         },
 
-        "apr_lowP_stopTarg"   : {
+        "apr_TrkDe_50_D0200"   : {
             "bit" : 190 ,
             "enabled": 1,
             "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
@@ -104,7 +104,7 @@
                                ]
         },
 
-         "apr_highP_stopTarg_multiTrk"   : {
+         "apr_TwoTrkDe_80m70p_D0200"   : {
             "bit" : 191 ,
             "enabled": 1,
             "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
@@ -112,7 +112,7 @@
                                ]
          },
 
-	"apr_lowP_multiHelix"   : {
+	"apr_TwoTrkDe_50"   : {
             "bit" : 192 ,
             "enabled": 1,
             "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
@@ -120,7 +120,7 @@
                                ]
         },
 
-        "aprHelix"   : {
+        "apr_Hlx_50"   : {
             "bit" : 195 ,
             "enabled": 1,
             "eventModeConfig": [{"eventMode":"OnSpill", "prescale":10000, "streams": [ "physics_main", "dqm_trigger" ] },
