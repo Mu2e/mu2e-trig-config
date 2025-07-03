@@ -10,7 +10,7 @@ TrigTrkPaths:{
                                    TTtimeClusterFinder, mprTrkDe80m70pD0200TCFilter, TTRobustMultiHelixFinder,
                                    TTMprHelixMergerDe, mprTrkDe80m70pD0200HSFilter, TTMprKSFDe,
                                    mprTrkDe80m70pD0200KSFilter, mprTrkDe80m70pD0200TriggerInfoMerger ]
-    
+
     #####################
     # TPR algorithm paths
 
