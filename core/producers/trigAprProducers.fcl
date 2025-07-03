@@ -1,25 +1,25 @@
 BEGIN_PROLOG
 
 TrigAprProducers : {
-  TTTZClusterFinder : { @table::CalPatRec.producers.TZClusterFinder
-    chCollLabel                : "TTflagPH"
+  TrigTZClusterFinder : { @table::CalPatRec.producers.TZClusterFinder
+    chCollLabel                : "TrigFlagPH"
     ccCollLabel                : "CaloClusterFast"
   }
 
-  TTAprHelixFinder: { @table::CalPatRec.producers.AgnosticHelixFinder
-    chCollLabel             : "TTflagPH"
-    tcCollLabel             : "TTTZClusterFinder"
+  TrigAprHelixFinder: { @table::CalPatRec.producers.AgnosticHelixFinder
+    chCollLabel             : "TrigFlagPH"
+    tcCollLabel             : "TrigTZClusterFinder"
     ccCollLabel             : "CaloClusterFast"
     minNHelixComboHits      : 10
-    maxEDepAvg              : @local::TrigTrkProducers.TTHelixFinderParams.maxEDepAvg
+    maxEDepAvg              : @local::TrigTrkProducers.TrigHelixFinderParams.maxEDepAvg
     maxNHitsRatio           : 1.5
     doEDepFlag              : true
     eDepFlagThresh          : 0.003
   }
 
-  TTAprHelixMerger: {
+  TrigAprHelixMerger: {
     HelixFinders: [
-      "TTAprHelixFinder"
+      "TrigAprHelixFinder"
     ]
     debugLevel: 0
     deltanh: 5
@@ -30,7 +30,7 @@ TrigAprProducers : {
     MinNHitOverlap: 10
   }
 
-  TTAprKSF: {
+  TrigAprKSF: {
     module_type : LoopHelixFit
     MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
     KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
@@ -39,13 +39,13 @@ TrigAprProducers : {
     ModuleSettings   : {
       @table::Mu2eKinKalTrigger.LOOPHELIX
       FitParticle : @local::Particle.eminus
-      HelixSeedCollections   : [ "TTAprHelixMerger" ]
+      HelixSeedCollections   : [ "TrigAprHelixMerger" ]
     }
     UsePDGCharge     : false
     FitDirection     : @local::FitDir.downstream
   }
 
-  TTAprUeKSF: {
+  TrigAprUeKSF: {
     module_type : LoopHelixFit
     MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
     KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
@@ -54,31 +54,31 @@ TrigAprProducers : {
     ModuleSettings   : {
       @table::Mu2eKinKalTrigger.LOOPHELIX
       FitParticle : @local::Particle.eminus
-      HelixSeedCollections   : [ "TTAprHelixMerger" ]
+      HelixSeedCollections   : [ "TrigAprHelixMerger" ]
     }
     UsePDGCharge     : false
     FitDirection     : @local::FitDir.upstream
   }
 
-  aprTrk80m70pD0200TriggerInfoMerger: {
+  AprTrk80m70pD0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprTrk80m70pTriggerInfoMerger: {
+  AprTrk80m70pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprTrk50D0200TriggerInfoMerger: {
+  AprTrk50D0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprTrk80m70pD0200MultiTrkTriggerInfoMerger: {
+  AprTrk80m70pD0200MultiTrkTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprTrk50MultiHelixTriggerInfoMerger: {
+  AprTrk50MultiHelixTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprTrkUe80m70pTriggerInfoMerger: {
+  AprTrkUe80m70pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprHelixTriggerInfoMerger: {
+  AprHelixTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
 }

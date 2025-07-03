@@ -1,7 +1,7 @@
 BEGIN_PROLOG
 
 TrigTrkProducers : {
-  TTmakeSH: {
+  TrigMakeSH: {
     diagLevel: 0
     module_type: "ComboHitsFromDataDecoders"
     printLevel : 0
@@ -27,25 +27,25 @@ TrigTrkProducers : {
     TrackerDataDecoderTag : "artFragFromDTCEvents"
 
    }
-   TTmakePH: {
+   TrigMakePH: {
       @table::TrkHitReco.producers.makePH
-      TestFlag   : false # not needed, since TTmakeSH is filtering
+      TestFlag   : false # not needed, since TrigMakeSH is filtering
       FilterHits : false
       MinimumTimeOffSpill : 0
       MinimumTimeOffSpill : 100000
-      ComboHitCollection    : "TTmakeSH"
+      ComboHitCollection    : "TrigMakeSH"
       StrawHitSelectionBits : []
       StrawHitMask          : []
    }
    # combine panel hits in a station
-   TTmakeSTH : {
+   TrigMakeSTH : {
       @table::TrkHitReco.producers.makeSTH
       TestFlag           : false
       FilterHits         : true
-      ComboHitCollection : "TTmakePH"
+      ComboHitCollection : "TrigMakePH"
    }
 
-   TTmakeSHFromDigi: {
+   TrigMakeSHFromDigi: {
       @table::TrkHitReco.producers.makeSH
       MinimumTimeOffSpill : 0
       MaximumTimeOffSpill : 100000
@@ -54,20 +54,20 @@ TrigTrkProducers : {
       WriteStrawHitCollection : false
       StrawDigiADCWaveformCollectionTag : "notUsed"
    }
-   TTflagBkgHits: {
+   TrigFlagBkgHits: {
       @table::TrkHitReco.producers.FlagBkgHits
-      ComboHitCollection   : "TTmakeSTH"
+      ComboHitCollection   : "TrigMakeSTH"
       FilterHits           : true
    }
 
   TTDeltaFinder: {
     @table::CalPatRec.producers.DeltaFinder
-    chCollTag                     : TTmakePH                # input coll
-    sschCollTag                   : TTmakeSH                # input coll
+    chCollTag                     : TrigMakePH                # input coll
+    sschCollTag                   : TrigMakeSH                # input coll
     writeFilteredComboHits        : 1
   }
 
-  TTHelixFinderParams: {
+  TrigHelixFinderParams: {
     @table::TrkReco.HelixFinderParams
     maxEDepAvg : 0.0025
   }
@@ -75,13 +75,13 @@ TrigTrkProducers : {
 # This next defines which hit flagger to use
 TrigTrkProducers : {
   @table::TrigTrkProducers
-  TTflagPH: @local::TrigTrkProducers.TTDeltaFinder
+  TrigFlagPH: @local::TrigTrkProducers.TTDeltaFinder
 }
 
 TrigTrkProducers : {
   @table::TrigTrkProducers
-   TTOmakeSH: {
-      @table::TrigTrkProducers.TTmakeSH
+   TrigOffSpMakeSH: {
+      @table::TrigTrkProducers.TrigMakeSH
       MinimumTime : 0
       MaximumTime : 100000
       MinimumRadius : 0
@@ -89,8 +89,8 @@ TrigTrkProducers : {
       MinimumEnergy : 0
       MaximumEnergy : 1
    }
-   TTOmakeSHFromDigi: {
-      @table::TrigTrkProducers.TTmakeSHFromDigi
+   TrigOffSpMakeSHFromDigi: {
+      @table::TrigTrkProducers.TrigMakeSHFromDigi
       MinimumTime : 0
       MaximumTime : 100000
       MinimumRadius : 0
@@ -98,15 +98,15 @@ TrigTrkProducers : {
       MinimumEnergy : 0
       MaximumEnergy : 1
    }
-   TTOmakePH: {
-      @table::TrigTrkProducers.TTmakePH
+   TrigOffSpMakePH: {
+      @table::TrigTrkProducers.TrigMakePH
       MinimumTime : 0
       MinimumTime : 100000
       MinimumRadius : 0
       MaximumRadius : 800
       MinimumEnergy : 0
       MaximumEnergy : 1
-      ComboHitCollection    : "TTOmakeSH"
+      ComboHitCollection    : "TrigOffSpMakeSH"
    }
 
 

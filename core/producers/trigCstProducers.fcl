@@ -2,7 +2,7 @@ BEGIN_PROLOG
 
 TrigCstProducers : {
   CstCosmicTrackFinder: {
-    ComboHitCollection: "TTOmakePH"
+    ComboHitCollection: "TrigOffSpMakePH"
     CosmicTrackFit: {
       DoNotUseFlag: "Outlier"
       GaussianSeedTimeResolution: 24
@@ -37,7 +37,7 @@ TrigCstProducers : {
     module_type: "CosmicTrackFinder"
   }
   CstLineFinder: {
-    ComboHitCollection: "TTOmakePH"
+    ComboHitCollection: "TrigOffSpMakePH"
     NSteps: 0
     NTSteps: 0
     StepSize: 5e-1
@@ -49,7 +49,7 @@ TrigCstProducers : {
     MaxPairs: 500
   }
   CstSimpleTimeCluster: {
-    ComboHitCollection: "TTOmakePH"
+    ComboHitCollection: "TrigOffSpMakePH"
     TestFlag: false
     module_type: "SimpleTimeCluster"
     HitSelectionBits  : []

@@ -5,62 +5,62 @@ TrigTrkPaths:{
     # MPR algorithm paths
 
     mpr_TrkDe_80m70p_d0200     : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                   mprTrkDe80m70pD0200PS, @sequence::TrigRecoSequences.calReco,
+                                   MprTrkDe80m70pD0200PS, @sequence::TrigRecoSequences.calReco,
                                    @sequence::TrigRecoSequences.trkPrepareHits,
-                                   TTtimeClusterFinder, mprTrkDe80m70pD0200TCFilter, TTRobustMultiHelixFinder,
-                                   TTMprHelixMergerDe, mprTrkDe80m70pD0200HSFilter, TTMprKSFDe,
-                                   mprTrkDe80m70pD0200KSFilter, mprTrkDe80m70pD0200TriggerInfoMerger ]
+                                   TrigTimeClusterFinder, MprTrkDe80m70pD0200TCFilter, TrigRobustMultiHelixFinder,
+                                   TrigMprHelixMergerDe, MprTrkDe80m70pD0200HSFilter, TrigMprKSFDe,
+                                   MprTrkDe80m70pD0200KSFilter, MprTrkDe80m70pD0200TriggerInfoMerger ]
 
     #####################
     # TPR algorithm paths
 
     tpr_TrkDe_80m70p_d0200     : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                   tprTrkDe80m70pD0200PS, @sequence::TrigRecoSequences.calReco,
+                                   TprTrkDe80m70pD0200PS, @sequence::TrigRecoSequences.calReco,
                                    @sequence::TrigRecoSequences.trkPrepareHits,
-                                   TTtimeClusterFinder, tprTrkDe80m70pD0200TCFilter, TThelixFinder,
-                                   TTHelixMergerDe, tprTrkDe80m70pD0200HSFilter, TTKSFDe,
-                                   tprTrkDe80m70pD0200KSFilter, tprTrkDe80m70pD0200TriggerInfoMerger ]
+                                   TrigTimeClusterFinder, TprTrkDe80m70pD0200TCFilter, TrigHelixFinder,
+                                   TrigHelixMergerDe, TprTrkDe80m70pD0200HSFilter, TrigKSFDe,
+                                   TprTrkDe80m70pD0200KSFilter, TprTrkDe80m70pD0200TriggerInfoMerger ]
     tpr_TrkDe_80m70p           : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                   tprTrkDe80m70pPS, @sequence::TrigRecoSequences.calReco,
+                                   TprTrkDe80m70pPS, @sequence::TrigRecoSequences.calReco,
                                    @sequence::TrigRecoSequences.trkPrepareHits,
-                                   TTtimeClusterFinder, tprTrkDe80m70pTCFilter, TThelixFinder,
-                                   TTHelixMergerDe, tprTrkDe80m70pHSFilter, TTKSFDe,
-                                   tprTrkDe80m70pKSFilter, tprTrkDe80m70pTriggerInfoMerger ]
+                                   TrigTimeClusterFinder, TprTrkDe80m70pTCFilter, TrigHelixFinder,
+                                   TrigHelixMergerDe, TprTrkDe80m70pHSFilter, TrigKSFDe,
+                                   TprTrkDe80m70pKSFilter, TprTrkDe80m70pTriggerInfoMerger ]
     tpr_TrkDe_50_d0200         : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                   tprTrkDe50D0200PS, @sequence::TrigRecoSequences.calReco,
+                                   TprTrkDe50D0200PS, @sequence::TrigRecoSequences.calReco,
                                    @sequence::TrigRecoSequences.trkPrepareHits,
-                                   TTtimeClusterFinder, tprTrkDe50D0200TCFilter, TThelixFinder,
-                                   TTHelixMergerDe, tprTrkDe50D0200HSFilter, TTKSFDe,
-                                   tprTrkDe50D0200KSFilter, tprTrkDe50D0200TriggerInfoMerger ]
+                                   TrigTimeClusterFinder, TprTrkDe50D0200TCFilter, TrigHelixFinder,
+                                   TrigHelixMergerDe, TprTrkDe50D0200HSFilter, TrigKSFDe,
+                                   TprTrkDe50D0200KSFilter, TprTrkDe50D0200TriggerInfoMerger ]
     tpr_HlxDe_70m50p            : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    tprHlxDe70m50pPS, @sequence::TrigRecoSequences.calReco,
+                                    TprHlxDe70m50pPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTtimeClusterFinder, tprHlxDe70m50pTCFilter, TThelixFinder,
-                                    TTHelixMergerDe, tprHlxDe70m50pHSFilter, tprHlxDe70m50pTriggerInfoMerger ]
+                                    TrigTimeClusterFinder, TprHlxDe70m50pTCFilter, TrigHelixFinder,
+                                    TrigHelixMergerDe, TprHlxDe70m50pHSFilter, TprHlxDe70m50pTriggerInfoMerger ]
     tpr_HlxUe_50m30p            : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    tprHlxUe50m30pPS, @sequence::TrigRecoSequences.calReco,
+                                    TprHlxUe50m30pPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTtimeClusterFinderUe, tprHlxUe50m30pTCFilter, TThelixFinderUe,
-                                    TTHelixMergerUe, tprHlxUe50m30pHSFilter, tprHlxUe50m30pTriggerInfoMerger ]
+                                    TrigTimeClusterFinderUe, TprHlxUe50m30pTCFilter, TrigHelixFinderUe,
+                                    TrigHelixMergerUe, TprHlxUe50m30pHSFilter, TprHlxUe50m30pTriggerInfoMerger ]
     #   calibration with DIO-Michel form Inner Proton Absorber
     tpr_HlxDe_30p_IPAPhi        : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    tprHlxDe30pIPAPhiPS, @sequence::TrigRecoSequences.calReco,
+                                    TprHlxDe30pIPAPhiPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTtimeClusterFinder, tprHlxDe30pIPAPhiTCFilter, TThelixFinder,
-                                    TTHelixMergerDe, tprHlxDe30pIPAPhiHSFilter,
-                                    tprHlxDe30pIPAPhiTriggerInfoMerger  ]
+                                    TrigTimeClusterFinder, TprHlxDe30pIPAPhiTCFilter, TrigHelixFinder,
+                                    TrigHelixMergerDe, TprHlxDe30pIPAPhiHSFilter,
+                                    TprHlxDe30pIPAPhiTriggerInfoMerger  ]
     #    beam monitoring using the e- from the DIO in the IPA
     tpr_HlxDe_30p_IPA           : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    tprHlxDe30pIPAPS, @sequence::TrigRecoSequences.calReco,
+                                    TprHlxDe30pIPAPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTtimeClusterFinder, tprHlxDe30pIPATCFilter, TThelixFinder,
-                                    TTHelixMergerDe, tprHlxDe30pIPAHSFilter, tprHlxDe30pIPATriggerInfoMerger  ]
+                                    TrigTimeClusterFinder, TprHlxDe30pIPATCFilter, TrigHelixFinder,
+                                    TrigHelixMergerDe, TprHlxDe30pIPAHSFilter, TprHlxDe30pIPATriggerInfoMerger  ]
     # sequences that use a collection of combohits filtered using the calorimeter cluster info
     # tprSeedUCC_TrkDe           : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
     #                                tprSeedUCCDePS, @sequence::TrigRecoSequences.calReco,
     #                                @sequence::TrigRecoSequences.trkPrepareHitsUCC,
-    #                                TTtimeClusterFinderUCC, tprSeedUCCDeTCFilter, TThelixFinderUCC,
-    #                                TTHelixUCCMergerDe, tprSeedUCCDeHSFilter, TTKSFUCCDe,
+    #                                TrigTimeClusterFinderUCC, tprSeedUCCDeTCFilter, TrigHelixFinderUCC,
+    #                                TrigHelixUCCMergerDe, tprSeedUCCDeHSFilter, TrigKSFUCCDe,
     #                                tprSeedUCCDeKSFilter, tprSeedUCCDeTriggerInfoMerger ]
 
 
@@ -69,113 +69,113 @@ TrigTrkPaths:{
 
     #calo-seeded tracking
     cpr_TrkDe_80m70p_d0200      : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    cprTrkDe80m70pD0200PS, @sequence::TrigRecoSequences.calReco,
+                                    CprTrkDe80m70pD0200PS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTCalTimePeakFinder, cprTrkDe80m70pD0200TCFilter, TTCalHelixFinderDe,
-                                    TTCalHelixMergerDe, cprTrkDe80m70pD0200HSFilter, TTCalSeedFitDe,
-                                    cprTrkDe80m70pD0200KSFilter, cprTrkDe80m70pD0200TriggerInfoMerger ]
+                                    TrigCalTimePeakFinder, CprTrkDe80m70pD0200TCFilter, TrigCalHelixFinderDe,
+                                    TrigCalHelixMergerDe, CprTrkDe80m70pD0200HSFilter, TrigCalSeedFitDe,
+                                    CprTrkDe80m70pD0200KSFilter, CprTrkDe80m70pD0200TriggerInfoMerger ]
     cpr_TrkDe_80m70p            : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    cprTrkDe80m70pPS, @sequence::TrigRecoSequences.calReco,
+                                    CprTrkDe80m70pPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTCalTimePeakFinder, cprTrkDe80m70pTCFilter, TTCalHelixFinderDe,
-                                    TTCalHelixMergerDe, cprTrkDe80m70pHSFilter, TTCalSeedFitDe,
-                                    cprTrkDe80m70pKSFilter, cprTrkDe80m70pTriggerInfoMerger ]
+                                    TrigCalTimePeakFinder, CprTrkDe80m70pTCFilter, TrigCalHelixFinderDe,
+                                    TrigCalHelixMergerDe, CprTrkDe80m70pHSFilter, TrigCalSeedFitDe,
+                                    CprTrkDe80m70pKSFilter, CprTrkDe80m70pTriggerInfoMerger ]
     cpr_TrkDe_50_d0200          : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    cprTrkDe50D0200PS, @sequence::TrigRecoSequences.calReco,
+                                    CprTrkDe50D0200PS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTCalTimePeakFinder, cprTrkDe50D0200TCFilter, TTCalHelixFinderDe,
-                                    TTCalHelixMergerDe, cprTrkDe50D0200HSFilter, TTCalSeedFitDe,
-                                    cprTrkDe50D0200KSFilter, cprTrkDe50D0200TriggerInfoMerger ]
+                                    TrigCalTimePeakFinder, CprTrkDe50D0200TCFilter, TrigCalHelixFinderDe,
+                                    TrigCalHelixMergerDe, CprTrkDe50D0200HSFilter, TrigCalSeedFitDe,
+                                    CprTrkDe50D0200KSFilter, CprTrkDe50D0200TriggerInfoMerger ]
     cpr_HlxDe_50                : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    cprHelixDePS, @sequence::TrigRecoSequences.calReco,
+                                    CprHelixDePS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTCalTimePeakFinder, cprHelixDeTCFilter, TTCalHelixFinderDe,
-                                    TTCalHelixMergerDe, cprHelixDeHSFilter, cprHelixDeTriggerInfoMerger ]
+                                    TrigCalTimePeakFinder, CprHelixDeTCFilter, TrigCalHelixFinderDe,
+                                    TrigCalHelixMergerDe, CprHelixDeHSFilter, CprHelixDeTriggerInfoMerger ]
     cpr_HlxUe_40                : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    cprHelixUePS,  @sequence::TrigRecoSequences.calReco,
+                                    CprHelixUePS,  @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTCalTimePeakFinderUe, cprHelixUeTCFilter, TTCalHelixFinderUe,
-                                    TTCalHelixMergerUe, cprHelixUeHSFilter ]
+                                    TrigCalTimePeakFinderUe, CprHelixUeTCFilter, TrigCalHelixFinderUe,
+                                    TrigCalHelixMergerUe, CprHelixUeHSFilter ]
     # cprSeedUCC_TrkDe            : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
     #                                      cprSeedUCCDePS,  @sequence::TrigRecoSequences.calReco,
     #                                      @sequence::TrigRecoSequences.trkPrepareHitsUCC,
-    #                                      TTCalTimePeakFinderUCC, cprSeedUCCDeTCFilter, TTCalHelixFinderUCCDe,
-    #                                      TTCalHelixUCCMergerDe, cprSeedUCCDeHSFilter,
-    #                                      TTCalSeedFitUCCDe, cprSeedUCCDeKSFilter, cprSeedUCCDeTriggerInfoMerger ]
+    #                                      TrigCalTimePeakFinderUCC, cprSeedUCCDeTCFilter, TrigCalHelixFinderUCCDe,
+    #                                      TrigCalHelixUCCMergerDe, cprSeedUCCDeHSFilter,
+    #                                      TrigCalSeedFitUCCDe, cprSeedUCCDeKSFilter, cprSeedUCCDeTriggerInfoMerger ]
 
 
     #####################
     # APR algorithm paths
 
     apr_TrkDe_80m70p_d0200      : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    aprTrk80m70pD0200PS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrk80m70pD0200PS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTTZClusterFinder, aprTrk80m70pD0200TCFilter, TTAprHelixFinder,
-                                    TTAprHelixMerger, aprTrk80m70pD0200HSFilter, TTAprKSF,
-                                    aprTrk80m70pD0200KSFilter, aprTrk80m70pD0200TriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprTrk80m70pD0200TCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprTrk80m70pD0200HSFilter, TrigAprKSF,
+                                    AprTrk80m70pD0200KSFilter, AprTrk80m70pD0200TriggerInfoMerger ]
     apr_TrkDe_80m70p            : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    aprTrk80m70pPS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrk80m70pPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTTZClusterFinder, aprTrk80m70pTCFilter, TTAprHelixFinder,
-                                    TTAprHelixMerger, aprTrk80m70pHSFilter, TTAprKSF,
-                                    aprTrk80m70pKSFilter, aprTrk80m70pTriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprTrk80m70pTCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprTrk80m70pHSFilter, TrigAprKSF,
+                                    AprTrk80m70pKSFilter, AprTrk80m70pTriggerInfoMerger ]
     apr_TrkDe_50_d0200          : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    aprTrk50D0200PS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrk50D0200PS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTTZClusterFinder, aprTrk50D0200TCFilter, TTAprHelixFinder,
-                                    TTAprHelixMerger, aprTrk50D0200HSFilter, TTAprKSF,
-                                    aprTrk50D0200KSFilter, aprTrk50D0200TriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprTrk50D0200TCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprTrk50D0200HSFilter, TrigAprKSF,
+                                    AprTrk50D0200KSFilter, AprTrk50D0200TriggerInfoMerger ]
     apr_TwoTrkDe_80m70p_d0200   : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    aprTrk80m70pD0200MultiTrkPS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrk80m70pD0200MultiTrkPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTTZClusterFinder, aprTrk80m70pD0200MultiTrkTCFilter, TTAprHelixFinder,
-                                    TTAprHelixMerger, aprTrk80m70pD0200MultiTrkHSFilter, TTAprKSF,
-                                    aprTrk80m70pD0200MultiTrkKSFilter, aprTrk80m70pD0200MultiTrkTriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprTrk80m70pD0200MultiTrkTCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprTrk80m70pD0200MultiTrkHSFilter, TrigAprKSF,
+                                    AprTrk80m70pD0200MultiTrkKSFilter, AprTrk80m70pD0200MultiTrkTriggerInfoMerger ]
     apr_TwoTrkDe_50             : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    aprTrk50MultiHelixPS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrk50MultiHelixPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTTZClusterFinder, aprTrk50MultiHelixTCFilter, TTAprHelixFinder,
-                                    TTAprHelixMerger, aprTrk50MultiHelixHSFilter, TTAprKSF,
-                                    aprTrk50MultiHelixKSFilter, aprTrk50MultiHelixTriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprTrk50MultiHelixTCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprTrk50MultiHelixHSFilter, TrigAprKSF,
+                                    AprTrk50MultiHelixKSFilter, AprTrk50MultiHelixTriggerInfoMerger ]
     apr_TrkUe_80m70p            : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    aprTrkUe80m70pPS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrkUe80m70pPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTTZClusterFinder, aprTrkUe80m70pTCFilter, TTAprHelixFinder,
-                                    TTAprHelixMerger, aprTrkUe80m70pHSFilter, TTAprUeKSF,
-                                    aprTrkUe80m70pKSFilter, aprTrkUe80m70pTriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprTrkUe80m70pTCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprTrkUe80m70pHSFilter, TrigAprUeKSF,
+                                    AprTrkUe80m70pKSFilter, AprTrkUe80m70pTriggerInfoMerger ]
     apr_Hlx_50                  : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    aprTrk50D0200PS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrk50D0200PS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TTTZClusterFinder, aprHelixTCFilter, TTAprHelixFinder,
-                                    TTAprHelixMerger, aprHelixHSFilter, aprHelixTriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprHelixTCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprHelixHSFilter, AprHelixTriggerInfoMerger ]
 
 }
 
 TrigCaloPaths: {
     caloFast_cosmic: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                       "caloFastCosmicPS",
+                       "CaloFastCosmicPS",
                        @sequence::TrigRecoSequences.calReco,
-                       "caloFastCosmicFilter"
+                       "CaloFastCosmicFilter"
                       ]
     caloFast_MVANNCE: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                        "caloFastMVANNCEPS",
+                        "CaloFastMVANNCEPS",
                         @sequence::TrigRecoSequences.calReco,
-                        "caloFastMVANNCEFilter"
+                        "CaloFastMVANNCEFilter"
                        ]
     caloFast_photon: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                       "caloFastPhotonPS",
+                       "CaloFastPhotonPS",
                        @sequence::TrigRecoSequences.calReco,
-                       "caloFastPhotonFilter"
+                       "CaloFastPhotonFilter"
                       ]
     caloFast_RMC: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                    "caloFastRMCPS",
+                    "CaloFastRMCPS",
                     @sequence::TrigRecoSequences.calReco,
-                    "caloFastRMCFilter"
+                    "CaloFastRMCFilter"
                    ]
     caloHitRec_N0Source: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                           "caloHitRecN0SourcePS",
+                           "CaloHitRecN0SourcePS",
                            @sequence::TrigRecoSequences.calPrepareHits,
-                           "caloHitRecN0SourceFilter"
+                           "CaloHitRecN0SourceFilter"
                           ]
 
 }

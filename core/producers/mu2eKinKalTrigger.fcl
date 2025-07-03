@@ -63,7 +63,7 @@ Mu2eKinKalTrigger : {
   LOOPHELIX : {
     @table::Mu2eKinKal.LOOPHELIX
     SeedErrors: [ 5, 5, 5, 5, 2e-2, 5 ]
-    ComboHitCollection : "TTmakeSH"
+    ComboHitCollection : "TrigMakeSH"
     CaloClusterCollection : "CaloClusterFast"
     SampleSurfaces : ["TT_Mid"]
   }

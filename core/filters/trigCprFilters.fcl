@@ -1,20 +1,20 @@
 BEGIN_PROLOG
 
 TrigCprFilters:{
-  cprTrkDe80m70pD0200PS  : { module_type: PrescaleEvent
+  CprTrkDe80m70pD0200PS  : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  cprTrkDe80m70pPS          : { module_type: PrescaleEvent
+  CprTrkDe80m70pPS          : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  cprTrkDe50D0200PS   : { module_type: PrescaleEvent
+  CprTrkDe50D0200PS   : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  cprHelixDePS          : { module_type: PrescaleEvent
+  CprHelixDePS          : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  cprHelixUePS          : { module_type: PrescaleEvent
+  CprHelixUePS          : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
-  cprTrkDe80m70pD0200HSFilter: {
+  CprTrkDe80m70pD0200HSFilter: {
     module_type: "HelixFilter"
-    helixSeedCollection: "TTCalHelixMergerDe"
+    helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       configured: true
       doHelicityCheck: true
@@ -54,14 +54,15 @@ TrigCprFilters:{
       requireCaloCluster: false
     }
   }
-  cprTrkDe80m70pD0200TCFilter: {
+  CprTrkDe80m70pD0200TCFilter: {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: true
-    timeClusterCollection: "TTCalTimePeakFinder"
+    timeClusterCollection: "TrigCalTimePeakFinder"
+    ComboHitCollection : "TrigMakePH"
   }
-  cprTrkDe80m70pD0200KSFilter: {
-    kalSeedCollections: [ "TTCalSeedFitDe" ]
+  CprTrkDe80m70pD0200KSFilter: {
+    kalSeedCollections: [ "TrigCalSeedFitDe" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
       { #cuts for downstreeam e-minus
@@ -97,9 +98,9 @@ TrigCprFilters:{
     ]
   }
 
-  cprTrkDe80m70pHSFilter: {
+  CprTrkDe80m70pHSFilter: {
     module_type: "HelixFilter"
-    helixSeedCollection: "TTCalHelixMergerDe"
+    helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       configured: true
       doHelicityCheck: true
@@ -139,14 +140,15 @@ TrigCprFilters:{
       requireCaloCluster: false
     }
   }
-  cprTrkDe80m70pTCFilter: {
+  CprTrkDe80m70pTCFilter: {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: true
-    timeClusterCollection: "TTCalTimePeakFinder"
+    timeClusterCollection: "TrigCalTimePeakFinder"
+    ComboHitCollection : "TrigMakePH"
   }
-  cprTrkDe80m70pKSFilter: {
-    kalSeedCollections: [ "TTCalSeedFitDe" ]
+  CprTrkDe80m70pKSFilter: {
+    kalSeedCollections: [ "TrigCalSeedFitDe" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
       { #cuts for downstreeam e-minus
@@ -182,8 +184,8 @@ TrigCprFilters:{
     ]
   }
 
-  cprTrkDe50D0200HSFilter: {
-    helixSeedCollection: "TTCalHelixMergerDe"
+  CprTrkDe50D0200HSFilter: {
+    helixSeedCollection: "TrigCalHelixMergerDe"
     module_type: "HelixFilter"
     posHelicitySelection : {
       configured: true
@@ -224,14 +226,15 @@ TrigCprFilters:{
       requireCaloCluster: false
     }
   }
-  cprTrkDe50D0200TCFilter: {
+  CprTrkDe50D0200TCFilter: {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
-    timeClusterCollection: "TTCalTimePeakFinder"
+    timeClusterCollection: "TrigCalTimePeakFinder"
+    ComboHitCollection : "TrigMakePH"
   }
-  cprTrkDe50D0200KSFilter: {
-    kalSeedCollections: [ "TTCalSeedFitDe" ]
+  CprTrkDe50D0200KSFilter: {
+    kalSeedCollections: [ "TrigCalSeedFitDe" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
       { #cuts for downstream e-minus
@@ -267,9 +270,9 @@ TrigCprFilters:{
     ]
   }
 
-  cprHelixDeHSFilter: {
+  CprHelixDeHSFilter: {
     module_type: "HelixFilter"
-    helixSeedCollection: "TTCalHelixMergerDe"
+    helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       configured: true
       doHelicityCheck: true
@@ -311,16 +314,17 @@ TrigCprFilters:{
 
   }
 
-  cprHelixDeTCFilter: {
+  CprHelixDeTCFilter: {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
-    timeClusterCollection: "TTCalTimePeakFinder"
+    timeClusterCollection: "TrigCalTimePeakFinder"
+    ComboHitCollection : "TrigMakePH"
   }
 
-  cprHelixUeHSFilter: {
+  CprHelixUeHSFilter: {
     module_type: "HelixFilter"
-    helixSeedCollection: "TTCalHelixMergerUe"
+    helixSeedCollection: "TrigCalHelixMergerUe"
     posHelicitySelection : {
       configured: true
       doHelicityCheck: true
@@ -361,11 +365,12 @@ TrigCprFilters:{
     }
   }
 
-  cprHelixUeTCFilter: {
+  CprHelixUeTCFilter: {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
-    timeClusterCollection: "TTCalTimePeakFinderUe"
+    timeClusterCollection: "TrigCalTimePeakFinderUe"
+    ComboHitCollection : "TrigMakePH"
   }
 }
 
