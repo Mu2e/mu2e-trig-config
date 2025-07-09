@@ -4,6 +4,7 @@ TrigAprProducers : {
   TTTZClusterFinder : { @table::CalPatRec.producers.TZClusterFinder
     chCollLabel                : "TTflagPH"
     ccCollLabel                : "CaloClusterFast"
+    radSelect                  : 0
   }
 
   TTAprHelixFinder: { @table::CalPatRec.producers.AgnosticHelixFinder

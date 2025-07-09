@@ -26,7 +26,7 @@ TrigTrkProducers : {
      MinimumTimeOffSpill : 0
      MaximumTimeOffSpill : 100000
      FitType                 : 5
-     FilterHits              : true
+     FilterHits              : false
      WriteStrawHitCollection : false
      StrawDigiADCWaveformCollectionTag : "notUsed"
    }
@@ -36,7 +36,7 @@ TrigTrkProducers : {
      MinimumTimeOffSpill : 0
      MaximumTimeOffSpill : 100000
      FitType                 : 5
-     FilterHits              : true
+     FilterHits              : false
      WriteStrawHitCollection : false
      StrawDigiADCWaveformCollectionTag : "notUsed"
      StrawDigiCollectionTag : "TTmakeSD"
@@ -71,7 +71,7 @@ TrigTrkProducers : {
     @table::CalPatRec.producers.DeltaFinder
     chCollTag                     : TTmakePH                # input coll
     sschCollTag                   : TTmakeSH                # input coll
-    writeFilteredComboHits        : 1
+    writeFilteredComboHits        : 0
   }
 
   TTHelixFinderParams: {
