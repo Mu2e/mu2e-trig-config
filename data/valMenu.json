@@ -128,28 +128,28 @@
                                ]
         },
 
-        "caloFast_photon"  :{
+        "calo_photon"  :{
             "bit" : 200 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ]},
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_calo_calib" ]        }]
         },
 
-        "caloFast_MVANNCE" :{
+        "calo_MVANNCE" :{
             "bit" : 201 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ]},
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_calo_calib" ]        }]
         },
 
-        "caloFast_cosmic" : {
+        "calo_cosmic" : {
             "bit" : 202 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ]},
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_calo_calib" ]        }]
         },
 
-        "caloFast_RMC" :{
+        "calo_RMC" :{
             "bit" : 220 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ]},

@@ -1,55 +1,55 @@
 {
     "version": 1,
-    
+
     "trkcal_filter_process_name": "TrkCalEventFilter",
 
     "crv_agg_process_name": "FinalEventBuilder",
 
-    
+
     "trigger_paths" : {
 
-        "caloFast_cosmic" : { 
+        "calo_cosmic" : {
             "bit" : 202 ,
-            "enabled": 1, 
+            "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "dqm_trigger" ]}]
         },
-                
-        "cstTimeCluster":{ 
+
+        "cstTimeCluster":{
             "bit" : 310 ,
-            "enabled": 1, 
+            "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main" ]}]
         },
-        
-        "minBias_SDCount":{ 
+
+        "minBias_SDCount":{
             "bit" : 400 ,
-            "enabled": 1, 
+            "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main" ]}]
         },
-        
-        "minBias_CDCount":{ 
+
+        "minBias_CDCount":{
             "bit" : 410 ,
-            "enabled": 1, 
+            "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main" ]}]
         }
-        
-        
 
-        
+
+
+
     },
-    
+
     "agg_trigger_paths" : {
     },
-    
+
     "dataLogger_streams": {
         "cosmics_main": { "enabled" : 1 },
         "dqm_trigger": {  "enabled" : 1 }
     },
-    
+
     "lumiLogger_streams":{
         "lumi": {
             "enabled" : 1
         }
     }
-    
+
 
 }

@@ -152,22 +152,22 @@ TrigTrkPaths:{
 }
 
 TrigCaloPaths: {
-    caloFast_cosmic: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
+    calo_cosmic: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
                        "CaloFastCosmicPS",
                        @sequence::TrigRecoSequences.calReco,
                        "CaloFastCosmicFilter"
                       ]
-    caloFast_MVANNCE: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
+    calo_MVANNCE: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
                         "CaloFastMVANNCEPS",
                         @sequence::TrigRecoSequences.calReco,
                         "CaloFastMVANNCEFilter"
                        ]
-    caloFast_photon: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
+    calo_photon: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
                        "CaloFastPhotonPS",
                        @sequence::TrigRecoSequences.calReco,
                        "CaloFastPhotonFilter"
                       ]
-    caloFast_RMC: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
+    calo_RMC: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
                     "CaloFastRMCPS",
                     @sequence::TrigRecoSequences.calReco,
                     "CaloFastRMCFilter"
