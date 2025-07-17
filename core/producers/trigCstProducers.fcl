@@ -65,13 +65,13 @@ TrigCstProducers : {
     UseOnlyOnePlane : false
   }
 
-  cstTimeClusterTriggerInfoMerger: {
+  CstTimeClusterTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
   cstTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  cstCosmicTrackSeedTriggerInfoMerger: {
+  CstCosmicTrackSeedTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
 }

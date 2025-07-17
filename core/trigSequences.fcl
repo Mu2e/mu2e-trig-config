@@ -108,35 +108,35 @@ TrigTrkPaths:{
     # APR algorithm paths
 
     apr_TrkDe_80m70p_D0200      : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    AprTrk80m70pD0200PS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrkDe80m70pD0200PS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TrigTZClusterFinder, AprTrk80m70pD0200TCFilter, TrigAprHelixFinder,
-                                    TrigAprHelixMerger, AprTrk80m70pD0200HSFilter, TrigAprKSF,
-                                    AprTrk80m70pD0200KSFilter, AprTrk80m70pD0200TriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprTrkDe80m70pD0200TCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprTrkDe80m70pD0200HSFilter, TrigAprKSF,
+                                    AprTrkDe80m70pD0200KSFilter, AprTrkDe80m70pD0200TriggerInfoMerger ]
     apr_TrkDe_80m70p            : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    AprTrk80m70pPS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrkDe80m70pPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TrigTZClusterFinder, AprTrk80m70pTCFilter, TrigAprHelixFinder,
-                                    TrigAprHelixMerger, AprTrk80m70pHSFilter, TrigAprKSF,
-                                    AprTrk80m70pKSFilter, AprTrk80m70pTriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprTrkDe80m70pTCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprTrkDe80m70pHSFilter, TrigAprKSF,
+                                    AprTrkDe80m70pKSFilter, AprTrkDe80m70pTriggerInfoMerger ]
     apr_TrkDe_50_D0200          : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    AprTrk50D0200PS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrkDe50D0200PS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TrigTZClusterFinder, AprTrk50D0200TCFilter, TrigAprHelixFinder,
-                                    TrigAprHelixMerger, AprTrk50D0200HSFilter, TrigAprKSF,
-                                    AprTrk50D0200KSFilter, AprTrk50D0200TriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprTrkDe50D0200TCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprTrkDe50D0200HSFilter, TrigAprKSF,
+                                    AprTrkDe50D0200KSFilter, AprTrkDe50D0200TriggerInfoMerger ]
     apr_TwoTrkDe_80m70p_D0200   : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    AprTrk80m70pD0200MultiTrkPS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrkDe80m70pD0200MultiTrkPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TrigTZClusterFinder, AprTrk80m70pD0200MultiTrkTCFilter, TrigAprHelixFinder,
-                                    TrigAprHelixMerger, AprTrk80m70pD0200MultiTrkHSFilter, TrigAprKSF,
-                                    AprTrk80m70pD0200MultiTrkKSFilter, AprTrk80m70pD0200MultiTrkTriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprTrkDe80m70pD0200MultiTrkTCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprTrkDe80m70pD0200MultiTrkHSFilter, TrigAprKSF,
+                                    AprTrkDe80m70pD0200MultiTrkKSFilter, AprTrkDe80m70pD0200MultiTrkTriggerInfoMerger ]
     apr_TwoTrkDe_50             : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    AprTrk50MultiHelixPS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrkDe50MultiHelixPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
-                                    TrigTZClusterFinder, AprTrk50MultiHelixTCFilter, TrigAprHelixFinder,
-                                    TrigAprHelixMerger, AprTrk50MultiHelixHSFilter, TrigAprKSF,
-                                    AprTrk50MultiHelixKSFilter, AprTrk50MultiHelixTriggerInfoMerger ]
+                                    TrigTZClusterFinder, AprTrkDe50MultiHelixTCFilter, TrigAprHelixFinder,
+                                    TrigAprHelixMerger, AprTrkDe50MultiHelixHSFilter, TrigAprKSF,
+                                    AprTrkDe50MultiHelixKSFilter, AprTrkDe50MultiHelixTriggerInfoMerger ]
     apr_TrkUe_80m70p            : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
                                     AprTrkUe80m70pPS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
@@ -144,7 +144,7 @@ TrigTrkPaths:{
                                     TrigAprHelixMerger, AprTrkUe80m70pHSFilter, TrigAprUeKSF,
                                     AprTrkUe80m70pKSFilter, AprTrkUe80m70pTriggerInfoMerger ]
     apr_Hlx_50                  : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                                    AprTrk50D0200PS, @sequence::TrigRecoSequences.calReco,
+                                    AprTrkDe50D0200PS, @sequence::TrigRecoSequences.calReco,
                                     @sequence::TrigRecoSequences.trkPrepareHits,
                                     TrigTZClusterFinder, AprHelixTCFilter, TrigAprHelixFinder,
                                     TrigAprHelixMerger, AprHelixHSFilter, AprHelixTriggerInfoMerger ]
@@ -153,43 +153,43 @@ TrigTrkPaths:{
 
 TrigCaloPaths: {
     calo_cosmic: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                       "CaloFastCosmicPS",
+                       "CaloCosmicPS",
                        @sequence::TrigRecoSequences.calReco,
-                       "CaloFastCosmicFilter"
+                       "CaloCosmicFilter"
                       ]
     calo_MVANNCE: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                        "CaloFastMVANNCEPS",
+                        "CaloMVANNCEPS",
                         @sequence::TrigRecoSequences.calReco,
-                        "CaloFastMVANNCEFilter"
+                        "CaloMVANNCEFilter"
                        ]
     calo_photon: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                       "CaloFastPhotonPS",
+                       "CaloPhotonPS",
                        @sequence::TrigRecoSequences.calReco,
-                       "CaloFastPhotonFilter"
+                       "CaloPhotonFilter"
                       ]
     calo_RMC: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                    "CaloFastRMCPS",
+                    "CaloRMCPS",
                     @sequence::TrigRecoSequences.calReco,
-                    "CaloFastRMCFilter"
+                    "CaloRMCFilter"
                    ]
-    caloHitRec_N0Source: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
-                           "CaloHitRecN0SourcePS",
+    calo_N0Source: [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,
+                           "CaloN0SourcePS",
                            @sequence::TrigRecoSequences.calPrepareHits,
-                           "CaloHitRecN0SourceFilter"
+                           "CaloN0SourceFilter"
                           ]
 
 }
 
 TrigCstPaths: {
-    cstTimeCluster : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,  cstTimeClusterPS,
+    cst_TimeCluster : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,  CstTimeClusterPS,
                        @sequence::TrigRecoSequences.trkPrepareHitsOffSpill,
-                       cstTimeClusterSDCountFilter,
-                       CstSimpleTimeCluster, cstTimeClusterTCFilter, cstTimeClusterTriggerInfoMerger ]
-    cstCosmicTrackSeed : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,  cstCosmicTrackSeedPS,
+                       CstTimeClusterSDCountFilter,
+                       CstSimpleTimeCluster, CstTimeClusterTCFilter, CstTimeClusterTriggerInfoMerger ]
+    cst_CosmicTrackSeed : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,  CstCosmicTrackSeedPS,
                            @sequence::TrigRecoSequences.trkPrepareHitsOffSpill,
-                           cstCosmicTrackSeedSDCountFilter,
-                           CstSimpleTimeCluster, cstCosmicTrackSeedTCFilter, CstLineFinder, cstCosmicTrackSeedCTSFilter,
-                           cstCosmicTrackSeedTriggerInfoMerger ]
+                           CstCosmicTrackSeedSDCountFilter,
+                           CstSimpleTimeCluster, CstCosmicTrackSeedTCFilter, CstLineFinder, CstCosmicTrackSeedCTSFilter,
+                           CstCosmicTrackSeedTriggerInfoMerger ]
 
 
 
@@ -200,13 +200,13 @@ TrigSupPaths:{
     #unbiased           : [ unbiasedPS ]
 
     #minimum bias filters. So far, a filter based on the StrawDigi occupancy
-    minBias_SDCount : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,  minBiasSDCountPS, minBiasSDCountFilter]
+    minBias_SDCount : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,  MinBiasSDCountPS, MinBiasSDCountFilter]
 
     #filter to select events with large occupancy in the tracker
     #largeSDCount       : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,  largeSDCountPS, largeSDCountFilter]
 
     #minimum bias filters. So far, a filter based on the StrawDigi occupancy
-    minBias_CDCount : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,  minBiasCDCountPS, minBiasCDCountFilter]
+    minBias_CDCount : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,  MinBiasCDCountPS, MinBiasCDCountFilter]
 
     #filter to select events with large occupancy in the tracker
     #largeCDCount       : [ @sequence::TrigRecoSequences.dtcAndCFOEventsGen,  largeCDCountPS, largeCDCountFilter]

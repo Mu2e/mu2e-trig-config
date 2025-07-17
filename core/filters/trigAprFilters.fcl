@@ -1,20 +1,20 @@
 BEGIN_PROLOG
 
 TrigAprFilters:{
-  AprTrk50D0200PS        : { module_type: PrescaleEvent
+  AprTrkDe50D0200PS        : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  AprTrk80m70pD0200PS       : { module_type: PrescaleEvent
+  AprTrkDe80m70pD0200PS       : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  AprTrk80m70pPS               : { module_type: PrescaleEvent
+  AprTrkDe80m70pPS               : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  AprTrk80m70pD0200MultiTrkPS: { module_type: PrescaleEvent
+  AprTrkDe80m70pD0200MultiTrkPS: { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-   AprTrk50MultiHelixPS: { module_type: PrescaleEvent
+   AprTrkDe50MultiHelixPS: { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprTrkUe80m70pPS             : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
-  AprTrk80m70pD0200HSFilter: {
+  AprTrkDe80m70pD0200HSFilter: {
     module_type: "HelixFilter"
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
@@ -56,14 +56,14 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  AprTrk80m70pD0200TCFilter : {
+  AprTrkDe80m70pD0200TCFilter : {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
     ComboHitCollection : "TrigMakePH"
   }
-  AprTrk80m70pD0200KSFilter: {
+  AprTrkDe80m70pD0200KSFilter: {
     kalSeedCollections: [ "TrigAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
@@ -100,7 +100,7 @@ TrigAprFilters:{
     ]
   }
 
-  AprTrk80m70pHSFilter: {
+  AprTrkDe80m70pHSFilter: {
     module_type: "HelixFilter"
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
@@ -142,14 +142,14 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  AprTrk80m70pTCFilter : {
+  AprTrkDe80m70pTCFilter : {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
     ComboHitCollection : "TrigMakePH"
   }
-  AprTrk80m70pKSFilter: {
+  AprTrkDe80m70pKSFilter: {
     kalSeedCollections: [ "TrigAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
@@ -274,7 +274,7 @@ TrigAprFilters:{
   }
 
   #apr lowP filters
-  AprTrk50D0200HSFilter: {
+  AprTrkDe50D0200HSFilter: {
     module_type: "HelixFilter"
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
@@ -316,14 +316,14 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  AprTrk50D0200TCFilter: {
+  AprTrkDe50D0200TCFilter: {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
     ComboHitCollection : "TrigMakePH"
   }
-  AprTrk50D0200KSFilter: {
+  AprTrkDe50D0200KSFilter: {
     kalSeedCollections: [ "TrigAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
@@ -360,7 +360,7 @@ TrigAprFilters:{
     ]
   }
 
-  AprTrk80m70pD0200MultiTrkHSFilter: {
+  AprTrkDe80m70pD0200MultiTrkHSFilter: {
     helixSeedCollection: "TrigAprHelixMerger"
     module_type: "HelixFilter"
     minNHelices: 2
@@ -403,14 +403,14 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  AprTrk80m70pD0200MultiTrkTCFilter: {
+  AprTrkDe80m70pD0200MultiTrkTCFilter: {
     minNStrawHits: 10
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
     ComboHitCollection : "TrigMakePH"
   }
-  AprTrk80m70pD0200MultiTrkKSFilter: {
+  AprTrkDe80m70pD0200MultiTrkKSFilter: {
     kalSeedCollections: [ "TrigAprKSF" ]
     module_type: "KalSeedFilter"
     minNTrks: 2
@@ -448,7 +448,7 @@ TrigAprFilters:{
     ]
   }
 
-  AprTrk50MultiHelixHSFilter: {
+  AprTrkDe50MultiHelixHSFilter: {
     helixSeedCollection: "TrigAprHelixMerger"
     module_type: "HelixFilter"
     minNHelices: 2
@@ -491,14 +491,14 @@ TrigAprFilters:{
       requireCaloCluster: false
     }
   }
-  AprTrk50MultiHelixTCFilter: {
+  AprTrkDe50MultiHelixTCFilter: {
     minNStrawHits: 10
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
     ComboHitCollection : "TrigMakePH"
   }
-  AprTrk50MultiHelixKSFilter: {
+  AprTrkDe50MultiHelixKSFilter: {
     kalSeedCollections: ["TrigAprKSF"]
     module_type: "KalSeedFilter"
     minNTrks: 2

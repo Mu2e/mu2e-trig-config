@@ -187,14 +187,14 @@
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_calo_calib" ]        }]
         },
 
-        "cstTimeCluster":{
+        "cst_TimeCluster":{
             "bit" : 310 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":-1, "streams": [ "physics_trk_calib" ]},
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]}]
         },
 
-        "cstCosmicTrackSeed":{
+        "cst_CosmicTrackSeed":{
             "bit" : 320 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":-1, "streams": [ "physics_trk_calib" ]},
@@ -215,7 +215,7 @@
                                  {"eventMode":"OffSpill", "prescale":10000, "streams": [ "cosmics_main", "physics_minBias" ]}]
         },
 
-        "caloHitRec_N0Source":{
+        "calo_N0Source":{
             "bit" : 500 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":10000, "streams": [ "physics_calo_calib" ]},

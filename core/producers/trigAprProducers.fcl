@@ -60,19 +60,19 @@ TrigAprProducers : {
     FitDirection     : @local::FitDir.upstream
   }
 
-  AprTrk80m70pD0200TriggerInfoMerger: {
+  AprTrkDe80m70pD0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  AprTrk80m70pTriggerInfoMerger: {
+  AprTrkDe80m70pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  AprTrk50D0200TriggerInfoMerger: {
+  AprTrkDe50D0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  AprTrk80m70pD0200MultiTrkTriggerInfoMerger: {
+  AprTrkDe80m70pD0200MultiTrkTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  AprTrk50MultiHelixTriggerInfoMerger: {
+  AprTrkDe50MultiHelixTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
   AprTrkUe80m70pTriggerInfoMerger: {
