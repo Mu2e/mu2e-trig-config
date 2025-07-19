@@ -7,9 +7,9 @@ TrigCprFilters:{
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   CprTrkDe50D0200PS   : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  CprHelixDePS          : { module_type: PrescaleEvent
+  CprHlxDe50PS          : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  CprHelixUePS          : { module_type: PrescaleEvent
+  CprHlxUe40PS          : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
   CprTrkDe80m70pD0200HSFilter: {
@@ -270,7 +270,7 @@ TrigCprFilters:{
     ]
   }
 
-  CprHelixDeHSFilter: {
+  CprHlxDe50HSFilter: {
     module_type: "HelixFilter"
     helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
@@ -314,7 +314,7 @@ TrigCprFilters:{
 
   }
 
-  CprHelixDeTCFilter: {
+  CprHlxDe50TCFilter: {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
@@ -322,7 +322,7 @@ TrigCprFilters:{
     ComboHitCollection : "TrigMakePH"
   }
 
-  CprHelixUeHSFilter: {
+  CprHlxUe40HSFilter: {
     module_type: "HelixFilter"
     helixSeedCollection: "TrigCalHelixMergerUe"
     posHelicitySelection : {
@@ -365,7 +365,7 @@ TrigCprFilters:{
     }
   }
 
-  CprHelixUeTCFilter: {
+  CprHlxUe40TCFilter: {
     minNStrawHits: 15
     module_type: "TimeClusterFilter"
     requireCaloCluster: false

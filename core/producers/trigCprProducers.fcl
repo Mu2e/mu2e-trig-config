@@ -254,7 +254,7 @@ TrigCprProducers : {
    CprTrkDe50D0200TriggerInfoMerger: {
       module_type: "MergeTriggerInfo"
    }
-   CprHelixDeTriggerInfoMerger: {
+   CprHlxDe50TriggerInfoMerger: {
       module_type: "MergeTriggerInfo"
    }
 }
