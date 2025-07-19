@@ -1,12 +1,12 @@
 BEGIN_PROLOG
 
 TrigSupFilters:{
-  minBiasSDCountPS : { module_type: PrescaleEvent
+  MinBiasSDCountPS : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  minBiasCDCountPS : { module_type: PrescaleEvent
+  MinBiasCDCountPS : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
-  minBiasCDCountFilter: {
+  MinBiasCDCountFilter: {
     caloDigiCollection: "CaloDigiMaker"
     maxCaloEnergy: -1
     maxNCaloDigi: 5000
@@ -19,7 +19,7 @@ TrigSupFilters:{
     useCaloDigi: true
     useStrawDigi: false
   }
-  minBiasSDCountFilter: {
+  MinBiasSDCountFilter: {
     caloDigiCollection: "notUSed"
     maxCaloEnergy: -1
     maxNCaloDigi: -1
