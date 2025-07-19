@@ -1,33 +1,48 @@
 BEGIN_PROLOG
 
 TrigTrkProducers : {
-  TrigMakeSH: {
-    diagLevel: 0
-    module_type: "ComboHitsFromDataDecoders"
-    printLevel : 0
-    FitType : 5
-    UseCalorimeter : false
-    clusterDt : 100
-    minimumEnergy : 0.0
-    maximumEnergy : 0.0035
-    minimumRho   : 0.
-    maximumRho   : 800.
-    crossTalkEnergy : 0.007
-    crossTalkMinimumTime : -1
-    crossTalkMaximumTime : 100
-    MinimumTime : 500
-    MaximumTime : 2000
-    MinimumTimeOffSpill : 0
-    MaximumTimeOffSpill : 100000
-    FilterHits : true
-    WriteStrawHitCollection : false
-    FlagCrossTalk : false
-    CaloClusterCollectionTag : "notNow"
-    ProtonBunchTimeTag : "EWMProducer"
-    TrackerDataDecoderTag : "artFragFromDTCEvents"
+  TrigMakeSD: {
+    module_type: StrawDigisFromArtdaqFragments
+    diagLevel : 0
+    debugLevel : 0
+    saveWaveforms : false
+    missingDTCHeaders : false
+    geography : [
+      {
+        minnesota: "MN998"
+        plane: 0
+        panel: 0
+      },
+      {
+        minnesota: "MN999"
+        plane: 0
+        panel: 1
+        }
+    ]
+  }
 
+   TrigMakeSHFromDigi: {
+     @table::TrkHitReco.producers.makeSH
+     MinimumTimeOffSpill : 0
+     MaximumTimeOffSpill : 100000
+     FitType                 : 5
+     FilterHits              : false
+     WriteStrawHitCollection : false
+     StrawDigiADCWaveformCollectionTag : "notUsed"
    }
-   TrigMakePH: {
+
+   TrigMakeSH: {
+     @table::TrkHitReco.producers.makeSH
+     MinimumTimeOffSpill : 0
+     MaximumTimeOffSpill : 100000
+     FitType                 : 5
+     FilterHits              : false
+     WriteStrawHitCollection : false
+     StrawDigiADCWaveformCollectionTag : "notUsed"
+     StrawDigiCollectionTag : "TrigMakeSD"
+   }
+
+   TTmakePH: {
       @table::TrkHitReco.producers.makePH
       TestFlag   : false # not needed, since TrigMakeSH is filtering
       FilterHits : false
@@ -37,6 +52,7 @@ TrigTrkProducers : {
       StrawHitSelectionBits : []
       StrawHitMask          : []
    }
+
    # combine panel hits in a station
    TrigMakeSTH : {
       @table::TrkHitReco.producers.makeSTH
@@ -45,15 +61,6 @@ TrigTrkProducers : {
       ComboHitCollection : "TrigMakePH"
    }
 
-   TrigMakeSHFromDigi: {
-      @table::TrkHitReco.producers.makeSH
-      MinimumTimeOffSpill : 0
-      MaximumTimeOffSpill : 100000
-      FitType                 : 5
-      FilterHits              : true
-      WriteStrawHitCollection : false
-      StrawDigiADCWaveformCollectionTag : "notUsed"
-   }
    TrigFlagBkgHits: {
       @table::TrkHitReco.producers.FlagBkgHits
       ComboHitCollection   : "TrigMakeSTH"
@@ -64,7 +71,7 @@ TrigTrkProducers : {
     @table::CalPatRec.producers.DeltaFinder
     chCollTag                     : TrigMakePH                # input coll
     sschCollTag                   : TrigMakeSH                # input coll
-    writeFilteredComboHits        : 1
+    writeFilteredComboHits        : 0
   }
 
   TrigHelixFinderParams: {

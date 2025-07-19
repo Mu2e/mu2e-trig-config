@@ -1,12 +1,10 @@
 BEGIN_PROLOG
 
 TrigDAQProducers : {
-  processDTCAndCFOEvents: {
-    diagLevel: 0
-    makeCRVFrag: 0
-    makeCaloFrag: 1
-    makeTrkFrag: 1
-    module_type: "ProcessDTCAndCFOEvents"
+  processCFOData : {
+    module_type : EventHeaderFromCFOFragment
+    cfoTag : "CFOBoardReader"
+    diagLevel : 0
   }
 
   binaryOutput: {
