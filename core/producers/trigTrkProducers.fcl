@@ -42,7 +42,7 @@ TrigTrkProducers : {
      StrawDigiCollectionTag : "TrigMakeSD"
    }
 
-   TTmakePH: {
+   TrigMakePH: {
       @table::TrkHitReco.producers.makePH
       TestFlag   : false # not needed, since TrigMakeSH is filtering
       FilterHits : false

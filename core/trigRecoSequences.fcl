@@ -8,7 +8,7 @@ TrigRecoSequences:{
    #calorimeter reco
    calPrepareHits     : [ CaloHitMakerFast ]
    calReco            : [ CaloHitMakerFast, CaloClusterFast ]
-   cfoDataGen : [ processCFOData ]
+   cfoDataGen : [ ProcessCFOData ]
 }
 
 END_PROLOG

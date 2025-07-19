@@ -1,0 +1,4 @@
+# Only process the main physics triggers
+#include "mu2e-trig-config/test/triggerTest.fcl"
+
+physics.trigger_paths : [ CprDe_highP_stopTarg, CprDe_highP, Apr_highP_stopTarg, Apr_highP, Apr_lowP_multiHelix]

@@ -1,7 +1,7 @@
 BEGIN_PROLOG
 
 TrigDAQProducers : {
-  processCFOData : {
+  ProcessCFOData : {
     module_type : EventHeaderFromCFOFragment
     cfoTag : "CFOBoardReader"
     diagLevel : 0
