@@ -242,6 +242,9 @@ TrigCprProducers : {
          FitParticle         : @local::Particle.eminus
       }
       UsePDGCharge     : false
+      HelixMask: {
+         MinHelixMom : 50
+      }
       FitDirection     : @local::FitDir.downstream
       PrioritizeCaloHits : true
    }
