@@ -3,9 +3,8 @@ BEGIN_PROLOG
 TrigCalProducers : {
   CaloHitMakerFast:
   {
-    module_type   : "CaloHitsFromDataDecoders"
+    module_type   : "CaloHitsFromDTCEvents"
     diagLevel     : 0
-    caloTag       : "processDTCAndCFOEvents"
     digiSampling  : 5
     deltaTPulses  : 5.
     nPEperMeV     : 30

@@ -3,8 +3,8 @@ BEGIN_PROLOG
 TrigAprProducers : {
   TTTZClusterFinder : { @table::CalPatRec.producers.TZClusterFinder
     chCollLabel                : "TTflagPH"
-    chCollLabel2               : "TTmakeSH"
     ccCollLabel                : "CaloClusterFast"
+    radSelect                  : 0
   }
 
   TTAprHelixFinder: { @table::CalPatRec.producers.AgnosticHelixFinder
@@ -14,6 +14,8 @@ TrigAprProducers : {
     minNHelixComboHits      : 10
     maxEDepAvg              : @local::TrigTrkProducers.TTHelixFinderParams.maxEDepAvg
     maxNHitsRatio           : 1.5
+    doEDepFlag              : true
+    eDepFlagThresh          : 0.003
   }
 
   TTAprHelixMerger: {
@@ -45,7 +47,21 @@ TrigAprProducers : {
       MinHelixMom : 50
     }
     FitDirection     : @local::FitDir.downstream
-    PrioritizeCaloHits : true
+  }
+
+  TTAprUeKSF: {
+    module_type : LoopHelixFit
+    MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
+    KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
+    FitSettings      : { @table::Mu2eKinKalTrigger.SEEDFIT }
+    ExtensionSettings: { @table::Mu2eKinKalTrigger.SEEDEXT }
+    ModuleSettings   : {
+      @table::Mu2eKinKalTrigger.LOOPHELIX
+      FitParticle : @local::Particle.eminus
+      HelixSeedCollections   : [ "TTAprHelixMerger" ]
+    }
+    UsePDGCharge     : false
+    FitDirection     : @local::FitDir.upstream
   }
 
   aprHighPStopTargTriggerInfoMerger: {
@@ -61,6 +77,9 @@ TrigAprProducers : {
     module_type: "MergeTriggerInfo"
   }
   aprLowPMultiHelixTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  aprUeHighPTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
   aprHelixTriggerInfoMerger: {

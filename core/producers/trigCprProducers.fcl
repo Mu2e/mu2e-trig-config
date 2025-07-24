@@ -246,7 +246,6 @@ TrigCprProducers : {
          MinHelixMom : 50
       }
       FitDirection     : @local::FitDir.downstream
-      PrioritizeCaloHits : true
    }
 
    cprDeHighPStopTargTriggerInfoMerger: {
