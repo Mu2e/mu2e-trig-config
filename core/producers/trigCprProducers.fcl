@@ -243,7 +243,7 @@ TrigCprProducers : {
       }
       UsePDGCharge     : false
       HelixMask: {
-         MinHelixMom : 50
+         MinHelixMom : 40
       }
       FitDirection     : @local::FitDir.downstream
    }
