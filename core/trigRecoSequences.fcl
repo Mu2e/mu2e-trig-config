@@ -3,12 +3,12 @@ BEGIN_PROLOG
 
 TrigRecoSequences:{
    #tracker hit reco/flagging
-   trkPrepareHits     : [ TTmakeSD, TTmakeSH, TTmakePH, TTflagPH ]
-   trkPrepareHitsOffSpill  : [ TTmakeSD, TTOmakeSH, TTOmakePH ]
+   trkPrepareHits          : [ TrigMakeSD     , TrigMakeSH     , TrigMakePH     , TrigFlagPH ]
+   trkPrepareHitsOffSpill  : [ TrigMakeSD, TrigOffSpMakeSH, TrigOffSpMakePH ]
    #calorimeter reco
    calPrepareHits     : [ CaloHitMakerFast ]
    calReco            : [ CaloHitMakerFast, CaloClusterFast ]
-   cfoDataGen : [ processCFOData ]
+   cfoDataGen : [ ProcessCFOData ]
 }
 
 END_PROLOG
