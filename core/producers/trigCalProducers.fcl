@@ -32,7 +32,9 @@ TrigCalProducers : {
     module_type: "CaloHitMakerFast"
     nPEperMeV: 30
     nSigmaNoise: 4
-    noiseLevelMeV: 5.5e-1
+      noiseLevelMeV: 5.5e-1
+      caphriEDepMin : 0.
+      caphriEDepMax : 10.
   }
 
 
