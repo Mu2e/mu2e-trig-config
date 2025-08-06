@@ -21,11 +21,17 @@ TrigCalProducers : {
     ProtonBunchTimeTag: "EWMProducer"
     caloDigiCollection: "CaloDigiMaker"
     caphriCrystalID: [
-      623,
-      624,
-      595,
-      596
+                      582,
+                      609,
+                      610,
+                      637
     ]
+    # caphriCrystalID: [
+    #   623,
+    #   624,
+    #   595,
+    #   596
+    # ]
     deltaTPulses: 11
     diagLevel: 0
     digiSampling: 5
