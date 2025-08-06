@@ -8,6 +8,7 @@ Conditions lines: 38  hash: 8098310628555253397
 DbService  MDC2020_best v1_3   mu2e_conditions_prd
 DbService  textFiles: 
 GlobalConstants file: /exp/mu2e/app/users/izarif/Single_Electron/Offline/GlobalConstantsService/data/globalConstants_01.txt
+
 GlobalConstants lines: 165  hash: 10185786924093877558
 BkgANNSHU weights Offline/Mu2eKinKal/data/TrainBkgTrigger.dat cut 0.2 freezing ( 0x1 : Inactive )
 BkgANNSHU weights Offline/Mu2eKinKal/data/TrainBkgTrigger.dat cut 0.2 freezing ( 0x1 : Inactive )
@@ -15,30 +16,30 @@ BkgANNSHU weights Offline/Mu2eKinKal/data/TrainBkgTrigger.dat cut 0.2 freezing (
 BkgANNSHU weights Offline/Mu2eKinKal/data/TrainBkgTrigger.dat cut 0.2 freezing ( 0x1 : Inactive )
 BkgANNSHU weights Offline/Mu2eKinKal/data/TrainBkgTrigger.dat cut 0.2 freezing ( 0x1 : Inactive )
 DeltaFinderAlg created
-24-Jul-2025 16:40:11 CDT  Initiating request to open input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
-24-Jul-2025 16:40:11 CDT  Opened input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
+30-Jul-2025 16:13:31 CDT  Initiating request to open input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
+30-Jul-2025 16:13:31 CDT  Opened input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
 tprHelixDeIpaHSFilter NO HELIX CUT HAS BEEN SET FOR THE HELICES WITH NEGATIVE HELICITY. IF THAT'S NOT THE DESIRED BEHAVIOUR REVIEW YOUR CONFIGUREATION!
 tprHelixDeIpaPhiScaledHSFilter NO HELIX CUT HAS BEEN SET FOR THE HELICES WITH NEGATIVE HELICITY. IF THAT'S NOT THE DESIRED BEHAVIOUR REVIEW YOUR CONFIGUREATION!
-Geometry file: /exp/mu2e/app/users/izarif/Single_Electron/Offline/Mu2eG4/geom/geom_common.txt
-Geometry lines: 21724  hash: 5962533537671616341
-BField file: /exp/mu2e/app/users/izarif/Single_Electron/Offline/Mu2eG4/geom/bfgeom_reco_v01.txt
+Geometry file: /scratch/workspace/GitHubPRTests/mu2e-offline-build-test/Offline/Mu2eG4/geom/geom_common.txt
+Geometry lines: 21731  hash: 7157205387130621323
+BField file: /scratch/workspace/GitHubPRTests/mu2e-offline-build-test/Offline/Mu2eG4/geom/bfgeom_reco_v01.txt
 BField lines: 98  hash: 3243269116804334601
-Begin processing the 1st record. run: 1202 subRun: 0 event: 1 at 24-Jul-2025 16:40:29 CDT
-DbReader::fillValCache took 0.25805 s
+Begin processing the 1st record. run: 1202 subRun: 0 event: 1 at 30-Jul-2025 16:13:31 CDT
+DbReader::fillValCache took 0.209926 s
 DbEngine confirmed purpose and version:
 MDC2020_best 1/3/-1
 DbEngine IoV summary
             Table        N IoV
        TrkDelayPanel       1
-      TrkPreampStraw       1
-     TrkAlignTracker       1
-       TrkAlignPlane       1
-       TrkAlignPanel       1
-       TrkAlignStraw       1
-      TrkPanelStatus       1
-      TrkPlaneStatus       1
- TrkStrawStatusShort       1
-  TrkStrawStatusLong       1
+      TrkPreampStraw       2
+     TrkAlignTracker       2
+       TrkAlignPlane       2
+       TrkAlignPanel       2
+       TrkAlignStraw       2
+      TrkPanelStatus       2
+      TrkPlaneStatus       2
+ TrkStrawStatusShort       2
+  TrkStrawStatusLong       2
       TrkDelayRStraw       1
     SimEfficiencies2       1
   TrkAlignTrackerSim       1
@@ -224,6 +225,7 @@ DbEngine::endJob
     Total time waiting for locks: 1e-06 s
     Total time in locks: 0.557499 s
     valcache memory: 68009 b
+
   Database cache stats:
     cache nTable : 11
     cache HWM    : 1364957 b
@@ -237,7 +239,7 @@ TrigReport ---------- Trigger-path summary ------------
 TrigReport    Path ID        Run     Passed     Failed      Error Name
 TrigReport        100      20000          1      19999          0 tprDe_highP_stopTarg
 TrigReport        101      20000          5      19995          0 tprDe_highP
-TrigReport        110      20000        141      19859          0 tprDe_lowP_stopTarg
+TrigReport        110      20000        142      19858          0 tprDe_lowP_stopTarg
 TrigReport        120      20000        552      19448          0 tprHelixDe_ipa
 TrigReport        121      20000        147      19853          0 tprHelixDe_ipa_phiScaled
 TrigReport        130      20000       1446      18554          0 tprHelixDe
@@ -257,7 +259,7 @@ TrigReport        195      20000       1305      18695          0 aprHelix
 TrigReport        200      20000        471      19529          0 caloFast_photon
 TrigReport        201      20000       1844      18156          0 caloFast_MVANNCE
 TrigReport        202      20000          0      20000          0 caloFast_cosmic
-TrigReport        210      20000        344      19656          0 mprDe_highP_stopTarg
+TrigReport        210      20000        315      19685          0 mprDe_highP_stopTarg
 TrigReport        220      20000          0      20000          0 caloFast_RMC
 TrigReport        310      20000          0      20000          0 cstTimeCluster
 TrigReport        320      20000          0      20000          0 cstCosmicTrackSeed
@@ -582,8 +584,8 @@ TrigReport        210      19893      19893          0          0 TTRobustMultiH
 TrigReport        210      19893      19893          0          0 TTMprHelixMergerDe
 TrigReport        210      19893      12558       7335          0 mprDeHighPStopTargHSFilter
 TrigReport        210      12558      12558          0          0 TTMprKSFDe
-TrigReport        210      12558        344      12214          0 mprDeHighPStopTargKSFilter
-TrigReport        210        344        344          0          0 mprDeHighPStopTargTriggerInfoMerger
+TrigReport        210      12558        315      12243          0 mprDeHighPStopTargKSFilter
+TrigReport        210        315        315          0          0 mprDeHighPStopTargTriggerInfoMerger
 
 TrigReport ---------- Modules in path: tprDe_highP ------------
 TrigReport    Path ID    Visited     Passed     Failed      Error Name
@@ -639,8 +641,8 @@ TrigReport        110      19937      19937          0          0 TThelixFinder
 TrigReport        110      19937      19937          0          0 TTHelixMergerDe
 TrigReport        110      19937       1774      18163          0 tprDeLowPStopTargHSFilter
 TrigReport        110       1774       1774          0          0 TTKSFDe
-TrigReport        110       1774        141       1633          0 tprDeLowPStopTargKSFilter
-TrigReport        110        141        141          0          0 tprDeLowPStopTargTriggerInfoMerger
+TrigReport        110       1774        142       1632          0 tprDeLowPStopTargKSFilter
+TrigReport        110        142        142          0          0 tprDeLowPStopTargTriggerInfoMerger
 
 TrigReport ---------- Modules in path: tprHelixDe ------------
 TrigReport    Path ID    Visited     Passed     Failed      Error Name
@@ -823,10 +825,10 @@ TrigReport      20000      20000          0      20000          0 minBiasCDCount
 TrigReport          0          0          0          0          0 minBiasSDCountFilter
 TrigReport      20000      20000          0      20000          0 minBiasSDCountPS
 TrigReport      19893      19893      12558       7335          0 mprDeHighPStopTargHSFilter
-TrigReport      12558      12558        344      12214          0 mprDeHighPStopTargKSFilter
+TrigReport      12558      12558        315      12243          0 mprDeHighPStopTargKSFilter
 TrigReport      20000      20000      20000          0          0 mprDeHighPStopTargPS
 TrigReport      20000      20000      19893        107          0 mprDeHighPStopTargTCFilter
-TrigReport        344        344        344          0          0 mprDeHighPStopTargTriggerInfoMerger
+TrigReport        315        315        315          0          0 mprDeHighPStopTargTriggerInfoMerger
 TrigReport     580000      20000      20000          0          0 processCFOData
 TrigReport      19893      19893       1125      18768          0 tprDeHighPHSFilter
 TrigReport       1125       1125          5       1120          0 tprDeHighPKSFilter
@@ -839,10 +841,10 @@ TrigReport          1          1          1          0          0 tprDeHighPStop
 TrigReport      20000      20000      19893        107          0 tprDeHighPTCFilter
 TrigReport          5          5          5          0          0 tprDeHighPTriggerInfoMerger
 TrigReport      19937      19937       1774      18163          0 tprDeLowPStopTargHSFilter
-TrigReport       1774       1774        141       1633          0 tprDeLowPStopTargKSFilter
+TrigReport       1774       1774        142       1632          0 tprDeLowPStopTargKSFilter
 TrigReport      20000      20000      20000          0          0 tprDeLowPStopTargPS
 TrigReport      20000      20000      19937         63          0 tprDeLowPStopTargTCFilter
-TrigReport        141        141        141          0          0 tprDeLowPStopTargTriggerInfoMerger
+TrigReport        142        142        142          0          0 tprDeLowPStopTargTriggerInfoMerger
 TrigReport      19893      19893       1446      18447          0 tprHelixDeHSFilter
 TrigReport      19893      19893        552      19341          0 tprHelixDeIpaHSFilter
 TrigReport      20000      20000      20000          0          0 tprHelixDeIpaPS
