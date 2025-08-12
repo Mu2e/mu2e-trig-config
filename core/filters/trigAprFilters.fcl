@@ -544,12 +544,12 @@ TrigAprFilters:{
       maxD0: 600
       maxMomentum: 2000
       maxNLoops: 30
-      minAbsLambda: 50
+      minAbsLambda: 40
       minD0: -600
       minHitRatio: 4e-1
-      minMomentum: 50
+      minMomentum: 30
       minNLoops: 0
-      minNStrawHits: 15
+      minNStrawHits: 20
       minPt: 0
       prescaleUsingD0Phi: false
       requireCaloCluster: false
@@ -563,12 +563,12 @@ TrigAprFilters:{
       maxD0: 600
       maxMomentum: 2000
       maxNLoops: 30
-      minAbsLambda: 50
+      minAbsLambda: 40
       minD0: -600
       minHitRatio: 4e-1
-      minMomentum: 50
+      minMomentum: 30
       minNLoops: 0
-      minNStrawHits: 15
+      minNStrawHits: 20
       minPt: 0
       prescaleUsingD0Phi: false
       requireCaloCluster: false
