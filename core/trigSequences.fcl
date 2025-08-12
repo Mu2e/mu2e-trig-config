@@ -292,7 +292,9 @@ TrigSupPaths:{
                        lumiStreamPS,
                        @sequence::TrigRecoSequences.calReco,
                        @sequence::TrigRecoSequences.trkPrepareHits,
-                       TTTZClusterFinder]
+                       TTTZClusterFinder,
+                       lumiBuffer
+                      ]
 
 }
 
