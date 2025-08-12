@@ -8,6 +8,14 @@
 
     "trigger_paths" : {
 
+        "lumiStream"          : {
+            "bit" : 800 ,
+            "enabled": 1,
+            "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "luminosity" ] },
+                                {"eventMode":"OffSpill", "prescale":1, "streams": [ "luminosity" ]                                 }
+                               ]
+        },
+
         "mprDe_highP_stopTarg": {
             "bit" : 210 ,
             "enabled": 1,
@@ -233,7 +241,8 @@
         "physics_trk_calib"  : { "enabled" : 1 },
         "physics_calo_calib" : { "enabled" : 1 },
         "cosmics_main"       : { "enabled" : 1 },
-        "dqm_trigger"        : { "enabled" : 1 }
+        "dqm_trigger"        : { "enabled" : 1 },
+        "luminosity"         : { "enabled" : 1 }
     },
 
     "dataLogger_analyzers": {

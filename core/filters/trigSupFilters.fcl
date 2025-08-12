@@ -5,6 +5,8 @@ TrigSupFilters:{
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   minBiasCDCountPS : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+  lumiStreamPS : { module_type: PrescaleEvent
+      eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
   minBiasCDCountFilter: {
     caloDigiCollection: "CaloDigiMaker"
