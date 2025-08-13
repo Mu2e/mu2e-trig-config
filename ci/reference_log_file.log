@@ -1,13 +1,13 @@
    ************************** Mu2e Offline **************************
      art v3_15_00    root v6_32_06    KinKal v03_02_01
-     build  /exp/mu2e/app/users/mmackenz/Yale/main
-     build  al9-prof-e29-p083    08/12/25 17:35:27
+     build  /scratch/workspace/GitHubPRTests/mu2e-offline-build-test
+     build  al9-prof-e29-p083    08/13/25 13:37:02
    ******************************************************************
-Conditions file: /exp/mu2e/app/users/mmackenz/Yale/main/Offline/ConditionsService/data/conditions_01.txt
+Conditions file: /scratch/workspace/GitHubPRTests/mu2e-offline-build-test/Offline/ConditionsService/data/conditions_01.txt
 Conditions lines: 38  hash: 8098310628555253397
 DbService  MDC2020_best v1_3   mu2e_conditions_prd
 DbService  textFiles: 
-GlobalConstants file: /exp/mu2e/app/users/mmackenz/Yale/main/Offline/GlobalConstantsService/data/globalConstants_01.txt
+GlobalConstants file: /scratch/workspace/GitHubPRTests/mu2e-offline-build-test/Offline/GlobalConstantsService/data/globalConstants_01.txt
 GlobalConstants lines: 165  hash: 10185786924093877558
 BkgANNSHU weights Offline/Mu2eKinKal/data/TrainBkgTrigger.dat cut 0.2 freezing ( 0x1 : Inactive )
 BkgANNSHU weights Offline/Mu2eKinKal/data/TrainBkgTrigger.dat cut 0.2 freezing ( 0x1 : Inactive )
@@ -15,16 +15,16 @@ BkgANNSHU weights Offline/Mu2eKinKal/data/TrainBkgTrigger.dat cut 0.2 freezing (
 BkgANNSHU weights Offline/Mu2eKinKal/data/TrainBkgTrigger.dat cut 0.2 freezing ( 0x1 : Inactive )
 BkgANNSHU weights Offline/Mu2eKinKal/data/TrainBkgTrigger.dat cut 0.2 freezing ( 0x1 : Inactive )
 DeltaFinderAlg created
-13-Aug-2025 11:49:30 CDT  Initiating request to open input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
-13-Aug-2025 11:49:31 CDT  Opened input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
+13-Aug-2025 13:46:22 CDT  Initiating request to open input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
+13-Aug-2025 13:46:22 CDT  Opened input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
 tprHelixDeIpaHSFilter NO HELIX CUT HAS BEEN SET FOR THE HELICES WITH NEGATIVE HELICITY. IF THAT'S NOT THE DESIRED BEHAVIOUR REVIEW YOUR CONFIGUREATION!
 tprHelixDeIpaPhiScaledHSFilter NO HELIX CUT HAS BEEN SET FOR THE HELICES WITH NEGATIVE HELICITY. IF THAT'S NOT THE DESIRED BEHAVIOUR REVIEW YOUR CONFIGUREATION!
-Geometry file: /exp/mu2e/app/users/mmackenz/Yale/main/Offline/Mu2eG4/geom/geom_common.txt
-Geometry lines: 21763  hash: 5785303828219236850
-BField file: /exp/mu2e/app/users/mmackenz/Yale/main/Offline/Mu2eG4/geom/bfgeom_reco_v01.txt
+Geometry file: /scratch/workspace/GitHubPRTests/mu2e-offline-build-test/Offline/Mu2eG4/geom/geom_common.txt
+Geometry lines: 21767  hash: 6156955001906094491
+BField file: /scratch/workspace/GitHubPRTests/mu2e-offline-build-test/Offline/Mu2eG4/geom/bfgeom_reco_v01.txt
 BField lines: 98  hash: 3243269116804334601
-Begin processing the 1st record. run: 1202 subRun: 0 event: 1 at 13-Aug-2025 11:50:09 CDT
-DbReader::fillValCache took 0.317989 s
+Begin processing the 1st record. run: 1202 subRun: 0 event: 1 at 13-Aug-2025 13:46:22 CDT
+DbReader::fillValCache took 0.309787 s
 DbEngine confirmed purpose and version:
 MDC2020_best 1/3/-1
 DbEngine IoV summary
@@ -49,181 +49,179 @@ DbEngine IoV summary
              CRVSiPM       6
            CRVPhoton       6
              CRVTime       6
-DbEngine inclusive beginJob time was 0.318315 s
-Begin processing the 2nd record. run: 1202 subRun: 0 event: 2 at 13-Aug-2025 11:50:10 CDT
-Begin processing the 3rd record. run: 1202 subRun: 0 event: 3 at 13-Aug-2025 11:50:10 CDT
-Begin processing the 5th record. run: 1202 subRun: 0 event: 5 at 13-Aug-2025 11:50:10 CDT
-Begin processing the 9th record. run: 1202 subRun: 0 event: 9 at 13-Aug-2025 11:50:11 CDT
-Begin processing the 17th record. run: 1202 subRun: 0 event: 17 at 13-Aug-2025 11:50:11 CDT
-Begin processing the 33rd record. run: 1202 subRun: 0 event: 33 at 13-Aug-2025 11:50:11 CDT
-Begin processing the 65th record. run: 1202 subRun: 0 event: 65 at 13-Aug-2025 11:50:12 CDT
-Begin processing the 129th record. run: 1202 subRun: 0 event: 129 at 13-Aug-2025 11:50:13 CDT
-Begin processing the 257th record. run: 1202 subRun: 0 event: 257 at 13-Aug-2025 11:50:15 CDT
-Begin processing the 513th record. run: 1202 subRun: 0 event: 513 at 13-Aug-2025 11:50:21 CDT
-Begin processing the 1025th record. run: 1202 subRun: 0 event: 1025 at 13-Aug-2025 11:50:32 CDT
-Begin processing the 2049th record. run: 1202 subRun: 0 event: 2049 at 13-Aug-2025 11:50:53 CDT
-Begin processing the 4097th record. run: 1202 subRun: 1 event: 97 at 13-Aug-2025 11:51:33 CDT
-Begin processing the 8193rd record. run: 1202 subRun: 2 event: 193 at 13-Aug-2025 11:53:00 CDT
-13-Aug-2025 11:53:38 CDT  Closed input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
-13-Aug-2025 11:53:38 CDT  Initiating request to open input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
-13-Aug-2025 11:53:38 CDT  Opened input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
-%MSG-w GEOM:  BeginRun 13-Aug-2025 11:53:38 CDT run: 1202
+DbEngine inclusive beginJob time was 0.309963 s
+Begin processing the 2nd record. run: 1202 subRun: 0 event: 2 at 13-Aug-2025 13:46:24 CDT
+Begin processing the 3rd record. run: 1202 subRun: 0 event: 3 at 13-Aug-2025 13:46:24 CDT
+Begin processing the 5th record. run: 1202 subRun: 0 event: 5 at 13-Aug-2025 13:46:24 CDT
+Begin processing the 9th record. run: 1202 subRun: 0 event: 9 at 13-Aug-2025 13:46:24 CDT
+Begin processing the 17th record. run: 1202 subRun: 0 event: 17 at 13-Aug-2025 13:46:24 CDT
+Begin processing the 33rd record. run: 1202 subRun: 0 event: 33 at 13-Aug-2025 13:46:25 CDT
+Begin processing the 65th record. run: 1202 subRun: 0 event: 65 at 13-Aug-2025 13:46:26 CDT
+Begin processing the 129th record. run: 1202 subRun: 0 event: 129 at 13-Aug-2025 13:46:27 CDT
+Begin processing the 257th record. run: 1202 subRun: 0 event: 257 at 13-Aug-2025 13:46:31 CDT
+Begin processing the 513th record. run: 1202 subRun: 0 event: 513 at 13-Aug-2025 13:46:39 CDT
+Begin processing the 1025th record. run: 1202 subRun: 0 event: 1025 at 13-Aug-2025 13:46:57 CDT
+Begin processing the 2049th record. run: 1202 subRun: 0 event: 2049 at 13-Aug-2025 13:47:28 CDT
+Begin processing the 4097th record. run: 1202 subRun: 1 event: 97 at 13-Aug-2025 13:48:26 CDT
+Begin processing the 8193rd record. run: 1202 subRun: 2 event: 193 at 13-Aug-2025 13:50:28 CDT
+13-Aug-2025 13:51:18 CDT  Closed input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
+13-Aug-2025 13:51:18 CDT  Initiating request to open input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
+13-Aug-2025 13:51:18 CDT  Opened input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
+%MSG-w GEOM:  BeginRun 13-Aug-2025 13:51:19 CDT run: 1202
 This test version does not change geometry on run boundaries.
 %MSG
 This test version does not change geometry on run boundaries.
-Begin processing the 16385th record. run: 1202 subRun: 4 event: 385 at 13-Aug-2025 11:55:50 CDT
-13-Aug-2025 11:57:05 CDT  Closed input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
+Begin processing the 16385th record. run: 1202 subRun: 4 event: 385 at 13-Aug-2025 13:54:09 CDT
+13-Aug-2025 13:55:44 CDT  Closed input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
 
 =======================================================================================================================================================================
 TimeTracker printout (sec)                                                               Min           Avg           Max         Median          RMS         nEvts   
 =======================================================================================================================================================================
-Full event                                                                           0.00110076     0.0206235     0.969854      0.0115098     0.0266309      20000   
+Full event                                                                           0.00142778     0.0279042      1.11646      0.0150953     0.0371331      20000   
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-source:RootInput(read)                                                               6.8922e-05    0.000156641    0.0282126    0.000112966   0.000299152     20000   
-caloHitRec_N0Source:processCFOData:EventHeaderFromCFOFragment                         1.058e-05    1.51619e-05   0.000356612   1.3056e-05    7.29878e-06     20000   
-caloHitRec_N0Source:caloHitRecN0SourcePS:PrescaleEvent                                8.486e-06    1.52672e-05   0.00223975    1.1573e-05    4.34002e-05     20000   
-minBias_CDCount:minBiasCDCountPS:PrescaleEvent                                        1.863e-06    2.63864e-06   6.7809e-05     2.336e-06    1.40096e-06     20000   
-minBias_SDCount:minBiasSDCountPS:PrescaleEvent                                        1.533e-06    2.20814e-06   0.00010517     2.014e-06    1.44977e-06     20000   
-cstCosmicTrackSeed:cstCosmicTrackSeedPS:PrescaleEvent                                 1.553e-06    2.32716e-06   0.000195654    2.034e-06    1.85998e-06     20000   
-cstTimeCluster:cstTimeClusterPS:PrescaleEvent                                         1.433e-06    2.09048e-06   0.000203398    1.763e-06    2.32484e-06     20000   
-caloFast_RMC:caloFastRMCPS:PrescaleEvent                                              1.562e-06    2.21008e-06   5.0817e-05     1.934e-06    1.23484e-06     20000   
-caloFast_RMC:CaloHitMakerFast:CaloHitMakerFast                                       9.1204e-05    0.000613986    0.0301656    0.000479381   0.000570274     20000   
-caloFast_RMC:CaloClusterFast:CaloClusterFast                                          9.699e-06    6.57611e-05   0.000603424   5.50305e-05   4.17739e-05     20000   
-caloFast_RMC:caloFastRMCFilter:CaloClusterCounterFilter                               6.843e-06    9.67116e-06   0.000321704    8.506e-06    4.82314e-06     20000   
-caloFast_cosmic:caloFastCosmicPS:PrescaleEvent                                        2.535e-06    3.92226e-06   0.000191686    3.526e-06    2.61361e-06     20000   
-caloFast_cosmic:caloFastCosmicFilter:CaloCosmicCalib                                  4.649e-06    6.44535e-06   0.000220903    5.731e-06    2.83257e-06     20000   
-caloFast_MVANNCE:caloFastMVANNCEPS:PrescaleEvent                                      1.764e-06    2.53231e-06   3.4076e-05     2.244e-06    1.30264e-06     20000   
-caloFast_MVANNCE:caloFastMVANNCEFilter:FilterEcalNNTrigger                            5.03e-06     8.83124e-06   0.000211585    7.865e-06    4.22606e-06     20000   
-caloFast_photon:caloFastPhotonPS:PrescaleEvent                                        1.673e-06    2.37069e-06   0.000190685    2.065e-06    1.76391e-06     20000   
-caloFast_photon:caloFastPhotonFilter:CaloLikelihood                                   5.151e-06    9.33935e-06   0.00121009     6.733e-06    1.21496e-05     20000   
-aprHelix:aprLowPStopTargPS:PrescaleEvent                                              1.823e-06    2.75815e-06   0.000329911    2.395e-06    2.69766e-06     20000   
-aprHelix:TTmakeSD:StrawDigisFromArtdaqFragments                                       8.316e-06    1.15574e-05   0.000214149    9.919e-06    4.94238e-06     20000   
-aprHelix:TTmakeSH:StrawHitReco                                                       4.0246e-05    0.000575062    0.954003     0.000452144   0.00674998      20000   
-aprHelix:TTmakePH:CombineStrawHits                                                    9.578e-06    7.8433e-05    0.000943845   6.1117e-05    6.01351e-05     20000   
-aprHelix:TTflagPH:DeltaFinder                                                        8.4992e-05    0.000526612    0.0135635    0.000401492   0.000431466     20000   
-aprHelix:TTTZClusterFinder:TZClusterFinder                                           1.2525e-05    9.50073e-05   0.000790321    6.842e-05    8.19911e-05     20000   
-aprHelix:aprHelixTCFilter:TimeClusterFilter                                           9.97e-06     1.43862e-05   0.000204291   1.3044e-05    4.81854e-06     20000   
-aprHelix:TTAprHelixFinder:AgnosticHelixFinder                                        1.0741e-05    0.000262002    0.0119046    0.000101855   0.000440689     16299   
-aprHelix:TTAprHelixMerger:MergeHelices                                               1.1612e-05    1.59196e-05   0.000378774   1.4288e-05    6.48831e-06     16299   
-aprHelix:aprHelixHSFilter:HelixFilter                                                 5.991e-06    8.45161e-06   0.000205333    7.514e-06    3.94032e-06     16299   
-apr_lowP_multiHelix:aprLowPMultiHelixPS:PrescaleEvent                                 2.375e-06    3.7972e-06    0.00155021     3.317e-06    1.1452e-05      20000   
-apr_lowP_multiHelix:aprLowPMultiHelixTCFilter:TimeClusterFilter                       7.494e-06    1.09133e-05   0.000387401   1.0109e-05    5.18592e-06     20000   
-apr_lowP_multiHelix:aprLowPMultiHelixHSFilter:HelixFilter                             5.361e-06    7.40996e-06   6.7639e-05     6.633e-06    2.49022e-06     16299   
-apr_highP_stopTarg_multiTrk:aprHighPStopTargMultiTrkPS:PrescaleEvent                  1.753e-06    2.7161e-06    0.000204561    2.404e-06    1.97433e-06     20000   
-apr_highP_stopTarg_multiTrk:aprHighPStopTargMultiTrkTCFilter:TimeClusterFilter        7.074e-06    9.45438e-06   0.000225431    8.576e-06    3.94731e-06     20000   
-apr_highP_stopTarg_multiTrk:aprHighPStopTargMultiTrkHSFilter:HelixFilter              4.94e-06     6.74122e-06   0.000107655    5.962e-06    2.65946e-06     16299   
-apr_lowP_stopTarg:aprLowPStopTargTCFilter:TimeClusterFilter                           6.473e-06    8.6505e-06    4.9705e-05     7.784e-06    2.88778e-06     20000   
-apr_lowP_stopTarg:aprLowPStopTargHSFilter:HelixFilter                                  4.8e-06     6.68891e-06   0.000210141    5.952e-06    3.31641e-06     16299   
-apr_ue_highP:aprUeHighPPS:PrescaleEvent                                               1.773e-06    2.60162e-06   0.000179102    2.254e-06    2.01813e-06     20000   
-apr_ue_highP:aprUeHighPTCFilter:TimeClusterFilter                                     6.311e-06    8.50767e-06   0.000277851    7.595e-06    3.67803e-06     20000   
-apr_ue_highP:aprUeHighPHSFilter:HelixFilter                                           4.629e-06    6.42055e-06   0.000117955    5.671e-06    2.49941e-06     16299   
-apr_highP:aprHighPPS:PrescaleEvent                                                    1.754e-06    2.60128e-06   0.000206705    2.265e-06    1.93413e-06     20000   
-apr_highP:aprHighPTCFilter:TimeClusterFilter                                          6.663e-06    8.75893e-06   0.000200343    7.885e-06    3.58937e-06     20000   
-apr_highP:aprHighPHSFilter:HelixFilter                                                4.689e-06    6.32781e-06   0.000210472    5.581e-06    2.8085e-06      16299   
-apr_highP_stopTarg:aprHighPStopTargPS:PrescaleEvent                                   1.704e-06    2.4132e-06    2.7081e-05     2.154e-06    1.09674e-06     20000   
-apr_highP_stopTarg:aprHighPStopTargTCFilter:TimeClusterFilter                         6.573e-06    8.62517e-06   7.8591e-05     7.805e-06    2.8974e-06      20000   
-apr_highP_stopTarg:aprHighPStopTargHSFilter:HelixFilter                               4.899e-06    6.5353e-06    0.000196165    5.801e-06    2.74991e-06     16299   
-cprHelixUe:cprHelixUePS:PrescaleEvent                                                 1.763e-06    2.48238e-06   4.0218e-05     2.185e-06    1.27325e-06     20000   
-cprHelixUe:TTCalTimePeakFinderUe:CalTimePeakFinder                                    8.686e-06    1.42903e-05   0.000339339   1.1031e-05    9.44959e-06     20000   
-cprHelixUe:cprHelixUeTCFilter:TimeClusterFilter                                       7.535e-06    9.66842e-06   0.000216694    8.757e-06    3.94424e-06     20000   
-cprHelixDe:cprHelixDePS:PrescaleEvent                                                 1.783e-06    2.53934e-06   2.4077e-05     2.264e-06    1.07775e-06     20000   
-cprHelixDe:TTCalTimePeakFinder:CalTimePeakFinder                                      6.943e-06    1.10816e-05   0.000450913    8.145e-06    9.04947e-06     20000   
-cprHelixDe:cprHelixDeTCFilter:TimeClusterFilter                                       7.043e-06    8.93663e-06   0.00104207     7.986e-06    8.01382e-06     20000   
-cprDe_lowP_stopTarg:cprDeLowPStopTargPS:PrescaleEvent                                 1.733e-06    2.58394e-06   0.000190604    2.255e-06    2.34166e-06     20000   
-cprDe_lowP_stopTarg:cprDeLowPStopTargTCFilter:TimeClusterFilter                       6.552e-06    8.62856e-06   0.000537628    7.594e-06    5.15012e-06     20000   
-cprDe_highP:cprDeHighPPS:PrescaleEvent                                                1.653e-06    2.26484e-06   3.4796e-05     2.034e-06    1.08193e-06     20000   
-cprDe_highP:cprDeHighPTCFilter:TimeClusterFilter                                      6.181e-06    8.0062e-06    0.000213599    7.123e-06    3.37624e-06     20000   
-cprDe_highP_stopTarg:cprDeHighPStopTargPS:PrescaleEvent                               1.653e-06    2.27991e-06   0.000236042    2.004e-06    2.01327e-06     20000   
-cprDe_highP_stopTarg:cprDeHighPStopTargTCFilter:TimeClusterFilter                     6.042e-06    7.8877e-06    0.000240009    7.073e-06    3.15225e-06     20000   
-tprHelixUe:tprHelixUePS:PrescaleEvent                                                 1.713e-06    2.45735e-06   0.000161038    2.144e-06    1.65322e-06     20000   
-tprHelixUe:TTtimeClusterFinderUe:TimeClusterFinder                                   2.9787e-05    0.00185366     0.030309     0.00110348    0.00231283      20000   
-tprHelixUe:tprHelixUeTCFilter:TimeClusterFilter                                       8.005e-06    1.45176e-05   0.000955127   1.3356e-05    8.90085e-06     20000   
-tprHelixUe:TThelixFinderUe:RobustHelixFinder                                         1.0289e-05    0.000617815    0.0215239    0.000336233   0.000910652     19881   
-tprHelixUe:TTHelixMergerUe:MergeHelices                                              1.0599e-05    1.78669e-05   0.000404643   1.5681e-05    8.8856e-06      19881   
-tprHelixUe:tprHelixUeHSFilter:HelixFilter                                             5.872e-06    9.7876e-06    0.000220421    8.386e-06    4.92167e-06     19881   
-tprHelixDe:tprHelixDePS:PrescaleEvent                                                 1.873e-06    3.68534e-06   0.000324691    3.397e-06    3.23801e-06     20000   
-tprHelixDe:TTtimeClusterFinder:TimeClusterFinder                                     2.6731e-05    0.00177433     0.0315573    0.00104139    0.00226952      20000   
-tprHelixDe:tprHelixDeTCFilter:TimeClusterFilter                                       7.505e-06    1.46821e-05   0.000991756   1.3446e-05    9.70422e-06     20000   
-tprHelixDe:TThelixFinder:RobustHelixFinder                                            8.135e-06    0.000669633    0.0184978    0.000347605   0.00103089      19889   
-tprHelixDe:TTHelixMergerDe:MergeHelices                                               9.528e-06    1.73901e-05   0.000379926   1.5429e-05    7.74449e-06     19889   
-tprHelixDe:tprHelixDeHSFilter:HelixFilter                                             5.37e-06     9.53394e-06   0.000341162    8.206e-06     5.261e-06      19889   
-tprHelixDe_ipa_phiScaled:tprHelixDeIpaPhiScaledPS:PrescaleEvent                       1.924e-06    3.54564e-06   7.5525e-05     3.276e-06    1.51888e-06     20000   
-tprHelixDe_ipa_phiScaled:tprHelixDeIpaPhiScaledTCFilter:TimeClusterFilter             6.562e-06    1.20208e-05   0.000357453   1.1192e-05    5.44415e-06     20000   
-tprHelixDe_ipa_phiScaled:tprHelixDeIpaPhiScaledHSFilter:HelixFilter                   4.839e-06    7.28855e-06   0.00405822     6.263e-06    2.88685e-05     19889   
-tprHelixDe_ipa:tprHelixDeIpaPS:PrescaleEvent                                          1.693e-06    2.60141e-06   2.4777e-05     2.385e-06    1.11193e-06     20000   
-tprHelixDe_ipa:tprHelixDeIpaTCFilter:TimeClusterFilter                                6.523e-06    9.74495e-06   0.00043954     8.877e-06    4.54519e-06     20000   
-tprHelixDe_ipa:tprHelixDeIpaHSFilter:HelixFilter                                      4.588e-06    6.53719e-06   0.000215222    5.791e-06    2.99746e-06     19889   
-tprDe_lowP_stopTarg:tprDeLowPStopTargPS:PrescaleEvent                                 1.753e-06    2.56659e-06   0.000181306    2.255e-06    1.72776e-06     20000   
-tprDe_lowP_stopTarg:tprDeLowPStopTargTCFilter:TimeClusterFilter                       6.523e-06    9.23421e-06   0.000390066    8.295e-06    5.8428e-06      20000   
-tprDe_lowP_stopTarg:tprDeLowPStopTargHSFilter:HelixFilter                             4.94e-06     7.25088e-06   0.000219891    6.432e-06    3.52824e-06     19935   
-tprDe_highP:tprDeHighPPS:PrescaleEvent                                                1.783e-06    2.65378e-06   0.000213096    2.254e-06    2.32244e-06     20000   
-tprDe_highP:tprDeHighPTCFilter:TimeClusterFilter                                      6.513e-06    9.28965e-06   0.000227595    8.165e-06    3.49499e-06     20000   
-tprDe_highP:tprDeHighPHSFilter:HelixFilter                                            4.639e-06    7.02659e-06   0.000201516    5.912e-06    3.95576e-06     19889   
-tprDe_highP_stopTarg:tprDeHighPStopTargPS:PrescaleEvent                               1.733e-06    2.46776e-06   0.000118537    2.175e-06    1.4633e-06      20000   
-tprDe_highP_stopTarg:tprDeHighPStopTargTCFilter:TimeClusterFilter                     6.312e-06    8.88617e-06   0.000265418    7.935e-06    3.74122e-06     20000   
-tprDe_highP_stopTarg:tprDeHighPStopTargHSFilter:HelixFilter                           4.779e-06    6.91762e-06   0.000195804    6.052e-06    3.09032e-06     19889   
-mprDe_highP_stopTarg:mprDeHighPStopTargPS:PrescaleEvent                               1.703e-06    2.45248e-06   0.000389234    2.144e-06    2.97587e-06     20000   
-mprDe_highP_stopTarg:mprDeHighPStopTargTCFilter:TimeClusterFilter                     6.594e-06    1.0904e-05    0.000529302    8.376e-06    1.99847e-05     20000   
-mprDe_highP_stopTarg:TTRobustMultiHelixFinder:RobustMultiHelixFinder                 1.7653e-05    0.00401922     0.185972     0.00145568    0.00854684      19889   
-mprDe_highP_stopTarg:TTMprHelixMergerDe:MergeHelices                                 1.3366e-05    0.000154684   0.00506703    4.6709e-05    0.000311564     19889   
-mprDe_highP_stopTarg:mprDeHighPStopTargHSFilter:HelixFilter                           5.59e-06     2.20633e-05   0.000361762   1.7794e-05    1.58466e-05     19889   
-mprDe_highP_stopTarg:TTMprKSFDe:LoopHelixFit                                         0.000149204    0.0123997     0.100165     0.00870155     0.0114958      12429   
-mprDe_highP_stopTarg:mprDeHighPStopTargKSFilter:KalSeedFilter                         8.166e-06    2.32729e-05   0.00258752    1.9577e-05    2.87266e-05     12429   
-lumiStream:lumiStreamPS:PrescaleEvent                                                 1.773e-06    4.10572e-06   0.000215372    3.706e-06    3.03401e-06     20000   
-lumiStream:lumiBuffer:LumiStreamFilter                                               2.2263e-05    3.03351e-05   0.000400936    2.635e-05    1.10894e-05     20000   
-[art]:TriggerResults:TriggerResultInserter                                            3.566e-06    5.31983e-06   0.000330652    4.47e-06     4.19098e-06     20000   
-cprHelixUe:TTCalHelixFinderUe:CalHelixFinder                                         2.9526e-05    0.000218399   0.00275202    0.000153382   0.00019706      1715    
-cprHelixUe:TTCalHelixMergerUe:MergeHelices                                           1.1281e-05    1.52824e-05   4.0357e-05    1.4298e-05    3.50888e-06     1715    
-cprHelixUe:cprHelixUeHSFilter:HelixFilter                                             5.871e-06    8.62997e-06   2.6941e-05     7.925e-06    2.33479e-06     1715    
-cprHelixDe:TTCalHelixFinderDe:CalHelixFinder                                          2.605e-05    0.000213421   0.00284669    0.000142402   0.000217078     1788    
-cprHelixDe:TTCalHelixMergerDe:MergeHelices                                            1.062e-05    1.52277e-05   0.000262521   1.4147e-05    6.76256e-06     1788    
-cprHelixDe:cprHelixDeHSFilter:HelixFilter                                             5.66e-06     9.07547e-06   0.000195814    8.185e-06    5.26831e-06     1788    
-cprDe_lowP_stopTarg:cprDeLowPStopTargHSFilter:HelixFilter                             5.651e-06    8.26886e-06   3.5497e-05     7.544e-06    2.6868e-06      1788    
-cprDe_highP:cprDeHighPHSFilter:HelixFilter                                            5.33e-06     7.79627e-06   3.7391e-05    7.1935e-06    2.37558e-06     1788    
-cprDe_highP_stopTarg:cprDeHighPStopTargHSFilter:HelixFilter                           5.39e-06     7.8132e-06     3.682e-05     7.239e-06    2.37299e-06     1788    
-tprHelixDe:tprHelixDeTriggerInfoMerger:MergeTriggerInfo                              1.4728e-05    2.49428e-05   0.000138204   2.1321e-05    1.04939e-05     1391    
-tprDe_lowP_stopTarg:TTKSFDe:LoopHelixFit                                             0.000166408   0.00202821     0.0126938     0.0017058    0.00142655      1698    
-tprDe_lowP_stopTarg:tprDeLowPStopTargKSFilter:KalSeedFilter                           8.446e-06    1.5831e-05    0.000237244   1.4863e-05    7.55557e-06     1698    
-apr_lowP_stopTarg:TTAprKSF:LoopHelixFit                                              0.000174894   0.00123597    0.00868614    0.00113339    0.00101972       564    
-apr_lowP_stopTarg:aprLowPStopTargKSFilter:KalSeedFilter                               5.531e-06    1.43693e-05   5.6999e-05    1.3195e-05    5.24136e-06      592    
-apr_lowP_stopTarg:aprLowPStopTargTriggerInfoMerger:MergeTriggerInfo                  1.5129e-05    2.43592e-05   6.5024e-05    2.06395e-05   8.92765e-06      124    
-mprDe_highP_stopTarg:mprDeHighPStopTargTriggerInfoMerger:MergeTriggerInfo            1.8686e-05    3.86898e-05   0.000246762   3.28735e-05   2.10603e-05      324    
-tprHelixUe:tprHelixUeTriggerInfoMerger:MergeTriggerInfo                              1.4958e-05    2.73834e-05   0.000385648    2.591e-05    1.3021e-05      1831    
-tprDe_lowP_stopTarg:tprDeLowPStopTargTriggerInfoMerger:MergeTriggerInfo              1.7993e-05    2.14561e-05   4.8112e-05    2.0119e-05    4.35175e-06      146    
-apr_ue_highP:TTAprUeKSF:LoopHelixFit                                                 0.000163452   0.00093188    0.00855083    0.000615492   0.000926447      314    
-apr_ue_highP:aprUeHighPKSFilter:KalSeedFilter                                         7.834e-06    1.19797e-05   3.3605e-05    1.0996e-05    3.63119e-06      314    
-apr_highP:TTAprKSF:LoopHelixFit                                                      0.000147933   0.000973711   0.00630389    0.000668297   0.000889277      133    
-apr_highP:aprHighPKSFilter:KalSeedFilter                                              5.36e-06     9.14484e-06   6.0596e-05     8.501e-06    3.89967e-06      314    
-aprHelix:aprHelixTriggerInfoMerger:MergeTriggerInfo                                  1.6432e-05    2.94546e-05   0.00012045    2.8645e-05    9.2496e-06      1259    
-tprDe_highP:tprDeHighPKSFilter:KalSeedFilter                                          5.18e-06     9.45893e-06   3.5828e-05     8.626e-06    3.96554e-06     1096    
-tprDe_highP_stopTarg:tprDeHighPStopTargKSFilter:KalSeedFilter                         4.719e-06    8.33624e-06   3.2472e-05     7.77e-06     3.12795e-06      684    
-tprDe_lowP_stopTarg:TThelixFinder:RobustHelixFinder                                   9.528e-06    3.82723e-05   0.000293421   1.74635e-05   5.33401e-05      46     
-tprDe_lowP_stopTarg:TTHelixMergerDe:MergeHelices                                     1.0991e-05    1.41263e-05   2.5108e-05    1.35415e-05   2.66632e-06      46     
-tprHelixDe_ipa:tprHelixDeIpaTriggerInfoMerger:MergeTriggerInfo                       1.0912e-05    1.72548e-05   8.8961e-05    1.52145e-05   7.77876e-06      536    
-tprHelixDe_ipa_phiScaled:tprHelixDeIpaPhiScaledTriggerInfoMerger:MergeTriggerInfo    1.2764e-05    1.89702e-05    4.728e-05    1.6732e-05    6.58842e-06      131    
-cprHelixDe:cprHelixDeTriggerInfoMerger:MergeTriggerInfo                              1.5199e-05    2.62239e-05    5.19e-05     2.2854e-05    8.72294e-06      81     
-cprDe_highP:TTCalSeedFitDe:LoopHelixFit                                              0.000341994   0.000977419   0.00183703    0.00100198    0.000549748       5     
-cprDe_highP:cprDeHighPKSFilter:KalSeedFilter                                          5.811e-06    8.9978e-06    1.9216e-05     7.325e-06    3.51549e-06      45     
-tprDe_highP:TTKSFDe:LoopHelixFit                                                     0.000197879   0.00158681     0.0068175    0.00122187    0.00122813       121    
-cprDe_lowP_stopTarg:TTCalSeedFitDe:LoopHelixFit                                      0.000182218   0.00101871    0.00373096    0.000957702   0.000715412      77     
-cprDe_lowP_stopTarg:cprDeLowPStopTargKSFilter:KalSeedFilter                           8.937e-06    1.40892e-05   2.9987e-05    1.2906e-05    4.40359e-06      77     
-apr_highP_stopTarg:aprHighPStopTargKSFilter:KalSeedFilter                             5.34e-06     7.37371e-06   1.7344e-05     6.943e-06    1.7672e-06       73     
-apr_lowP_multiHelix:TTAprKSF:LoopHelixFit                                            0.000409093   0.00222315    0.00686161    0.00190698    0.00148005       29     
-apr_lowP_multiHelix:aprLowPMultiHelixKSFilter:KalSeedFilter                           9.309e-06    1.60003e-05   4.2212e-05    1.2703e-05    6.97288e-06      29     
-apr_highP_stopTarg_multiTrk:aprHighPStopTargMultiTrkKSFilter:KalSeedFilter            6.793e-06    8.23414e-06    9.348e-06     8.046e-06    9.55675e-07       7     
-cprDe_highP_stopTarg:cprDeHighPStopTargKSFilter:KalSeedFilter                         5.532e-06    7.94411e-06   1.9918e-05     6.562e-06    3.17476e-06      19     
-cprDe_lowP_stopTarg:cprDeLowPStopTargTriggerInfoMerger:MergeTriggerInfo              1.8045e-05    2.17837e-05    3.152e-05    2.0309e-05    3.93225e-06      19     
-tprDe_highP:tprDeHighPTriggerInfoMerger:MergeTriggerInfo                              1.506e-05    1.77993e-05   2.0318e-05    1.79095e-05   1.96046e-06       4     
-apr_highP:aprHighPTriggerInfoMerger:MergeTriggerInfo                                 1.7073e-05    1.78345e-05   1.8596e-05    1.78345e-05    7.615e-07        2     
-apr_lowP_multiHelix:aprLowPMultiHelixTriggerInfoMerger:MergeTriggerInfo              2.0689e-05    2.4767e-05    2.8845e-05    2.4767e-05     4.078e-06        2     
-cprDe_highP:cprDeHighPTriggerInfoMerger:MergeTriggerInfo                             1.8265e-05    1.8265e-05    1.8265e-05    1.8265e-05         0            1     
-cprDe_highP_stopTarg:cprDeHighPStopTargTriggerInfoMerger:MergeTriggerInfo             1.553e-05     1.553e-05     1.553e-05     1.553e-05         0            1     
-apr_highP_stopTarg:aprHighPStopTargTriggerInfoMerger:MergeTriggerInfo                1.6532e-05    1.6532e-05    1.6532e-05    1.6532e-05         0            1     
+source:RootInput(read)                                                               7.7046e-05    0.000147647   0.00544462    0.000119553   0.000108117     20000   
+caloHitRec_N0Source:processCFOData:EventHeaderFromCFOFragment                        1.0676e-05    1.69118e-05   0.000293388   1.54375e-05   4.83519e-06     20000   
+caloHitRec_N0Source:caloHitRecN0SourcePS:PrescaleEvent                                8.653e-06    1.55423e-05   0.00121585    1.2743e-05    3.05264e-05     20000   
+minBias_CDCount:minBiasCDCountPS:PrescaleEvent                                        2.049e-06    3.12432e-06   2.0327e-05     3.004e-06    8.59789e-07     20000   
+minBias_SDCount:minBiasSDCountPS:PrescaleEvent                                        1.777e-06    2.61842e-06   2.4445e-05     2.47e-06     8.5912e-07      20000   
+cstCosmicTrackSeed:cstCosmicTrackSeedPS:PrescaleEvent                                 1.816e-06    2.61779e-06   2.5771e-05     2.446e-06    8.46814e-07     20000   
+cstTimeCluster:cstTimeClusterPS:PrescaleEvent                                         1.75e-06     2.50842e-06   1.9813e-05     2.363e-06    7.85712e-07     20000   
+caloFast_RMC:caloFastRMCPS:PrescaleEvent                                              1.844e-06    2.52199e-06   3.0381e-05     2.392e-06    8.4174e-07      20000   
+caloFast_RMC:CaloHitMakerFast:CaloHitMakerFast                                       0.000103193   0.000688107    0.0059677    0.000563253   0.000454437     20000   
+caloFast_RMC:CaloClusterFast:CaloClusterFast                                         1.0161e-05    6.76096e-05   0.000372435   5.6098e-05    4.2765e-05      20000   
+caloFast_RMC:caloFastRMCFilter:CaloClusterCounterFilter                               7.382e-06    1.02344e-05   7.0598e-05     9.336e-06    2.23982e-06     20000   
+caloFast_cosmic:caloFastCosmicPS:PrescaleEvent                                        2.551e-06    4.03624e-06   2.2617e-05     3.864e-06    8.95491e-07     20000   
+caloFast_cosmic:caloFastCosmicFilter:CaloCosmicCalib                                  5.416e-06    7.09713e-06   2.7999e-05     6.581e-06    1.42477e-06     20000   
+caloFast_MVANNCE:caloFastMVANNCEPS:PrescaleEvent                                      2.064e-06    2.72642e-06   1.9492e-05     2.588e-06    5.76413e-07     20000   
+caloFast_MVANNCE:caloFastMVANNCEFilter:FilterEcalNNTrigger                            5.748e-06    8.88872e-06   5.3461e-05     8.414e-06    2.19043e-06     20000   
+caloFast_photon:caloFastPhotonPS:PrescaleEvent                                        2.028e-06    2.58953e-06   2.4957e-05     2.422e-06     6.727e-07      20000   
+caloFast_photon:caloFastPhotonFilter:CaloLikelihood                                   5.863e-06    9.0882e-06    9.7418e-05     7.635e-06    3.31179e-06     20000   
+aprHelix:aprLowPStopTargPS:PrescaleEvent                                              2.073e-06    2.94749e-06   1.9827e-05     2.722e-06    6.61332e-07     20000   
+aprHelix:TTmakeSD:StrawDigisFromArtdaqFragments                                       9.616e-06    1.28214e-05   6.8182e-05    1.14065e-05   2.94611e-06     20000   
+aprHelix:TTmakeSH:StrawHitReco                                                       5.1296e-05    0.000590169     1.10173     0.000461964   0.00779305      20000   
+aprHelix:TTmakePH:CombineStrawHits                                                    9.859e-06    9.54007e-05   0.000835872   7.2766e-05    7.72481e-05     20000   
+aprHelix:TTflagPH:DeltaFinder                                                        0.000156796   0.000571647   0.00654396    0.000432999   0.000442971     20000   
+aprHelix:TTTZClusterFinder:TZClusterFinder                                           1.4394e-05    0.000111482   0.00102714    7.8712e-05    9.95857e-05     20000   
+aprHelix:aprHelixTCFilter:TimeClusterFilter                                          1.1149e-05    1.62347e-05   0.000214596   1.5005e-05    3.74702e-06     20000   
+aprHelix:TTAprHelixFinder:AgnosticHelixFinder                                        1.2058e-05    0.00033666     0.0162248    0.000126274   0.000576368     16299   
+aprHelix:TTAprHelixMerger:MergeHelices                                               1.3304e-05    1.76509e-05   0.000174685   1.6277e-05    4.03345e-06     16299   
+aprHelix:aprHelixHSFilter:HelixFilter                                                 7.005e-06    9.41379e-06   4.0879e-05     8.688e-06    2.08011e-06     16299   
+apr_lowP_multiHelix:aprLowPMultiHelixPS:PrescaleEvent                                 2.597e-06    4.11007e-06   2.1405e-05     3.907e-06    9.18578e-07     20000   
+apr_lowP_multiHelix:aprLowPMultiHelixTCFilter:TimeClusterFilter                       8.663e-06    1.1848e-05    3.7176e-05    1.1384e-05    1.9536e-06      20000   
+apr_lowP_multiHelix:aprLowPMultiHelixHSFilter:HelixFilter                             6.314e-06    8.44565e-06   2.9089e-05     7.877e-06    1.72943e-06     16299   
+apr_highP_stopTarg_multiTrk:aprHighPStopTargMultiTrkPS:PrescaleEvent                  2.101e-06    3.00455e-06   1.9649e-05     2.82e-06     6.71232e-07     20000   
+apr_highP_stopTarg_multiTrk:aprHighPStopTargMultiTrkTCFilter:TimeClusterFilter        7.939e-06    1.04218e-05    3.133e-05     9.915e-06    1.71432e-06     20000   
+apr_highP_stopTarg_multiTrk:aprHighPStopTargMultiTrkHSFilter:HelixFilter              5.823e-06    7.8132e-06     3.354e-05     7.25e-06     1.61623e-06     16299   
+apr_lowP_stopTarg:aprLowPStopTargTCFilter:TimeClusterFilter                           7.554e-06    9.7854e-06    2.9544e-05    9.2145e-06    1.69698e-06     20000   
+apr_lowP_stopTarg:aprLowPStopTargHSFilter:HelixFilter                                 5.524e-06    7.25783e-06   2.7916e-05     6.791e-06    1.48284e-06     16299   
+apr_ue_highP:aprUeHighPPS:PrescaleEvent                                               2.05e-06     2.82718e-06   1.9172e-05     2.66e-06     6.37936e-07     20000   
+apr_ue_highP:aprUeHighPTCFilter:TimeClusterFilter                                     7.123e-06    9.38426e-06   2.9293e-05     8.815e-06    1.78334e-06     20000   
+apr_ue_highP:aprUeHighPHSFilter:HelixFilter                                           5.48e-06     7.45399e-06   3.6871e-05     6.758e-06    2.15386e-06     16299   
+apr_highP:aprHighPPS:PrescaleEvent                                                    1.964e-06    2.75283e-06   1.9619e-05     2.584e-06    6.40759e-07     20000   
+apr_highP:aprHighPTCFilter:TimeClusterFilter                                          7.301e-06    9.32026e-06   3.0736e-05     8.723e-06    1.72229e-06     20000   
+apr_highP:aprHighPHSFilter:HelixFilter                                                5.499e-06    7.23483e-06   2.8103e-05     6.66e-06     1.77966e-06     16299   
+apr_highP_stopTarg:aprHighPStopTargPS:PrescaleEvent                                   2.012e-06    2.70676e-06   1.8251e-05     2.515e-06    6.41422e-07     20000   
+apr_highP_stopTarg:aprHighPStopTargTCFilter:TimeClusterFilter                         7.023e-06    9.14194e-06   0.000269218    8.613e-06    2.43168e-06     20000   
+apr_highP_stopTarg:aprHighPStopTargHSFilter:HelixFilter                               5.454e-06    7.23116e-06   3.0403e-05     6.628e-06    1.69051e-06     16299   
+cprHelixUe:cprHelixUePS:PrescaleEvent                                                 2.015e-06    2.74946e-06   1.9871e-05     2.529e-06    7.05013e-07     20000   
+cprHelixUe:TTCalTimePeakFinderUe:CalTimePeakFinder                                    9.545e-06    1.54142e-05   0.000264038   1.20815e-05   1.11226e-05     20000   
+cprHelixUe:cprHelixUeTCFilter:TimeClusterFilter                                       8.519e-06    1.05909e-05    4.203e-05     9.996e-06    1.73667e-06     20000   
+cprHelixDe:cprHelixDePS:PrescaleEvent                                                 1.923e-06    2.71443e-06   1.8687e-05     2.534e-06    6.18449e-07     20000   
+cprHelixDe:TTCalTimePeakFinder:CalTimePeakFinder                                      7.76e-06     1.28297e-05   0.000261583    9.539e-06    1.19474e-05     20000   
+cprHelixDe:cprHelixDeTCFilter:TimeClusterFilter                                       7.853e-06    9.9267e-06    3.0836e-05     9.343e-06    1.82734e-06     20000   
+cprDe_lowP_stopTarg:cprDeLowPStopTargPS:PrescaleEvent                                 1.977e-06    2.76028e-06    1.986e-05     2.549e-06    7.02315e-07     20000   
+cprDe_lowP_stopTarg:cprDeLowPStopTargTCFilter:TimeClusterFilter                       7.381e-06    9.67925e-06   3.0601e-05     8.962e-06    2.0348e-06      20000   
+cprDe_highP:cprDeHighPPS:PrescaleEvent                                                1.913e-06    2.60738e-06   2.0317e-05     2.432e-06    6.73055e-07     20000   
+cprDe_highP:cprDeHighPTCFilter:TimeClusterFilter                                      7.184e-06    9.25338e-06   3.2979e-05     8.632e-06    1.79413e-06     20000   
+cprDe_highP_stopTarg:cprDeHighPStopTargPS:PrescaleEvent                               1.913e-06    2.56799e-06   1.9505e-05     2.443e-06    6.04202e-07     20000   
+cprDe_highP_stopTarg:cprDeHighPStopTargTCFilter:TimeClusterFilter                     6.913e-06    8.86195e-06   2.9536e-05     8.332e-06    1.68031e-06     20000   
+tprHelixUe:tprHelixUePS:PrescaleEvent                                                 2.045e-06    2.7827e-06    2.0285e-05     2.548e-06    7.25679e-07     20000   
+tprHelixUe:TTtimeClusterFinderUe:TimeClusterFinder                                   3.6545e-05    0.00261754     0.0470503    0.00150983    0.00338681      20000   
+tprHelixUe:tprHelixUeTCFilter:TimeClusterFilter                                       8.364e-06    1.3044e-05    0.000165085   1.2293e-05    2.94162e-06     20000   
+tprHelixUe:TThelixFinderUe:RobustHelixFinder                                         1.1127e-05    0.000818036    0.0367496    0.000414449   0.00133919      19881   
+tprHelixUe:TTHelixMergerUe:MergeHelices                                              1.1256e-05    1.85794e-05   0.000282539   1.6774e-05    6.58872e-06     19881   
+tprHelixUe:tprHelixUeHSFilter:HelixFilter                                             6.457e-06    1.15578e-05   5.6816e-05     9.337e-06    5.63004e-06     19881   
+tprHelixDe:tprHelixDePS:PrescaleEvent                                                 2.044e-06    3.62522e-06    2.115e-05     3.477e-06    7.57028e-07     20000   
+tprHelixDe:TTtimeClusterFinder:TimeClusterFinder                                     3.3398e-05    0.00251068     0.0415016    0.00143277     0.0033146      20000   
+tprHelixDe:tprHelixDeTCFilter:TimeClusterFilter                                       7.924e-06    1.35759e-05   5.8597e-05    1.28525e-05   2.97089e-06     20000   
+tprHelixDe:TThelixFinder:RobustHelixFinder                                            8.659e-06    0.000898609    0.0333076    0.000440114   0.00155458      19889   
+tprHelixDe:TTHelixMergerDe:MergeHelices                                              1.0137e-05    1.73444e-05   0.000217099   1.5655e-05    6.44101e-06     19889   
+tprHelixDe:tprHelixDeHSFilter:HelixFilter                                             6.187e-06    1.09748e-05   5.1434e-05     9.275e-06    4.87674e-06     19889   
+tprHelixDe_ipa_phiScaled:tprHelixDeIpaPhiScaledPS:PrescaleEvent                       2.14e-06     3.64229e-06   2.0578e-05     3.491e-06    7.12767e-07     20000   
+tprHelixDe_ipa_phiScaled:tprHelixDeIpaPhiScaledTCFilter:TimeClusterFilter             7.43e-06     1.29573e-05   0.000190349   1.24525e-05   2.9563e-06      20000   
+tprHelixDe_ipa_phiScaled:tprHelixDeIpaPhiScaledHSFilter:HelixFilter                   5.709e-06    8.17362e-06   3.1553e-05     7.61e-06     1.88161e-06     19889   
+tprHelixDe_ipa:tprHelixDeIpaPS:PrescaleEvent                                          1.985e-06    2.94063e-06    1.981e-05     2.796e-06    5.3495e-07      20000   
+tprHelixDe_ipa:tprHelixDeIpaTCFilter:TimeClusterFilter                                6.902e-06    1.0804e-05    0.00025042    1.03235e-05   2.44696e-06     20000   
+tprHelixDe_ipa:tprHelixDeIpaHSFilter:HelixFilter                                      5.395e-06    7.50958e-06   2.5577e-05     7.038e-06    1.65444e-06     19889   
+tprDe_lowP_stopTarg:tprDeLowPStopTargPS:PrescaleEvent                                 2.027e-06    2.76029e-06   1.9963e-05     2.611e-06    5.59861e-07     20000   
+tprDe_lowP_stopTarg:tprDeLowPStopTargTCFilter:TimeClusterFilter                       7.601e-06    1.04738e-05   0.000230487    9.932e-06    3.44089e-06     20000   
+tprDe_lowP_stopTarg:tprDeLowPStopTargHSFilter:HelixFilter                             5.897e-06    8.57034e-06   3.4912e-05     8.201e-06    2.35757e-06     19935   
+tprDe_highP:tprDeHighPPS:PrescaleEvent                                                1.955e-06    2.78188e-06   1.9571e-05     2.51e-06     7.64244e-07     20000   
+tprDe_highP:tprDeHighPTCFilter:TimeClusterFilter                                      7.368e-06    1.03677e-05   0.000195912    9.406e-06    3.28427e-06     20000   
+tprDe_highP:tprDeHighPHSFilter:HelixFilter                                            5.456e-06    8.50311e-06   5.5431e-05     7.472e-06    3.79186e-06     19889   
+tprDe_highP_stopTarg:tprDeHighPStopTargPS:PrescaleEvent                               1.947e-06    2.66101e-06   1.9764e-05     2.463e-06    6.4615e-07      20000   
+tprDe_highP_stopTarg:tprDeHighPStopTargTCFilter:TimeClusterFilter                     7.183e-06    9.96102e-06   0.000447733    9.199e-06    5.52309e-06     20000   
+tprDe_highP_stopTarg:tprDeHighPStopTargHSFilter:HelixFilter                           5.365e-06    7.92836e-06   4.5357e-05     7.301e-06    2.61973e-06     19889   
+mprDe_highP_stopTarg:mprDeHighPStopTargPS:PrescaleEvent                               1.985e-06    2.63395e-06   1.9245e-05     2.459e-06    5.47592e-07     20000   
+mprDe_highP_stopTarg:mprDeHighPStopTargTCFilter:TimeClusterFilter                     7.59e-06      1.122e-05    0.000381474   9.9525e-06    1.34547e-05     20000   
+mprDe_highP_stopTarg:TTRobustMultiHelixFinder:RobustMultiHelixFinder                  2.061e-05    0.00539632     0.260691     0.00189317     0.0119117      19889   
+mprDe_highP_stopTarg:TTMprHelixMergerDe:MergeHelices                                 1.4599e-05    0.000198636   0.00701465    5.5482e-05    0.000409854     19889   
+mprDe_highP_stopTarg:mprDeHighPStopTargHSFilter:HelixFilter                           6.356e-06    2.92481e-05   0.000209079   2.4531e-05    1.99835e-05     19889   
+mprDe_highP_stopTarg:TTMprKSFDe:LoopHelixFit                                         0.000195871    0.0179475     0.153927      0.0125475     0.0167441      12429   
+mprDe_highP_stopTarg:mprDeHighPStopTargKSFilter:KalSeedFilter                         9.47e-06     2.64131e-05   0.000141142   2.3578e-05    1.2435e-05      12429   
+[art]:TriggerResults:TriggerResultInserter                                            4.187e-06    6.1588e-06    2.5782e-05     5.613e-06    1.48189e-06     20000   
+cprHelixUe:TTCalHelixFinderUe:CalHelixFinder                                          4.163e-05    0.000266915   0.00393372    0.000181737   0.00025836      1711    
+cprHelixUe:TTCalHelixMergerUe:MergeHelices                                           1.1815e-05    1.7878e-05    4.1717e-05    1.7335e-05    2.92083e-06     1711    
+cprHelixUe:cprHelixUeHSFilter:HelixFilter                                             6.452e-06    9.91441e-06    2.753e-05     9.461e-06    1.97144e-06     1711    
+cprHelixDe:TTCalHelixFinderDe:CalHelixFinder                                         3.3378e-05    0.000279265   0.00367767    0.000183233   0.000290334     1783    
+cprHelixDe:TTCalHelixMergerDe:MergeHelices                                           1.1819e-05    1.79023e-05   3.4934e-05    1.7225e-05    3.13836e-06     1783    
+cprHelixDe:cprHelixDeHSFilter:HelixFilter                                             6.969e-06    1.04546e-05   3.1004e-05     9.834e-06    2.25581e-06     1783    
+cprDe_lowP_stopTarg:cprDeLowPStopTargHSFilter:HelixFilter                             6.77e-06     9.73576e-06   3.0421e-05     9.203e-06    1.83777e-06     1783    
+cprDe_highP:cprDeHighPHSFilter:HelixFilter                                            6.433e-06    9.03482e-06   3.6387e-05     8.425e-06    2.19572e-06     1783    
+cprDe_highP_stopTarg:cprDeHighPStopTargHSFilter:HelixFilter                           6.093e-06    8.86195e-06   2.6906e-05     8.407e-06    1.67801e-06     1783    
+tprHelixDe:tprHelixDeTriggerInfoMerger:MergeTriggerInfo                              1.3696e-05    2.31995e-05   0.000147013   2.1249e-05    7.81764e-06     1391    
+tprDe_lowP_stopTarg:TTKSFDe:LoopHelixFit                                             0.000233559   0.00271262     0.0174877    0.00234734    0.00176707      1698    
+tprDe_lowP_stopTarg:tprDeLowPStopTargKSFilter:KalSeedFilter                           9.105e-06    1.66407e-05   4.4526e-05    1.62665e-05   5.19892e-06     1698    
+apr_lowP_stopTarg:TTAprKSF:LoopHelixFit                                              0.000241399   0.00179382     0.0121219     0.0016218    0.00149332       564    
+apr_lowP_stopTarg:aprLowPStopTargKSFilter:KalSeedFilter                               6.351e-06    1.57437e-05   5.7047e-05    1.5077e-05    5.24236e-06      592    
+apr_lowP_stopTarg:aprLowPStopTargTriggerInfoMerger:MergeTriggerInfo                  1.5582e-05    2.72013e-05   5.4504e-05    2.4448e-05    6.14845e-06      124    
+mprDe_highP_stopTarg:mprDeHighPStopTargTriggerInfoMerger:MergeTriggerInfo             2.13e-05     3.39831e-05   7.2857e-05    2.8678e-05     1.186e-05       324    
+tprHelixUe:tprHelixUeTriggerInfoMerger:MergeTriggerInfo                              1.5707e-05    2.55489e-05   0.000193612   2.3312e-05    8.69364e-06     1831    
+tprDe_lowP_stopTarg:tprDeLowPStopTargTriggerInfoMerger:MergeTriggerInfo               2.043e-05    2.46756e-05   4.3215e-05    2.2968e-05    3.99576e-06      145    
+apr_ue_highP:TTAprUeKSF:LoopHelixFit                                                 0.000195389    0.0012531     0.0132345    0.00081057    0.00125981       314    
+apr_ue_highP:aprUeHighPKSFilter:KalSeedFilter                                         8.253e-06    1.22458e-05   3.7372e-05    1.1405e-05    3.35786e-06      314    
+apr_highP:TTAprKSF:LoopHelixFit                                                      0.000200158   0.00142435    0.00929613    0.000981807   0.00134316       133    
+apr_highP:aprHighPKSFilter:KalSeedFilter                                              6.278e-06    9.53886e-06   2.4663e-05    8.8845e-06    2.97275e-06      314    
+aprHelix:aprHelixTriggerInfoMerger:MergeTriggerInfo                                  1.7465e-05    2.68829e-05    6.066e-05    2.4617e-05    6.52115e-06     1259    
+tprDe_highP:tprDeHighPKSFilter:KalSeedFilter                                          6.441e-06    1.01157e-05   4.1256e-05    9.3965e-06    3.41667e-06     1096    
+tprDe_highP_stopTarg:tprDeHighPStopTargKSFilter:KalSeedFilter                         6.069e-06    8.85702e-06   1.8908e-05    8.2215e-06    2.15912e-06      684    
+tprDe_lowP_stopTarg:TThelixFinder:RobustHelixFinder                                  1.0831e-05    3.47569e-05   0.000234902   2.1618e-05    3.58737e-05      46     
+tprDe_lowP_stopTarg:TTHelixMergerDe:MergeHelices                                     1.1305e-05    1.5427e-05     2.203e-05    1.46665e-05   2.4048e-06       46     
+tprHelixDe_ipa:tprHelixDeIpaTriggerInfoMerger:MergeTriggerInfo                       1.2033e-05    1.6904e-05    3.4719e-05    1.57065e-05   4.48482e-06      536    
+tprHelixDe_ipa_phiScaled:tprHelixDeIpaPhiScaledTriggerInfoMerger:MergeTriggerInfo    1.3028e-05    1.87591e-05   3.9845e-05    1.7478e-05    5.72916e-06      131    
+cprHelixDe:cprHelixDeTriggerInfoMerger:MergeTriggerInfo                              1.9805e-05    2.78221e-05   4.6081e-05    2.57805e-05   6.16045e-06      80     
+cprDe_highP:TTCalSeedFitDe:LoopHelixFit                                              0.000547013   0.00136665    0.00247154    0.00149115    0.000728876       5     
+cprDe_highP:cprDeHighPKSFilter:KalSeedFilter                                          6.963e-06    9.82571e-06   2.5047e-05     8.192e-06    3.68995e-06      45     
+tprDe_highP:TTKSFDe:LoopHelixFit                                                     0.000261345   0.00209241    0.00908537    0.00162809    0.00158171       121    
+cprDe_lowP_stopTarg:TTCalSeedFitDe:LoopHelixFit                                      0.000227721    0.0013948    0.00486654    0.00116053    0.000978917      76     
+cprDe_lowP_stopTarg:cprDeLowPStopTargKSFilter:KalSeedFilter                          1.0238e-05    1.53794e-05   2.6058e-05    1.38495e-05   4.21248e-06      76     
+apr_highP_stopTarg:aprHighPStopTargKSFilter:KalSeedFilter                             6.267e-06    7.68626e-06   1.3701e-05     7.144e-06    1.41877e-06      73     
+apr_lowP_multiHelix:TTAprKSF:LoopHelixFit                                            0.000532298   0.00322582     0.0106735    0.00270219    0.00225889       29     
+apr_lowP_multiHelix:aprLowPMultiHelixKSFilter:KalSeedFilter                          1.0888e-05    1.64112e-05   2.7495e-05    1.5999e-05    5.04415e-06      29     
+apr_highP_stopTarg_multiTrk:aprHighPStopTargMultiTrkKSFilter:KalSeedFilter            7.303e-06     9.26e-06     1.2811e-05     8.145e-06    2.02922e-06       7     
+cprDe_highP_stopTarg:cprDeHighPStopTargKSFilter:KalSeedFilter                         6.771e-06    9.03142e-06   1.2288e-05     7.825e-06    1.94077e-06      19     
+cprDe_lowP_stopTarg:cprDeLowPStopTargTriggerInfoMerger:MergeTriggerInfo              2.2142e-05    2.52929e-05   3.8214e-05    2.4182e-05    3.65404e-06      19     
+tprDe_highP:tprDeHighPTriggerInfoMerger:MergeTriggerInfo                             1.6802e-05    2.34023e-05   3.2509e-05    2.2149e-05    5.69533e-06       4     
+apr_highP:aprHighPTriggerInfoMerger:MergeTriggerInfo                                 2.2436e-05    2.3387e-05    2.4338e-05    2.3387e-05     9.51e-07         2     
+apr_lowP_multiHelix:aprLowPMultiHelixTriggerInfoMerger:MergeTriggerInfo              2.2811e-05    2.98635e-05   3.6916e-05    2.98635e-05   7.0525e-06        2     
+cprDe_highP:cprDeHighPTriggerInfoMerger:MergeTriggerInfo                             1.9051e-05    1.9051e-05    1.9051e-05    1.9051e-05         0            1     
+cprDe_highP_stopTarg:cprDeHighPStopTargTriggerInfoMerger:MergeTriggerInfo            1.8519e-05    1.8519e-05    1.8519e-05    1.8519e-05         0            1     
+apr_highP_stopTarg:aprHighPStopTargTriggerInfoMerger:MergeTriggerInfo                1.8153e-05    1.8153e-05    1.8153e-05    1.8153e-05         0            1     
 =======================================================================================================================================================================
 DbEngine::endJob
-    Total time in reading DB: 0.854755 s
+    Total time in reading DB: 0.882246 s
     Total time waiting for locks: 1e-06 s
-    Total time in locks: 0.612567 s
+    Total time in locks: 0.696087 s
     valcache memory: 78885 b
   Database cache stats:
     cache nTable : 11
@@ -232,13 +230,13 @@ DbEngine::endJob
     cache nPurged : 0
 
 TrigReport ---------- Event summary -------------
-TrigReport Events total = 20000 passed = 4800 failed = 15200
+TrigReport Events total = 20000 passed = 4791 failed = 15209
 
 TrigReport ---------- Trigger-path summary ------------
 TrigReport    Path ID        Run     Passed     Failed      Error Name
 TrigReport        100      20000          0      20000          0 tprDe_highP_stopTarg
 TrigReport        101      20000          4      19996          0 tprDe_highP
-TrigReport        110      20000        146      19854          0 tprDe_lowP_stopTarg
+TrigReport        110      20000        145      19855          0 tprDe_lowP_stopTarg
 TrigReport        120      20000        536      19464          0 tprHelixDe_ipa
 TrigReport        121      20000        131      19869          0 tprHelixDe_ipa_phiScaled
 TrigReport        130      20000       1391      18609          0 tprHelixDe
@@ -246,8 +244,8 @@ TrigReport        131      20000       1831      18169          0 tprHelixUe
 TrigReport        150      20000          1      19999          0 cprDe_highP_stopTarg
 TrigReport        151      20000          1      19999          0 cprDe_highP
 TrigReport        160      20000         19      19981          0 cprDe_lowP_stopTarg
-TrigReport        170      20000         81      19919          0 cprHelixDe
-TrigReport        171      20000         35      19965          0 cprHelixUe
+TrigReport        170      20000         80      19920          0 cprHelixDe
+TrigReport        171      20000         33      19967          0 cprHelixUe
 TrigReport        180      20000          1      19999          0 apr_highP_stopTarg
 TrigReport        181      20000          2      19998          0 apr_highP
 TrigReport        185      20000          0      20000          0 apr_ue_highP
@@ -256,7 +254,7 @@ TrigReport        191      20000          0      20000          0 apr_highP_stop
 TrigReport        192      20000          2      19998          0 apr_lowP_multiHelix
 TrigReport        195      20000       1259      18741          0 aprHelix
 TrigReport        200      20000        471      19529          0 caloFast_photon
-TrigReport        201      20000       1858      18142          0 caloFast_MVANNCE
+TrigReport        201      20000       1844      18156          0 caloFast_MVANNCE
 TrigReport        202      20000          0      20000          0 caloFast_cosmic
 TrigReport        210      20000        324      19676          0 mprDe_highP_stopTarg
 TrigReport        220      20000          0      20000          0 caloFast_RMC
@@ -265,7 +263,6 @@ TrigReport        320      20000          0      20000          0 cstCosmicTrack
 TrigReport        400      20000          0      20000          0 minBias_SDCount
 TrigReport        410      20000          0      20000          0 minBias_CDCount
 TrigReport        500      20000          0      20000          0 caloHitRec_N0Source
-TrigReport        800      20000          6      19994          0 lumiStream
 
 TrigReport ---------- End-path summary ---------
 TrigReport        Run    Success      Error
@@ -407,7 +404,7 @@ TrigReport        201      20000      20000          0          0 processCFOData
 TrigReport        201      20000      20000          0          0 caloFastMVANNCEPS
 TrigReport        201      20000      20000          0          0 CaloHitMakerFast
 TrigReport        201      20000      20000          0          0 CaloClusterFast
-TrigReport        201      20000       1858      18142          0 caloFastMVANNCEFilter
+TrigReport        201      20000       1844      18156          0 caloFastMVANNCEFilter
 
 TrigReport ---------- Modules in path: caloFast_RMC ------------
 TrigReport    Path ID    Visited     Passed     Failed      Error Name
@@ -451,10 +448,10 @@ TrigReport        151      20000      20000          0          0 TTmakeSH
 TrigReport        151      20000      20000          0          0 TTmakePH
 TrigReport        151      20000      20000          0          0 TTflagPH
 TrigReport        151      20000      20000          0          0 TTCalTimePeakFinder
-TrigReport        151      20000       1788      18212          0 cprDeHighPTCFilter
-TrigReport        151       1788       1788          0          0 TTCalHelixFinderDe
-TrigReport        151       1788       1788          0          0 TTCalHelixMergerDe
-TrigReport        151       1788         45       1743          0 cprDeHighPHSFilter
+TrigReport        151      20000       1783      18217          0 cprDeHighPTCFilter
+TrigReport        151       1783       1783          0          0 TTCalHelixFinderDe
+TrigReport        151       1783       1783          0          0 TTCalHelixMergerDe
+TrigReport        151       1783         45       1738          0 cprDeHighPHSFilter
 TrigReport        151         45         45          0          0 TTCalSeedFitDe
 TrigReport        151         45          1         44          0 cprDeHighPKSFilter
 TrigReport        151          1          1          0          0 cprDeHighPTriggerInfoMerger
@@ -470,10 +467,10 @@ TrigReport        150      20000      20000          0          0 TTmakeSH
 TrigReport        150      20000      20000          0          0 TTmakePH
 TrigReport        150      20000      20000          0          0 TTflagPH
 TrigReport        150      20000      20000          0          0 TTCalTimePeakFinder
-TrigReport        150      20000       1788      18212          0 cprDeHighPStopTargTCFilter
-TrigReport        150       1788       1788          0          0 TTCalHelixFinderDe
-TrigReport        150       1788       1788          0          0 TTCalHelixMergerDe
-TrigReport        150       1788         19       1769          0 cprDeHighPStopTargHSFilter
+TrigReport        150      20000       1783      18217          0 cprDeHighPStopTargTCFilter
+TrigReport        150       1783       1783          0          0 TTCalHelixFinderDe
+TrigReport        150       1783       1783          0          0 TTCalHelixMergerDe
+TrigReport        150       1783         19       1764          0 cprDeHighPStopTargHSFilter
 TrigReport        150         19         19          0          0 TTCalSeedFitDe
 TrigReport        150         19          1         18          0 cprDeHighPStopTargKSFilter
 TrigReport        150          1          1          0          0 cprDeHighPStopTargTriggerInfoMerger
@@ -489,12 +486,12 @@ TrigReport        160      20000      20000          0          0 TTmakeSH
 TrigReport        160      20000      20000          0          0 TTmakePH
 TrigReport        160      20000      20000          0          0 TTflagPH
 TrigReport        160      20000      20000          0          0 TTCalTimePeakFinder
-TrigReport        160      20000       1788      18212          0 cprDeLowPStopTargTCFilter
-TrigReport        160       1788       1788          0          0 TTCalHelixFinderDe
-TrigReport        160       1788       1788          0          0 TTCalHelixMergerDe
-TrigReport        160       1788         77       1711          0 cprDeLowPStopTargHSFilter
-TrigReport        160         77         77          0          0 TTCalSeedFitDe
-TrigReport        160         77         19         58          0 cprDeLowPStopTargKSFilter
+TrigReport        160      20000       1783      18217          0 cprDeLowPStopTargTCFilter
+TrigReport        160       1783       1783          0          0 TTCalHelixFinderDe
+TrigReport        160       1783       1783          0          0 TTCalHelixMergerDe
+TrigReport        160       1783         76       1707          0 cprDeLowPStopTargHSFilter
+TrigReport        160         76         76          0          0 TTCalSeedFitDe
+TrigReport        160         76         19         57          0 cprDeLowPStopTargKSFilter
 TrigReport        160         19         19          0          0 cprDeLowPStopTargTriggerInfoMerger
 
 TrigReport ---------- Modules in path: cprHelixDe ------------
@@ -508,11 +505,11 @@ TrigReport        170      20000      20000          0          0 TTmakeSH
 TrigReport        170      20000      20000          0          0 TTmakePH
 TrigReport        170      20000      20000          0          0 TTflagPH
 TrigReport        170      20000      20000          0          0 TTCalTimePeakFinder
-TrigReport        170      20000       1788      18212          0 cprHelixDeTCFilter
-TrigReport        170       1788       1788          0          0 TTCalHelixFinderDe
-TrigReport        170       1788       1788          0          0 TTCalHelixMergerDe
-TrigReport        170       1788         81       1707          0 cprHelixDeHSFilter
-TrigReport        170         81         81          0          0 cprHelixDeTriggerInfoMerger
+TrigReport        170      20000       1783      18217          0 cprHelixDeTCFilter
+TrigReport        170       1783       1783          0          0 TTCalHelixFinderDe
+TrigReport        170       1783       1783          0          0 TTCalHelixMergerDe
+TrigReport        170       1783         80       1703          0 cprHelixDeHSFilter
+TrigReport        170         80         80          0          0 cprHelixDeTriggerInfoMerger
 
 TrigReport ---------- Modules in path: cprHelixUe ------------
 TrigReport    Path ID    Visited     Passed     Failed      Error Name
@@ -525,10 +522,10 @@ TrigReport        171      20000      20000          0          0 TTmakeSH
 TrigReport        171      20000      20000          0          0 TTmakePH
 TrigReport        171      20000      20000          0          0 TTflagPH
 TrigReport        171      20000      20000          0          0 TTCalTimePeakFinderUe
-TrigReport        171      20000       1715      18285          0 cprHelixUeTCFilter
-TrigReport        171       1715       1715          0          0 TTCalHelixFinderUe
-TrigReport        171       1715       1715          0          0 TTCalHelixMergerUe
-TrigReport        171       1715         35       1680          0 cprHelixUeHSFilter
+TrigReport        171      20000       1711      18289          0 cprHelixUeTCFilter
+TrigReport        171       1711       1711          0          0 TTCalHelixFinderUe
+TrigReport        171       1711       1711          0          0 TTCalHelixMergerUe
+TrigReport        171       1711         33       1678          0 cprHelixUeHSFilter
 
 TrigReport ---------- Modules in path: cstCosmicTrackSeed ------------
 TrigReport    Path ID    Visited     Passed     Failed      Error Name
@@ -555,19 +552,6 @@ TrigReport        310          0          0          0          0 cstTimeCluster
 TrigReport        310          0          0          0          0 CstSimpleTimeCluster
 TrigReport        310          0          0          0          0 cstTimeClusterTCFilter
 TrigReport        310          0          0          0          0 cstTimeClusterTriggerInfoMerger
-
-TrigReport ---------- Modules in path: lumiStream ------------
-TrigReport    Path ID    Visited     Passed     Failed      Error Name
-TrigReport        800      20000      20000          0          0 processCFOData
-TrigReport        800      20000      20000          0          0 lumiStreamPS
-TrigReport        800      20000      20000          0          0 CaloHitMakerFast
-TrigReport        800      20000      20000          0          0 CaloClusterFast
-TrigReport        800      20000      20000          0          0 TTmakeSD
-TrigReport        800      20000      20000          0          0 TTmakeSH
-TrigReport        800      20000      20000          0          0 TTmakePH
-TrigReport        800      20000      20000          0          0 TTflagPH
-TrigReport        800      20000      20000          0          0 TTTZClusterFinder
-TrigReport        800      20000          6      19994          0 lumiBuffer
 
 TrigReport ---------- Modules in path: minBias_CDCount ------------
 TrigReport    Path ID    Visited     Passed     Failed      Error Name
@@ -654,8 +638,8 @@ TrigReport        110      19935      19935          0          0 TThelixFinder
 TrigReport        110      19935      19935          0          0 TTHelixMergerDe
 TrigReport        110      19935       1698      18237          0 tprDeLowPStopTargHSFilter
 TrigReport        110       1698       1698          0          0 TTKSFDe
-TrigReport        110       1698        146       1552          0 tprDeLowPStopTargKSFilter
-TrigReport        110        146        146          0          0 tprDeLowPStopTargTriggerInfoMerger
+TrigReport        110       1698        145       1553          0 tprDeLowPStopTargKSFilter
+TrigReport        110        145        145          0          0 tprDeLowPStopTargTriggerInfoMerger
 
 TrigReport ---------- Modules in path: tprHelixDe ------------
 TrigReport    Path ID    Visited     Passed     Failed      Error Name
@@ -727,19 +711,19 @@ TrigReport        131       1831       1831          0          0 tprHelixUeTrig
 
 TrigReport ---------- Module summary ------------
 TrigReport    Visited        Run     Passed     Failed      Error Name
-TrigReport     500000      20000      20000          0          0 CaloClusterFast
-TrigReport     500000      20000      20000          0          0 CaloHitMakerFast
+TrigReport     480000      20000      20000          0          0 CaloClusterFast
+TrigReport     480000      20000      20000          0          0 CaloHitMakerFast
 TrigReport          0          0          0          0          0 CstLineFinder
 TrigReport          0          0          0          0          0 CstSimpleTimeCluster
 TrigReport     114093      16299      16299          0          0 TTAprHelixFinder
 TrigReport     114093      16299      16299          0          0 TTAprHelixMerger
 TrigReport       1015        726        726          0          0 TTAprKSF
 TrigReport        314        314        314          0          0 TTAprUeKSF
-TrigReport       7152       1788       1788          0          0 TTCalHelixFinderDe
-TrigReport       1715       1715       1715          0          0 TTCalHelixFinderUe
-TrigReport       7152       1788       1788          0          0 TTCalHelixMergerDe
-TrigReport       1715       1715       1715          0          0 TTCalHelixMergerUe
-TrigReport        141         82         82          0          0 TTCalSeedFitDe
+TrigReport       7132       1783       1783          0          0 TTCalHelixFinderDe
+TrigReport       1711       1711       1711          0          0 TTCalHelixFinderUe
+TrigReport       7132       1783       1783          0          0 TTCalHelixMergerDe
+TrigReport       1711       1711       1711          0          0 TTCalHelixMergerUe
+TrigReport        140         81         81          0          0 TTCalSeedFitDe
 TrigReport      80000      20000      20000          0          0 TTCalTimePeakFinder
 TrigReport      20000      20000      20000          0          0 TTCalTimePeakFinderUe
 TrigReport     119380      19935      19935          0          0 TTHelixMergerDe
@@ -750,13 +734,13 @@ TrigReport      12429      12429      12429          0          0 TTMprKSFDe
 TrigReport          0          0          0          0          0 TTOmakePH
 TrigReport          0          0          0          0          0 TTOmakeSH
 TrigReport      19889      19889      19889          0          0 TTRobustMultiHelixFinder
-TrigReport     160000      20000      20000          0          0 TTTZClusterFinder
-TrigReport     420000      20000      20000          0          0 TTflagPH
+TrigReport     140000      20000      20000          0          0 TTTZClusterFinder
+TrigReport     400000      20000      20000          0          0 TTflagPH
 TrigReport     119380      19935      19935          0          0 TThelixFinder
 TrigReport      19881      19881      19881          0          0 TThelixFinderUe
-TrigReport     420000      20000      20000          0          0 TTmakePH
-TrigReport     420000      20000      20000          0          0 TTmakeSD
-TrigReport     420000      20000      20000          0          0 TTmakeSH
+TrigReport     400000      20000      20000          0          0 TTmakePH
+TrigReport     400000      20000      20000          0          0 TTmakeSD
+TrigReport     400000      20000      20000          0          0 TTmakeSH
 TrigReport     140000      20000      20000          0          0 TTtimeClusterFinder
 TrigReport      20000      20000      20000          0          0 TTtimeClusterFinderUe
 TrigReport      16299      16299       1259      15040          0 aprHelixHSFilter
@@ -794,7 +778,7 @@ TrigReport      20000      20000      16299       3701          0 aprUeHighPTCFi
 TrigReport          0          0          0          0          0 aprUeHighPTriggerInfoMerger
 TrigReport      20000      20000          0      20000          0 caloFastCosmicFilter
 TrigReport      20000      20000      20000          0          0 caloFastCosmicPS
-TrigReport      20000      20000       1858      18142          0 caloFastMVANNCEFilter
+TrigReport      20000      20000       1844      18156          0 caloFastMVANNCEFilter
 TrigReport      20000      20000      20000          0          0 caloFastMVANNCEPS
 TrigReport      20000      20000        471      19529          0 caloFastPhotonFilter
 TrigReport      20000      20000      20000          0          0 caloFastPhotonPS
@@ -802,28 +786,28 @@ TrigReport      20000      20000          0      20000          0 caloFastRMCFil
 TrigReport      20000      20000      20000          0          0 caloFastRMCPS
 TrigReport          0          0          0          0          0 caloHitRecN0SourceFilter
 TrigReport      20000      20000          0      20000          0 caloHitRecN0SourcePS
-TrigReport       1788       1788         45       1743          0 cprDeHighPHSFilter
+TrigReport       1783       1783         45       1738          0 cprDeHighPHSFilter
 TrigReport         45         45          1         44          0 cprDeHighPKSFilter
 TrigReport      20000      20000      20000          0          0 cprDeHighPPS
-TrigReport       1788       1788         19       1769          0 cprDeHighPStopTargHSFilter
+TrigReport       1783       1783         19       1764          0 cprDeHighPStopTargHSFilter
 TrigReport         19         19          1         18          0 cprDeHighPStopTargKSFilter
 TrigReport      20000      20000      20000          0          0 cprDeHighPStopTargPS
-TrigReport      20000      20000       1788      18212          0 cprDeHighPStopTargTCFilter
+TrigReport      20000      20000       1783      18217          0 cprDeHighPStopTargTCFilter
 TrigReport          1          1          1          0          0 cprDeHighPStopTargTriggerInfoMerger
-TrigReport      20000      20000       1788      18212          0 cprDeHighPTCFilter
+TrigReport      20000      20000       1783      18217          0 cprDeHighPTCFilter
 TrigReport          1          1          1          0          0 cprDeHighPTriggerInfoMerger
-TrigReport       1788       1788         77       1711          0 cprDeLowPStopTargHSFilter
-TrigReport         77         77         19         58          0 cprDeLowPStopTargKSFilter
+TrigReport       1783       1783         76       1707          0 cprDeLowPStopTargHSFilter
+TrigReport         76         76         19         57          0 cprDeLowPStopTargKSFilter
 TrigReport      20000      20000      20000          0          0 cprDeLowPStopTargPS
-TrigReport      20000      20000       1788      18212          0 cprDeLowPStopTargTCFilter
+TrigReport      20000      20000       1783      18217          0 cprDeLowPStopTargTCFilter
 TrigReport         19         19         19          0          0 cprDeLowPStopTargTriggerInfoMerger
-TrigReport       1788       1788         81       1707          0 cprHelixDeHSFilter
+TrigReport       1783       1783         80       1703          0 cprHelixDeHSFilter
 TrigReport      20000      20000      20000          0          0 cprHelixDePS
-TrigReport      20000      20000       1788      18212          0 cprHelixDeTCFilter
-TrigReport         81         81         81          0          0 cprHelixDeTriggerInfoMerger
-TrigReport       1715       1715         35       1680          0 cprHelixUeHSFilter
+TrigReport      20000      20000       1783      18217          0 cprHelixDeTCFilter
+TrigReport         80         80         80          0          0 cprHelixDeTriggerInfoMerger
+TrigReport       1711       1711         33       1678          0 cprHelixUeHSFilter
 TrigReport      20000      20000      20000          0          0 cprHelixUePS
-TrigReport      20000      20000       1715      18285          0 cprHelixUeTCFilter
+TrigReport      20000      20000       1711      18289          0 cprHelixUeTCFilter
 TrigReport          0          0          0          0          0 cstCosmicTrackSeedCTSFilter
 TrigReport      20000      20000          0      20000          0 cstCosmicTrackSeedPS
 TrigReport          0          0          0          0          0 cstCosmicTrackSeedSDCountFilter
@@ -833,8 +817,6 @@ TrigReport      20000      20000          0      20000          0 cstTimeCluster
 TrigReport          0          0          0          0          0 cstTimeClusterSDCountFilter
 TrigReport          0          0          0          0          0 cstTimeClusterTCFilter
 TrigReport          0          0          0          0          0 cstTimeClusterTriggerInfoMerger
-TrigReport      20000      20000          6      19994          0 lumiBuffer
-TrigReport      20000      20000      20000          0          0 lumiStreamPS
 TrigReport          0          0          0          0          0 minBiasCDCountFilter
 TrigReport      20000      20000          0      20000          0 minBiasCDCountPS
 TrigReport          0          0          0          0          0 minBiasSDCountFilter
@@ -844,7 +826,7 @@ TrigReport      12429      12429        324      12105          0 mprDeHighPStop
 TrigReport      20000      20000      20000          0          0 mprDeHighPStopTargPS
 TrigReport      20000      20000      19889        111          0 mprDeHighPStopTargTCFilter
 TrigReport        324        324        324          0          0 mprDeHighPStopTargTriggerInfoMerger
-TrigReport     600000      20000      20000          0          0 processCFOData
+TrigReport     580000      20000      20000          0          0 processCFOData
 TrigReport      19889      19889       1096      18793          0 tprDeHighPHSFilter
 TrigReport       1096       1096          4       1092          0 tprDeHighPKSFilter
 TrigReport      20000      20000      20000          0          0 tprDeHighPPS
@@ -856,10 +838,10 @@ TrigReport          0          0          0          0          0 tprDeHighPStop
 TrigReport      20000      20000      19889        111          0 tprDeHighPTCFilter
 TrigReport          4          4          4          0          0 tprDeHighPTriggerInfoMerger
 TrigReport      19935      19935       1698      18237          0 tprDeLowPStopTargHSFilter
-TrigReport       1698       1698        146       1552          0 tprDeLowPStopTargKSFilter
+TrigReport       1698       1698        145       1553          0 tprDeLowPStopTargKSFilter
 TrigReport      20000      20000      20000          0          0 tprDeLowPStopTargPS
 TrigReport      20000      20000      19935         65          0 tprDeLowPStopTargTCFilter
-TrigReport        146        146        146          0          0 tprDeLowPStopTargTriggerInfoMerger
+TrigReport        145        145        145          0          0 tprDeLowPStopTargTriggerInfoMerger
 TrigReport      19889      19889       1391      18498          0 tprHelixDeHSFilter
 TrigReport      19889      19889        536      19353          0 tprHelixDeIpaHSFilter
 TrigReport      20000      20000      20000          0          0 tprHelixDeIpaPS
@@ -878,9 +860,9 @@ TrigReport      20000      20000      19881        119          0 tprHelixUeTCFi
 TrigReport       1831       1831       1831          0          0 tprHelixUeTriggerInfoMerger
 
 TimeReport ---------- Time summary [sec] -------
-TimeReport CPU = 430.485196 Real = 471.479470
+TimeReport CPU = 577.802571 Real = 580.838391
 
 MemReport  ---------- Memory summary [base-10 MB] ------
-MemReport  VmPeak = 1592.32 VmHWM = 610.943
+MemReport  VmPeak = 4275.11 VmHWM = 620.093
 
 Art has completed and will exit with status 0.
