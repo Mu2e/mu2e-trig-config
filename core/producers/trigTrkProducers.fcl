@@ -44,13 +44,13 @@ TrigTrkProducers : {
 
    TTmakePH: {
       @table::TrkHitReco.producers.makePH
-      TestFlag   : false # not needed, since TTmakeSH is filtering
+      TestFlag   : true # required as makeSH no longer filters hits
       FilterHits : false
       MinimumTimeOffSpill : 0
       MinimumTimeOffSpill : 100000
       ComboHitCollection    : "TTmakeSH"
-      StrawHitSelectionBits : []
-      StrawHitMask          : []
+      StrawHitSelectionBits : ["TimeSelection"]
+      StrawHitMask          : ["Dead"]
    }
 
    # combine panel hits in a station
