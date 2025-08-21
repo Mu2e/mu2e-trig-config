@@ -108,7 +108,6 @@ for path in results_1:
                 minor_fail = True
                 print(">>> Path " + path + " has a minor change:")
                 print("Local counts    :", counts_1)
-                print("Reference counts:", counts_2)
                 print("Reference counts:", counts_2, "(delta/sqrt(reference) = %.2f)" % (z))
                 break
     else:
