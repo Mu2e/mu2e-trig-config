@@ -72,6 +72,7 @@ TrigTrkProducers : {
     chCollTag                     : TTmakePH                # input coll
     sschCollTag                   : TTmakeSH                # input coll
     writeFilteredComboHits        : 0
+    writeStrawHits                : 0
   }
 
   TTHelixFinderParams: {
