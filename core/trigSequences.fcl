@@ -287,6 +287,15 @@ TrigSupPaths:{
    #filter to select events with large occupancy in the tracker
    #largeCDCount       : [ @sequence::TrigRecoSequences.cfoDataGen,  largeCDCountPS, largeCDCountFilter]
 
+   # luminosity stream info
+   lumiStream      : [ @sequence::TrigRecoSequences.cfoDataGen,
+                       lumiStreamPS,
+                       @sequence::TrigRecoSequences.calReco,
+                       @sequence::TrigRecoSequences.trkPrepareHits,
+                       TTTZClusterFinder,
+                       lumiBuffer
+                      ]
+
 }
 
 
