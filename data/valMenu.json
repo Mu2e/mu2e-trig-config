@@ -11,8 +11,8 @@
         "mprDe_highP_stopTarg": {
             "bit" : 210 ,
             "enabled": 1,
-            "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
-                                {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }
+            "eventModeConfig": [{"eventMode":"OnSpill", "prescale":10000, "streams": [ "physics_main", "dqm_trigger" ] },
+                                {"eventMode":"OffSpill", "prescale":10000, "streams": [ "cosmics_main", "physics_trk_calib" ]          }
                                ]
         },
 

@@ -1,6 +1,7 @@
 # Compare two trigger reports
 
 import sys
+from math import sqrt
 
 #--------------------------------------------------------------
 # Fill the log results
@@ -82,7 +83,7 @@ results_2,timing_2,reference_time_2 = fill_results(f_2, verbose)
 
 # Define the major vs. minor failure thresholds
 count_minor_threshold = 1 # path rate change for minor failure
-count_major_threshold = 4 # path rate change for major failure
+count_major_threshold = 1.5 # path rate change sigma for major failure
 avg_time_minor_threshold = 0.40 # fractional change in time / event
 avg_time_major_threshold = 0.50 # fractional change in time / event
 minor_fail = False
@@ -95,17 +96,19 @@ for path in results_1:
         counts_2 = results_2[path]
         for index in range(len(counts_1)):
             delta = abs(counts_1[index] - counts_2[index])
-            if delta >= count_major_threshold:
+            sigma = sqrt(counts_2[index]) if counts_2[index] > 0 else 2 / count_major_threshold # default to 2 events if none before
+            z = delta / sigma
+            if z >= count_major_threshold:
                 major_fail = True
                 print(">>> Path " + path + " has a major change!")
                 print("Local counts    :", counts_1)
-                print("Reference counts:", counts_2)
+                print("Reference counts:", counts_2, "(delta/sqrt(reference) = %.2f)" % (z))
                 break
             elif delta >= count_minor_threshold:
                 minor_fail = True
                 print(">>> Path " + path + " has a minor change:")
                 print("Local counts    :", counts_1)
-                print("Reference counts:", counts_2)
+                print("Reference counts:", counts_2, "(delta/sqrt(reference) = %.2f)" % (z))
                 break
     else:
         print(">>> New trigger path " + path + " in local found, not in the reference!")

@@ -52,6 +52,9 @@ TrigMprProducers : {
       HelixSeedCollections   : [ "TTMprHelixMergerDe" ]
     }
     UsePDGCharge     : false
+    HelixMask: {
+      MinHelixMom : 50
+    }
     FitDirection     : @local::FitDir.downstream
   }
 

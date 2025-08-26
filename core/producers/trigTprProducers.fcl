@@ -186,6 +186,9 @@ TrigTprProducers : {
       HelixSeedCollections   : [ "TTHelixMergerDe" ]
     }
     UsePDGCharge     : false
+    HelixMask: {
+      MinHelixMom : 50
+    }
     FitDirection     : @local::FitDir.downstream
   }
 
@@ -201,6 +204,9 @@ TrigTprProducers : {
       HelixSeedCollections   : [ "TTHelixMergerUe" ]
     }
     UsePDGCharge     : false
+    HelixMask: {
+      MinHelixMom : 50
+    }
     FitDirection     : @local::FitDir.upstream
   }
 
