@@ -33,7 +33,7 @@ Mu2eKinKalTrigger : {
       [ 40.0, 1e6, 5.0, 5.0, "TOT", "Null:Inactive", "", 0 ]
     ]
     StrawXingUpdaterSettings : [
-      [10.0, -1.0, -1.0, true, 0 ]
+      [2.5, 10.0, true, 0 ]
     ]
     BkgANNSHUSettings : [
     ]
@@ -53,7 +53,7 @@ Mu2eKinKalTrigger : {
       [ 0.0, "CADSHU:BkgANNSHU" ]
     ]
     StrawXingUpdaterSettings : [
-      [10.0, -1.0, -1.0, true, 0 ]
+      [2.5,5.0, true, 0 ]
     ]
     BkgANNSHUSettings : [
       [ "Offline/Mu2eKinKal/data/TrainBkgTrigger.dat",0.2,"Inactive", 1]
