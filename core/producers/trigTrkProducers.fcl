@@ -26,7 +26,7 @@ TrigTrkProducers : {
      MinimumTimeOffSpill : 0
      MaximumTimeOffSpill : 100000
      FitType                 : 5
-     FilterHits              : true
+     FilterHits              : false
      WriteStrawHitCollection : false
      StrawDigiADCWaveformCollectionTag : "notUsed"
    }
@@ -36,7 +36,7 @@ TrigTrkProducers : {
      MinimumTimeOffSpill : 0
      MaximumTimeOffSpill : 100000
      FitType                 : 5
-     FilterHits              : true
+     FilterHits              : false
      WriteStrawHitCollection : false
      StrawDigiADCWaveformCollectionTag : "notUsed"
      StrawDigiCollectionTag : "TTmakeSD"
@@ -44,13 +44,13 @@ TrigTrkProducers : {
 
    TTmakePH: {
       @table::TrkHitReco.producers.makePH
-      TestFlag   : false # not needed, since TTmakeSH is filtering
+      TestFlag   : true # required as makeSH no longer filters hits
       FilterHits : false
       MinimumTimeOffSpill : 0
       MinimumTimeOffSpill : 100000
       ComboHitCollection    : "TTmakeSH"
-      StrawHitSelectionBits : []
-      StrawHitMask          : []
+      StrawHitSelectionBits : ["TimeSelection"]
+      StrawHitMask          : ["Dead"]
    }
 
    # combine panel hits in a station
@@ -71,7 +71,8 @@ TrigTrkProducers : {
     @table::CalPatRec.producers.DeltaFinder
     chCollTag                     : TTmakePH                # input coll
     sschCollTag                   : TTmakeSH                # input coll
-    writeFilteredComboHits        : 1
+    writeFilteredComboHits        : 0
+    writeStrawHits                : 0
   }
 
   TTHelixFinderParams: {

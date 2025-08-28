@@ -18,21 +18,17 @@ TrigCalProducers : {
   }
 
   CaloHitMakerFastFromDigi: {
+    module_type: "CaloHitMakerFast"
     ProtonBunchTimeTag: "EWMProducer"
     caloDigiCollection: "CaloDigiMaker"
-    caphriCrystalID: [
-      623,
-      624,
-      595,
-      596
-    ]
     deltaTPulses: 11
     diagLevel: 0
     digiSampling: 5
-    module_type: "CaloHitMakerFast"
     nPEperMeV: 30
     nSigmaNoise: 4
     noiseLevelMeV: 5.5e-1
+    caphriEDepMin : 1.
+    caphriEDepMax : 5.
   }
 
 

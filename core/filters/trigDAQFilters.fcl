@@ -1,0 +1,15 @@
+BEGIN_PROLOG
+TrigDAQFilters: {
+    lumiBuffer : {
+        module_type    : LumiStreamFilter
+        caloTag        : CaloHitMakerFast
+        trackerTag     : TTmakeSH
+        timeClusterTag : TTTZClusterFinder
+        headerTag      : processCFOData
+        eventFreq      : 10000
+        passFirst      : true
+        diagLevel      : 0
+        duplications   : 0
+    }
+}
+END_PROLOG
