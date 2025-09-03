@@ -234,10 +234,10 @@ TrigCprProducers : {
       module_type : LoopHelixFit
       MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
       KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
-      FitSettings      : { @table::Mu2eKinKalTrigger.SEEDFIT }
-      ExtensionSettings: { @table::Mu2eKinKalTrigger.SEEDEXT }
+      FitSettings      : { @table::Mu2eKinKalTrigger.LHSEEDFIT }
+      ExtensionSettings: { @table::Mu2eKinKalTrigger.LHSEEDEXT }
       ModuleSettings   : {
-         @table::Mu2eKinKalTrigger.LOOPHELIX
+         @table::Mu2eKinKalTrigger.LHHELIX
          HelixSeedCollections: ["TTCalHelixMergerDe"]
          FitParticle         : @local::Particle.eminus
       }
