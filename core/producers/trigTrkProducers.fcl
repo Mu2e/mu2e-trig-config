@@ -17,61 +17,62 @@ TrigTrkProducers : {
         minnesota: "MN999"
         plane: 0
         panel: 1
-        }
+      }
     ]
   }
 
-   TrigMakeSHFromDigi: {
-     @table::TrkHitReco.producers.makeSH
-     MinimumTimeOffSpill : 0
-     MaximumTimeOffSpill : 100000
-     FitType                 : 5
-     FilterHits              : false
-     WriteStrawHitCollection : false
-     StrawDigiADCWaveformCollectionTag : "notUsed"
-   }
+  TrigMakeSHFromDigi: {
+    @table::TrkHitReco.producers.makeSH
+    MinimumTimeOffSpill : 0
+    MaximumTimeOffSpill : 100000
+    FitType                 : 5
+    FilterHits              : false
+    WriteStrawHitCollection : false
+    StrawDigiADCWaveformCollectionTag : "notUsed"
+  }
 
-   TrigMakeSH: {
-     @table::TrkHitReco.producers.makeSH
-     MinimumTimeOffSpill : 0
-     MaximumTimeOffSpill : 100000
-     FitType                 : 5
-     FilterHits              : false
-     WriteStrawHitCollection : false
-     StrawDigiADCWaveformCollectionTag : "notUsed"
-     StrawDigiCollectionTag : "TrigMakeSD"
-   }
+  TrigMakeSH: {
+    @table::TrkHitReco.producers.makeSH
+    MinimumTimeOffSpill : 0
+    MaximumTimeOffSpill : 100000
+    FitType                 : 5
+    FilterHits              : false
+    WriteStrawHitCollection : false
+    StrawDigiADCWaveformCollectionTag : "notUsed"
+    StrawDigiCollectionTag : "TrigMakeSD"
+  }
 
-   TrigMakePH: {
-      @table::TrkHitReco.producers.makePH
-      TestFlag   : false # not needed, since TrigMakeSH is filtering
-      FilterHits : false
-      MinimumTimeOffSpill : 0
-      MinimumTimeOffSpill : 100000
-      ComboHitCollection    : "TrigMakeSH"
-      StrawHitSelectionBits : []
-      StrawHitMask          : []
-   }
+  TrigMakePH: {
+    @table::TrkHitReco.producers.makePH
+    TestFlag   : true # required as makeSH no longer filters hits
+    FilterHits : false
+    MinimumTimeOffSpill : 0
+    MinimumTimeOffSpill : 100000
+    ComboHitCollection    : "TrigMakeSH"
+    StrawHitSelectionBits : ["TimeSelection"]
+    StrawHitMask          : ["Dead"]
+  }
 
-   # combine panel hits in a station
-   TrigMakeSTH : {
-      @table::TrkHitReco.producers.makeSTH
-      TestFlag           : false
-      FilterHits         : true
-      ComboHitCollection : "TrigMakePH"
-   }
+  # combine panel hits in a station
+  TrigMakeSTH : {
+    @table::TrkHitReco.producers.makeSTH
+    TestFlag           : false
+    FilterHits         : true
+    ComboHitCollection : "TrigMakePH"
+  }
 
-   TrigFlagBkgHits: {
-      @table::TrkHitReco.producers.FlagBkgHits
-      ComboHitCollection   : "TrigMakeSTH"
-      FilterHits           : true
-   }
+  TrigFlagBkgHits: {
+    @table::TrkHitReco.producers.FlagBkgHits
+    ComboHitCollection   : "TrigMakeSTH"
+    FilterHits           : true
+  }
 
   TTDeltaFinder: {
     @table::CalPatRec.producers.DeltaFinder
     chCollTag                     : TrigMakePH                # input coll
     sschCollTag                   : TrigMakeSH                # input coll
     writeFilteredComboHits        : 0
+    writeStrawHits                : 0
   }
 
   TrigHelixFinderParams: {
@@ -87,34 +88,34 @@ TrigTrkProducers : {
 
 TrigTrkProducers : {
   @table::TrigTrkProducers
-   TrigOffSpMakeSH: {
-      @table::TrigTrkProducers.TrigMakeSH
-      MinimumTime : 0
-      MaximumTime : 100000
-      MinimumRadius : 0
-      MaximumRadius : 800
-      MinimumEnergy : 0
-      MaximumEnergy : 1
-   }
-   TrigOffSpMakeSHFromDigi: {
-      @table::TrigTrkProducers.TrigMakeSHFromDigi
-      MinimumTime : 0
-      MaximumTime : 100000
-      MinimumRadius : 0
-      MaximumRadius : 800
-      MinimumEnergy : 0
-      MaximumEnergy : 1
-   }
-   TrigOffSpMakePH: {
-      @table::TrigTrkProducers.TrigMakePH
-      MinimumTime : 0
-      MinimumTime : 100000
-      MinimumRadius : 0
-      MaximumRadius : 800
-      MinimumEnergy : 0
-      MaximumEnergy : 1
-      ComboHitCollection    : "TrigOffSpMakeSH"
-   }
+  TrigOffSpMakeSH: {
+    @table::TrigTrkProducers.TrigMakeSH
+    MinimumTime : 0
+    MaximumTime : 100000
+    MinimumRadius : 0
+    MaximumRadius : 800
+    MinimumEnergy : 0
+    MaximumEnergy : 1
+  }
+  TrigOffSpMakeSHFromDigi: {
+    @table::TrigTrkProducers.TrigMakeSHFromDigi
+    MinimumTime : 0
+    MaximumTime : 100000
+    MinimumRadius : 0
+    MaximumRadius : 800
+    MinimumEnergy : 0
+    MaximumEnergy : 1
+  }
+  TrigOffSpMakePH: {
+    @table::TrigTrkProducers.TrigMakePH
+    MinimumTime : 0
+    MinimumTime : 100000
+    MinimumRadius : 0
+    MaximumRadius : 800
+    MinimumEnergy : 0
+    MaximumEnergy : 1
+    ComboHitCollection    : "TrigOffSpMakeSH"
+  }
 
 
 }

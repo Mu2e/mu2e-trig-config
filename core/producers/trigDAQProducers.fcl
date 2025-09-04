@@ -7,7 +7,7 @@ TrigDAQProducers : {
     diagLevel : 0
   }
 
-  binaryOutput: {
+  BinaryOutput: {
     #      module_type     : BinaryPacketsFromDataBlocks
     module_type     : ArtBinaryPacketsFromDigis
     strawDigiCollection : "makeSD"

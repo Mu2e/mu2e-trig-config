@@ -169,6 +169,8 @@ def generateMenu(evtMode, outdir,  dictMenu, menuName, dictStreams, proc_name, i
         vv=dictMenu[path]['eventModeConfig']
         for dd in vv:
             for s in dd['streams']:
+                if s not in dictStreams:
+                    print(s, "not found in the dictionary")
                 if path not in dictStreams[s]:
                     trg_path = proc_name+"*:"+path
                     dictStreams[s].append(trg_path)

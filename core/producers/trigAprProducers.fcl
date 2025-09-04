@@ -43,6 +43,9 @@ TrigAprProducers : {
       HelixSeedCollections   : [ "TrigAprHelixMerger" ]
     }
     UsePDGCharge     : false
+    HelixMask: {
+      MinHelixMom : 50
+    }
     FitDirection     : @local::FitDir.downstream
   }
 
@@ -58,6 +61,9 @@ TrigAprProducers : {
       HelixSeedCollections   : [ "TrigAprHelixMerger" ]
     }
     UsePDGCharge     : false
+    HelixMask: {
+      MinHelixMom : 50
+    }
     FitDirection     : @local::FitDir.upstream
   }
 
