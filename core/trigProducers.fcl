@@ -9,6 +9,7 @@
 #include "Offline/CalPatRec/fcl/prolog.fcl"
 #include "Offline/TrkReco/fcl/Particle.fcl"
 #include "Offline/CosmicReco/fcl/prolog.fcl"
+#include "Offline/DAQ/fcl/prolog.fcl"
 
 #include "mu2e-trig-config/core/producers/trigDAQProducers.fcl"
 #include "mu2e-trig-config/core/producers/trigCalProducers.fcl"
