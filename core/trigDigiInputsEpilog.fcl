@@ -1,3 +1,3 @@
-physics.producers.TTmakeSH         : { @table::TrigProducers.producers.TTmakeSHFromDigi         }
-physics.producers.TTOmakeSH         : { @table::TrigProducers.producers.TTOmakeSHFromDigi         }
+physics.producers.TrigMakeSH       : { @table::TrigProducers.producers.TrigMakeSHFromDigi       }
+physics.producers.TrigOffSpMakeSH  : { @table::TrigProducers.producers.TrigOffSpMakeSHFromDigi  }
 physics.producers.CaloHitMakerFast : { @table::TrigProducers.producers.CaloHitMakerFastFromDigi }
