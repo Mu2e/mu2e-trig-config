@@ -3,12 +3,12 @@ BEGIN_PROLOG
 TrigCstFilters:{
   cstPS            : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  cstTimeClusterPS : { module_type: PrescaleEvent
+  CstTimeClusterPS : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  cstCosmicTrackSeedPS : { module_type: PrescaleEvent
+  CstCosmicTrackSeedPS : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
-  cstSDCountFilter: {
+  CstSDCountFilter: {
     caloDigiCollection: "notUsed"
     maxCaloEnergy: -1
     maxNCaloDigi: -1
@@ -25,7 +25,7 @@ TrigCstFilters:{
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "CstSimpleTimeCluster"
-    ComboHitCollection: "TTOmakePH"
+    ComboHitCollection: "TrigOffSpMakePH"
   }
   cstTSFilter: {
     CosmicTrackSeedCollection: "CstCosmicTrackFinder"
@@ -40,7 +40,7 @@ TrigCstFilters:{
     minNPanelStereo : 0
     module_type: "CosmicSeedFilter"
   }
-  cstTimeClusterSDCountFilter: {
+  CstTimeClusterSDCountFilter: {
     caloDigiCollection: "notUsed"
     maxCaloEnergy: -1
     maxNCaloDigi: -1
@@ -52,14 +52,14 @@ TrigCstFilters:{
     useCaloDigi: false
     useStrawDigi: true
   }
-  cstTimeClusterTCFilter: {
+  CstTimeClusterTCFilter: {
     minNStrawHits: 12
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "CstSimpleTimeCluster"
-    ComboHitCollection: "TTOmakePH"
+    ComboHitCollection: "TrigOffSpMakePH"
   }
-  cstCosmicTrackSeedSDCountFilter: {
+  CstCosmicTrackSeedSDCountFilter: {
     caloDigiCollection: "notUsed"
     maxCaloEnergy: -1
     maxNCaloDigi: -1
@@ -71,14 +71,14 @@ TrigCstFilters:{
     useCaloDigi: false
     useStrawDigi: true
   }
-  cstCosmicTrackSeedTCFilter: {
+  CstCosmicTrackSeedTCFilter: {
     minNStrawHits: 12
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "CstSimpleTimeCluster"
-    ComboHitCollection: "TTOmakePH"
+    ComboHitCollection: "TrigOffSpMakePH"
   }
-  cstCosmicTrackSeedCTSFilter: {
+  CstCosmicTrackSeedCTSFilter: {
     module_type: "CosmicSeedFilter"
     CosmicTrackSeedCollection: "CstLineFinder"
     cosmicseedFitFlag: [

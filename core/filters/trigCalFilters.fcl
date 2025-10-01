@@ -1,18 +1,18 @@
 BEGIN_PROLOG
 
 TrigCalFilters:{
-  caloFastCosmicPS    : { module_type: PrescaleEvent
+  CaloCosmicPS    : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  caloFastMVANNCEPS   : { module_type: PrescaleEvent
+  CaloMVANNCEPS   : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  caloFastPhotonPS    : { module_type: PrescaleEvent
+  CaloPhotonPS    : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  caloFastRMCPS       : { module_type: PrescaleEvent
+  CaloRMCPS       : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  caloHitRecN0SourcePS : { module_type: PrescaleEvent
+  CaloN0SourcePS : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
-  caloFastCosmicFilter: {
+  CaloCosmicFilter: {
     CaloClusterModuleLabel: "CaloClusterFast"
     InnerRadius: 460
     MaxEnergy: 600
@@ -28,7 +28,7 @@ TrigCalFilters:{
     dyminval: 140
     module_type: "CaloCosmicCalib"
   }
-  caloFastMVANNCEFilter: {
+  CaloMVANNCEFilter: {
     caloBkgMVA: {
       MVAWeights: "Offline/CaloFilters/data/CE_NN_ReLU.weights.xml"
     }
@@ -38,7 +38,7 @@ TrigCalFilters:{
     minMVAScore: 9.5e-1
     module_type: "FilterEcalNNTrigger"
   }
-  caloFastPhotonFilter: {
+  CaloPhotonFilter: {
     BackgroundTemplates: "OfflineData/CaloFilters/v7_1_5/caloLH_bkg.root"
     CaloClusterModuleLabel: "CaloClusterFast"
     ClusterEnergyStep: 10
@@ -53,7 +53,7 @@ TrigCalFilters:{
     SignalTemplates: "OfflineData/CaloFilters/v7_1_5/caloLH_ce.root"
     module_type: "CaloLikelihood"
   }
-  caloFastRMCFilter: {
+  CaloRMCFilter: {
     CaloClusterModuleLabel: "CaloClusterFast"
     DiskID: [
       0
@@ -68,7 +68,7 @@ TrigCalFilters:{
     module_type: "CaloClusterCounterFilter"
   }
 
-  caloHitRecN0SourceFilter: {
+  CaloN0SourceFilter: {
       caloDigiCollection: "CaloDigiMaker"
       maxCaloEnergy: -1
       maxNCaloDigi: 5000
