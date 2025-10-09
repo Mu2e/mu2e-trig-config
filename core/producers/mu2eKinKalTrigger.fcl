@@ -20,8 +20,8 @@ Mu2eKinKalTrigger : {
     SaveTrajectory : "T0"
   }
 
-  SEEDFIT: {
-    @table::Mu2eKinKal.SEEDFIT
+  LHSEEDFIT: {
+    @table::Mu2eKinKal.LHSEEDFIT
     MaxNIter : 2
     MetaIterationSettings : [
       [ 4.0, "CADSHU" ],
@@ -39,8 +39,8 @@ Mu2eKinKalTrigger : {
     ]
   }
 
-  SEEDEXT: {
-    @table::Mu2eKinKal.SEEDEXT
+  LHSEEDEXT: {
+    @table::Mu2eKinKal.LHSEEDEXT
     MaxNIter : 2
     BFieldCorrection : true
 
@@ -60,12 +60,11 @@ Mu2eKinKalTrigger : {
     ]
   }
 
-  LOOPHELIX : {
-    @table::Mu2eKinKal.LOOPHELIX
+  LHHELIX : {
+    @table::Mu2eKinKal.LHHELIX
     SeedErrors: [ 5, 5, 5, 5, 2e-2, 5 ]
     ComboHitCollection : "TTmakeSH"
     CaloClusterCollection : "CaloClusterFast"
-    SampleSurfaces : ["TT_Mid"]
   }
 
   KINEMATICLINE : {
