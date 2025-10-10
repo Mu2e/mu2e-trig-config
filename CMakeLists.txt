@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.19 FATAL_ERROR)
 
 find_package(cetmodules)
 
-project(mu2e-trig-config VERSION 7.04.00)
+project(mu2e-trig-config VERSION 7.05.00)
 
 include(CetCMakeEnv)
 SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
