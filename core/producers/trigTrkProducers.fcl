@@ -1,12 +1,9 @@
+#include "Offline/DAQ/fcl/prolog.fcl"
 BEGIN_PROLOG
 
 TrigTrkProducers : {
   TTmakeSD: {
-    module_type: StrawDigisFromArtdaqFragments
-    diagLevel : 0
-    debugLevel : 0
-    saveWaveforms : false
-    missingDTCHeaders : false
+    @table::DAQ.producers.makeSD
     geography : [
       {
         minnesota: "MN998"
