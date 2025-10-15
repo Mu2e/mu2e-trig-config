@@ -2,23 +2,7 @@ BEGIN_PROLOG
 
 TrigTrkProducers : {
   TrigMakeSD: {
-    module_type: StrawDigisFromArtdaqFragments
-    diagLevel : 0
-    debugLevel : 0
-    saveWaveforms : false
-    missingDTCHeaders : false
-    geography : [
-      {
-        minnesota: "MN998"
-        plane: 0
-        panel: 0
-      },
-      {
-        minnesota: "MN999"
-        plane: 0
-        panel: 1
-      }
-    ]
+    @table::DAQ.producers.makeSD
   }
 
   TrigMakeSHFromDigi: {
