@@ -6,3 +6,4 @@
 # Spack
 spack-*
 .spack*
+build-linux*
