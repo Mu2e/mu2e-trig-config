@@ -1,11 +1,66 @@
 BEGIN_PROLOG
 
+# Define some common selection tables
+AprHelixSelections_pos : { # downstream e-minus
+  configured: true
+  doHelicityCheck: true
+  maxAbsLambda: 300
+  maxChi2PhiZ: 8
+  maxChi2XY: 8
+  maxMomentum: 2000
+  maxNLoops: 30
+  minAbsLambda: 140
+  minHitRatio: 4e-1
+  minNLoops: 0
+  minNStrawHits: 15
+  minPt: 0
+  prescaleUsingD0Phi: false
+  requireCaloCluster: false
+}
+AprHelixSelections_neg : { # downstream e-plus
+  @@table::AprHelixSelections_pos
+}
+AprTrackSelections_neg_de : { # downstream e-minus
+  fitdirection: @local::FitDir.downstream
+  fitparticle: @local::Particle.eminus
+  maxChi2DOF: 20
+  maxMomErr: 10
+  maxMomentum: 2000
+  maxTanDip: 100
+  minFitCons: -1
+  minNStrawHits: 15
+  minTanDip: 0
+  requireCaloCluster: false
+}
+AprTrackSelections_pos_de : { # downstream e-plus
+  @table::AprTrackSelections_neg_de
+  fitparticle: @local::Particle.eplus
+}
+AprTrackSelections_neg_ue : { # upstream e-minus
+  @table::AprTrackSelections_neg_de
+  fitdirection: @local::FitDir.upstream
+  maxTanDip: 0
+  minTanDip: -100
+}
+AprTrackSelections_pos_ue : { # upstream e-plus
+  @table::AprTrackSelections_pos_de
+  fitdirection: @local::FitDir.upstream
+  maxTanDip: 0
+  minTanDip: -100
+}
+
 TrigAprFilters:{
   AprTrkDe50D0200PS        : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprTrkDe80m70pD0200PS       : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprTrkDe80m70pPS               : { module_type: PrescaleEvent
+      eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+  AprTrkDe75m70pPS               : { module_type: PrescaleEvent
+      eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+  AprTrkDe75PS               : { module_type: PrescaleEvent
+      eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+  AprTrkDe70PS               : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprTwoTrkDe80m70pD0200PS: { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
@@ -18,42 +73,16 @@ TrigAprFilters:{
     module_type: "HelixFilter"
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
-      configured: true
-      doHelicityCheck: true
-      maxAbsLambda: 300
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
+      @table::AprHelixSelections_pos
       maxD0: 300
-      maxMomentum: 2000
-      maxNLoops: 30
-      minAbsLambda: 140
       minD0: -150
-      minHitRatio: 4e-1
       minMomentum: 80
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
     negHelicitySelection: {
-      configured: true
-      doHelicityCheck: true
-      maxAbsLambda: 300
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
+      @table::AprHelixSelections_neg
       maxD0: 300
-      maxMomentum: 2000
-      maxNLoops: 30
-      minAbsLambda: 140
       minD0: -150
-      minHitRatio: 4e-1
       minMomentum: 70
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
   }
   AprTrkDe80m70pD0200TCFilter : {
@@ -67,35 +96,17 @@ TrigAprFilters:{
     kalSeedCollections: [ "TrigAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
-      { #cuts for downstreeam e-minus
-        fitdirection: @local::FitDir.downstream
-        fitparticle: @local::Particle.eminus
-        maxChi2DOF: 20
+      { #cuts for downstream e-minus
+	@table::AprTrackSelections_neg_de
         maxD0: 200
-        maxMomErr: 10
-        maxMomentum: 2000
-        maxTanDip: 100
         minD0: -200
-        minFitCons: -1
         minMomentum: 80
-        minNStrawHits: 15
-        minTanDip: 0
-        requireCaloCluster: false
       },
-      {#cuts for downstreeam e-plus
-        fitdirection: @local::FitDir.downstream
-        fitparticle: @local::Particle.eplus
-        maxChi2DOF: 20
+      {#cuts for downstream e-plus
+	@table::AprTrackSelections_pos_de
         maxD0: 200
-        maxMomErr: 10
-        maxMomentum: 2000
-        maxTanDip: 100
         minD0: -200
-        minFitCons: -1
         minMomentum: 70
-        minNStrawHits: 15
-        minTanDip: 0
-        requireCaloCluster: false
       }
     ]
   }
@@ -104,42 +115,20 @@ TrigAprFilters:{
     module_type: "HelixFilter"
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_pos
       maxAbsLambda: 1000
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
       maxD0: 600
-      maxMomentum: 2000
-      maxNLoops: 30
       minAbsLambda: 50
       minD0: -600
-      minHitRatio: 4e-1
       minMomentum: 80
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
     negHelicitySelection: {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_neg
       maxAbsLambda: 1000
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
       maxD0: 600
-      maxMomentum: 2000
-      maxNLoops: 30
       minAbsLambda: 50
       minD0: -600
-      minHitRatio: 4e-1
       minMomentum: 70
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
   }
   AprTrkDe80m70pTCFilter : {
@@ -153,35 +142,17 @@ TrigAprFilters:{
     kalSeedCollections: [ "TrigAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
-      { #cuts for downstreeam e-minus
-        fitdirection: @local::FitDir.downstream
-        fitparticle: @local::Particle.eminus
-        maxChi2DOF: 20
+      { #cuts for downstream e-minus
+	@table::AprTrackSelections_neg_de
         maxD0: 600
-        maxMomErr: 10
-        maxMomentum: 2000
-        maxTanDip: 1000
         minD0: -600
-        minFitCons: -1
         minMomentum: 80
-        minNStrawHits: 15
-        minTanDip: 0
-        requireCaloCluster: false
       },
-      {#cuts for downstreeam e-plus
-        fitdirection: @local::FitDir.downstream
-        fitparticle: @local::Particle.eplus
-        maxChi2DOF: 20
+      {#cuts for downstream e-plus
+	@table::AprTrackSelections_pos_de
         maxD0: 600
-        maxMomErr: 10
-        maxMomentum: 2000
-        maxTanDip: 1000
         minD0: -600
-        minFitCons: -1
         minMomentum: 70
-        minNStrawHits: 15
-        minTanDip: 0
-        requireCaloCluster: false
       }
     ]
   }
@@ -191,42 +162,20 @@ TrigAprFilters:{
     module_type: "HelixFilter"
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_pos
       maxAbsLambda: 1000
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
       maxD0: 600
-      maxMomentum: 2000
-      maxNLoops: 30
       minAbsLambda: 50
       minD0: -600
-      minHitRatio: 4e-1
       minMomentum: 80
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
     negHelicitySelection: {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_neg
       maxAbsLambda: 1000
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
       maxD0: 600
-      maxMomentum: 2000
-      maxNLoops: 30
       minAbsLambda: 50
       minD0: -600
-      minHitRatio: 4e-1
       minMomentum: 70
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
   }
   AprTrkUe80m70pTCFilter : {
@@ -241,34 +190,16 @@ TrigAprFilters:{
     module_type: "KalSeedFilter"
     KalSeedCuts : [
       { #cuts for upstream e-minus
-        fitdirection: @local::FitDir.upstream
-        fitparticle: @local::Particle.eminus
-        maxChi2DOF: 20
+	@table::AprTrackSelections_neg_ue
         maxD0: 600
-        maxMomErr: 10
-        maxMomentum: 2000
-        maxTanDip: 1000
         minD0: -600
-        minFitCons: -1
         minMomentum: 80
-        minNStrawHits: 15
-        minTanDip: 0
-        requireCaloCluster: false
       },
       {#cuts for upstream e-plus
-        fitdirection: @local::FitDir.upstream
-        fitparticle: @local::Particle.eplus
-        maxChi2DOF: 20
+	@table::AprTrackSelections_pos_ue
         maxD0: 600
-        maxMomErr: 10
-        maxMomentum: 2000
-        maxTanDip: 1000
         minD0: -600
-        minFitCons: -1
         minMomentum: 70
-        minNStrawHits: 15
-        minTanDip: 0
-        requireCaloCluster: false
       }
     ]
   }
@@ -278,42 +209,20 @@ TrigAprFilters:{
     module_type: "HelixFilter"
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_pos
       maxAbsLambda: 500
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
       maxD0: 300
-      maxMomentum: 2000
-      maxNLoops: 30
       minAbsLambda: 50
       minD0: -150
-      minHitRatio: 4e-1
       minMomentum: 50
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
     negHelicitySelection : {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_neg
       maxAbsLambda: 500
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
       maxD0: 300
-      maxMomentum: 2000
-      maxNLoops: 30
       minAbsLambda: 50
       minD0: -150
-      minHitRatio: 4e-1
       minMomentum: 50
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
   }
   AprTrkDe50D0200TCFilter: {
@@ -327,35 +236,17 @@ TrigAprFilters:{
     kalSeedCollections: [ "TrigAprKSF" ]
     module_type: "KalSeedFilter"
     KalSeedCuts : [
-      { #cuts for downstreeam e-minus
-        fitdirection: @local::FitDir.downstream
-        fitparticle: @local::Particle.eminus
-        maxChi2DOF: 20
+      { #cuts for downstream e-minus
+	@table::AprTrackSelections_neg_de
         maxD0: 200
-        maxMomErr: 10
-        maxMomentum: 2000
-        maxTanDip: 100
         minD0: -200
-        minFitCons: -1
         minMomentum: 50
-        minNStrawHits: 15
-        minTanDip: 0
-        requireCaloCluster: false
       },
-      {#cuts for downstreeam e-plus
-        fitdirection: @local::FitDir.downstream
-        fitparticle: @local::Particle.eplus
-        maxChi2DOF: 20
+      {#cuts for downstream e-plus
+	@table::AprTrackSelections_pos_de
         maxD0: 200
-        maxMomErr: 10
-        maxMomentum: 2000
-        maxTanDip: 100
         minD0: -200
-        minFitCons: -1
         minMomentum: 50
-        minNStrawHits: 15
-        minTanDip: 0
-        requireCaloCluster: false
       }
     ]
   }
@@ -365,42 +256,20 @@ TrigAprFilters:{
     module_type: "HelixFilter"
     minNHelices: 2
     posHelicitySelection : {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_pos
       maxAbsLambda: 500
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
-      maxD0: 600.
-      maxMomentum: 2000
-      maxNLoops: 30
+      maxD0: 600. #FIXME: Should this be 150?
       minAbsLambda: 50
       minD0: -600. #-150
-      minHitRatio: 4e-1
       minMomentum: 80
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
     negHelicitySelection : {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_neg
       maxAbsLambda: 500
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
       maxD0: 150
-      maxMomentum: 2000
-      maxNLoops: 30
       minAbsLambda: 50
       minD0: -150
-      minHitRatio: 4e-1
       minMomentum: 70
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
   }
   AprTrkDe80m70pD0200MultiTrkTCFilter: {
@@ -415,35 +284,19 @@ TrigAprFilters:{
     module_type: "KalSeedFilter"
     minNTrks: 2
     KalSeedCuts : [
-      { #cuts for downstreeam e-minus
-        fitdirection: @local::FitDir.downstream
-        fitparticle: @local::Particle.eminus
-        maxChi2DOF: 20
+      { #cuts for downstream e-minus
+	@table::AprTrackSelections_neg_de
         maxD0: 600.
-        maxMomErr: 10
-        maxMomentum: 2000
-        maxTanDip: 100
         minD0: -600.   #-150
-        minFitCons: -1
         minMomentum: 80
         minNStrawHits: 12
-        minTanDip: 0
-        requireCaloCluster: false
       },
-      { #cuts for downstreeam e-plus
-        fitdirection: @local::FitDir.downstream
-        fitparticle: @local::Particle.eplus
-        maxChi2DOF: 20
+      { #cuts for downstream e-plus
+	@table::AprTrackSelections_pos_de
         maxD0: 600 #150
-        maxMomErr: 10
-        maxMomentum:2000
-        maxTanDip: 100
         minD0: -600. #-150
-        minFitCons: -1
         minMomentum: 80
         minNStrawHits: 12
-        minTanDip: 0
-        requireCaloCluster: false
       }
     ]
   }
@@ -453,42 +306,20 @@ TrigAprFilters:{
     module_type: "HelixFilter"
     minNHelices: 2
     posHelicitySelection : {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_pos
       maxAbsLambda: 500
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
       maxD0: 600
-      maxMomentum: 2000
-      maxNLoops: 30
       minAbsLambda: 50
       minD0: -600
-      minHitRatio: 4e-1
       minMomentum: 50
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
     negHelicitySelection : {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_neg
       maxAbsLambda: 500
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
       maxD0: 600
-      maxMomentum: 2000
-      maxNLoops: 30
       minAbsLambda: 50
       minD0: -600
-      minHitRatio: 4e-1
       minMomentum: 50
-      minNLoops: 0
-      minNStrawHits: 15
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
   }
   AprTrkDe50MultiHelixTCFilter: {
@@ -503,35 +334,19 @@ TrigAprFilters:{
     module_type: "KalSeedFilter"
     minNTrks: 2
     KalSeedCuts : [
-      { #cuts for downstreeam e-minus
-        fitdirection: @local::FitDir.downstream
-        fitparticle: @local::Particle.eminus
-        maxChi2DOF: 20
+      { #cuts for downstream e-minus
+	@table::AprTrackSelections_neg_de
         maxD0: 600
-        maxMomErr: 10
-        maxMomentum: 2000
-        maxTanDip: 100
         minD0: -600
-        minFitCons: -1
         minMomentum: 50
         minNStrawHits: 12
-        minTanDip: 0
-        requireCaloCluster: false
       },
-      { #cuts for downstreeam e-plus
-        fitdirection: @local::FitDir.downstream
-        fitparticle: @local::Particle.eplus
-        maxChi2DOF: 20
+      { #cuts for downstream e-plus
+	@table::AprTrackSelections_pos_de
         maxD0: 600
-        maxMomErr: 10
-        maxMomentum:2000
-        maxTanDip: 100
         minD0: -600
-        minFitCons: -1
         minMomentum: 50
         minNStrawHits: 12
-        minTanDip: 0
-        requireCaloCluster: false
       }
     ]
   }
@@ -542,42 +357,22 @@ TrigAprFilters:{
     helixSeedCollection: "TrigAprHelixMerger"
     module_type: "HelixFilter"
     posHelicitySelection : {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_pos
       maxAbsLambda: 1000
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
       maxD0: 600
-      maxMomentum: 2000
-      maxNLoops: 30
       minAbsLambda: 40
       minD0: -600
-      minHitRatio: 4e-1
       minMomentum: 30
-      minNLoops: 0
       minNStrawHits: 20
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
     negHelicitySelection : {
-      configured: true
-      doHelicityCheck: true
+      @table::AprHelixSelections_neg
       maxAbsLambda: 1000
-      maxChi2PhiZ: 8
-      maxChi2XY: 8
       maxD0: 600
-      maxMomentum: 2000
-      maxNLoops: 30
       minAbsLambda: 40
       minD0: -600
-      minHitRatio: 4e-1
       minMomentum: 30
-      minNLoops: 0
       minNStrawHits: 20
-      minPt: 0
-      prescaleUsingD0Phi: false
-      requireCaloCluster: false
     }
   }
   AprHelixTCFilter: {
