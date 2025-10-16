@@ -44,14 +44,12 @@ def generateLogger(evtMode, outdir, dictLog, logName, dictStreams, isOfflineBuil
     for k in dictLog:
         if dictLog[k]['enabled'] == 0: continue
         vv = k.split("_")
-        streamName = vv[0]
-        for i in range(1,len(vv)): streamName = streamName + capitalize(vv[i])
-        streamName = streamName+"Output"
+        streamName = "".join([capitalize(x) for x in vv]) + "Output"
         list_of_logger_streams.append(streamName)
         #
         if doIt == True:
-            loggerConfig.write('         {}:'.format(streamName)+' { \n')
-            loggerConfig.write('            module_type: RootDAQOutput \n')
+            loggerConfig.write('         {}:'.format(streamName)+' {\n')
+            loggerConfig.write('            module_type: RootDAQOutput\n')
             loggerConfig.write('            SelectEvents : {}\n'.format(json.dumps(dictStreams[k])))
             loggerConfig.write('            maxSubRuns   : 1\n')
             loggerConfig.write('            fileName     : "{}_%r_%#.art\"\n'.format(k))
@@ -150,11 +148,10 @@ def generateMenu(evtMode, outdir,  dictMenu, menuName, dictStreams, proc_name, i
                 trigMenu.write('     "{}:{}"\n'.format(dictMenu[path]['bit'], path))
         #
         vv=path.split("_")
-        streamName = vv[0]
-        for i in range(1,len(vv)): streamName = streamName + capitalize(vv[i])
+        streamName = "".join([capitalize(x) for x in vv])
         if doIt == True:
-            psConfig.write("   {}PS:".format(streamName)+" { \n")
-            psConfig.write("      module_type: PrescaleEvent \n")
+            psConfig.write("   {}PS:".format(streamName)+" {\n")
+            psConfig.write("      module_type: PrescaleEvent\n")
         evtModes = dictMenu[path]['eventModeConfig']
         psInput = "[ "
         notFirst = False

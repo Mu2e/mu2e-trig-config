@@ -1,26 +1,26 @@
 BEGIN_PROLOG
 
 TrigAprProducers : {
-  TTTZClusterFinder : { @table::CalPatRec.producers.TZClusterFinder
-    chCollLabel                : "TTflagPH"
+  TrigTZClusterFinder : { @table::CalPatRec.producers.TZClusterFinder
+    chCollLabel                : "TrigFlagPH"
     ccCollLabel                : "CaloClusterFast"
     radSelect                  : 0
   }
 
-  TTAprHelixFinder: { @table::CalPatRec.producers.AgnosticHelixFinder
-    chCollLabel             : "TTflagPH"
-    tcCollLabel             : "TTTZClusterFinder"
+  TrigAprHelixFinder: { @table::CalPatRec.producers.AgnosticHelixFinder
+    chCollLabel             : "TrigFlagPH"
+    tcCollLabel             : "TrigTZClusterFinder"
     ccCollLabel             : "CaloClusterFast"
     minNHelixComboHits      : 10
-    maxEDepAvg              : @local::TrigTrkProducers.TTHelixFinderParams.maxEDepAvg
+    maxEDepAvg              : @local::TrigTrkProducers.TrigHelixFinderParams.maxEDepAvg
     maxNHitsRatio           : 1.5
     doEDepFlag              : true
     eDepFlagThresh          : 0.003
   }
 
-  TTAprHelixMerger: {
+  TrigAprHelixMerger: {
     HelixFinders: [
-      "TTAprHelixFinder"
+      "TrigAprHelixFinder"
     ]
     debugLevel: 0
     deltanh: 5
@@ -31,7 +31,7 @@ TrigAprProducers : {
     MinNHitOverlap: 10
   }
 
-  TTAprKSF: {
+  TrigAprKSF: {
     module_type : LoopHelixFit
     MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
     KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
@@ -40,7 +40,7 @@ TrigAprProducers : {
     ModuleSettings   : {
       @table::Mu2eKinKalTrigger.LHHELIX
       FitParticle : @local::Particle.eminus
-      HelixSeedCollections   : [ "TTAprHelixMerger" ]
+      HelixSeedCollections   : [ "TrigAprHelixMerger" ]
     }
     UsePDGCharge     : false
     HelixMask: {
@@ -49,7 +49,7 @@ TrigAprProducers : {
     FitDirection     : @local::FitDir.downstream
   }
 
-  TTAprUeKSF: {
+  TrigAprUeKSF: {
     module_type : LoopHelixFit
     MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
     KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
@@ -58,7 +58,7 @@ TrigAprProducers : {
     ModuleSettings   : {
       @table::Mu2eKinKalTrigger.LHHELIX
       FitParticle : @local::Particle.eminus
-      HelixSeedCollections   : [ "TTAprHelixMerger" ]
+      HelixSeedCollections   : [ "TrigAprHelixMerger" ]
     }
     UsePDGCharge     : false
     HelixMask: {
@@ -67,25 +67,25 @@ TrigAprProducers : {
     FitDirection     : @local::FitDir.upstream
   }
 
-  aprHighPStopTargTriggerInfoMerger: {
+  AprTrkDe80m70pD0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprHighPTriggerInfoMerger: {
+  AprTrkDe80m70pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprLowPStopTargTriggerInfoMerger: {
+  AprTrkDe50D0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprHighPStopTargMultiTrkTriggerInfoMerger: {
+  AprTrkDe80m70pD0200MultiTrkTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprLowPMultiHelixTriggerInfoMerger: {
+  AprTrkDe50MultiHelixTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprUeHighPTriggerInfoMerger: {
+  AprTrkUe80m70pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  aprHelixTriggerInfoMerger: {
+  AprHelixTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
 }

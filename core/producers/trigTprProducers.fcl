@@ -1,9 +1,9 @@
 BEGIN_PROLOG
 
 TrigTprProducers : {
-   TTtimeClusterFinder: {
+   TrigTimeClusterFinder: {
       @table::TrkPatRec.TimeClusterFinder
-      ComboHitCollection     : "TTflagPH"
+      ComboHitCollection     : "TrigFlagPH"
       CaloClusterCollection  : "CaloClusterFast"
       TestFlag               : false
       T0Calculator           : {
@@ -12,9 +12,9 @@ TrigTprProducers : {
       }
    }
 
-   TTtimeClusterFinderUe: {
+   TrigTimeClusterFinderUe: {
       @table::TrkPatRec.TimeClusterFinder
-      ComboHitCollection     : "TTflagPH"
+      ComboHitCollection     : "TrigFlagPH"
       CaloClusterCollection  : "CaloClusterFast"
       TestFlag               : false
       AveragePitch : -0.63
@@ -24,12 +24,12 @@ TrigTprProducers : {
       }
    }
 
-  TThelixFinder: {
+  TrigHelixFinder: {
     doSingleOutput: true
     AveragePitch: 6e-1
     CentralPerpResolution: 12
     CentralRadialResolution: 20
-    ComboHitCollection: "TTflagPH"
+    ComboHitCollection: "TrigFlagPH"
     DebugLevel: 0
     DiagLevel: 0
     DiagPlugin: {
@@ -138,21 +138,21 @@ TrigTprProducers : {
       CaloTimeErr: 5e-1
       TrkToCaloTimeOffset: -3.1
     }
-    TimeClusterCollection: "TTtimeClusterFinder"
+    TimeClusterCollection: "TrigTimeClusterFinder"
     UpdateStereo: false
-    maxEDepAvg: @local::TrigTrkProducers.TTHelixFinderParams.maxEDepAvg
+    maxEDepAvg: @local::TrigTrkProducers.TrigHelixFinderParams.maxEDepAvg
     UpdateStereoHits: false
     UseHitMVA: false
     UseTripletArea: false
-    module_label: "TThelixFinder"
+    module_label: "TrigHelixFinder"
     module_type: "RobustHelixFinder"
     targetconsistent: false
     targetconsistent_init: false
   }
 
-  TTHelixMergerDe: {
+  TrigHelixMergerDe: {
     HelixFinders: [
-      "TThelixFinder"
+      "TrigHelixFinder"
     ]
     debugLevel: 0
     deltanh: 5
@@ -162,9 +162,9 @@ TrigTprProducers : {
     MinHitOverlapFraction: 0.5
     MinNHitOverlap: 10
   }
-  TTHelixMergerUe: {
+  TrigHelixMergerUe: {
     HelixFinders: [
-      "TThelixFinderUe"
+      "TrigHelixFinderUe"
     ]
     debugLevel: 0
     deltanh: 5
@@ -174,7 +174,7 @@ TrigTprProducers : {
     MinHitOverlapFraction: 0.5
     MinNHitOverlap: 10
   }
-  TTKSFDe: {
+  TrigKSFDe: {
     module_type : LoopHelixFit
     MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
     KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
@@ -183,7 +183,7 @@ TrigTprProducers : {
     ModuleSettings   : {
       @table::Mu2eKinKalTrigger.LHHELIX
       FitParticle : @local::Particle.eminus
-      HelixSeedCollections   : [ "TTHelixMergerDe" ]
+      HelixSeedCollections   : [ "TrigHelixMergerDe" ]
     }
     UsePDGCharge     : false
     HelixMask: {
@@ -192,7 +192,7 @@ TrigTprProducers : {
     FitDirection     : @local::FitDir.downstream
   }
 
-  TTKSFUe: {
+  TrigKSFUe: {
     module_type : LoopHelixFit
     MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
     KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
@@ -201,7 +201,7 @@ TrigTprProducers : {
     ModuleSettings   : {
       @table::Mu2eKinKalTrigger.LHHELIX
       FitParticle : @local::Particle.eminus
-      HelixSeedCollections   : [ "TTHelixMergerUe" ]
+      HelixSeedCollections   : [ "TrigHelixMergerUe" ]
     }
     UsePDGCharge     : false
     HelixMask: {
@@ -210,12 +210,12 @@ TrigTprProducers : {
     FitDirection     : @local::FitDir.upstream
   }
 
-  TThelixFinderUe: {
+  TrigHelixFinderUe: {
     doSingleOutput: true
     AveragePitch: 6e-1
     CentralPerpResolution: 12
     CentralRadialResolution: 20
-    ComboHitCollection: "TTflagPH"
+    ComboHitCollection: "TrigFlagPH"
     DebugLevel: 0
     DiagLevel: 0
     DiagPlugin: {
@@ -324,9 +324,9 @@ TrigTprProducers : {
       CaloTimeErr: 5e-1
       TrkToCaloTimeOffset: -3.1
     }
-    TimeClusterCollection: "TTtimeClusterFinderUe"
+    TimeClusterCollection: "TrigTimeClusterFinderUe"
     UpdateStereo: false
-    maxEDepAvg: @local::TrigTrkProducers.TTHelixFinderParams.maxEDepAvg
+    maxEDepAvg: @local::TrigTrkProducers.TrigHelixFinderParams.maxEDepAvg
     UpdateStereoHits: false
     UseHitMVA: false
     UseTripletArea: false
@@ -335,25 +335,25 @@ TrigTprProducers : {
     targetconsistent_init: false
   }
 
-  tprDeHighPStopTargTriggerInfoMerger: {
+  TprTrkDe80m70pD0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprDeHighPTriggerInfoMerger: {
+  TprTrkDe80m70pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprDeLowPStopTargTriggerInfoMerger: {
+  TprTrkDe50D0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprHelixDeIpaPhiScaledTriggerInfoMerger: {
+  TprHlxDe30pIPAPhiTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprHelixDeIpaTriggerInfoMerger: {
+  TprHlxDe30pIPATriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprHelixDeTriggerInfoMerger: {
+  TprHlxDe70m50pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  tprHelixUeTriggerInfoMerger: {
+  TprHlxUe50m30pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
 }

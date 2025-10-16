@@ -2,7 +2,7 @@ BEGIN_PROLOG
 
 TrigCprProducers : {
 
-   TTCalHelixFinderDe: {
+   TrigCalHelixFinderDe: {
       doSingleOutput: true
       HelixFinderAlg: {
          BackgroundSelectionBits: [
@@ -52,8 +52,8 @@ TrigCprProducers : {
          xyWeights: false
          zWeights: false
       }
-      StrawHitCollectionLabel: "TTflagPH"
-      TimeClusterCollectionLabel: "TTCalTimePeakFinder"
+      StrawHitCollectionLabel: "TrigFlagPH"
+      TimeClusterCollectionLabel: "TrigCalTimePeakFinder"
       debugLevel: 0
       diagLevel: 0
       diagPlugin: {
@@ -61,7 +61,7 @@ TrigCprProducers : {
          mcUtils: {
             strawDigiMCCollTag: "compressDigiMCs"
             tool_type: "TrkPatRecMcUtils"
-            comboHitCollTag: "TTmakeSH"
+            comboHitCollTag: "TrigMakeSH"
          }
          tool_type: "CalHelixFinderDiag"
       }
@@ -78,7 +78,7 @@ TrigCprProducers : {
       printFrequency: 100
    }
 
-   TTCalHelixFinderUe: {
+   TrigCalHelixFinderUe: {
       doSingleOutput: true
       HelixFinderAlg: {
          BackgroundSelectionBits: [
@@ -128,8 +128,8 @@ TrigCprProducers : {
          xyWeights: false
          zWeights: false
       }
-      StrawHitCollectionLabel: "TTflagPH"
-      TimeClusterCollectionLabel: "TTCalTimePeakFinderUe"
+      StrawHitCollectionLabel: "TrigFlagPH"
+      TimeClusterCollectionLabel: "TrigCalTimePeakFinderUe"
       debugLevel: 0
       diagLevel: 0
       diagPlugin: {
@@ -137,7 +137,7 @@ TrigCprProducers : {
          mcUtils: {
             strawDigiMCCollTag: "compressDigiMCs"
             tool_type: "TrkPatRecMcUtils"
-            comboHitCollTag: "TTmakeSH"
+            comboHitCollTag: "TrigMakeSH"
          }
          tool_type: "CalHelixFinderDiag"
       }
@@ -154,7 +154,7 @@ TrigCprProducers : {
       printFrequency: 100
    }
 
-   TTCalTimePeakFinder: {
+   TrigCalTimePeakFinder: {
       HitSelBits: ["TimeSelection","EnergySelection"]
       BkgSelBits: [
          "Background",
@@ -164,7 +164,7 @@ TrigCprProducers : {
       DtMax: 20
       DtMin: -20
       MinNHits: 10
-      StrawHitCollectionLabel: "TTflagPH"
+      StrawHitCollectionLabel: "TrigFlagPH"
       Beta: 1
       CaloClusterModuleLabel: "CaloClusterFast"
       DebugLevel: 0
@@ -181,7 +181,7 @@ TrigCprProducers : {
       PitchAngle: 6.7e-1
       PrintFrequency: 100
    }
-   TTCalTimePeakFinderUe: {
+   TrigCalTimePeakFinderUe: {
       HitSelBits: ["TimeSelection","EnergySelection"]
       BkgSelBits: [
          "Background",
@@ -191,7 +191,7 @@ TrigCprProducers : {
       DtMax: 20
       DtMin: -20
       MinNHits: 10
-      StrawHitCollectionLabel: "TTflagPH"
+      StrawHitCollectionLabel: "TrigFlagPH"
       Beta: 1
       CaloClusterModuleLabel: "CaloClusterFast"
       DebugLevel: 0
@@ -209,9 +209,9 @@ TrigCprProducers : {
       PrintFrequency: 100
    }
 
-   TTCalHelixMergerDe: {
+   TrigCalHelixMergerDe: {
       HelixFinders: [
-         "TTCalHelixFinderDe"
+         "TrigCalHelixFinderDe"
       ]
       debugLevel: 0
       deltanh: 5
@@ -221,9 +221,9 @@ TrigCprProducers : {
       MinHitOverlapFraction: 0.5
       MinNHitOverlap: 10
    }
-   TTCalHelixMergerUe: {
+   TrigCalHelixMergerUe: {
       HelixFinders: [
-         "TTCalHelixFinderUe"
+         "TrigCalHelixFinderUe"
       ]
       debugLevel: 0
       deltanh: 5
@@ -234,7 +234,7 @@ TrigCprProducers : {
       MinNHitOverlap: 10
    }
 
-   TTCalSeedFitDe: {
+   TrigCalSeedFitDe: {
       module_type : LoopHelixFit
       MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
       KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
@@ -242,7 +242,7 @@ TrigCprProducers : {
       ExtensionSettings: { @table::Mu2eKinKalTrigger.LHSEEDEXT }
       ModuleSettings   : {
          @table::Mu2eKinKalTrigger.LHHELIX
-         HelixSeedCollections: ["TTCalHelixMergerDe"]
+         HelixSeedCollections: ["TrigCalHelixMergerDe"]
          FitParticle         : @local::Particle.eminus
       }
       UsePDGCharge     : false
@@ -252,16 +252,16 @@ TrigCprProducers : {
       FitDirection     : @local::FitDir.downstream
    }
 
-   cprDeHighPStopTargTriggerInfoMerger: {
+   CprTrkDe80m70pD0200TriggerInfoMerger: {
       module_type: "MergeTriggerInfo"
    }
-   cprDeHighPTriggerInfoMerger: {
+   CprTrkDe80m70pTriggerInfoMerger: {
       module_type: "MergeTriggerInfo"
    }
-   cprDeLowPStopTargTriggerInfoMerger: {
+   CprTrkDe50D0200TriggerInfoMerger: {
       module_type: "MergeTriggerInfo"
    }
-   cprHelixDeTriggerInfoMerger: {
+   CprHlxDe50TriggerInfoMerger: {
       module_type: "MergeTriggerInfo"
    }
 }
