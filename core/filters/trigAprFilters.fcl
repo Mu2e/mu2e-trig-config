@@ -18,7 +18,7 @@ AprHelixSelections_pos : { # downstream e-minus
   requireCaloCluster: false
 }
 AprHelixSelections_neg : { # downstream e-plus
-  @@table::AprHelixSelections_pos
+  @table::AprHelixSelections_pos
 }
 AprTrackSelections_neg_de : { # downstream e-minus
   fitdirection: @local::FitDir.downstream
