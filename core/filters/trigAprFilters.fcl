@@ -18,7 +18,7 @@ AprHelixSelections_pos : { # downstream e-minus
   requireCaloCluster: false
 }
 AprHelixSelections_neg : { # downstream e-plus
-  @@table::AprHelixSelections_pos
+  @table::AprHelixSelections_pos
 }
 AprTrackSelections_neg_de : { # downstream e-minus
   fitdirection: @local::FitDir.downstream
@@ -149,6 +149,52 @@ TrigAprFilters:{
         minMomentum: 80
       },
       {#cuts for downstream e-plus
+	@table::AprTrackSelections_pos_de
+        maxD0: 600
+        minD0: -600
+        minMomentum: 70
+      }
+    ]
+  }
+
+  AprTrkDe75m70pHSFilter: {
+    module_type: "HelixFilter"
+    helixSeedCollection: "TrigAprHelixMerger"
+    posHelicitySelection : {
+      @table::AprHelixSelections_pos
+      maxAbsLambda: 1000
+      maxD0: 600
+      minAbsLambda: 50
+      minD0: -600
+      minMomentum:70
+    }
+    negHelicitySelection: {
+      @table::AprHelixSelections_neg
+      maxAbsLambda: 1000
+      maxD0: 600
+      minAbsLambda: 50
+      minD0: -600
+      minMomentum: 65
+    }
+  }
+  AprTrkDe75m70pTCFilter : {
+    minNStrawHits: 15
+    module_type: "TimeClusterFilter"
+    requireCaloCluster: false
+    timeClusterCollection: "TrigTZClusterFinder"
+    ComboHitCollection : "TrigMakePH"
+  }
+  AprTrkDe75m70pKSFilter: {
+    kalSeedCollections: [ "TrigAprKSF" ]
+    module_type: "KalSeedFilter"
+    KalSeedCuts : [
+      { #cuts for downstream e-minus
+	@table::AprTrackSelections_neg_de
+        maxD0: 600
+        minD0: -600
+        minMomentum: 75
+      },
+      { #cuts for downstream e-plus
 	@table::AprTrackSelections_pos_de
         maxD0: 600
         minD0: -600
