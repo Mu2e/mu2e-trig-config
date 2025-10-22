@@ -70,7 +70,25 @@ TrigAprProducers : {
   AprTrkDe80m70pD0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
+  AprTrkDe75m70pD0200TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  AprTrkDe75D0200TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  AprTrkDe70D0200TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
   AprTrkDe80m70pTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  AprTrkDe75m70pTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  AprTrkDe75TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  AprTrkDe70TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
   AprTrkDe50D0200TriggerInfoMerger: {
@@ -85,7 +103,10 @@ TrigAprProducers : {
   AprTrkUe80m70pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  AprHelixTriggerInfoMerger: {
+  AprHlx50TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  AprHlx30TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
 }
