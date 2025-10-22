@@ -1,7 +1,7 @@
 BEGIN_PROLOG
 
 # Define some common selection tables
-AprHelixSelections_pos : { # downstream e-minus
+AprHelixSelections_pos : { # downstream e-minus/upstream e-plus
   configured: true
   doHelicityCheck: true
   maxAbsLambda: 300
@@ -17,7 +17,7 @@ AprHelixSelections_pos : { # downstream e-minus
   prescaleUsingD0Phi: false
   requireCaloCluster: false
 }
-AprHelixSelections_neg : { # downstream e-plus
+AprHelixSelections_neg : { # downstream e-plus/upstream e-minus
   @table::AprHelixSelections_pos
 }
 AprTrackSelections_neg_de : { # downstream e-minus
