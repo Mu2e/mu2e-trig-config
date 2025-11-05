@@ -35,3 +35,19 @@ install(DIRECTORY data DESTINATION ${CMAKE_INSTALL_DATAROOTDIR})
 install(DIRECTORY python DESTINATION .)
 
 cet_script(python/generateMenuFromJSON.py)
+
+# generate fcl files from menu files in the repo, and install in fcl/mu2e-trig-config/gen
+add_custom_command(
+    OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/.gen_ran_marker  # Dummy file to mark completion
+    COMMAND ./genWrapper
+            ${CMAKE_BINARY_DIR}/gen
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/python
+    COMMENT "Running generateMenuFromJSON.py"
+)
+
+add_custom_target(
+    generateMenuFromJSON
+    ALL # <-- This keyword makes it run every time the main build command is executed
+    DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/.gen_ran_marker
+  )
+install_fhicl(SUBDIRS ${CMAKE_BINARY_DIR}/gen   SUBDIRNAME mu2e-trig-config/gen)
