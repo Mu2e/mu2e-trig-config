@@ -103,6 +103,9 @@ TrigAprProducers : {
   AprTrkUe80m70pTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
+  AprHlx50Hlx30TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
   AprHlx50TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
