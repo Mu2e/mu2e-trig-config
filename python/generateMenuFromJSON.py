@@ -314,34 +314,34 @@ def generateOffline(menuFile, evtMode, outdir, doIt=False, verbose=False):
 #
 #
 #--------------------------------------------------------------------------------
-def generate(args):
-    tag = args.menuFile.split('/')[-1].split('.')[0]
+def generate(menuFile, evtMode, outdir, verbose):
+    tag = menuFile.split('/')[-1].split('.')[0]
 
-    with open(args.menuFile) as f:
+    with open(menuFile) as f:
         conf = json.load(f)
         keys = conf.keys()
-        if args.verbose==True: print("[generateMenuJSON] KEYS FOUND: {}".format(keys))
+        if verbose==True: print("[generateMenuJSON] KEYS FOUND: {}".format(keys))
         data_streams = {}
         for k in conf['dataLogger_streams']:
             data_streams[k] = []
 
         dict_trkcal_triggers = conf['trigger_paths']
         trkcal_proc_name     = conf['trkcal_filter_process_name']
-        generateMenu(args.evtMode, args.outdir, dict_trkcal_triggers, 'trig_'+tag, data_streams, trkcal_proc_name, False, True, args.verbose)
-        if args.verbose==True: print("[generateMenuJSON] DATA STREAMS FOUND: {}".format(data_streams))
+        generateMenu(evtMode, outdir, dict_trkcal_triggers, 'trig_'+tag, data_streams, trkcal_proc_name, False, True, verbose)
+        if verbose==True: print("[generateMenuJSON] DATA STREAMS FOUND: {}".format(data_streams))
 
         dict_agg_triggers = conf['agg_trigger_paths']
         add_proc_name     = conf['crv_agg_process_name']
-        generateMenu(args.evtMode, args.outdir, dict_agg_triggers, 'agg_'+tag, data_streams, add_proc_name, False, True, args.verbose)
+        generateMenu(evtMode, outdir, dict_agg_triggers, 'agg_'+tag, data_streams, add_proc_name, False, True, verbose)
 
         #now produce the logger menus
         dict_logger = conf['dataLogger_streams']
-        generateLogger(args.evtMode, args.outdir, dict_logger, 'trigLogger_'+tag, data_streams, False, True, args.verbose)
+        generateLogger(evtMode, outdir, dict_logger, 'trigLogger_'+tag, data_streams, False, True, verbose)
         #
         dict_logger = conf['lumiLogger_streams']
         lumi_streams =  {}
         lumi_streams['lumi'] = []
-        generateLogger(args.evtMode, args.outdir, dict_logger, 'trigLumiLogger_'+tag, lumi_streams, False, True, args.verbose)
+        generateLogger(evtMode, outdir, dict_logger, 'trigLumiLogger_'+tag, lumi_streams, False, True, verbose)
 
     # psConfig.write("}\n")
     # psConfig.close()
@@ -378,4 +378,4 @@ if __name__ == "__main__":
         print("[generateMenuFromJSON] EVENT-MODE {} NOT ALLOWED! THE POSSIBLE OPTIONS ARE: {}".format(args.evtMode, allowed_evtModes))
         exit(1)
 
-    generate(args)
+    generate(args.menuFile, args.evtMode, args.outdir, args.verbose)
