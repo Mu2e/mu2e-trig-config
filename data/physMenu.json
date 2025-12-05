@@ -224,6 +224,14 @@
                                ]
         },
 
+        "apr_Hlx_50_Hlx_30"   : {
+            "bit" : 255 ,
+            "enabled": 1,
+            "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
+                                {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }
+                               ]
+        },
+
         "apr_TrkDe_50_D0200"   : {
             "bit" : 260 ,
             "enabled": 1,

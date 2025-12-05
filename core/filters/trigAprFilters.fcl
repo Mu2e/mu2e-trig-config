@@ -70,9 +70,17 @@ TrigAprFilters:{
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprTwoTrkDe80m70pD0200PS: { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+  AprTrkDe75m70pD0200PS   : { module_type: PrescaleEvent
+      eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+  AprTrkDe75D0200PS       : { module_type: PrescaleEvent
+      eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+  AprTrkDe70D0200PS       : { module_type: PrescaleEvent
+      eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
    AprTwoTrkDe50PS        : { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprTrkUe80m70pPS        : { module_type: PrescaleEvent
+      eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+  AprHlx50Hlx30PS         : { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprHlx50PS              : { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
@@ -627,6 +635,54 @@ TrigAprFilters:{
 
 
   #AprHelix filters
+  AprHlx50Hlx30HSFilter: {
+    helixSeedCollection: "TrigAprHelixMerger"
+    module_type: "MultiHelixFilter"
+    minNHelices: 2
+    timeWindow : 100.
+    minArcGap : 20.
+    debugLevel : 0
+    HelixCuts : [
+      {
+	minMomentum: 50
+	maxMomentum: 2000
+	minPt: 0
+	minAbsLambda: 50
+	maxAbsLambda: 500
+	minNLoops: 0
+	maxNLoops: 30
+	minD0: -600
+	maxD0:  600
+	maxChi2PhiZ: 8
+	maxChi2XY: 8
+	minHitRatio: 0.4
+	minNStrawHits: 15
+      },
+      {
+	minMomentum: 30
+	maxMomentum: 2000
+	minPt: 0
+	minAbsLambda: 50
+	maxAbsLambda: 500
+	minNLoops: 0
+	maxNLoops: 30
+	minD0: -600
+	maxD0:  600
+	maxChi2PhiZ: 8
+	maxChi2XY: 8
+	minHitRatio: 0.4
+	minNStrawHits: 15
+      }
+    ]
+  }
+  AprHlx50Hlx30TCFilter: {
+    minNStrawHits: 10
+    module_type: "TimeClusterFilter"
+    requireCaloCluster: false
+    timeClusterCollection: "TrigTZClusterFinder"
+    ComboHitCollection : "TrigMakePH"
+  }
+
   AprHlx50HSFilter: {
     helixSeedCollection: "TrigAprHelixMerger"
     module_type: "HelixFilter"
