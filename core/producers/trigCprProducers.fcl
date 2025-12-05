@@ -255,7 +255,25 @@ TrigCprProducers : {
    CprTrkDe80m70pD0200TriggerInfoMerger: {
       module_type: "MergeTriggerInfo"
    }
+   CprTrkDe75m70pD0200TriggerInfoMerger: {
+      module_type: "MergeTriggerInfo"
+   }
+   CprTrkDe75D0200TriggerInfoMerger: {
+      module_type: "MergeTriggerInfo"
+   }
+   CprTrkDe70D0200TriggerInfoMerger: {
+      module_type: "MergeTriggerInfo"
+   }
    CprTrkDe80m70pTriggerInfoMerger: {
+      module_type: "MergeTriggerInfo"
+   }
+   CprTrkDe75m70pTriggerInfoMerger: {
+      module_type: "MergeTriggerInfo"
+   }
+   CprTrkDe75TriggerInfoMerger: {
+      module_type: "MergeTriggerInfo"
+   }
+   CprTrkDe70TriggerInfoMerger: {
       module_type: "MergeTriggerInfo"
    }
    CprTrkDe50D0200TriggerInfoMerger: {
