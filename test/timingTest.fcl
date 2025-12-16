@@ -1,0 +1,72 @@
+#------------------------------------------------------------------------------
+# runs the trigger reco, only for the main trigger paths
+#------------------------------------------------------------------------------
+
+#include "Offline/fcl/minimalMessageService.fcl"
+#include "Offline/fcl/standardServices.fcl"
+
+#include "mu2e-trig-config/core/trigProducers.fcl"
+#include "mu2e-trig-config/core/trigFilters.fcl"
+#include "mu2e-trig-config/core/trigRecoSequences.fcl"
+BEGIN_PROLOG
+# Add prefetch modules to avoid reading time being added to trigger reconstruction
+TrigRecoSequences.cfoDataGen : [ Prefetch, ProcessCFOData ]
+END_PROLOG
+#include "mu2e-trig-config/core/trigSequences.fcl"
+
+#include "mu2e-trig-config/gen/trig_physMenuPSConfig_OnSpill.fcl"
+#include "mu2e-trig-config/gen/trig_physMenu_OnSpill.fcl"
+
+process_name : triggerTiming
+
+# we don't need any simulation services for this job
+
+services : @local::Services.Reco
+services.GeometryService.bFieldFile     : "Offline/Mu2eG4/geom/bfgeom_reco_v01.txt"
+source: { module_type: RootInput }
+services.TFileService.fileName : "/dev/null"
+
+# timing information
+services.TimeTracker : {
+  dbOutput : {
+    filename : "triggerTiming.db" #uncomment to create the .db output
+    overwrite : true
+  }
+}
+services.scheduler.wantSummary: true
+
+
+
+physics : {
+
+   @table::TrigSequences
+   #@table::TrigLoggerOutputs
+
+   producers : {
+       @table::TrigProducers.producers
+       Prefetch : {
+           module_type            : PrefetchDAQData
+           fetchCaloDigis         : 1
+           fetchStrawDigis        : 1
+           fetchCaloFragments     : 0
+           fetchTrkFragments      : 0
+           fetchAllFragments      : 0
+           caloDigiCollectionTag  : "CaloDigiMaker"
+           strawDigiCollectionTag : "makeSD"
+           caloFragmentTag        : ""
+           trkFragmentTag         : ""
+           debugLevel             : 0
+       }
+   }
+   filters   : {
+       @table::TrigFilters.filters
+       @table::Trig_physMenuPSConfig
+   }
+}
+
+# This gets replaced by genTimingFcl.py
+physics.trigger_paths : [@sequence::Trig_physMenu.trigger_paths]
+
+#include "mu2e-trig-config/core/trigDigiInputsEpilog.fcl"
+#include "Production/Validation/database.fcl"
+#include "Production/JobConfig/reco/drop_trigger.fcl"
