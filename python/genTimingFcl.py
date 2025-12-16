@@ -49,7 +49,7 @@ def start_fcl(f):
 #--------------------------------------------------------------------------------
 # Add the timing paths for a specific path
 #--------------------------------------------------------------------------------
-def add_path(path, sequence_map, f, mod_file, verbose):
+def add_path(path, sequence_map, f, verbose):
     if verbose > 0: print(f'Adding path {path}')
     module_list = ''
     counter = 0
@@ -60,7 +60,6 @@ def add_path(path, sequence_map, f, mod_file, verbose):
             if counter > 0: timing_list += ', '
             timing_list += f'{path}_timing_{counter}'
             counter += 1
-        mod_file.write(f'{module}\n')
         if module_list == '': module_list = module
         else:                 module_list = module_list + ', ' + module
     f.write(f'{timing_list} ]\n\n')
@@ -70,10 +69,7 @@ def add_path(path, sequence_map, f, mod_file, verbose):
 #--------------------------------------------------------------------------------
 def generate(name, paths, verbose):
     sequence_map = parse_sequences(verbose)
-    module_list = name
-    module_list = module_list.replace('.fcl', '_modules.txt')
     with open(name, 'w') as f:
-        mod_file = open(module_list, 'w')
         start_fcl(f)
         trigger_paths = 'physics.trigger_paths : [ '
         counter = 0
@@ -81,13 +77,12 @@ def generate(name, paths, verbose):
             if path not in sequence_map:
                 print(f'!!! Path {path} not found in the sequence map!')
                 continue
-            add_path(path, sequence_map, f, mod_file, verbose)
+            add_path(path, sequence_map, f, verbose)
             if counter > 0: trigger_paths += ', '
             trigger_paths += f'{path}, @sequence::Timing_paths.{path}'
             counter += 1
         f.write(f'{trigger_paths} ]\n')
-        mod_file.close()
-        print(f'>>> Created timing fcl {name} and module list {module_list}')
+        print(f'>>> Created timing fcl {name}')
 
 
 #--------------------------------------------------------------------------------
