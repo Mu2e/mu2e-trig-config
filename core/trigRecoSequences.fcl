@@ -8,6 +8,14 @@ TrigRecoSequences:{
    #calorimeter reco
    calPrepareHits     : [ CaloHitMakerFast ]
    calReco            : [ CaloHitMakerFast, CaloClusterFast ]
+   #track fitting, where Offline may override to append MC matching
+   aprKSFDeSequence : [ TrigAprKSF ]
+   aprKSFUeSequence : [ TrigAprUeKSF ]
+   cprKSFDeSequence : [ TrigCalSeedFitDe ]
+   mprKSFDeSequence : [ TrigMprKSFDe ]
+   tprKSFDeSequence : [ TrigKSFDe ]
+   tprKSFUeSequence : [ TrigKSFUe ]
+   #CFO
    cfoDataGen : [ ProcessCFOData ]
 }
 
