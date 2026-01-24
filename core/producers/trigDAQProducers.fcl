@@ -4,6 +4,7 @@ TrigDAQProducers : {
   ProcessCFOData : {
     module_type : EventHeaderFromCFOFragment
     cfoTag : "CFOBoardReader"
+    createEWM : true
     diagLevel : 0
   }
 
