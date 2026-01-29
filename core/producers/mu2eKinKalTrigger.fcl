@@ -56,7 +56,8 @@ Mu2eKinKalTrigger : {
       [2.5,5.0, true, 0 ]
     ]
     BkgANNSHUSettings : [
-      [ "Offline/Mu2eKinKal/data/TrainBkgTrigger.dat",0.2,"Inactive", 1]
+    # weight file, threshold, freeze, diag
+      [ "Offline/Mu2eKinKal/data/TrainBkgTrigger.dat",0.2,"Inactive", 0 ]
     ]
   }
 
