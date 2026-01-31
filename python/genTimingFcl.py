@@ -20,6 +20,7 @@ def parse_sequences(verbose):
             line = ' '.join(line.split()) # remove multiple spaces
             if ': [' in line or ':[' in line: # new sequence
                 current = line.split()[0]
+                current = current.replace(':', '')
                 paths[current] = []
                 if verbose > 0: print(f'  Found new sequence {current}')
                 line = line.split(': [')[1]
@@ -29,6 +30,7 @@ def parse_sequences(verbose):
                 ended = True
             elif ended or not started: continue
             line = line.replace(']', '')
+            line = line.replace('"', '')
             line = line.replace(' ', '')
             if verbose > 2: print(f'    Parsing line {line} for modules in {current} path')
             modules = line.split(',')

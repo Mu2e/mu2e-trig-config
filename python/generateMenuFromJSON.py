@@ -140,11 +140,10 @@ def generateMenu(evtMode, outdir,  dictMenu, menuName, dictStreams, proc_name, i
 
     for i in range(len(list_of_calo_trk_paths)):
         path = list_of_calo_trk_paths[i]
-        if i!= len(list_of_calo_trk_paths)-1:
-            if doIt == True:
+        if doIt:
+            if i!= len(list_of_calo_trk_paths)-1:
                 trigMenu.write('     "{}:{}",\n'.format(dictMenu[path]['bit'], path))
-        else:
-            if doIt == True:
+            else:
                 trigMenu.write('     "{}:{}"\n'.format(dictMenu[path]['bit'], path))
         #
         vv=path.split("_")
@@ -177,6 +176,16 @@ def generateMenu(evtMode, outdir,  dictMenu, menuName, dictStreams, proc_name, i
 
     #
     if verbose==True: print("[generateMenu] {} TRIGGER PATHS FOUND (): {}".format(menuName, len(list_of_calo_trk_paths), list_of_calo_trk_paths))
+    # Add a trigger list that doesn't include the trigger bit, for SelectEvents
+    if doIt:
+        trigMenu.write("  ]\n")
+        trigMenu.write("  trigger_list: [\n")
+        for i in range(len(list_of_calo_trk_paths)):
+            path = list_of_calo_trk_paths[i]
+            trigMenu.write(f'     "{path}"')
+            if i!= len(list_of_calo_trk_paths)-1: trigMenu.write(',')
+            trigMenu.write('\n')
+        
     #
     if doIt == True:
         psConfig.write("}\n")
