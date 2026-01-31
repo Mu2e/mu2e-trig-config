@@ -185,7 +185,7 @@ def generateMenu(evtMode, outdir,  dictMenu, menuName, dictStreams, proc_name, i
             trigMenu.write(f'     "{path}"')
             if i!= len(list_of_calo_trk_paths)-1: trigMenu.write(',')
             trigMenu.write('\n')
-        
+
     #
     if doIt == True:
         psConfig.write("}\n")
