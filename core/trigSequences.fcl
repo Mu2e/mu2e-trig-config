@@ -231,29 +231,64 @@ TrigTrkPaths:{
     TrigTZClusterFinder, AprHlx50TCFilter, TrigAprHelixFinder,
     TrigAprHelixMerger, AprHlx50HSFilter, AprHlx30TriggerInfoMerger ]
 
+  apr_TC                  : [ @sequence::TrigRecoSequences.cfoDataGen,
+    AprTCPS, @sequence::TrigRecoSequences.calReco,
+    @sequence::TrigRecoSequences.trkPrepareHits,
+    TrigTZClusterFinder, AprTCTCFilter, AprTCTriggerInfoMerger ]
+  apr_TC_calo             : [ @sequence::TrigRecoSequences.cfoDataGen,
+    AprTCCaloPS, @sequence::TrigRecoSequences.calReco,
+    @sequence::TrigRecoSequences.trkPrepareHits,
+    TrigTZClusterFinder, AprTCCaloTCFilter, AprTCCaloTriggerInfoMerger ]
+
 }
 
 TrigCaloPaths: {
   calo_cosmic: [ @sequence::TrigRecoSequences.cfoDataGen,
-    "CaloCosmicPS",
+    CaloCosmicPS,
     @sequence::TrigRecoSequences.calReco,
-    "CaloCosmicFilter"
+    CaloCosmicFilter, CaloCosmicTriggerInfoMerger
   ]
   calo_MVANNCE: [ @sequence::TrigRecoSequences.cfoDataGen,
-    "CaloMVANNCEPS",
+    CaloMVANNCEPS,
     @sequence::TrigRecoSequences.calReco,
-    "CaloMVANNCEFilter"
+    CaloMVANNCEFilter, CaloMVANNCETriggerInfoMerger
   ]
   calo_photon: [ @sequence::TrigRecoSequences.cfoDataGen,
-    "CaloPhotonPS",
+    CaloPhotonPS,
     @sequence::TrigRecoSequences.calReco,
-    "CaloPhotonFilter"
+    CaloPhotonFilter, CaloPhotonTriggerInfoMerger
   ]
   calo_RMC: [ @sequence::TrigRecoSequences.cfoDataGen,
-    "CaloRMCPS",
+    CaloRMCPS,
     @sequence::TrigRecoSequences.calReco,
-    "CaloRMCFilter"
+    CaloRMCFilter, CaloRMCTriggerInfoMerger
   ]
+  calo_cluster_50: [ @sequence::TrigRecoSequences.cfoDataGen,
+    CaloCluster50PS,
+    @sequence::TrigRecoSequences.calReco,
+    CaloCluster50Filter, CaloCluster50TriggerInfoMerger
+  ]
+  calo_cluster_60: [ @sequence::TrigRecoSequences.cfoDataGen,
+    CaloCluster60PS,
+    @sequence::TrigRecoSequences.calReco,
+    CaloCluster60Filter, CaloCluster60TriggerInfoMerger
+  ]
+  calo_cluster_70: [ @sequence::TrigRecoSequences.cfoDataGen,
+    CaloCluster70PS,
+    @sequence::TrigRecoSequences.calReco,
+    CaloCluster70Filter, CaloCluster70TriggerInfoMerger
+  ]
+  calo_cluster_75: [ @sequence::TrigRecoSequences.cfoDataGen,
+    CaloCluster75PS,
+    @sequence::TrigRecoSequences.calReco,
+    CaloCluster75Filter, CaloCluster75TriggerInfoMerger
+  ]
+  calo_cluster_80: [ @sequence::TrigRecoSequences.cfoDataGen,
+    CaloCluster80PS,
+    @sequence::TrigRecoSequences.calReco,
+    CaloCluster80Filter, CaloCluster80TriggerInfoMerger
+  ]
+
   calo_N0Source: [ @sequence::TrigRecoSequences.cfoDataGen,
     "CaloN0SourcePS",
     @sequence::TrigRecoSequences.calPrepareHits,

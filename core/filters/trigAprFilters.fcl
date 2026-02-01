@@ -86,6 +86,10 @@ TrigAprFilters:{
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprHlx30PS              : { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+  AprTCPS                 : { module_type: PrescaleEvent
+      eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+  AprTCCaloPS             : { module_type: PrescaleEvent
+      eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
   AprTrkDe80m70pD0200HSFilter: {
     module_type: "HelixFilter"
@@ -739,6 +743,21 @@ TrigAprFilters:{
     minNStrawHits: 10
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
+    timeClusterCollection: "TrigTZClusterFinder"
+    ComboHitCollection : "TrigMakePH"
+  }
+
+  AprTCTCFilter : {
+    minNStrawHits: 15
+    module_type: "TimeClusterFilter"
+    requireCaloCluster: false
+    timeClusterCollection: "TrigTZClusterFinder"
+    ComboHitCollection : "TrigMakePH"
+  }
+  AprTCCaloTCFilter : {
+    minNStrawHits: 15
+    module_type: "TimeClusterFilter"
+    requireCaloCluster: true
     timeClusterCollection: "TrigTZClusterFinder"
     ComboHitCollection : "TrigMakePH"
   }

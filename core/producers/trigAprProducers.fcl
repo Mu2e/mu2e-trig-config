@@ -33,8 +33,8 @@ TrigAprProducers : {
 
   TrigAprKSF: {
     module_type : LoopHelixFit
-    MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
-    KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
+    MaterialSettings : { @table::Mu2eKinKalTrigger.MAT       }
+    KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT     }
     FitSettings      : { @table::Mu2eKinKalTrigger.LHSEEDFIT }
     ExtensionSettings: { @table::Mu2eKinKalTrigger.LHSEEDEXT }
     ModuleSettings   : {
@@ -51,8 +51,8 @@ TrigAprProducers : {
 
   TrigAprUeKSF: {
     module_type : LoopHelixFit
-    MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
-    KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
+    MaterialSettings : { @table::Mu2eKinKalTrigger.MAT       }
+    KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT     }
     FitSettings      : { @table::Mu2eKinKalTrigger.LHSEEDFIT }
     ExtensionSettings: { @table::Mu2eKinKalTrigger.LHSEEDEXT }
     ModuleSettings   : {
@@ -110,6 +110,12 @@ TrigAprProducers : {
     module_type: "MergeTriggerInfo"
   }
   AprHlx30TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  AprTCTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  AprTCCaloTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
 }

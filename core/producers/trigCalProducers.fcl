@@ -1,6 +1,35 @@
 BEGIN_PROLOG
 
 TrigCalProducers : {
+  CaloCosmicTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloMVANNCETriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloPhotonTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloRMCTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloCluster50TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloCluster60TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloCluster70TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloCluster75TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloCluster80TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+
+
   CaloHitMakerFast:
   {
     module_type   : "CaloHitsFromDTCEvents"
