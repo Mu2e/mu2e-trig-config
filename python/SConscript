@@ -20,7 +20,7 @@ import generateMenuFromJSON
 sys.dont_write_bytecode = wrtSave
 
 # run like this, it just generates the source and target file listss
-menus      = ["physMenu","extrPosMenu", "valMenu"]
+menus      = ["physMenu","extrPosMenu", "valMenu", "noFieldMenu"]
 evtModes   = ["OnSpill","OffSpill","all"]
 for m in menus:
     for evt in evtModes:
