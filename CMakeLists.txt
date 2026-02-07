@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.19 FATAL_ERROR)
 
 find_package(cetmodules)
 
-project(mu2e-trig-config VERSION 8.00.00)
+project(mu2e-trig-config VERSION 8.01.00)
 
 include(CetCMakeEnv)
 SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
@@ -26,6 +26,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/python/generateMenuFromJSON.py      $
 
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/data/physMenu.json                  ${CURRENT_BINARY_DIR} data/physMenu.json                          COPYONLY)
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/data/extrPosMenu.json               ${CURRENT_BINARY_DIR} data/extrPosMenu.json                       COPYONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/data/noFieldMenu.json               ${CURRENT_BINARY_DIR} data/noFieldMenu.json                       COPYONLY)
 
 install_fhicl(SUBDIRS core SUBDIRNAME mu2e-trig-config/core)
 install_fhicl(SUBDIRS core/producers SUBDIRNAME mu2e-trig-config/core/producers)
