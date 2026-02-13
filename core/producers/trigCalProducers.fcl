@@ -1,3 +1,5 @@
+#include "Offline/CaloReco/fcl/common.fcl"
+
 BEGIN_PROLOG
 
 TrigCalProducers : {
