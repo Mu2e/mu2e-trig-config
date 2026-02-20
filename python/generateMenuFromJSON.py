@@ -44,14 +44,12 @@ def generateLogger(evtMode, outdir, dictLog, logName, dictStreams, isOfflineBuil
     for k in dictLog:
         if dictLog[k]['enabled'] == 0: continue
         vv = k.split("_")
-        streamName = vv[0]
-        for i in range(1,len(vv)): streamName = streamName + capitalize(vv[i])
-        streamName = streamName+"Output"
+        streamName = "".join([capitalize(x) for x in vv]) + "Output"
         list_of_logger_streams.append(streamName)
         #
         if doIt == True:
-            loggerConfig.write('         {}:'.format(streamName)+' { \n')
-            loggerConfig.write('            module_type: RootDAQOutput \n')
+            loggerConfig.write('         {}:'.format(streamName)+' {\n')
+            loggerConfig.write('            module_type: RootDAQOutput\n')
             loggerConfig.write('            SelectEvents : {}\n'.format(json.dumps(dictStreams[k])))
             loggerConfig.write('            maxSubRuns   : 1\n')
             loggerConfig.write('            fileName     : "{}_%r_%#.art\"\n'.format(k))
@@ -142,19 +140,17 @@ def generateMenu(evtMode, outdir,  dictMenu, menuName, dictStreams, proc_name, i
 
     for i in range(len(list_of_calo_trk_paths)):
         path = list_of_calo_trk_paths[i]
-        if i!= len(list_of_calo_trk_paths)-1:
-            if doIt == True:
+        if doIt:
+            if i!= len(list_of_calo_trk_paths)-1:
                 trigMenu.write('     "{}:{}",\n'.format(dictMenu[path]['bit'], path))
-        else:
-            if doIt == True:
+            else:
                 trigMenu.write('     "{}:{}"\n'.format(dictMenu[path]['bit'], path))
         #
         vv=path.split("_")
-        streamName = vv[0]
-        for i in range(1,len(vv)): streamName = streamName + capitalize(vv[i])
+        streamName = "".join([capitalize(x) for x in vv])
         if doIt == True:
-            psConfig.write("   {}PS:".format(streamName)+" { \n")
-            psConfig.write("      module_type: PrescaleEvent \n")
+            psConfig.write("   {}PS:".format(streamName)+" {\n")
+            psConfig.write("      module_type: PrescaleEvent\n")
         evtModes = dictMenu[path]['eventModeConfig']
         psInput = "[ "
         notFirst = False
@@ -172,12 +168,24 @@ def generateMenu(evtMode, outdir,  dictMenu, menuName, dictStreams, proc_name, i
         vv=dictMenu[path]['eventModeConfig']
         for dd in vv:
             for s in dd['streams']:
+                if s not in dictStreams:
+                    print(s, "not found in the dictionary")
                 if path not in dictStreams[s]:
                     trg_path = proc_name+"*:"+path
                     dictStreams[s].append(trg_path)
 
     #
     if verbose==True: print("[generateMenu] {} TRIGGER PATHS FOUND (): {}".format(menuName, len(list_of_calo_trk_paths), list_of_calo_trk_paths))
+    # Add a trigger list that doesn't include the trigger bit, for SelectEvents
+    if doIt:
+        trigMenu.write("  ]\n")
+        trigMenu.write("  trigger_list: [\n")
+        for i in range(len(list_of_calo_trk_paths)):
+            path = list_of_calo_trk_paths[i]
+            trigMenu.write(f'     "{path}"')
+            if i!= len(list_of_calo_trk_paths)-1: trigMenu.write(',')
+            trigMenu.write('\n')
+
     #
     if doIt == True:
         psConfig.write("}\n")
@@ -315,34 +323,34 @@ def generateOffline(menuFile, evtMode, outdir, doIt=False, verbose=False):
 #
 #
 #--------------------------------------------------------------------------------
-def generate(args):
-    tag = args.menuFile.split('/')[-1].split('.')[0]
+def generate(menuFile, evtMode, outdir, verbose):
+    tag = menuFile.split('/')[-1].split('.')[0]
 
-    with open(args.menuFile) as f:
+    with open(menuFile) as f:
         conf = json.load(f)
         keys = conf.keys()
-        if args.verbose==True: print("[generateMenuJSON] KEYS FOUND: {}".format(keys))
+        if verbose==True: print("[generateMenuJSON] KEYS FOUND: {}".format(keys))
         data_streams = {}
         for k in conf['dataLogger_streams']:
             data_streams[k] = []
 
         dict_trkcal_triggers = conf['trigger_paths']
         trkcal_proc_name     = conf['trkcal_filter_process_name']
-        generateMenu(args.evtMode, args.outdir, dict_trkcal_triggers, 'trig_'+tag, data_streams, trkcal_proc_name, False, True, args.verbose)
-        if args.verbose==True: print("[generateMenuJSON] DATA STREAMS FOUND: {}".format(data_streams))
+        generateMenu(evtMode, outdir, dict_trkcal_triggers, 'trig_'+tag, data_streams, trkcal_proc_name, False, True, verbose)
+        if verbose==True: print("[generateMenuJSON] DATA STREAMS FOUND: {}".format(data_streams))
 
         dict_agg_triggers = conf['agg_trigger_paths']
         add_proc_name     = conf['crv_agg_process_name']
-        generateMenu(args.evtMode, args.outdir, dict_agg_triggers, 'agg_'+tag, data_streams, add_proc_name, False, True, args.verbose)
+        generateMenu(evtMode, outdir, dict_agg_triggers, 'agg_'+tag, data_streams, add_proc_name, False, True, verbose)
 
         #now produce the logger menus
         dict_logger = conf['dataLogger_streams']
-        generateLogger(args.evtMode, args.outdir, dict_logger, 'trigLogger_'+tag, data_streams, False, True, args.verbose)
+        generateLogger(evtMode, outdir, dict_logger, 'trigLogger_'+tag, data_streams, False, True, verbose)
         #
         dict_logger = conf['lumiLogger_streams']
         lumi_streams =  {}
         lumi_streams['lumi'] = []
-        generateLogger(args.evtMode, args.outdir, dict_logger, 'trigLumiLogger_'+tag, lumi_streams, False, True, args.verbose)
+        generateLogger(evtMode, outdir, dict_logger, 'trigLumiLogger_'+tag, lumi_streams, False, True, verbose)
 
     # psConfig.write("}\n")
     # psConfig.close()
@@ -379,4 +387,4 @@ if __name__ == "__main__":
         print("[generateMenuFromJSON] EVENT-MODE {} NOT ALLOWED! THE POSSIBLE OPTIONS ARE: {}".format(args.evtMode, allowed_evtModes))
         exit(1)
 
-    generate(args)
+    generate(args.menuFile, args.evtMode, args.outdir, args.verbose)

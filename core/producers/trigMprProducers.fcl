@@ -1,10 +1,10 @@
 BEGIN_PROLOG
 
 TrigMprProducers : {
-  TTRobustMultiHelixFinder : {
+  TrigRobustMultiHelixFinder : {
     module_type   : RobustMultiHelixFinder
-    ComboHitCollection      : "TTflagPH"
-    TimeClusterCollection   : "TTtimeClusterFinder"
+    ComboHitCollection      : "TrigFlagPH"
+    TimeClusterCollection   : "TrigTimeClusterFinder"
     Helicities              : [-1,1]
     MinDRCircle             : 40
     MinRadCircle            : 150
@@ -28,10 +28,10 @@ TrigMprProducers : {
     MinStrawHits            : 10
     NMaxTrkIter             : 3
     DiagLevel               : 0
-    maxEDepAvg              : @local::TrigTrkProducers.TTHelixFinderParams.maxEDepAvg
+    maxEDepAvg              : @local::TrigTrkProducers.TrigHelixFinderParams.maxEDepAvg
   }
-  TTMprHelixMergerDe: {
-    HelixFinders: [ "TTRobustMultiHelixFinder:Positive", "TTRobustMultiHelixFinder:Negative" ]
+  TrigMprHelixMergerDe: {
+    HelixFinders: [ "TrigRobustMultiHelixFinder:Positive", "TrigRobustMultiHelixFinder:Negative" ]
     debugLevel: 0
     deltanh: 5
     module_type: "MergeHelices"
@@ -40,22 +40,25 @@ TrigMprProducers : {
     MinHitOverlapFraction: 0.5
     MinNHitOverlap: 10
   }
-  TTMprKSFDe: {
+  TrigMprKSFDe: {
     module_type : LoopHelixFit
     MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
     KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
-    FitSettings      : { @table::Mu2eKinKalTrigger.SEEDFIT }
-    ExtensionSettings: { @table::Mu2eKinKalTrigger.SEEDEXT }
+    FitSettings      : { @table::Mu2eKinKalTrigger.LHSEEDFIT }
+    ExtensionSettings: { @table::Mu2eKinKalTrigger.LHSEEDEXT }
     ModuleSettings   : {
-      @table::Mu2eKinKalTrigger.LOOPHELIX
+      @table::Mu2eKinKalTrigger.LHHELIX
       FitParticle : @local::Particle.eminus
-      HelixSeedCollections   : [ "TTMprHelixMergerDe" ]
+      HelixSeedCollections   : [ "TrigMprHelixMergerDe" ]
     }
     UsePDGCharge     : false
+    HelixMask: {
+      MinHelixMom : 50
+    }
     FitDirection     : @local::FitDir.downstream
   }
 
-  mprDeHighPStopTargTriggerInfoMerger: {
+  MprTrkDe80m70pD0200TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
 }

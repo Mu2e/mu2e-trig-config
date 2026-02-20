@@ -1,79 +1,63 @@
 BEGIN_PROLOG
 
 TrigCstProducers : {
-  CstCosmicTrackFinder: {
-    ComboHitCollection: "TTOmakePH"
-    CosmicTrackFit: {
-      DoNotUseFlag: "Outlier"
-      GaussianSeedTimeResolution: 24
-      MaxDOCA: 2.5
-      MaxDeltaChi2: 1e-3
-      MaxHitPullForSeed: 100
-      MaxLogL: 150
-      MaxPosDev: 200
-      MaxSeedChi2DOF: 2.5
-      MaxTimeResidual: 40
-      MaxTrackLength: 2000
-      NParameters: 4
-      Noutliers: 2
-      UseTSeedDirection: false
-      maxNiter: 1000
-      minNComboHits: 8
-      minNHitsTimeCluster: 0
-      minNStrawHits: 2
+    CstCosmicTrackFinder: {
+        ComboHitCollection: "TrigOffSpMakePH"
+        CosmicTrackFit: {
+            DoNotUseFlag: "Outlier"
+            GaussianSeedTimeResolution: 24
+            MaxDOCA: 2.5
+            MaxDeltaChi2: 1e-3
+            MaxHitPullForSeed: 100
+            MaxLogL: 150
+            MaxPosDev: 200
+            MaxSeedChi2DOF: 2.5
+            MaxTimeResidual: 40
+            MaxTrackLength: 2000
+            NParameters: 4
+            Noutliers: 2
+            UseTSeedDirection: false
+            maxNiter: 1000
+            minNComboHits: 8
+            minNHitsTimeCluster: 0
+            minNStrawHits: 2
+        }
+        DoDrift: true
+        DriftRes: 10
+        LineFinderTag: "CstLineFinder"
+        MinuitPrecision: -1
+        MinuitTolerance: 5e-1
+        TimeClusterCollection: "CstSimpleTimeCluster"
+        UseChiFit: false
+        UseLineFinder: true
+        UseTime: true
+        minNComboHits: 0
+        minNHitsTimeCluster: 0
+        minNStrawHits: 4
+        module_type: "CosmicTrackFinder"
     }
-    DoDrift: true
-    DriftRes: 10
-    LineFinderTag: "CstLineFinder"
-    MinuitPrecision: -1
-    MinuitTolerance: 5e-1
-    TimeClusterCollection: "CstSimpleTimeCluster"
-    UseChiFit: false
-    UseLineFinder: true
-    UseTime: true
-    minNComboHits: 0
-    minNHitsTimeCluster: 0
-    minNStrawHits: 4
-    module_type: "CosmicTrackFinder"
-  }
-  CstLineFinder: {
-    ComboHitCollection: "TTOmakePH"
-    NSteps: 0
-    NTSteps: 0
-    StepSize: 5e-1
-    TimeClusterCollection: "CstSimpleTimeCluster"
-    maxDOCA: 10
-    minPeak: 10
-    module_type: "LineFinder"
-    t0offset: 0
-    MaxPairs: 500
-  }
-  CstSimpleTimeCluster: {
-    ComboHitCollection: "TTOmakePH"
-    TestFlag: false
-    module_type: "SimpleTimeCluster"
-    HitSelectionBits  : []
-    HitBackgroundBits : ["Background","Noisy","Dead"]
-    debugLevel : 0
-    minNStrawHits : 2
-    minNPanels : 1
-    TimeWindow : 100
-    useTimeWindow : false
-    TimeStep : 20
-    useTimeStep : true
-    UseOnlyOnePanel : false
-    UseOnlyOnePlane : false
-  }
+    CstLineFinder: {
+        @table::CosmicReco.producers.LineFinder
+        ComboHitCollection: "TrigOffSpMakePH"
+        TimeClusterCollection: "CstSimpleTimeCluster"
+        maxDOCA: 10
+        minPeak: 10
+    }
+    CstSimpleTimeCluster: {
+        @table::CosmicReco.producers.SimpleTimeCluster
+        ComboHitCollection: "TrigOffSpMakePH"
+        TestFlag: false
+    }
 
-  cstTimeClusterTriggerInfoMerger: {
-    module_type: "MergeTriggerInfo"
-  }
-  cstTriggerInfoMerger: {
-    module_type: "MergeTriggerInfo"
-  }
-  cstCosmicTrackSeedTriggerInfoMerger: {
-    module_type: "MergeTriggerInfo"
-  }
+    CstTimeClusterTriggerInfoMerger: {
+        module_type: "MergeTriggerInfo"
+    }
+    cstTriggerInfoMerger: {
+        module_type: "MergeTriggerInfo"
+    }
+    CstCosmicTrackSeedTriggerInfoMerger: {
+        module_type: "MergeTriggerInfo"
+    }
 }
 
 END_PROLOG

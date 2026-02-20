@@ -1,11 +1,41 @@
+#include "Offline/CaloReco/fcl/common.fcl"
+
 BEGIN_PROLOG
 
 TrigCalProducers : {
+  CaloCosmicTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloMVANNCETriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloPhotonTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloRMCTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloCluster50TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloCluster60TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloCluster70TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloCluster75TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloCluster80TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+
+
   CaloHitMakerFast:
   {
-    module_type   : "CaloHitsFromDataDecoders"
+    module_type   : "CaloHitsFromDTCEvents"
     diagLevel     : 0
-    caloTag       : "processDTCAndCFOEvents"
     digiSampling  : 5
     deltaTPulses  : 5.
     nPEperMeV     : 30
@@ -16,24 +46,22 @@ TrigCalProducers : {
     hitEDepMin    : 1.0
     caphriEDepMax : 5.0 #MeV
     caphriEDepMin : 1.0 #MeV
+    ADCToMeV      : @local::ADCToMeV
   }
 
   CaloHitMakerFastFromDigi: {
+    module_type: "CaloHitMakerFast"
     ProtonBunchTimeTag: "EWMProducer"
     caloDigiCollection: "CaloDigiMaker"
-    caphriCrystalID: [
-      623,
-      624,
-      595,
-      596
-    ]
     deltaTPulses: 11
     diagLevel: 0
     digiSampling: 5
-    module_type: "CaloHitMakerFast"
     nPEperMeV: 30
     nSigmaNoise: 4
     noiseLevelMeV: 5.5e-1
+    caphriEDepMin : 1.
+    caphriEDepMax : 5.
+    ADCToMeV      : @local::ADCToMeV
   }
 
 
