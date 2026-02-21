@@ -64,7 +64,6 @@ Trigger : {
             bFieldFile          : "Offline/Mu2eG4/geom/bfgeom_v01.txt"
             simulatedDetector   : { tool_type: "Mu2e" }
          }
-         ConditionsService          : { conditionsfile : "Offline/ConditionsService/data/conditions_01.txt"      }
             GlobalConstantsService     : { inputFile      : "Offline/GlobalConstantsService/data/globalConstants_01.txt" }
             DbService                  : DbEmpty : {
                # connect to the actual database
