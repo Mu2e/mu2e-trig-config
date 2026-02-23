@@ -96,7 +96,7 @@ def generateLogger(
     #
     if verbose == True:
         print(
-            "[generateLogger] {} OUTPUT PATHS FOUND (): {}".format(
+            "[generateLogger] {} OUTPUT PATHS FOUND ({}): {}".format(
                 logName, len(list_of_logger_streams), list_of_logger_streams
             )
         )
