@@ -124,7 +124,7 @@
         "lumiStream"          : {
             "bit" : 800 ,
             "enabled": 1,
-            "eventModeConfig": [{"eventMode":"OnSpill", "prescale":-1, "streams": [ "luminosity" ] },
+            "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "luminosity" ] },
                                 {"eventMode":"OffSpill", "prescale":-1, "streams": [ "luminosity" ]                                 }
                                ]
         }
