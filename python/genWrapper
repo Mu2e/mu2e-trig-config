@@ -4,11 +4,12 @@ import os
 import generateMenuFromJSON
 out_dir    = sys.argv[1]
 os.system(f"mkdir -p {out_dir}")
-menus      = ["physMenu","extrPosMenu", "valMenu"]
-evtModes   = ["OnSpill","OffSpill","all"]
+data_dir   = '../data'
+menus      = [ menu for menu in os.listdir(data_dir) if menu.endswith('.json') ]
+evtModes   = ["OnSpill", "OffSpill", "all"]
 for m in menus:
     for evt in evtModes:
-        menu_file  = '../data/{}.json'.format(m)
+        menu_file  = '../data/{}'.format(m)
         generateMenuFromJSON.generate(menu_file,
                                       evt,
                                       out_dir,
