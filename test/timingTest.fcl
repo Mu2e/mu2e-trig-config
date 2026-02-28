@@ -51,10 +51,14 @@ physics : {
            fetchCaloFragments     : 0
            fetchTrkFragments      : 0
            fetchAllFragments      : 0
+           fetchEWM               : 1
+           fetchPBT               : 1
            caloDigiCollectionTag  : "CaloDigiMaker"
            strawDigiCollectionTag : "makeSD"
            caloFragmentTag        : ""
            trkFragmentTag         : ""
+           ewmTag                 : "EWMProducer"
+           pbtTag                 : "EWMProducer"
            debugLevel             : 0
        }
    }
