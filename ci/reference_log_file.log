@@ -3,8 +3,6 @@
      build  /scratch/workspace/GitHubPRTests/mu2e-offline-build-test
      build  al9-prof-e29-p091    02/03/26 14:13:50
    ******************************************************************
-Conditions file: /scratch/workspace/GitHubPRTests/mu2e-offline-build-test/Offline/ConditionsService/data/conditions_01.txt
-Conditions lines: 38  hash: 8098310628555253397
 DbService  MDC2020_best v1_3   mu2e_conditions_prd
 DbService  textFiles: 
 GlobalConstants file: /scratch/workspace/GitHubPRTests/mu2e-offline-build-test/Offline/GlobalConstantsService/data/globalConstants_01.txt
