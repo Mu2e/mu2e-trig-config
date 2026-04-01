@@ -271,7 +271,7 @@
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_calo_calib" ]        }]
         },
 
-        "calo_MVANNCE" :{
+        "calo_NNCE" :{
             "bit" : 401 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ]},
