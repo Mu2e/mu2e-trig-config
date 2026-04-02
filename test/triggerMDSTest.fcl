@@ -1,0 +1,51 @@
+#------------------------------------------------------------------------------
+# runs the trigger reco
+#------------------------------------------------------------------------------
+#  > mu2e --config mu2e-trig-config/test/triggerTest.fcl --source "your digis file" --TFile globalFilter.root --nevts=100
+#include "Offline/fcl/minimalMessageService.fcl"
+#include "Offline/fcl/standardServices.fcl"
+
+#include "mu2e-trig-config/core/trigProducers.fcl"
+#include "mu2e-trig-config/core/trigFilters.fcl"
+#include "mu2e-trig-config/core/trigRecoSequences.fcl"
+#include "mu2e-trig-config/core/trigSequences.fcl"
+
+#include "mu2e-trig-config/gen/trig_mdsMenuPSConfig_OnSpill.fcl"
+#include "mu2e-trig-config/gen/trig_mdsMenu_OnSpill.fcl"
+
+process_name : globalTrigger
+
+# we don't need any simulation services for this job
+
+services : @local::Services.Reco
+services.GeometryService.bFieldFile     : "Offline/Mu2eG4/geom/bfgeom_reco_v01.txt"
+source: { module_type: RootInput }
+services.TFileService.fileName : "/dev/null"
+
+services.scheduler.wantSummary: true
+TrigRecoSequences.artFragmentsGen : [ @nil ]
+
+physics : {
+
+  @table::TrigSequences
+  producers : { @table::TrigProducers.producers }
+  filters   : {
+    @table::TrigFilters.filters
+    @table::Trig_mdsMenuPSConfig
+  }
+  EndPath : [ Output ]
+  trigger_paths : [ @sequence::Trig_mdsMenu.trigger_paths ]
+  end_paths : [ EndPath ]
+}
+
+outputs : {
+  Output : {
+    module_type : RootOutput
+    SelectEvents : [ @sequence::Trig_mdsMenu.trigger_list ]
+    fileName    : "dig.owner.Triggered.mdsMenu.sequencer.art"
+  }
+}
+
+#include "mu2e-trig-config/core/trigDigiInputsEpilog.fcl"
+#include "Production/Validation/database.fcl"
+#include "Production/JobConfig/reco/drop_trigger.fcl"
