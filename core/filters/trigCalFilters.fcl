@@ -55,7 +55,7 @@ TrigCalFilters:{
 
   CaloNNCEFilter: {
     caloClusterCollection: "CaloClusterFast"
-    caloMVACollection:     "CaloNNEvalCE"
+    caloMVACollection:     "CaloNNCEEval"
     diagLevel: 0
     minEtoTest: 80
     maxEtoTest: 2000
