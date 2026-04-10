@@ -79,7 +79,7 @@ TrigCalProducers : {
     timeOffset: -61
   }
 
-  CaloNNEvalCE: {
+  CaloNNCEEval: {
     caloBkgMVA: {
       MVAWeights: "Offline/CaloFilters/data/CE_NN_ReLU_noET.weights.xml"
     }
