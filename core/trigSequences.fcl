@@ -251,7 +251,7 @@ TrigCaloPaths: {
   calo_NNCE: [ @sequence::TrigRecoSequences.cfoDataGen,
     CaloNNCEPS,
     @sequence::TrigRecoSequences.calReco,
-    CaloNNCEEval, 
+    CaloNNCEEval,
     CaloNNCEFilter, CaloNNCETriggerInfoMerger
   ]
   calo_photon: [ @sequence::TrigRecoSequences.cfoDataGen,
