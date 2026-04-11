@@ -86,6 +86,8 @@ TrigAprFilters:{
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprHlx30PS              : { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
+  AprProtonPS             : { module_type: PrescaleEvent
+      eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprTCPS                 : { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprTCCaloPS             : { module_type: PrescaleEvent
@@ -744,6 +746,36 @@ TrigAprFilters:{
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
+    ComboHitCollection : "TrigMakePH"
+  }
+
+  AprProtonHSFilter: {
+    helixSeedCollection: "TrigAprProtonHelixMerger"
+    module_type: "HelixFilter"
+    posHelicitySelection : {
+      @table::AprHelixSelections_pos
+      maxAbsLambda: 1000
+      maxD0: 600
+      minAbsLambda: 40
+      minD0: -600
+      minMomentum: 80
+      minNStrawHits: 15
+    }
+    negHelicitySelection : {
+      @table::AprHelixSelections_neg
+      maxAbsLambda: 1000
+      maxD0: 600
+      minAbsLambda: 40
+      minD0: -600
+      minMomentum: 80
+      minNStrawHits: 15
+    }
+  }
+  AprProtonTCFilter: {
+    minNStrawHits: 10
+    module_type: "TimeClusterFilter"
+    requireCaloCluster: false
+    timeClusterCollection: "TrigTZClusterFinder:proton"
     ComboHitCollection : "TrigMakePH"
   }
 

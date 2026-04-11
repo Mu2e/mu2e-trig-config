@@ -231,6 +231,12 @@ TrigTrkPaths:{
     TrigTZClusterFinder, AprHlx50TCFilter, TrigAprHelixFinder,
     TrigAprHelixMerger, AprHlx50HSFilter, AprHlx30TriggerInfoMerger ]
 
+  apr_proton                  : [ @sequence::TrigRecoSequences.cfoDataGen,
+    AprProtonPS, @sequence::TrigRecoSequences.calReco,
+    @sequence::TrigRecoSequences.trkPrepareHits,
+    TrigTZClusterFinder, AprProtonTCFilter, TrigAprProtonHelixFinder,
+    TrigAprProtonHelixMerger, AprProtonHSFilter, AprProtonTriggerInfoMerger ]
+
   apr_TC                  : [ @sequence::TrigRecoSequences.cfoDataGen,
     AprTCPS, @sequence::TrigRecoSequences.calReco,
     @sequence::TrigRecoSequences.trkPrepareHits,
