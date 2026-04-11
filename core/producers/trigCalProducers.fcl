@@ -6,7 +6,7 @@ TrigCalProducers : {
   CaloCosmicTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  CaloMVANNCETriggerInfoMerger: {
+  CaloNNCETriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
   CaloPhotonTriggerInfoMerger: {
@@ -78,6 +78,24 @@ TrigCalProducers : {
     module_type: "CaloClusterFast"
     timeOffset: -61
   }
+
+  CaloNNCEEval: {
+    caloBkgMVA: {
+      MVAWeights: "Offline/CaloFilters/data/CE_NN_ReLU_noET.weights.xml"
+    }
+    caloClusterCollection: "CaloClusterFast"
+    diagLevel: 0
+    minEtoTest: 60
+    maxEtoTest: 2000
+    minTtoTest: 0
+    maxTtoTest: 1600
+    minRtoTest: 0
+    maxRtoTest: 1000
+    module_type: "CaloNNEval"
+  }
+
+
+
 
 }
 

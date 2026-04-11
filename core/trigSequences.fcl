@@ -248,10 +248,11 @@ TrigCaloPaths: {
     @sequence::TrigRecoSequences.calReco,
     CaloCosmicFilter, CaloCosmicTriggerInfoMerger
   ]
-  calo_MVANNCE: [ @sequence::TrigRecoSequences.cfoDataGen,
-    CaloMVANNCEPS,
+  calo_NNCE: [ @sequence::TrigRecoSequences.cfoDataGen,
+    CaloNNCEPS,
     @sequence::TrigRecoSequences.calReco,
-    CaloMVANNCEFilter, CaloMVANNCETriggerInfoMerger
+    CaloNNCEEval,
+    CaloNNCEFilter, CaloNNCETriggerInfoMerger
   ]
   calo_photon: [ @sequence::TrigRecoSequences.cfoDataGen,
     CaloPhotonPS,

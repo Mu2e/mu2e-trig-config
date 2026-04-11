@@ -16,7 +16,7 @@ TrigCalClusterID : {
 TrigCalFilters:{
   CaloCosmicPS    : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  CaloMVANNCEPS   : { module_type: PrescaleEvent
+  CaloNNCEPS   : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   CaloPhotonPS    : { module_type: PrescaleEvent
       eventModeConfig : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
@@ -52,16 +52,22 @@ TrigCalFilters:{
     module_type: "CaloCosmicCalib"
   }
 
-  CaloMVANNCEFilter: {
-    caloBkgMVA: {
-      MVAWeights: "Offline/CaloFilters/data/CE_NN_ReLU.weights.xml"
-    }
+
+  CaloNNCEFilter: {
     caloClusterCollection: "CaloClusterFast"
+    caloMVACollection:     "CaloNNCEEval"
     diagLevel: 0
-    minEtoTest: 40
-    minMVAScore: 9.5e-1
+    minEtoTest: 80
+    maxEtoTest: 2000
+    minTtoTest: 450
+    maxTtoTest: 1600
+    minRtoTest: 0
+    maxRtoTest: 1000
+    minMVAScore: 0.98
     module_type: "FilterEcalNNTrigger"
   }
+
+
 
   CaloPhotonFilter: {
     BackgroundTemplates: "OfflineData/CaloFilters/v7_1_5/caloLH_bkg.root"
