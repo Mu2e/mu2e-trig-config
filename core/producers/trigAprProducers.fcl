@@ -5,6 +5,7 @@ TrigAprProducers : {
     chCollLabel                : "TrigFlagPH"
     ccCollLabel                : "CaloClusterFast"
     radSelect                  : 0
+    protonTCs                  : true
   }
 
   TrigAprHelixFinder: { @table::CalPatRec.producers.AgnosticHelixFinder
@@ -18,9 +19,32 @@ TrigAprProducers : {
     eDepFlagThresh          : 0.003
   }
 
+  TrigAprProtonHelixFinder: { @table::CalPatRec.producers.AgnosticHelixFinder
+    chCollLabel             : "TrigFlagPH"
+    tcCollLabel             : "TrigTZClusterFinder:proton"
+    ccCollLabel             : "CaloClusterFast"
+    minNHelixComboHits      : 10
+    maxEDepAvg              : 100.
+    maxNHitsRatio           : 1.5
+    doEDepFlag              : false
+  }
+
   TrigAprHelixMerger: {
     HelixFinders: [
       "TrigAprHelixFinder"
+    ]
+    debugLevel: 0
+    deltanh: 5
+    module_type: "MergeHelices"
+    scaleXY: 1.1
+    scaleZPhi: 7.5e-1
+    MinHitOverlapFraction: 0.5
+    MinNHitOverlap: 10
+  }
+
+  TrigAprProtonHelixMerger: {
+    HelixFinders: [
+      "TrigAprProtonHelixFinder"
     ]
     debugLevel: 0
     deltanh: 5
@@ -110,6 +134,9 @@ TrigAprProducers : {
     module_type: "MergeTriggerInfo"
   }
   AprHlx30TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  AprProtonTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
   AprTCTriggerInfoMerger: {
