@@ -42,7 +42,6 @@ TrigMprProducers : {
   }
   TrigMprKSFDe: {
     module_type : LoopHelixFit
-    MaterialSettings : { @table::Mu2eKinKalTrigger.MAT     }
     KKFitSettings    : { @table::Mu2eKinKalTrigger.KKFIT   }
     FitSettings      : { @table::Mu2eKinKalTrigger.LHSEEDFIT }
     ExtensionSettings: { @table::Mu2eKinKalTrigger.LHSEEDEXT }
