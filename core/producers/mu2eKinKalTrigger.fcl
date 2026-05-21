@@ -6,9 +6,6 @@ BEGIN_PROLOG
 #
 ################################################################################
 Mu2eKinKalTrigger : {
-  MAT: {
-    @table::Mu2eKinKal.MAT
-  }
 
   KKFIT: {
     @table::Mu2eKinKal.KKFIT
