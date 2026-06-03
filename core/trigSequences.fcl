@@ -249,6 +249,9 @@ TrigTrkPaths:{
 }
 
 TrigCaloPaths: {
+  calo_hits: [ @sequence::TrigRecoSequences.cfoDataGen,
+    CaloHitsPS, CaloEventFilter, CaloHitsTriggerInfoMerger
+  ]
   calo_cosmic: [ @sequence::TrigRecoSequences.cfoDataGen,
     CaloCosmicPS,
     @sequence::TrigRecoSequences.calReco,

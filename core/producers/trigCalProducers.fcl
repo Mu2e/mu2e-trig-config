@@ -3,6 +3,9 @@
 BEGIN_PROLOG
 
 TrigCalProducers : {
+  CaloHitsTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
   CaloCosmicTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
