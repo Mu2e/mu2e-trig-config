@@ -46,13 +46,13 @@ physics : {
        @table::TrigProducers.producers
        Prefetch : {
            module_type            : PrefetchDAQData
-           fetchCaloDigis         : 1
-           fetchStrawDigis        : 1
-           fetchCaloFragments     : 0
-           fetchTrkFragments      : 0
-           fetchAllFragments      : 0
-           fetchEWM               : 1
-           fetchPBT               : 1
+           fetchCaloDigis         : true
+           fetchStrawDigis        : true
+           fetchCaloFragments     : false
+           fetchTrkFragments      : false
+           fetchAllFragments      : false
+           fetchEWM               : true
+           fetchPBT               : true
            caloDigiCollectionTag  : "CaloDigiMaker"
            strawDigiCollectionTag : "makeSD"
            caloFragmentTag        : ""
