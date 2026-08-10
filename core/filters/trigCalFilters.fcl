@@ -41,6 +41,26 @@ TrigCalFilters:{
     module_type: "CaloEventFilter"
   }
 
+  CaloHitFilter1: {
+    module_type: "CaloHitFilter"
+    minimumHits: 1
+  }
+
+  CaloHitFilter2: {
+    module_type: "CaloHitFilter"
+    minimumHits: 2
+  }
+
+  CaloHitFilter10: {
+    module_type: "CaloHitFilter"
+    minimumHits: 10
+  }
+
+  CaloHitFilterLaser: {
+    module_type: "CaloHitFilter"
+    minimumHits: 2500
+  }
+
   CaloCosmicFilter: {
     CaloClusterModuleLabel: "CaloClusterFast"
     InnerRadius: 460
