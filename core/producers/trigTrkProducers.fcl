@@ -67,6 +67,7 @@ TrigTrkProducers : {
     maxEDepAvg : 0.0025
   }
 }
+
 # This next defines which hit flagger to use
 TrigTrkProducers : {
   @table::TrigTrkProducers
@@ -103,8 +104,58 @@ TrigTrkProducers : {
     MaximumEnergy : 1
     ComboHitCollection    : "TrigOffSpMakeSH"
   }
+}
 
+# Add producers for basic tracking paths
+TrigTrkProducers : {
+  @table::TrigTrkProducers
 
+  TrkTCTriggerInfoMerger: { module_type: "MergeTriggerInfo" }
+  TrkSHTriggerInfoMerger: { module_type: "MergeTriggerInfo" }
+
+  # Hit-making for commissioning
+  TrigComMakeSH: {
+      @table::TrkHitReco.producers.makeSH
+      FitType                           : 5
+      FilterHits                        : false
+      WriteStrawHitCollection           : true
+      MinimumTime                       : 0
+      MaximumTime                       : 200000
+      MinimumEnergy                     : 0.0005
+      MaximumEnergy                     : 0.005
+      MinimumRadius                     : 350.0
+      MaximumRadius                     : 750.0
+      StrawDigiCollectionTag            : "TrigMakeSD"
+      StrawDigiADCWaveformCollectionTag : "notUsed"
+      ProtonBunchTimeTag                : "ProcessCFOData"
+      EventWindowMarker                 : "ProcessCFOData"
+      UseCalorimeter                    : false
+      clusterDt                         : 100.0
+      CaloClusterCollectionTag          : "notUsed"
+      FlagCrossTalk                     : false
+      crossTalkEnergy                   : 0.007
+      crossTalkMinimumTime              : -1
+      crossTalkMaximumTime              : 100
+  }
+
+  # Simple time clustering
+  TrkTCSimpleTimeCluster: {
+      module_type              : SimpleTimeCluster
+      ComboHitCollection       : "TrigComMakeSH"
+      TestFlag                 : true
+      HitSelectionBits         : []
+      HitBackgroundBits        : ["Background","Noisy","Dead"]
+      HitNonNoiseSelectionBits : ["EnergySelection"]
+      debugLevel               : 0
+      minNStrawHits            : 8
+      minNPanels               : 2
+      TimeWindow               : 400
+      useTimeWindow            : true
+      TimeStep                 : 100
+      useTimeStep              : false
+      UseOnlyOnePanel          : false
+      UseOnlyOnePlane          : false
+  }
 }
 
 END_PROLOG

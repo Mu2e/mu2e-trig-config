@@ -8,7 +8,7 @@ TrigCrvFilters:{
       module_type : CrvEventFilter
       minExtraPackets : 40
       debugEvery : 50000
-      printHistograms : false
+      # printHistograms : false
   }
 }
 

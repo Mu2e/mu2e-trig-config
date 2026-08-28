@@ -353,6 +353,15 @@ TrigSupPaths:{
 
 }
 
+TrigTrkPaths:{
+  trk_TC : [ @sequence::TrigRecoSequences.cfoDataGen, TrkTCPS,
+    TrigMakeSD, TrigComMakeSH, TrkTCSimpleTimeCluster, TrkTCTCFilter,
+    TrkTCTriggerInfoMerger ]
+  trk_SH : [ @sequence::TrigRecoSequences.cfoDataGen, TrkSHPS,
+    TrigMakeSD, TrigComMakeSH, TrkSHStrawHitFilter,
+    TrkSHTriggerInfoMerger ]
+}
+
 TrigCrvPaths:{
   crv_event : [ @sequence::TrigRecoSequences.cfoDataGen,  CrvEventPS, CrvEventFilter ]
 }
