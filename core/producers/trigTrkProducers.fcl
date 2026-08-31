@@ -31,7 +31,7 @@ TrigTrkProducers : {
     TestFlag   : true # required as makeSH no longer filters hits
     FilterHits : false
     MinimumTimeOffSpill : 0
-    MinimumTimeOffSpill : 100000
+    MaximumTimeOffSpill : 100000
     ComboHitCollection    : "TrigMakeSH"
     StrawHitSelectionBits : ["TimeSelection"]
     StrawHitMask          : ["Dead"]
@@ -93,7 +93,7 @@ TrigTrkProducers : {
   TrigOffSpMakePH: {
     @table::TrigTrkProducers.TrigMakePH
     MinimumTime : 0
-    MinimumTime : 100000
+    MaximumTime : 100000
     MinimumRadius : 0
     MaximumRadius : 800
     MinimumEnergy : 0
