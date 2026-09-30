@@ -1444,26 +1444,3 @@ MemReport  ---------- Memory summary [base-10 MB] ------
 MemReport  VmPeak = 4293.3 VmHWM = 641.237
 
 Art has completed and will exit with status 0.
-First event processing time: 0.2382
---> Adjusting the average time by 0.00001: 0.02867 --> 0.02866
-First event processing time: 0.1970
---> Adjusting the average time by 0.00001: 0.01844 --> 0.01843
->>> Path tpr_TrkDe_50_D0200 has a major change!
-Local counts    : [20000, 187, 19813, 0]
-Reference counts: [20000, 159, 19841, 0] (delta/sqrt(reference) = 2.22)
->>> Path cpr_TrkDe_50_D0200 has a minor change:
-Local counts    : [20000, 25, 19975, 0]
-Reference counts: [20000, 21, 19979, 0] (delta/sqrt(reference) = 0.87)
->>> Path apr_TwoTrkDe_50 has a major change!
-Local counts    : [20000, 3, 19997, 0]
-Reference counts: [20000, 1, 19999, 0] (delta/sqrt(reference) = 2.00)
->>> Path apr_TrkDe_50_D0200 has a major change!
-Local counts    : [20000, 163, 19837, 0]
-Reference counts: [20000, 127, 19873, 0] (delta/sqrt(reference) = 3.19)
->>> Path mpr_TrkDe_80m70p_D0200 has a minor change:
-Local counts    : [20000, 412, 19588, 0]
-Reference counts: [20000, 387, 19613, 0] (delta/sqrt(reference) = 1.27)
-Evaluating a timing scale: 2.317e-05 (new) and 1.670e-05 (reference) --> scale = 0.72
-Total processing time per event: 0.0287 (new) (0.0207 scaled) vs. 0.0184 (reference), |time_new / time_ref - 1| = 0.121
-Job completed with failure.
-Return Code: 2
