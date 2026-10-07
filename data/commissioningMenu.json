@@ -37,6 +37,13 @@
                                  {"eventMode":"OffSpill", "prescale":-1, "streams": [ "cosmics_main" ]}]
         },
 
+	"msd_hits" :{
+	    "bit" : 2000,
+	    "enabled": 0,
+            "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":-1, "streams": [ "physics_main", "dqm_trigger" ]},
+                                 {"eventMode":"OffSpill", "prescale":-1, "streams": [ "cosmics_main" ]}]
+	},
+
         "minBias_unbiased":{
             "bit" : 620,
             "enabled": 1,
