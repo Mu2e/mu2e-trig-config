@@ -3,6 +3,7 @@ BEGIN_PROLOG
 TrigTrkProducers : {
   TrigMakeSD: {
     @table::DAQ.producers.makeSD
+    saveWaveforms: true
   }
 
   TrigMakeSHFromDigi: {
@@ -116,7 +117,7 @@ TrigTrkProducers : {
   # Hit-making for commissioning
   TrigComMakeSH: {
       @table::TrkHitReco.producers.makeSH
-      FitType                           : 5
+      FitType                           : 1
       FilterHits                        : false
       WriteStrawHitCollection           : true
       MinimumTime                       : 0
@@ -126,7 +127,7 @@ TrigTrkProducers : {
       MinimumRadius                     : 350.0
       MaximumRadius                     : 750.0
       StrawDigiCollectionTag            : "TrigMakeSD"
-      StrawDigiADCWaveformCollectionTag : "notUsed"
+      StrawDigiADCWaveformCollectionTag: "TrigMakeSD"
       ProtonBunchTimeTag                : "ProcessCFOData"
       EventWindowMarker                 : "ProcessCFOData"
       UseCalorimeter                    : false
@@ -149,7 +150,7 @@ TrigTrkProducers : {
       debugLevel               : 0
       minNStrawHits            : 8
       minNPanels               : 2
-      TimeWindow               : 400
+      TimeWindow               : 100
       useTimeWindow            : true
       TimeStep                 : 100
       useTimeStep              : false
