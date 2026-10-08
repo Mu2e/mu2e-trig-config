@@ -1,2 +1,2 @@
-/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art
-/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art
+/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/dig.mu2e.data_like_no_primary_1BB.MDC2020ae_best_v1_3.001202_00000000.art
+/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/dig.mu2e.data_like_no_primary_1BB.MDC2020ae_best_v1_3.001202_00000080.art
