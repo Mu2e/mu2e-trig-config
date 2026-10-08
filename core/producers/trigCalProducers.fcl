@@ -36,7 +36,6 @@ TrigCalProducers : {
   {
     module_type   : "CaloHitsFromDTCEvents"
     diagLevel     : 0
-    digiSampling  : 5
     deltaTPulses  : 5.
     nPEperMeV     : 30
     noiseLevelMeV : 0.55
@@ -55,7 +54,6 @@ TrigCalProducers : {
     caloDigiCollection: "CaloDigiMaker"
     deltaTPulses: 11
     diagLevel: 0
-    digiSampling: 5
     nPEperMeV: 30
     nSigmaNoise: 4
     noiseLevelMeV: 5.5e-1
