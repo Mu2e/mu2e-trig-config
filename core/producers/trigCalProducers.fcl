@@ -45,7 +45,6 @@ TrigCalProducers : {
     hitEDepMin    : 1.0
     caphriEDepMax : 5.0 #MeV
     caphriEDepMin : 1.0 #MeV
-    ADCToMeV      : @local::ADCToMeV
   }
 
   CaloHitMakerFastFromDigi: {
@@ -59,7 +58,6 @@ TrigCalProducers : {
     noiseLevelMeV: 5.5e-1
     caphriEDepMin : 1.
     caphriEDepMax : 5.
-    ADCToMeV      : @local::ADCToMeV
   }
 
 
