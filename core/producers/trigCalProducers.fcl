@@ -21,6 +21,9 @@ TrigCalProducers : {
   CaloLaserTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
+  CaloHitsTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
   CaloRMCTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
@@ -41,8 +44,7 @@ TrigCalProducers : {
   }
 
 
-  CaloHitMakerFast:
-  {
+  CaloHitMakerFast: {
     module_type   : "CaloHitsFromDTCEvents"
     diagLevel     : 0
     deltaTPulses  : 5.
