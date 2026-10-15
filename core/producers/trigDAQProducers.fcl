@@ -32,6 +32,10 @@ TrigDAQProducers : {
     #         maxDMABlockSize : 32000
     #         bufferSize      : 1000
   }
+  MSDHitMaker: {
+    debugLevel: 0
+    module_type: MSDHitsFromDTCEvents
+  }
 }
 
 END_PROLOG

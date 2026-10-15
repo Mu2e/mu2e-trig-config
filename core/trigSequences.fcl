@@ -250,10 +250,16 @@ TrigTrkPaths:{
 
 TrigCaloPaths: {
   calo_hits: [ @sequence::TrigRecoSequences.cfoDataGen,
-    CaloHitsPS, CaloEventFilter, CaloHitsTriggerInfoMerger
+    CaloHitsPS, CaloHitFilter1, CaloHitsTriggerInfoMerger
+  ]
+  calo_csi: [ @sequence::TrigRecoSequences.cfoDataGen,
+    CaloCSIPS, CaloCSIFilter, CaloHitsTriggerInfoMerger
   ]
   calo_laser: [ @sequence::TrigRecoSequences.cfoDataGen,
-    CaloHitsPS, CaloHitFilterLaser, CaloHitsTriggerInfoMerger
+    CaloLaserPS, CaloLaserFilter, CaloHitsTriggerInfoMerger
+  ]
+  calo_caphri: [ @sequence::TrigRecoSequences.cfoDataGen,
+    CaloCAPHRIPS, CaloCAPHRIFilter, CaloHitsTriggerInfoMerger
   ]
   calo_cosmic: [ @sequence::TrigRecoSequences.cfoDataGen,
     CaloCosmicPS,
@@ -356,7 +362,7 @@ TrigSupPaths:{
 TrigTrkPaths:{
   # Require both the straw-hit and time-cluster filters to accept the event.
   trk_TC : [ @sequence::TrigRecoSequences.cfoDataGen, TrkTCPS,
-    TrigMakeSD, TrigComMakeSH, 
+    TrigMakeSD, TrigComMakeSH,
     TrkTCSimpleTimeCluster, TrkTCTCFilter, TrkTCTriggerInfoMerger ]
   trk_SH : [ @sequence::TrigRecoSequences.cfoDataGen, TrkSHPS,
     TrigMakeSD, TrigComMakeSH, TrkSHStrawHitFilter,
@@ -367,6 +373,10 @@ TrigCrvPaths:{
   crv_event : [ @sequence::TrigRecoSequences.cfoDataGen,  CrvEventPS, CrvEventFilter ]
 }
 
+TrigDAQPaths : {
+  msd_hits : [ MSDHitMaker, MSDHitFilter ]
+}
+
 TrigSequences:{
   #@table::TrigRecoSequences
   @table::TrigTrkPaths
@@ -374,6 +384,7 @@ TrigSequences:{
   @table::TrigCstPaths
   @table::TrigSupPaths
   @table::TrigCrvPaths
+  @table::TrigDAQPaths
 }
 
 END_PROLOG
