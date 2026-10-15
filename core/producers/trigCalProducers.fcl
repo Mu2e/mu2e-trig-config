@@ -12,6 +12,15 @@ TrigCalProducers : {
   CaloPhotonTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
+  CaloCAPHRITriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloCSITriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  CaloLaserTriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
   CaloRMCTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
