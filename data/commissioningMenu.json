@@ -30,6 +30,27 @@
                                  {"eventMode":"OffSpill", "prescale":-1, "streams": [ "cosmics_main", "physics_calo_calib" ]}]
         },
 
+        "calo_csi"  :{
+            "bit" : 1101,
+            "enabled": 1,
+            "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":-1, "streams": [ "physics_main", "dqm_trigger" ]},
+                                 {"eventMode":"OffSpill", "prescale":-1, "streams": [ "cosmics_main", "physics_calo_calib" ]}]
+        },
+
+        "calo_laser"  :{
+            "bit" : 1102,
+            "enabled": 1,
+            "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":-1, "streams": [ "physics_main", "dqm_trigger" ]},
+                                 {"eventMode":"OffSpill", "prescale":-1, "streams": [ "cosmics_main", "physics_calo_calib" ]}]
+        },
+
+        "calo_caphri"  :{
+            "bit" : 1103,
+            "enabled": 1,
+            "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":-1, "streams": [ "physics_main", "dqm_trigger" ]},
+                                 {"eventMode":"OffSpill", "prescale":-1, "streams": [ "cosmics_main", "physics_calo_calib" ]}]
+        },
+
         "crv_event"  :{
             "bit" : 1400,
             "enabled": 1,
