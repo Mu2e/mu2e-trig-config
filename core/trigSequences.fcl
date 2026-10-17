@@ -253,13 +253,13 @@ TrigCaloPaths: {
     CaloHitsPS, CaloHitFilter1, CaloHitsTriggerInfoMerger
   ]
   calo_csi: [ @sequence::TrigRecoSequences.cfoDataGen,
-    CaloCSIPS, CaloCSIFilter, CaloHitsTriggerInfoMerger
+    CaloCsiPS, CaloCSIFilter, CaloHitsTriggerInfoMerger
   ]
   calo_laser: [ @sequence::TrigRecoSequences.cfoDataGen,
     CaloLaserPS, CaloLaserFilter, CaloHitsTriggerInfoMerger
   ]
   calo_caphri: [ @sequence::TrigRecoSequences.cfoDataGen,
-    CaloCAPHRIPS, CaloCAPHRIFilter, CaloHitsTriggerInfoMerger
+    CaloCaphriPS, CaloCAPHRIFilter, CaloHitsTriggerInfoMerger
   ]
   calo_cosmic: [ @sequence::TrigRecoSequences.cfoDataGen,
     CaloCosmicPS,
