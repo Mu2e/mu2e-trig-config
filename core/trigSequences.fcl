@@ -362,7 +362,7 @@ TrigSupPaths:{
 TrigTrkPaths:{
   # Require both the straw-hit and time-cluster filters to accept the event.
   trk_TC : [ @sequence::TrigRecoSequences.cfoDataGen, TrkTCPS,
-    TrigMakeSD, TrigComMakeSH, TrkSHStrawHitFilter,
+    TrigMakeSD, TrigComMakeSH,
     TrkTCSimpleTimeCluster, TrkTCTCFilter, TrkTCTriggerInfoMerger ]
   trk_SH : [ @sequence::TrigRecoSequences.cfoDataGen, TrkSHPS,
     TrigMakeSD, TrigComMakeSH, TrkSHStrawHitFilter,

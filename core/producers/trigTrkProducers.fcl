@@ -156,6 +156,7 @@ TrigTrkProducers : {
       useTimeStep              : false
       UseOnlyOnePanel          : false
       UseOnlyOnePlane          : false
+      minNGoodStrawHits : 2
   }
 }
 
