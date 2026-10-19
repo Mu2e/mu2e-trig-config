@@ -75,7 +75,7 @@ TrigCalFilters:{
   CaloLaserFilter: {
     module_type: "CaloLaserFilter"
     minimumHits: 1
-    checkDiskPins: false
+    checkDiskPins: true
     debugEvery: 600000
   }
 
@@ -87,7 +87,7 @@ TrigCalFilters:{
 
   CaloCSIFilter: {
     module_type: "CaloCSIFilter"
-    minimumHits: 1
+    minimumHits: 2
     debugEvery: 600000
   }
 
