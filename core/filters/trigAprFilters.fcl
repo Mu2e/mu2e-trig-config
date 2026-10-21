@@ -12,7 +12,7 @@ AprHelixSelections_pos : { # downstream e-minus/upstream e-plus
   minAbsLambda: 140
   minHitRatio: 4e-1
   minNLoops: 0
-  minNStrawHits: 15
+  minNStrawHits: @local::TrigTrkConfig.Apr.HSMinNStrawHits
   minPt: 0
   prescaleUsingD0Phi: false
   requireCaloCluster: false
@@ -28,7 +28,7 @@ AprTrackSelections_neg_de : { # downstream e-minus
   maxMomentum: 2000
   maxTanDip: 100
   minFitCons: -1
-  minNStrawHits: 15
+  minNStrawHits: @local::TrigTrkConfig.Apr.KSMinNStrawHits
   minTanDip: 0
   requireCaloCluster: false
 }
@@ -110,7 +110,7 @@ TrigAprFilters:{
     }
   }
   AprTrkDe80m70pD0200TCFilter : {
-    minNStrawHits: 15
+    minNStrawHits: @local::TrigTrkConfig.Apr.TCMinNStrawHits
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
@@ -152,7 +152,7 @@ TrigAprFilters:{
     }
   }
   AprTrkDe75m70pD0200TCFilter : {
-    minNStrawHits: 15
+    minNStrawHits: @local::TrigTrkConfig.Apr.TCMinNStrawHits
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
@@ -194,7 +194,7 @@ TrigAprFilters:{
     }
   }
   AprTrkDe75D0200TCFilter : {
-    minNStrawHits: 15
+    minNStrawHits: @local::TrigTrkConfig.Apr.TCMinNStrawHits
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
@@ -236,7 +236,7 @@ TrigAprFilters:{
     }
   }
   AprTrkDe70D0200TCFilter : {
-    minNStrawHits: 15
+    minNStrawHits: @local::TrigTrkConfig.Apr.TCMinNStrawHits
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
@@ -282,7 +282,7 @@ TrigAprFilters:{
     }
   }
   AprTrkDe80m70pTCFilter : {
-    minNStrawHits: 15
+    minNStrawHits: @local::TrigTrkConfig.Apr.TCMinNStrawHits
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
@@ -328,7 +328,7 @@ TrigAprFilters:{
     }
   }
   AprTrkDe75m70pTCFilter : {
-    minNStrawHits: 15
+    minNStrawHits: @local::TrigTrkConfig.Apr.TCMinNStrawHits
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
@@ -374,7 +374,7 @@ TrigAprFilters:{
     }
   }
   AprTrkDe75TCFilter : {
-    minNStrawHits: 15
+    minNStrawHits: @local::TrigTrkConfig.Apr.TCMinNStrawHits
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
@@ -420,7 +420,7 @@ TrigAprFilters:{
     }
   }
   AprTrkDe70TCFilter : {
-    minNStrawHits: 15
+    minNStrawHits: @local::TrigTrkConfig.Apr.TCMinNStrawHits
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
@@ -467,7 +467,7 @@ TrigAprFilters:{
     }
   }
   AprTrkUe80m70pTCFilter : {
-    minNStrawHits: 15
+    minNStrawHits: @local::TrigTrkConfig.Apr.TCMinNStrawHits
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"
@@ -514,7 +514,7 @@ TrigAprFilters:{
     }
   }
   AprTrkDe50D0200TCFilter: {
-    minNStrawHits: 15
+    minNStrawHits: @local::TrigTrkConfig.Apr.TCMinNStrawHits
     module_type: "TimeClusterFilter"
     requireCaloCluster: false
     timeClusterCollection: "TrigTZClusterFinder"

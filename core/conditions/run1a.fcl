@@ -1,0 +1,32 @@
+# Configure for the Run 1A scenario:
+# - Reduced tracker
+# - 1BB intensity
+#
+# Include this file BEFORE trigProducers.fcl/trigFilters.fcl. Values are bound
+# with @protect_ignore so the run2.fcl defaults included later don't replace
+# them. Parameters not set here keep their run2.fcl values.
+
+BEGIN_PROLOG
+
+# CPR:
+TrigTrkConfig.Cpr.HelixFinder.minNHit             @protect_ignore: 7
+TrigTrkConfig.Cpr.HelixFinder.maxNHitsRatio       @protect_ignore: 3
+TrigTrkConfig.Cpr.HelixFinder.minNHitsTimeCluster @protect_ignore: 7
+
+TrigTrkConfig.Cpr.TCMinNStrawHits @protect_ignore: 10
+TrigTrkConfig.Cpr.HSMinNStrawHits @protect_ignore: 10
+TrigTrkConfig.Cpr.KSMinNStrawHits @protect_ignore: 10
+
+# APR:
+TrigTrkConfig.Apr.HelixFinder.maxSeedLineGap     @protect_ignore: 600
+TrigTrkConfig.Apr.HelixFinder.maxNHitsRatio      @protect_ignore: 3
+TrigTrkConfig.Apr.HelixFinder.minNHelixStrawHits @protect_ignore: 8
+TrigTrkConfig.Apr.HelixFinder.minNHelixComboHits @protect_ignore: 6
+TrigTrkConfig.Apr.HelixFinder.minSeedCircleHits  @protect_ignore: 5
+TrigTrkConfig.Apr.HelixFinder.minFinalSeedHits   @protect_ignore: 5
+
+TrigTrkConfig.Apr.TCMinNStrawHits @protect_ignore: 10
+TrigTrkConfig.Apr.HSMinNStrawHits @protect_ignore: 10
+TrigTrkConfig.Apr.KSMinNStrawHits @protect_ignore: 10
+
+END_PROLOG
