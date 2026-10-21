@@ -5,6 +5,13 @@
 # Include this file BEFORE trigProducers.fcl/trigFilters.fcl. Values are bound
 # with @protect_ignore so the run2.fcl defaults included later don't replace
 # them. Parameters not set here keep their run2.fcl values.
+#
+# Coverage: only the standard CPR/APR helix finder settings and time cluster,
+# helix seed, and kal seed hit thresholds have been tuned for this scenario.
+# Other CPR/APR parameters (e.g. AprHlx*, AprProton, AprTC* and the proton
+# helix finder) have not been evaluated yet and keep their nominal values; they
+# can be added to TrigTrkConfig once tuned. MPR and TPR are untuned backups not
+# intended for the deployed trigger at this point.
 
 BEGIN_PROLOG
 
