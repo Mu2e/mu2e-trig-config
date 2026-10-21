@@ -137,12 +137,19 @@ TrigAprProducers : {
   AprProtonTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
+  AprProtonP250TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
+  AprProtonP150TriggerInfoMerger: {
+    module_type: "MergeTriggerInfo"
+  }
   AprTCTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
   AprTCCaloTriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
+  AprTCProtonCaloTriggerInfoMerger: { module_type: "MergeTriggerInfo" }
 }
 
 END_PROLOG
