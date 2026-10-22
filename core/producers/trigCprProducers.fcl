@@ -17,7 +17,7 @@ TrigCprProducers : {
          debugLevel: 0
          debugLevel2: 0
          dfdzErr: 1e-1
-         maxNHitsRatio: 1.5
+         maxNHitsRatio: @local::TrigTrkConfig.Cpr.HelixFinder.maxNHitsRatio
          diagLevel: 0
          distPatRec: 100
          dzOverHelPitchCut: 7e-1
@@ -37,7 +37,7 @@ TrigCprProducers : {
          procAllTCs: false
          minDeltaNShPatRec: 2
          minDfDz: 2e-3
-         minNHit: 10
+         minNHit: @local::TrigTrkConfig.Cpr.HelixFinder.minNHit
          minP: 50
          mindist: 500
          mostProbableDfDz: 4.75e-3
@@ -73,7 +73,7 @@ TrigCprProducers : {
       fitdirection: @local::FitDir.downstream
       doSingleOutput: true
       maxEDepAvg: 0.0025
-      minNHitsTimeCluster: 10
+      minNHitsTimeCluster: @local::TrigTrkConfig.Cpr.HelixFinder.minNHitsTimeCluster
       module_type: "CalHelixFinder"
       printFrequency: 100
    }
