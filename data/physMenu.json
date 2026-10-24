@@ -260,7 +260,7 @@
             "bit" : 270 ,
             "enabled": 1,
             "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },
-                                {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }
+                                {"eventMode":"OffSpill", "prescale":-1, "streams": [ "cosmics_main", "physics_trk_calib" ]          }
                                ]
         },
         "apr_proton_p250"   : {
@@ -364,13 +364,6 @@
 
         "apr_TC_calo":{
             "bit" : 511 ,
-            "enabled": 1,
-            "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ]},
-                                 {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]}]
-        },
-
-        "apr_TC_proton_calo":{
-            "bit" : 512 ,
             "enabled": 1,
             "eventModeConfig" : [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ]},
                                  {"eventMode":"OffSpill", "prescale":1, "streams": [ "cosmics_main", "physics_trk_calib" ]}]

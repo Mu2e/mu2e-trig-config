@@ -28,6 +28,7 @@ AprProtonHelixSelection : { # base for the proton bands (AprProton*HSFilter)
   maxD0: 600
   minD0: -600
   minNStrawHits: 20
+  maxMass: 1200 # MeV, from p and the t vs z slope (proton 938, deuteron 1876)
 }
 AprTrackSelections_neg_de : { # downstream e-minus
   fitdirection: @local::FitDir.downstream
@@ -104,8 +105,6 @@ TrigAprFilters:{
   AprProtonP250PS         : { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprProtonP150PS         : { module_type: PrescaleEvent
-      eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  AprTCProtonCaloPS    : { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
 
   AprTrkDe80m70pD0200HSFilter: {
@@ -765,20 +764,19 @@ TrigAprFilters:{
   }
 
   # High-energy muon capture protons, in momentum bands sharing TrigAprProtonHelixFinder. The
-  # protons are forward (|lambda| ~ 1000 mm). The mean straw hit edep rejects deuterons and slower
-  # protons above ~280 MeV/c; below that the edep saturates, so the low band relies on its prescale.
-  AprProtonHSFilter: { # p > 325 MeV/c (KE > ~55 MeV), unprescaled
+  # protons are forward (|lambda| ~ 1000 mm). Deuterons are rejected with the mass from the helix
+  # momentum and t vs z slope (maxMass), which uses only hit times: the straw hit edep is compressed
+  # above ~4 keV and capped by the ADC near 5.8 keV, so it is not used for the selection.
+  AprProtonHSFilter: { # p > 335 MeV/c (KE > ~58 MeV), unprescaled
     helixSeedCollection: "TrigAprProtonHelixMerger"
     module_type: "HelixFilter"
     posHelicitySelection : {
       @table::AprProtonHelixSelection
-      minMomentum: 325
-      maxEDepAvg: 0.0042
+      minMomentum: 335
     }
     negHelicitySelection : {
       @table::AprProtonHelixSelection
-      minMomentum: 325
-      maxEDepAvg: 0.0042
+      minMomentum: 335
     }
   }
   AprProtonP250HSFilter: { # p > 250 MeV/c (KE > ~33 MeV), prescaled
@@ -787,15 +785,13 @@ TrigAprFilters:{
     posHelicitySelection : {
       @table::AprProtonHelixSelection
       minMomentum: 250
-      maxEDepAvg: 0.0046
     }
     negHelicitySelection : {
       @table::AprProtonHelixSelection
       minMomentum: 250
-      maxEDepAvg: 0.0046
     }
   }
-  AprProtonP150HSFilter: { # p > 150 MeV/c, no edep selection, heavily prescaled
+  AprProtonP150HSFilter: { # p > 150 MeV/c (KE > ~12 MeV), heavily prescaled
     helixSeedCollection: "TrigAprProtonHelixMerger"
     module_type: "HelixFilter"
     posHelicitySelection : {
@@ -829,13 +825,6 @@ TrigAprFilters:{
     module_type: "TimeClusterFilter"
     requireCaloCluster: true
     timeClusterCollection: "TrigTZClusterFinder"
-    ComboHitCollection : "TrigMakePH"
-  }
-  AprTCProtonCaloTCFilter : {
-    minNStrawHits: 10
-    module_type: "TimeClusterFilter"
-    requireCaloCluster: true
-    timeClusterCollection: "TrigTZClusterFinder:proton"
     ComboHitCollection : "TrigMakePH"
   }
 }

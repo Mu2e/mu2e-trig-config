@@ -255,10 +255,6 @@ TrigTrkPaths:{
     AprTCCaloPS, @sequence::TrigRecoSequences.calReco,
     @sequence::TrigRecoSequences.trkPrepareHits,
     TrigTZClusterFinder, AprTCCaloTCFilter, AprTCCaloTriggerInfoMerger ]
-  apr_TC_proton_calo      : [ @sequence::TrigRecoSequences.cfoDataGen,
-    AprTCProtonCaloPS, @sequence::TrigRecoSequences.calReco,
-    @sequence::TrigRecoSequences.trkPrepareHits,
-    TrigTZClusterFinder, AprTCCaloTCFilter, AprTCProtonCaloTriggerInfoMerger ]
 
 }
 
