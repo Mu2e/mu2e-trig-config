@@ -18,6 +18,7 @@ TrigTprFilters:{
 
   TprTrkDe80m70pD0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigHelixMergerDe"
     posHelicitySelection : {
       configured: true
@@ -106,6 +107,7 @@ TrigTprFilters:{
 
   TprTrkDe80m70pHSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigHelixMergerDe"
     posHelicitySelection : {
       configured: true
@@ -194,6 +196,7 @@ TrigTprFilters:{
 
   TprTrkDe50D0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigHelixMergerDe"
     posHelicitySelection : {
       configured: true
@@ -281,6 +284,7 @@ TrigTprFilters:{
 
   TprHlxDe70m50pHSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigHelixMergerDe"
     posHelicitySelection: {
       configured: true
@@ -325,6 +329,7 @@ TrigTprFilters:{
   TprHlxDe30pIPAHSFilter: {
     helixSeedCollection: "TrigHelixMergerDe"
     module_type: "HelixFilter"
+    useTrackerStatus: true
     posHelicitySelection: {
       configured: true
       doHelicityCheck: true
@@ -351,6 +356,7 @@ TrigTprFilters:{
 
   TprHlxDe30pIPAPhiHSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigHelixMergerDe"
     posHelicitySelection: {
       configured: true
@@ -404,6 +410,7 @@ TrigTprFilters:{
 
   TprHlxUe50m30pHSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigHelixMergerUe"
     posHelicitySelection: {
       configured: true

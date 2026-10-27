@@ -75,6 +75,7 @@ TrigCprFilters:{
 
   CprTrkDe80m70pD0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       @table::CprHelixSelections_pos_de
@@ -118,6 +119,7 @@ TrigCprFilters:{
 
   CprTrkDe75m70pD0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       @table::CprHelixSelections_pos_de
@@ -161,6 +163,7 @@ TrigCprFilters:{
 
   CprTrkDe75D0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       @table::CprHelixSelections_pos_de
@@ -204,6 +207,7 @@ TrigCprFilters:{
 
   CprTrkDe70D0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       @table::CprHelixSelections_pos_de
@@ -247,6 +251,7 @@ TrigCprFilters:{
 
   CprTrkDe80m70pHSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       @table::CprHelixSelections_pos_de
@@ -293,6 +298,7 @@ TrigCprFilters:{
 
   CprTrkDe75m70pHSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       @table::CprHelixSelections_pos_de
@@ -339,6 +345,7 @@ TrigCprFilters:{
 
   CprTrkDe75HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       @table::CprHelixSelections_pos_de
@@ -385,6 +392,7 @@ TrigCprFilters:{
 
   CprTrkDe70HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       @table::CprHelixSelections_pos_de
@@ -432,6 +440,7 @@ TrigCprFilters:{
   CprTrkDe50D0200HSFilter: {
     helixSeedCollection: "TrigCalHelixMergerDe"
     module_type: "HelixFilter"
+    useTrackerStatus: true
     posHelicitySelection : {
       @table::CprHelixSelections_pos_de
       maxAbsLambda: 500
@@ -477,6 +486,7 @@ TrigCprFilters:{
 
   CprHlxDe50HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigCalHelixMergerDe"
     posHelicitySelection : {
       @table::CprHelixSelections_pos_de
@@ -507,6 +517,7 @@ TrigCprFilters:{
 
   CprHlxUe40HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigCalHelixMergerUe"
     posHelicitySelection : {
       @table::CprHelixSelections_pos_de

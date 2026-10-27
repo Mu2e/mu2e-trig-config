@@ -95,6 +95,7 @@ TrigAprFilters:{
 
   AprTrkDe80m70pD0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -137,6 +138,7 @@ TrigAprFilters:{
 
   AprTrkDe75m70pD0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -179,6 +181,7 @@ TrigAprFilters:{
 
   AprTrkDe75D0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -221,6 +224,7 @@ TrigAprFilters:{
 
   AprTrkDe70D0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -263,6 +267,7 @@ TrigAprFilters:{
 
   AprTrkDe80m70pHSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -309,6 +314,7 @@ TrigAprFilters:{
 
   AprTrkDe75m70pHSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -355,6 +361,7 @@ TrigAprFilters:{
 
   AprTrkDe75HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -401,6 +408,7 @@ TrigAprFilters:{
 
   AprTrkDe70HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -448,6 +456,7 @@ TrigAprFilters:{
   #upstream track trigger filters
   AprTrkUe80m70pHSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -495,6 +504,7 @@ TrigAprFilters:{
   #apr lowP filters
   AprTrkDe50D0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigAprHelixMerger"
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -542,6 +552,7 @@ TrigAprFilters:{
   AprTrkDe80m70pD0200MultiTrkHSFilter: {
     helixSeedCollection: "TrigAprHelixMerger"
     module_type: "HelixFilter"
+    useTrackerStatus: true
     minNHelices: 2
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -592,6 +603,7 @@ TrigAprFilters:{
   AprTrkDe50MultiHelixHSFilter: {
     helixSeedCollection: "TrigAprHelixMerger"
     module_type: "HelixFilter"
+    useTrackerStatus: true
     minNHelices: 2
     posHelicitySelection : {
       @table::AprHelixSelections_pos
@@ -644,6 +656,7 @@ TrigAprFilters:{
   AprHlx50Hlx30HSFilter: {
     helixSeedCollection: "TrigAprHelixMerger"
     module_type: "MultiHelixFilter"
+    useTrackerStatus: true
     minNHelices: 2
     timeWindow : 100.
     minArcGap : 20.
@@ -692,6 +705,7 @@ TrigAprFilters:{
   AprHlx50HSFilter: {
     helixSeedCollection: "TrigAprHelixMerger"
     module_type: "HelixFilter"
+    useTrackerStatus: true
     posHelicitySelection : {
       @table::AprHelixSelections_pos
       maxAbsLambda: 1000
@@ -722,6 +736,7 @@ TrigAprFilters:{
   AprHlx30HSFilter: {
     helixSeedCollection: "TrigAprHelixMerger"
     module_type: "HelixFilter"
+    useTrackerStatus: true
     posHelicitySelection : {
       @table::AprHelixSelections_pos
       maxAbsLambda: 1000
@@ -752,6 +767,7 @@ TrigAprFilters:{
   AprProtonHSFilter: {
     helixSeedCollection: "TrigAprProtonHelixMerger"
     module_type: "HelixFilter"
+    useTrackerStatus: true
     posHelicitySelection : {
       @table::AprHelixSelections_pos
       maxAbsLambda: 1000
