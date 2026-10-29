@@ -31,6 +31,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/data/noFieldMenu.json               $
 install_fhicl(SUBDIRS core SUBDIRNAME mu2e-trig-config/core)
 install_fhicl(SUBDIRS core/producers SUBDIRNAME mu2e-trig-config/core/producers)
 install_fhicl(SUBDIRS core/filters   SUBDIRNAME mu2e-trig-config/core/filters)
+install_fhicl(SUBDIRS core/conditions SUBDIRNAME mu2e-trig-config/core/conditions)
 
 install(DIRECTORY data DESTINATION ${CMAKE_INSTALL_DATAROOTDIR})
 install(DIRECTORY python DESTINATION .)
