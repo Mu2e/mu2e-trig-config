@@ -6,6 +6,7 @@ TrigMprFilters:{
 
   MprTrkDe80m70pD0200HSFilter: {
     module_type: "HelixFilter"
+    useTrackerStatus: true
     helixSeedCollection: "TrigMprHelixMergerDe"
     posHelicitySelection : {
       configured: true
