@@ -17,6 +17,6 @@ TrigDAQFilters: {
         module_type: "MSDHitFilter"
         tag: "MSDHitMaker"
     }
-    
+
 }
 END_PROLOG
