@@ -24,7 +24,9 @@ import time
 
 UPSTREAM = "Mu2e/mu2e-trig-config"
 CMAKE = "CMakeLists.txt"
-CMAKE_VERSION = re.compile(r"(project\s*\(\s*mu2e-trig-config\s+VERSION\s+)(\d+)\.(\d+)\.(\d+)")
+CMAKE_VERSION = re.compile(
+    r"(project\s*\(\s*mu2e-trig-config\s+VERSION\s+)(\d+)\.(\d+)\.(\d+)"
+)
 TAG = re.compile(r"^v(\d+)_(\d+)_(\d+)$")
 
 
@@ -103,7 +105,20 @@ def latest_tag(repo, upstream):
 # Wait for GitHub to compute whether the PR can be merged
 def wait_mergeable(pr):
     for _ in range(30):
-        state = run(["gh", "pr", "view", pr, "-R", UPSTREAM, "--json", "mergeable", "--jq", ".mergeable"])
+        state = run(
+            [
+                "gh",
+                "pr",
+                "view",
+                pr,
+                "-R",
+                UPSTREAM,
+                "--json",
+                "mergeable",
+                "--jq",
+                ".mergeable",
+            ]
+        )
         if state != "UNKNOWN":
             return state
         time.sleep(10)
@@ -112,9 +127,15 @@ def wait_mergeable(pr):
 
 # --------------------------------------------------------------
 # Main
-parser = argparse.ArgumentParser(description="Update the version and make a new tag of %s" % UPSTREAM)
+parser = argparse.ArgumentParser(
+    description="Update the version and make a new tag of %s" % UPSTREAM
+)
 parser.add_argument("version", help="New version, e.g. 8.12.00 (tagged as v8_12_00)")
-parser.add_argument("--dry-run", action="store_true", help="Run the checks and show the version update, without committing")
+parser.add_argument(
+    "--dry-run",
+    action="store_true",
+    help="Run the checks and show the version update, without committing",
+)
 args = parser.parse_args()
 
 repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -129,11 +150,24 @@ run(["git", "fetch", upstream, "main"], cwd=repo)
 current = latest_tag(repo, upstream)
 print("Latest tag is %s, new tag is %s" % (tag_name(current), tag))
 if new <= current:
-    sys.exit("Version %s is not greater than the latest tag %s" % (version_string(new), tag_name(current)))
-expected = [(current[0], current[1], current[2] + 1), (current[0], current[1] + 1, 0), (current[0] + 1, 0, 0)]
+    sys.exit(
+        "Version %s is not greater than the latest tag %s"
+        % (version_string(new), tag_name(current))
+    )
+expected = [
+    (current[0], current[1], current[2] + 1),
+    (current[0], current[1] + 1, 0),
+    (current[0] + 1, 0, 0),
+]
 if new not in expected:
-    print("Version %s skips a version number: the next versions after %s are %s"
-          % (version_string(new), tag_name(current), ", ".join(version_string(v) for v in expected)))
+    print(
+        "Version %s skips a version number: the next versions after %s are %s"
+        % (
+            version_string(new),
+            tag_name(current),
+            ", ".join(version_string(v) for v in expected),
+        )
+    )
     if ask("Continue with %s?" % version_string(new), ["y", "n"]) != "y":
         sys.exit("Aborting")
 
@@ -142,12 +176,24 @@ head = run(["git", "rev-parse", "HEAD"], cwd=repo)
 main = run(["git", "rev-parse", "%s/main" % upstream], cwd=repo)
 use_local = False
 if head != main:
-    if subprocess.run(["git", "merge-base", "--is-ancestor", head, main], cwd=repo).returncode != 0:
-        sys.exit("The current checkout (%s) has commits that are not in %s main: merge them first, "
-                 "or check out %s/main" % (head[:9], UPSTREAM, upstream))
-    print("The current checkout (%s) is not at the HEAD of %s main (%s):" % (head[:9], UPSTREAM, main[:9]))
+    if (
+        subprocess.run(
+            ["git", "merge-base", "--is-ancestor", head, main], cwd=repo
+        ).returncode
+        != 0
+    ):
+        sys.exit(
+            "The current checkout (%s) has commits that are not in %s main: merge them first, "
+            "or check out %s/main" % (head[:9], UPSTREAM, upstream)
+        )
+    print(
+        "The current checkout (%s) is not at the HEAD of %s main (%s):"
+        % (head[:9], UPSTREAM, main[:9])
+    )
     print(run(["git", "log", "--oneline", "%s..%s" % (head, main)], cwd=repo))
-    answer = ask("Tag the (c)urrent checkout or %s (m)ain's HEAD?" % UPSTREAM, ["c", "m"])
+    answer = ask(
+        "Tag the (c)urrent checkout or %s (m)ain's HEAD?" % UPSTREAM, ["c", "m"]
+    )
     use_local = answer == "c"
 base = head if use_local else main
 
@@ -165,26 +211,63 @@ try:
         sys.exit("No project VERSION found in %s" % CMAKE)
     old = tuple(int(x) for x in match.groups()[1:])
     if new <= old:
-        sys.exit("Version %s is not greater than the %s version %s" % (version_string(new), CMAKE, version_string(old)))
+        sys.exit(
+            "Version %s is not greater than the %s version %s"
+            % (version_string(new), CMAKE, version_string(old))
+        )
     with open(cmake_path, "w") as f:
-        f.write(CMAKE_VERSION.sub(lambda m: m.group(1) + version_string(new), cmake, count=1))
+        f.write(
+            CMAKE_VERSION.sub(
+                lambda m: m.group(1) + version_string(new), cmake, count=1
+            )
+        )
     print(run(["git", "diff"], cwd=worktree))
     if args.dry_run:
         print("Dry run: not committing")
         sys.exit(0)
 
-    run(["git", "commit", "-am", "Update version to %s" % version_string(new)], cwd=worktree)
+    run(
+        ["git", "commit", "-am", "Update version to %s" % version_string(new)],
+        cwd=worktree,
+    )
     commit = run(["git", "rev-parse", "HEAD"], cwd=worktree)
     run(["git", "push", fork, branch], cwd=worktree)
-    pr_url = run(["gh", "pr", "create", "-R", UPSTREAM, "--base", "main", "--head", "%s:%s" % (login, branch),
-                  "--title", "Update version to %s" % version_string(new),
-                  "--body", "Update the version in `%s` to %s for tag %s." % (CMAKE, version_string(new), tag)])
+    pr_url = run(
+        [
+            "gh",
+            "pr",
+            "create",
+            "-R",
+            UPSTREAM,
+            "--base",
+            "main",
+            "--head",
+            "%s:%s" % (login, branch),
+            "--title",
+            "Update version to %s" % version_string(new),
+            "--body",
+            "Update the version in `%s` to %s for tag %s."
+            % (CMAKE, version_string(new), tag),
+        ]
+    )
     print("Opened " + pr_url)
     pr = pr_url.rstrip("/").split("/")[-1]
 
     # Wait for the required checks, then merge only if there are no conflicts
     time.sleep(15)
-    checks = subprocess.run(["gh", "pr", "checks", pr, "-R", UPSTREAM, "--required", "--watch", "--fail-fast"])
+    checks = subprocess.run(
+        [
+            "gh",
+            "pr",
+            "checks",
+            pr,
+            "-R",
+            UPSTREAM,
+            "--required",
+            "--watch",
+            "--fail-fast",
+        ]
+    )
     if checks.returncode != 0:
         sys.exit("Required checks did not pass, not merging %s" % pr_url)
     mergeable = wait_mergeable(pr)
@@ -195,9 +278,39 @@ try:
     print("Merged " + pr_url)
 
     # Tag the merge commit, or the version update commit if tagging the current checkout
-    target = commit if use_local else run(["gh", "pr", "view", pr, "-R", UPSTREAM, "--json", "mergeCommit",
-                                           "--jq", ".mergeCommit.oid"])
-    run(["gh", "release", "create", tag, "-R", UPSTREAM, "--target", target, "--title", tag, "--generate-notes"])
+    target = (
+        commit
+        if use_local
+        else run(
+            [
+                "gh",
+                "pr",
+                "view",
+                pr,
+                "-R",
+                UPSTREAM,
+                "--json",
+                "mergeCommit",
+                "--jq",
+                ".mergeCommit.oid",
+            ]
+        )
+    )
+    run(
+        [
+            "gh",
+            "release",
+            "create",
+            tag,
+            "-R",
+            UPSTREAM,
+            "--target",
+            target,
+            "--title",
+            tag,
+            "--generate-notes",
+        ]
+    )
     run(["git", "fetch", upstream, "main", "--tags"], cwd=repo)
     print("Tagged %s at %s" % (tag, target[:9]))
 finally:
