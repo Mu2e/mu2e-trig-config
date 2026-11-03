@@ -14,20 +14,16 @@ TrigDAQProducers : {
     strawDigiCollection : "makeSD"
     caloDigiCollection  : "CaloDigiMaker"
     crvDigiCollection   : "CrvDigi"
-    diagLevel       : 0
-    maxFullPrint    : 0
 
     includeTracker : 0
     includeCalorimeter : 0
     includeCrv : 0
-    includeDMAHeaders: 1
 
     generateTimestampTable : 0
     tableFile              : "tsTable.bin"
     timestampOffset        : 0
 
     generateBinaryFile : 1
-    generateTextFile   : 0
     #         outputFile      : "DTC_packets.bin"
     #         maxDMABlockSize : 32000
     #         bufferSize      : 1000

@@ -12,9 +12,13 @@ TrigAprProducers : {
     chCollLabel             : "TrigFlagPH"
     tcCollLabel             : "TrigTZClusterFinder"
     ccCollLabel             : "CaloClusterFast"
-    minNHelixComboHits      : 10
     maxEDepAvg              : @local::TrigTrkProducers.TrigHelixFinderParams.maxEDepAvg
-    maxNHitsRatio           : 1.5
+    maxSeedLineGap          : @local::TrigTrkConfig.Apr.HelixFinder.maxSeedLineGap
+    maxNHitsRatio           : @local::TrigTrkConfig.Apr.HelixFinder.maxNHitsRatio
+    minNHelixStrawHits      : @local::TrigTrkConfig.Apr.HelixFinder.minNHelixStrawHits
+    minNHelixComboHits      : @local::TrigTrkConfig.Apr.HelixFinder.minNHelixComboHits
+    minSeedCircleHits       : @local::TrigTrkConfig.Apr.HelixFinder.minSeedCircleHits
+    minFinalSeedHits        : @local::TrigTrkConfig.Apr.HelixFinder.minFinalSeedHits
     doEDepFlag              : true
     eDepFlagThresh          : 0.003
   }

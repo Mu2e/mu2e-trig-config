@@ -1,0 +1,35 @@
+# Configure for the Run 2 scenario (nominal tracker). These are the default
+# values: trigProducers.fcl and trigFilters.fcl include this file, and the
+# producer/filter prologs pick the values up via @local::TrigTrkConfig.
+#
+# To use a different scenario, include its file (e.g. run1a.fcl) BEFORE
+# trigProducers.fcl/trigFilters.fcl. Scenario files bind values with
+# @protect_ignore, so the defaults below are then ignored.
+#
+# Only use dotted assignments here: redefining the TrigTrkConfig table as a
+# whole would discard the protected scenario values.
+
+BEGIN_PROLOG
+
+# CPR:
+TrigTrkConfig.Cpr.HelixFinder.minNHit             : 10
+TrigTrkConfig.Cpr.HelixFinder.maxNHitsRatio       : 1.5
+TrigTrkConfig.Cpr.HelixFinder.minNHitsTimeCluster : 10
+
+TrigTrkConfig.Cpr.TCMinNStrawHits : 15 # time cluster filters
+TrigTrkConfig.Cpr.HSMinNStrawHits : 15 # helix seed filters
+TrigTrkConfig.Cpr.KSMinNStrawHits : 15 # kal seed filters
+
+# APR:
+TrigTrkConfig.Apr.HelixFinder.maxSeedLineGap     : 250
+TrigTrkConfig.Apr.HelixFinder.maxNHitsRatio      : 1.5
+TrigTrkConfig.Apr.HelixFinder.minNHelixStrawHits : 12
+TrigTrkConfig.Apr.HelixFinder.minNHelixComboHits : 10
+TrigTrkConfig.Apr.HelixFinder.minSeedCircleHits  : 7
+TrigTrkConfig.Apr.HelixFinder.minFinalSeedHits   : 7
+
+TrigTrkConfig.Apr.TCMinNStrawHits : 15 # time cluster filters
+TrigTrkConfig.Apr.HSMinNStrawHits : 15 # helix seed filters
+TrigTrkConfig.Apr.KSMinNStrawHits : 15 # kal seed filters
+
+END_PROLOG
