@@ -3,7 +3,7 @@ BEGIN_PROLOG
 TrigTrkProducers : {
   TrigMakeSD: {
     @table::DAQ.producers.makeSD
-    saveWaveforms: true
+    saveWaveforms: false
   }
 
   TrigMakeSHFromDigi: {
