@@ -64,6 +64,7 @@ class RunLog:
         _require_psycopg()
         if db_env is None:
             from daqpy.env import env
+
             db_env = env.db.runinfo
         self._cfg = db_env
         self._conn = None
@@ -71,9 +72,10 @@ class RunLog:
 
     def _validate(self):
         missing = [
-            var for var, val in [
+            var
+            for var, val in [
                 ("OTSDAQ_RUNINFO_DATABASE_HOST", self._cfg.host),
-                ("OTSDAQ_RUNINFO_DATABASE",      self._cfg.name),
+                ("OTSDAQ_RUNINFO_DATABASE", self._cfg.name),
             ]
             if not val
         ]
@@ -85,7 +87,7 @@ class RunLog:
     def _connect_kwargs(self) -> dict[str, Any]:
         cfg = self._cfg
         kw: dict[str, Any] = {
-            "host":   cfg.host,
+            "host": cfg.host,
             "dbname": cfg.name,
         }
         if cfg.port:
@@ -267,10 +269,12 @@ class RunLog:
             clauses.append("rt.name = %s")
             params.append(run_type)
         if run_status:
-            clauses.append("""CASE lt.type_id
+            clauses.append(
+                """CASE lt.type_id
                     WHEN 0 THEN 'halt' WHEN 1 THEN 'completed' WHEN 2 THEN 'error'
                     WHEN 3 THEN 'pause' WHEN 4 THEN 'resume' WHEN 5 THEN 'start'
-                    ELSE 'unknown' END = %s""")
+                    ELSE 'unknown' END = %s"""
+            )
             params.append(run_status)
         if subsystem:
             clauses.append("sub.subsystems_list ILIKE %s")
