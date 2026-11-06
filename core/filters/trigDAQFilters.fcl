@@ -6,7 +6,7 @@ TrigDAQFilters: {
         trackerTag         : TrigMakeSH
         protonClusterTag   : "TrigTZClusterFinder:proton"
         electronClusterTag : "TrigTZClusterFinder:electron"
-        headerTag          : ProcessCFOData
+        headerTag          : "EWMProducer"
         eventFreq          : 10000
         passFirst          : true
         diagLevel          : 0

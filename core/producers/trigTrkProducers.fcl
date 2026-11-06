@@ -25,8 +25,8 @@ TrigTrkProducers : {
     WriteStrawHitCollection : false
     StrawDigiADCWaveformCollectionTag : "notUsed"
     StrawDigiCollectionTag : "TrigMakeSD"
-    ProtonBunchTimeTag : "ProcessCFOData"
-    EventWindowMarker  : "ProcessCFOData"
+    ProtonBunchTimeTag : "EWMProducer"
+    EventWindowMarker  : "EWMProducer"
   }
 
   TrigMakePH: {
@@ -38,7 +38,7 @@ TrigTrkProducers : {
     ComboHitCollection    : "TrigMakeSH"
     StrawHitSelectionBits : ["TimeSelection"]
     StrawHitMask          : ["Dead"]
-    EventWindowMarker     : "ProcessCFOData"
+    EventWindowMarker     : "EWMProducer"
   }
 
   # combine panel hits in a station
@@ -128,8 +128,8 @@ TrigTrkProducers : {
       MaximumRadius                     : 750.0
       StrawDigiCollectionTag            : "TrigMakeSD"
       StrawDigiADCWaveformCollectionTag: "TrigMakeSD"
-      ProtonBunchTimeTag                : "ProcessCFOData"
-      EventWindowMarker                 : "ProcessCFOData"
+      ProtonBunchTimeTag                : "EWMProducer"
+      EventWindowMarker                 : "EWMProducer"
       UseCalorimeter                    : false
       clusterDt                         : 100.0
       CaloClusterCollectionTag          : "notUsed"

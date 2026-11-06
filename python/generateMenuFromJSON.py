@@ -183,7 +183,7 @@ def generateMenu(
         if doIt == True:
             psConfig.write("   {}PS:".format(streamName) + " {\n")
             psConfig.write("      module_type: PrescaleEvent\n")
-            psConfig.write("      EventWindowMarker: ProcessCFOData\n")
+            psConfig.write("      EventWindowMarker: EWMProducer\n")
         evtModes = dictMenu[path]["eventModeConfig"]
         psInput = "[ "
         notFirst = False
