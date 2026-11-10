@@ -256,7 +256,7 @@
                                ]
         },
 
-        "apr_proton"   : {
+        "apr_proton_p335"   : {
             "bit" : 270 ,
             "enabled": 1,
             "eventModeConfig": [{"eventMode":"OnSpill", "prescale":1, "streams": [ "physics_main", "dqm_trigger" ] },

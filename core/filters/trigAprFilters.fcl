@@ -96,7 +96,7 @@ TrigAprFilters:{
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprHlx30PS              : { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
-  AprProtonPS             : { module_type: PrescaleEvent
+  AprProtonP335PS         : { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
   AprTCPS                 : { module_type: PrescaleEvent
       eventModeConfig  : [  { eventMode: OnSpill prescale:-1}, { eventMode: OffSpill prescale:-1} ]}
@@ -782,7 +782,7 @@ TrigAprFilters:{
   # protons are forward (|lambda| ~ 1000 mm). Deuterons are rejected with the mass from the helix
   # momentum and t vs z slope (maxMass), which uses only hit times: the straw hit edep is compressed
   # above ~4 keV and capped by the ADC near 5.8 keV, so it is not used for the selection.
-  AprProtonHSFilter: { # p > 335 MeV/c (KE > ~58 MeV), unprescaled
+  AprProtonP335HSFilter: { # p > 335 MeV/c (KE > ~58 MeV)
     helixSeedCollection: "TrigAprProtonHelixMerger"
     module_type: "HelixFilter"
     useTrackerStatus: true
@@ -798,6 +798,7 @@ TrigAprFilters:{
   AprProtonP250HSFilter: { # p > 250 MeV/c (KE > ~33 MeV), prescaled
     helixSeedCollection: "TrigAprProtonHelixMerger"
     module_type: "HelixFilter"
+    useTrackerStatus: true
     posHelicitySelection : {
       @table::AprProtonHelixSelection
       minMomentum: 250
@@ -810,6 +811,7 @@ TrigAprFilters:{
   AprProtonP150HSFilter: { # p > 150 MeV/c (KE > ~12 MeV), heavily prescaled
     helixSeedCollection: "TrigAprProtonHelixMerger"
     module_type: "HelixFilter"
+    useTrackerStatus: true
     posHelicitySelection : {
       @table::AprProtonHelixSelection
       minMomentum: 150

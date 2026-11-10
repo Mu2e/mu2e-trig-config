@@ -142,7 +142,7 @@ TrigAprProducers : {
   AprHlx30TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
-  AprProtonTriggerInfoMerger: {
+  AprProtonP335TriggerInfoMerger: {
     module_type: "MergeTriggerInfo"
   }
   AprProtonP250TriggerInfoMerger: {
