@@ -49,6 +49,7 @@ def fill_results(f, verbose=0):
             "artFragFromDTCEvents" in words[0]
             or "processCFOData" in words[0]
             or "ProcessCFOData" in words[0]
+            or "EWMProducer" in words[0]
         )
         if is_ref and len(reference_timing_info) == 0:
             #             [min, avg, max, median, rms]
