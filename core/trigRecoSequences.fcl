@@ -3,8 +3,8 @@ BEGIN_PROLOG
 
 TrigRecoSequences:{
    #tracker hit reco/flagging
-   trkPrepareHits          : [ TrigMakeSD     , TrigMakeSH     , TrigMakePH     , TrigFlagPH ]
-   trkPrepareHitsOffSpill  : [ TrigMakeSD, TrigOffSpMakeSH, TrigOffSpMakePH ]
+   trkPrepareHits          : [ makeSD     , TrigMakeSH     , TrigMakePH     , TrigFlagPH ]
+   trkPrepareHitsOffSpill  : [ makeSD, TrigOffSpMakeSH, TrigOffSpMakePH ]
    #calorimeter reco
    calPrepareHits     : [ CaloHitMakerFast ]
    calReco            : [ CaloHitMakerFast, CaloClusterFast ]
