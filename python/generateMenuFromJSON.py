@@ -225,8 +225,8 @@ def generateMenu(
     if doIt:
         trigMenu.write("  ]\n")
         trigMenu.write("  trigger_list: [\n")
-        if "lumiStream" in list_of_calo_trk_paths:
-            list_of_calo_trk_paths.remove("lumiStream")  # FIXME
+        if "lumiStream" in list_of_calo_trk_paths: # Don't include the lumi stream in triggered event selection
+            list_of_calo_trk_paths.remove("lumiStream")
         for i in range(len(list_of_calo_trk_paths)):
             path = list_of_calo_trk_paths[i]
             trigMenu.write(f'     "{path}"')
