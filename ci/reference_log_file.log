@@ -1,7 +1,7 @@
    ************************** Mu2e Offline **************************
      art v3_15_00    root v6_38_00    KinKal v03_09_01
      build  /scratch/workspace/GitHubPRTests/mu2e-offline-build-test
-     build  al9-prof-e29-p110    11/14/26 07:58:58
+     build  al9-prof-e29-p110    11/17/26 10:25:04
    ******************************************************************
 DbService  Sim_best v1_5   mu2e_conditions_prd
 DbService  textFiles: 
@@ -9,19 +9,19 @@ GlobalConstants file: /scratch/workspace/GitHubPRTests/mu2e-offline-build-test/O
 GlobalConstants lines: 173  hash: 7808423069682089368
 StrawDigisFromArtdaqFragments_module.cc:192 : debug bit    0 is set to 0
 StrawDigisFromArtdaqFragments_module.cc:192 : debug bit    1 is set to 0
-14-Nov-2026 08:08:29 CST  Initiating request to open input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
-14-Nov-2026 08:08:29 CST  Opened input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
+17-Nov-2026 10:34:33 CST  Initiating request to open input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
+17-Nov-2026 10:34:34 CST  Opened input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
 TprHlxDe30pIPAHSFilter NO HELIX CUT HAS BEEN SET FOR THE HELICES WITH NEGATIVE HELICITY. IF THAT'S NOT THE DESIRED BEHAVIOUR REVIEW YOUR CONFIGURATION!
 TprHlxDe30pIPAPhiHSFilter NO HELIX CUT HAS BEEN SET FOR THE HELICES WITH NEGATIVE HELICITY. IF THAT'S NOT THE DESIRED BEHAVIOUR REVIEW YOUR CONFIGURATION!
 Geometry file: /scratch/workspace/GitHubPRTests/mu2e-offline-build-test/Offline/Mu2eG4/geom/geom_common.txt
-Geometry lines: 23707  hash: 7412352265870235934
+Geometry lines: 23720  hash: 2677213613673043577
 BField file: /scratch/workspace/GitHubPRTests/mu2e-offline-build-test/Offline/Mu2eG4/geom/bfgeom_reco_v01.txt
 BField lines: 98  hash: 3243269116804334601
-Begin processing the 1st record. run: 1202 subRun: 0 event: 1 at 14-Nov-2026 08:08:29 CST
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:29 CST  run: 1202 subRun: 0 event: 1
+Begin processing the 1st record. run: 1202 subRun: 0 event: 1 at 17-Nov-2026 10:34:34 CST
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:34 CST  run: 1202 subRun: 0 event: 1
 Event run: 1202 subRun: 0 event: 1: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-DbReader::fillValCache took 0.200167 s
+DbReader::fillValCache took 0.240175 s
 DbEngine confirmed purpose and version:
 Sim_best 1/5/-1
 DbEngine IoV summary
@@ -46,612 +46,612 @@ DbEngine IoV summary
              CRVSiPM      10
            CRVPhoton      10
              CRVTime      10
-DbEngine inclusive beginJob time was 0.200429 s
-Begin processing the 2nd record. run: 1202 subRun: 0 event: 2 at 14-Nov-2026 08:08:30 CST
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:30 CST  run: 1202 subRun: 0 event: 2
+DbEngine inclusive beginJob time was 0.240574 s
+Begin processing the 2nd record. run: 1202 subRun: 0 event: 2 at 17-Nov-2026 10:34:35 CST
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 2
 Event run: 1202 subRun: 0 event: 2: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 3rd record. run: 1202 subRun: 0 event: 3 at 14-Nov-2026 08:08:30 CST
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:30 CST  run: 1202 subRun: 0 event: 3
+Begin processing the 3rd record. run: 1202 subRun: 0 event: 3 at 17-Nov-2026 10:34:35 CST
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 3
 Event run: 1202 subRun: 0 event: 3: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:30 CST  run: 1202 subRun: 0 event: 4
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 4
 Event run: 1202 subRun: 0 event: 4: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 5th record. run: 1202 subRun: 0 event: 5 at 14-Nov-2026 08:08:30 CST
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:30 CST  run: 1202 subRun: 0 event: 5
+Begin processing the 5th record. run: 1202 subRun: 0 event: 5 at 17-Nov-2026 10:34:35 CST
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 5
 Event run: 1202 subRun: 0 event: 5: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:30 CST  run: 1202 subRun: 0 event: 6
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 6
 Event run: 1202 subRun: 0 event: 6: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:30 CST  run: 1202 subRun: 0 event: 7
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 7
 Event run: 1202 subRun: 0 event: 7: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:30 CST  run: 1202 subRun: 0 event: 8
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 8
 Event run: 1202 subRun: 0 event: 8: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 9th record. run: 1202 subRun: 0 event: 9 at 14-Nov-2026 08:08:30 CST
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:30 CST  run: 1202 subRun: 0 event: 9
+Begin processing the 9th record. run: 1202 subRun: 0 event: 9 at 17-Nov-2026 10:34:35 CST
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 9
 Event run: 1202 subRun: 0 event: 9: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:30 CST  run: 1202 subRun: 0 event: 10
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 10
 Event run: 1202 subRun: 0 event: 10: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:30 CST  run: 1202 subRun: 0 event: 11
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 11
 Event run: 1202 subRun: 0 event: 11: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 12
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 12
 Event run: 1202 subRun: 0 event: 12: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 13
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:35 CST  run: 1202 subRun: 0 event: 13
 Event run: 1202 subRun: 0 event: 13: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 14
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 14
 Event run: 1202 subRun: 0 event: 14: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 15
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 15
 Event run: 1202 subRun: 0 event: 15: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 16
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 16
 Event run: 1202 subRun: 0 event: 16: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 17th record. run: 1202 subRun: 0 event: 17 at 14-Nov-2026 08:08:31 CST
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 17
+Begin processing the 17th record. run: 1202 subRun: 0 event: 17 at 17-Nov-2026 10:34:36 CST
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 17
 Event run: 1202 subRun: 0 event: 17: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 18
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 18
 Event run: 1202 subRun: 0 event: 18: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 19
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 19
 Event run: 1202 subRun: 0 event: 19: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 20
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 20
 Event run: 1202 subRun: 0 event: 20: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 21
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 21
 Event run: 1202 subRun: 0 event: 21: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 22
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 22
 Event run: 1202 subRun: 0 event: 22: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 23
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 23
 Event run: 1202 subRun: 0 event: 23: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 24
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 24
 Event run: 1202 subRun: 0 event: 24: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 25
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 25
 Event run: 1202 subRun: 0 event: 25: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 26
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 26
 Event run: 1202 subRun: 0 event: 26: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 27
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 27
 Event run: 1202 subRun: 0 event: 27: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 28
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 28
 Event run: 1202 subRun: 0 event: 28: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 29
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 29
 Event run: 1202 subRun: 0 event: 29: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 30
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 30
 Event run: 1202 subRun: 0 event: 30: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 31
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 31
 Event run: 1202 subRun: 0 event: 31: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 32
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 32
 Event run: 1202 subRun: 0 event: 32: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 33rd record. run: 1202 subRun: 0 event: 33 at 14-Nov-2026 08:08:31 CST
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 33
+Begin processing the 33rd record. run: 1202 subRun: 0 event: 33 at 17-Nov-2026 10:34:36 CST
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 33
 Event run: 1202 subRun: 0 event: 33: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 34
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 34
 Event run: 1202 subRun: 0 event: 34: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 35
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 35
 Event run: 1202 subRun: 0 event: 35: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 36
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 36
 Event run: 1202 subRun: 0 event: 36: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 37
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 37
 Event run: 1202 subRun: 0 event: 37: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 38
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 38
 Event run: 1202 subRun: 0 event: 38: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 39
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 39
 Event run: 1202 subRun: 0 event: 39: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 40
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 40
 Event run: 1202 subRun: 0 event: 40: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 41
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 41
 Event run: 1202 subRun: 0 event: 41: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 42
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 42
 Event run: 1202 subRun: 0 event: 42: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 43
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 43
 Event run: 1202 subRun: 0 event: 43: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 44
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 44
 Event run: 1202 subRun: 0 event: 44: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:31 CST  run: 1202 subRun: 0 event: 45
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 45
 Event run: 1202 subRun: 0 event: 45: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 46
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:36 CST  run: 1202 subRun: 0 event: 46
 Event run: 1202 subRun: 0 event: 46: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 47
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 47
 Event run: 1202 subRun: 0 event: 47: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 48
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 48
 Event run: 1202 subRun: 0 event: 48: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 49
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 49
 Event run: 1202 subRun: 0 event: 49: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 50
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 50
 Event run: 1202 subRun: 0 event: 50: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 51
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 51
 Event run: 1202 subRun: 0 event: 51: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 52
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 52
 Event run: 1202 subRun: 0 event: 52: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 53
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 53
 Event run: 1202 subRun: 0 event: 53: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 54
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 54
 Event run: 1202 subRun: 0 event: 54: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 55
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 55
 Event run: 1202 subRun: 0 event: 55: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 56
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 56
 Event run: 1202 subRun: 0 event: 56: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 57
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 57
 Event run: 1202 subRun: 0 event: 57: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 58
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 58
 Event run: 1202 subRun: 0 event: 58: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 59
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 59
 Event run: 1202 subRun: 0 event: 59: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 60
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 60
 Event run: 1202 subRun: 0 event: 60: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 61
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 61
 Event run: 1202 subRun: 0 event: 61: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 62
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 62
 Event run: 1202 subRun: 0 event: 62: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 63
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 63
 Event run: 1202 subRun: 0 event: 63: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 64
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 64
 Event run: 1202 subRun: 0 event: 64: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 65th record. run: 1202 subRun: 0 event: 65 at 14-Nov-2026 08:08:32 CST
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 65
+Begin processing the 65th record. run: 1202 subRun: 0 event: 65 at 17-Nov-2026 10:34:37 CST
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 65
 Event run: 1202 subRun: 0 event: 65: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 66
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 66
 Event run: 1202 subRun: 0 event: 66: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 67
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 67
 Event run: 1202 subRun: 0 event: 67: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 68
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 68
 Event run: 1202 subRun: 0 event: 68: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 69
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 69
 Event run: 1202 subRun: 0 event: 69: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 70
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 70
 Event run: 1202 subRun: 0 event: 70: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 71
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 71
 Event run: 1202 subRun: 0 event: 71: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 72
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 72
 Event run: 1202 subRun: 0 event: 72: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 73
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 73
 Event run: 1202 subRun: 0 event: 73: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 74
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 74
 Event run: 1202 subRun: 0 event: 74: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 75
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 75
 Event run: 1202 subRun: 0 event: 75: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 76
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 76
 Event run: 1202 subRun: 0 event: 76: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 77
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 77
 Event run: 1202 subRun: 0 event: 77: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 78
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 78
 Event run: 1202 subRun: 0 event: 78: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 79
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 79
 Event run: 1202 subRun: 0 event: 79: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 80
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 80
 Event run: 1202 subRun: 0 event: 80: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 81
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 81
 Event run: 1202 subRun: 0 event: 81: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 82
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 82
 Event run: 1202 subRun: 0 event: 82: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 83
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 83
 Event run: 1202 subRun: 0 event: 83: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 84
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 84
 Event run: 1202 subRun: 0 event: 84: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 85
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 85
 Event run: 1202 subRun: 0 event: 85: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 86
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 86
 Event run: 1202 subRun: 0 event: 86: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 87
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 87
 Event run: 1202 subRun: 0 event: 87: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 88
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 88
 Event run: 1202 subRun: 0 event: 88: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 89
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 89
 Event run: 1202 subRun: 0 event: 89: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 90
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 90
 Event run: 1202 subRun: 0 event: 90: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 91
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 91
 Event run: 1202 subRun: 0 event: 91: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 92
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 92
 Event run: 1202 subRun: 0 event: 92: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:32 CST  run: 1202 subRun: 0 event: 93
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 93
 Event run: 1202 subRun: 0 event: 93: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:33 CST  run: 1202 subRun: 0 event: 94
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:37 CST  run: 1202 subRun: 0 event: 94
 Event run: 1202 subRun: 0 event: 94: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:33 CST  run: 1202 subRun: 0 event: 95
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:38 CST  run: 1202 subRun: 0 event: 95
 Event run: 1202 subRun: 0 event: 95: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:33 CST  run: 1202 subRun: 0 event: 96
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:38 CST  run: 1202 subRun: 0 event: 96
 Event run: 1202 subRun: 0 event: 96: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:33 CST  run: 1202 subRun: 0 event: 97
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:38 CST  run: 1202 subRun: 0 event: 97
 Event run: 1202 subRun: 0 event: 97: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:33 CST  run: 1202 subRun: 0 event: 98
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:38 CST  run: 1202 subRun: 0 event: 98
 Event run: 1202 subRun: 0 event: 98: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:33 CST  run: 1202 subRun: 0 event: 99
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:38 CST  run: 1202 subRun: 0 event: 99
 Event run: 1202 subRun: 0 event: 99: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:33 CST  run: 1202 subRun: 0 event: 100
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:38 CST  run: 1202 subRun: 0 event: 100
 Event run: 1202 subRun: 0 event: 100: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 129th record. run: 1202 subRun: 0 event: 129 at 14-Nov-2026 08:08:33 CST
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:35 CST  run: 1202 subRun: 0 event: 200
+Begin processing the 129th record. run: 1202 subRun: 0 event: 129 at 17-Nov-2026 10:34:38 CST
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:40 CST  run: 1202 subRun: 0 event: 200
 Event run: 1202 subRun: 0 event: 200: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 257th record. run: 1202 subRun: 0 event: 257 at 14-Nov-2026 08:08:36 CST
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:38 CST  run: 1202 subRun: 0 event: 300
+Begin processing the 257th record. run: 1202 subRun: 0 event: 257 at 17-Nov-2026 10:34:42 CST
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:43 CST  run: 1202 subRun: 0 event: 300
 Event run: 1202 subRun: 0 event: 300: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:43 CST  run: 1202 subRun: 0 event: 500
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:48 CST  run: 1202 subRun: 0 event: 500
 Event run: 1202 subRun: 0 event: 500: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 513th record. run: 1202 subRun: 0 event: 513 at 14-Nov-2026 08:08:43 CST
+Begin processing the 513th record. run: 1202 subRun: 0 event: 513 at 17-Nov-2026 10:34:48 CST
 ProtonCandidate::addSeed ERROR: trying to add hit in a wrong panel
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:08:53 CST  run: 1202 subRun: 0 event: 900
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:34:58 CST  run: 1202 subRun: 0 event: 900
 Event run: 1202 subRun: 0 event: 900: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 1025th record. run: 1202 subRun: 0 event: 1025 at 14-Nov-2026 08:08:56 CST
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:09:13 CST  run: 1202 subRun: 0 event: 1700
+Begin processing the 1025th record. run: 1202 subRun: 0 event: 1025 at 17-Nov-2026 10:35:02 CST
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:35:19 CST  run: 1202 subRun: 0 event: 1700
 Event run: 1202 subRun: 0 event: 1700: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
 ProtonCandidate::addSeed ERROR: trying to add hit in a wrong panel
-Begin processing the 2049th record. run: 1202 subRun: 0 event: 2049 at 14-Nov-2026 08:09:21 CST
+Begin processing the 2049th record. run: 1202 subRun: 0 event: 2049 at 17-Nov-2026 10:35:27 CST
 ProtonCandidate::addSeed ERROR: trying to add hit in a wrong panel
 ProtonCandidate::addSeed ERROR: trying to add hit in a wrong panel
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:09:49 CST  run: 1202 subRun: 0 event: 3300
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:35:56 CST  run: 1202 subRun: 0 event: 3300
 Event run: 1202 subRun: 0 event: 3300: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 4097th record. run: 1202 subRun: 1 event: 97 at 14-Nov-2026 08:10:07 CST
+Begin processing the 4097th record. run: 1202 subRun: 1 event: 97 at 17-Nov-2026 10:36:15 CST
 ProtonCandidate::addSeed ERROR: trying to add hit in a wrong panel
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:11:03 CST  run: 1202 subRun: 1 event: 2500
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:37:12 CST  run: 1202 subRun: 1 event: 2500
 Event run: 1202 subRun: 1 event: 2500: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
-Begin processing the 8193rd record. run: 1202 subRun: 2 event: 193 at 14-Nov-2026 08:11:43 CST
-14-Nov-2026 08:12:23 CST  Closed input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
-14-Nov-2026 08:12:23 CST  Initiating request to open input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
-14-Nov-2026 08:12:23 CST  Opened input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 14-Nov-2026 08:13:28 CST  run: 1202 subRun: 3 event: 900
+Begin processing the 8193rd record. run: 1202 subRun: 2 event: 193 at 17-Nov-2026 10:37:53 CST
+17-Nov-2026 10:38:35 CST  Closed input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1a.art"
+17-Nov-2026 10:38:35 CST  Initiating request to open input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
+17-Nov-2026 10:38:35 CST  Opened input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@BeginModule 17-Nov-2026 10:39:39 CST  run: 1202 subRun: 3 event: 900
 Event run: 1202 subRun: 3 event: 900: No CFO fragment collection found (CFOBoardReader), producing a default EventHeader
 %MSG
 ProtonCandidate::addSeed ERROR: trying to add hit in a wrong panel
-Begin processing the 16385th record. run: 1202 subRun: 4 event: 385 at 14-Nov-2026 08:14:38 CST
+Begin processing the 16385th record. run: 1202 subRun: 4 event: 385 at 17-Nov-2026 10:40:51 CST
 ProtonCandidate::addSeed ERROR: trying to add hit in a wrong panel
 ProtonCandidate::addSeed ERROR: trying to add hit in a wrong panel
 ProtonCandidate::addSeed ERROR: trying to add hit in a wrong panel
-14-Nov-2026 08:15:53 CST  Closed input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
-%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@EndJob 14-Nov-2026 08:15:53 CST  ModuleEndJob
+17-Nov-2026 10:42:07 CST  Closed input file "/cvmfs/mu2e.opensciencegrid.org/DataFiles/Validation/skim_NoPrimary1BB_1b.art"
+%MSG-w EventHeaderFromCFOFragment:   EventHeaderFromCFOFragment:ProcessCFOData@EndJob 17-Nov-2026 10:42:07 CST  ModuleEndJob
 Default EventHeader produced without CFO data in 20000 of 20000 events (20000 with no CFO fragment collection, 0 with an empty CFO fragment collection)
 %MSG
 
 =====================================================================================================================================================================
 TimeTracker printout (sec)                                                             Min           Avg           Max         Median          RMS         nEvts   
 =====================================================================================================================================================================
-Full event                                                                         0.00189219     0.0219865     0.934409      0.0135703     0.024461       20000   
+Full event                                                                         0.00194547     0.0224475      1.11061      0.0138152     0.0251656      20000   
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-source:RootInput(read)                                                             9.8855e-05    0.000167931   0.00569838    0.000141751   0.000102654     20000   
-lumiStream:ProcessCFOData:EventHeaderFromCFOFragment                               2.1966e-05    3.03044e-05   0.000278558   2.84425e-05   6.55405e-06     20000   
-lumiStream:LumiStreamPS:PrescaleEvent                                               9.401e-06    1.52276e-05   0.000931594   1.2961e-05    2.26271e-05     20000   
-lumiStream:CaloHitMakerFast:CaloHitMakerFast                                       0.00012378    0.000868446   0.00651369    0.000708575   0.000573376     20000   
-lumiStream:CaloClusterFast:CaloClusterFast                                         1.0651e-05    7.51628e-05   0.000447861   6.1729e-05    4.98691e-05     20000   
-lumiStream:TrigMakeSD:StrawDigisFromArtdaqFragments                                 9.471e-06    1.31018e-05   9.4035e-05    1.22335e-05   2.8193e-06      20000   
-lumiStream:TrigMakeSH:StrawHitReco                                                 5.5672e-05    0.000684403    0.920639     0.000548846   0.00651673      20000   
-lumiStream:TrigMakePH:CombineStrawHits                                             1.0245e-05    0.000107541   0.000941195   8.3151e-05    8.45151e-05     20000   
-lumiStream:TrigFlagPH:DeltaFinder                                                   2.557e-05    0.000410979   0.00655106    0.000262933   0.000466782     20000   
-lumiStream:TrigTZClusterFinder:TZClusterFinder                                     2.2262e-05    0.000126099   0.00101075    9.17475e-05   0.000104533     20000   
-lumiStream:LumiBuffer:LumiStreamFilter                                             3.4442e-05    4.41367e-05   0.000294296   4.25125e-05   7.42987e-06     20000   
-calo_N0Source:CaloN0SourcePS:PrescaleEvent                                          2.876e-06    4.12892e-06   2.1059e-05     3.99e-06     8.14798e-07     20000   
-minBias_CDCount:MinBiasCDCountPS:PrescaleEvent                                      2.003e-06    2.84015e-06    2.087e-05     2.693e-06    7.0377e-07      20000   
-minBias_SDCount:MinBiasSDCountPS:PrescaleEvent                                      1.894e-06    2.69757e-06   1.9322e-05     2.547e-06    6.41071e-07     20000   
-cst_CosmicTrackSeed:CstCosmicTrackSeedPS:PrescaleEvent                              1.974e-06    2.70641e-06   1.9516e-05     2.559e-06    6.42348e-07     20000   
-apr_TC_calo:AprTCCaloPS:PrescaleEvent                                               2.026e-06    2.79513e-06   2.0592e-05     2.602e-06    7.10042e-07     20000   
-apr_TC_calo:AprTCCaloTCFilter:TimeClusterFilter                                    1.2133e-05    1.52281e-05   7.6814e-05    1.4767e-05    2.52459e-06     20000   
-apr_TC:AprTCPS:PrescaleEvent                                                        2.244e-06    3.01659e-06   1.9795e-05     2.89e-06     6.67629e-07     20000   
-cst_TimeCluster:CstTimeClusterPS:PrescaleEvent                                      1.983e-06    2.71455e-06    2.022e-05     2.525e-06    6.84133e-07     20000   
-calo_cluster_80:CaloCluster80PS:PrescaleEvent                                       1.921e-06    2.62221e-06   2.0179e-05      2.5e-06     6.21507e-07     20000   
-calo_cluster_80:CaloCluster80Filter:CaloClusterCounterFilter                        5.905e-06    7.83433e-06   3.3695e-05     7.45e-06     1.50861e-06     20000   
-calo_cluster_75:CaloCluster75PS:PrescaleEvent                                       2.144e-06    2.91094e-06   1.9507e-05     2.757e-06    6.65567e-07     20000   
-calo_cluster_75:CaloCluster75Filter:CaloClusterCounterFilter                        4.845e-06    6.16284e-06   2.8346e-05     5.979e-06    1.07307e-06     20000   
-calo_cluster_70:CaloCluster70PS:PrescaleEvent                                       2.063e-06    2.74793e-06    1.988e-05     2.615e-06    6.91104e-07     20000   
-calo_cluster_70:CaloCluster70Filter:CaloClusterCounterFilter                        4.503e-06    5.86201e-06   2.7915e-05     5.639e-06    1.08395e-06     20000   
-calo_cluster_60:CaloCluster60PS:PrescaleEvent                                       2.048e-06    2.67733e-06   1.8824e-05     2.567e-06    5.87142e-07     20000   
-calo_cluster_60:CaloCluster60Filter:CaloClusterCounterFilter                        4.639e-06    5.91107e-06   2.3186e-05     5.672e-06    1.11847e-06     20000   
-calo_cluster_50:CaloCluster50PS:PrescaleEvent                                       2.055e-06    2.69353e-06   1.9659e-05    2.5785e-06    6.10398e-07     20000   
-calo_cluster_50:CaloCluster50Filter:CaloClusterCounterFilter                        4.393e-06    5.74237e-06   2.2367e-05     5.513e-06    1.06149e-06     20000   
-calo_RMC:CaloRMCPS:PrescaleEvent                                                    2.131e-06    2.85451e-06   2.0244e-05     2.719e-06    6.6907e-07      20000   
-calo_RMC:CaloRMCFilter:CaloClusterCounterFilter                                     4.52e-06     5.82683e-06   2.2712e-05     5.574e-06    1.0798e-06      20000   
-calo_cosmic:CaloCosmicPS:PrescaleEvent                                              2.022e-06    2.68435e-06    1.901e-05     2.57e-06     6.07116e-07     20000   
-calo_cosmic:CaloCosmicFilter:CaloCosmicCalib                                        4.997e-06    6.44771e-06   2.4795e-05     6.173e-06    1.28368e-06     20000   
-calo_NNCE:CaloNNCEPS:PrescaleEvent                                                  2.049e-06    2.65471e-06   4.8258e-05     2.538e-06    6.6229e-07      20000   
-calo_NNCE:CaloNNCEEval:CaloNNEval                                                   7.692e-06    1.09189e-05   6.9347e-05    1.0324e-05    2.47328e-06     20000   
-calo_NNCE:CaloNNCEFilter:FilterEcalNNTrigger                                        7.331e-06    9.28747e-06   5.4398e-05     8.86e-06     1.67355e-06     20000   
-calo_photon:CaloPhotonPS:PrescaleEvent                                              2.111e-06    2.75911e-06   2.2364e-05     2.621e-06    6.19776e-07     20000   
-calo_photon:CaloPhotonFilter:CaloLikelihood                                         6.248e-06    9.17072e-06   5.7102e-05    7.8165e-06    3.36289e-06     20000   
-mpr_TrkDe_80m70p_D0200:MprTrkDe80m70pD0200PS:PrescaleEvent                          2.233e-06    2.97104e-06    2.03e-05      2.831e-06    6.5067e-07      20000   
-mpr_TrkDe_80m70p_D0200:TrigTimeClusterFinder:TimeClusterFinder                     4.1409e-05    0.00273131     0.0414731    0.00171564    0.00323667      20000   
-mpr_TrkDe_80m70p_D0200:MprTrkDe80m70pD0200TCFilter:TimeClusterFilter               1.0123e-05    1.54124e-05   0.000611935   1.47725e-05   5.36207e-06     20000   
-mpr_TrkDe_80m70p_D0200:TrigRobustMultiHelixFinder:RobustMultiHelixFinder           1.9774e-05    0.00393409     0.139355     0.00174704     0.0067961      19849   
-mpr_TrkDe_80m70p_D0200:TrigMprHelixMergerDe:MergeHelices                           1.7706e-05    8.80773e-05   0.00174887    4.2858e-05    0.000121172     19849   
-mpr_TrkDe_80m70p_D0200:MprTrkDe80m70pD0200HSFilter:HelixFilter                      6.926e-06    4.19754e-05   0.000324299   2.9845e-05    4.0233e-05      19849   
-apr_proton_p150:AprProtonP150PS:PrescaleEvent                                       2.393e-06    5.08263e-06   2.3601e-05     4.832e-06    1.42312e-06     20000   
-apr_proton_p150:AprProtonTCFilter:TimeClusterFilter                                 9.214e-06    1.64607e-05   0.000330802   1.5779e-05    4.60748e-06     20000   
-apr_proton_p150:TrigAprProtonHelixFinder:AgnosticHelixFinder                       1.2624e-05    0.00040433     0.0153048    0.000192942   0.000685575     17990   
-apr_proton_p150:TrigAprProtonHelixMerger:MergeHelices                              1.1103e-05    4.22548e-05   0.000457606   2.91115e-05   3.77811e-05     17990   
-apr_proton_p150:AprProtonP150HSFilter:HelixFilter                                   6.738e-06    3.59437e-05   0.000269059   3.05095e-05   2.78896e-05     17990   
-apr_proton_p250:AprProtonP250PS:PrescaleEvent                                       2.215e-06    4.23391e-06   2.1949e-05    4.0915e-06    1.0701e-06      20000   
-apr_proton_p250:AprProtonP250HSFilter:HelixFilter                                   5.666e-06     1.014e-05    5.4395e-05     9.202e-06    3.66703e-06     17990   
-apr_proton_p335:AprProtonP335PS:PrescaleEvent                                       1.881e-06    3.44657e-06   2.1109e-05     3.336e-06    8.58483e-07     20000   
-apr_proton_p335:AprProtonP335HSFilter:HelixFilter                                   5.582e-06    8.47592e-06   6.3075e-05     7.982e-06    2.38046e-06     17990   
-apr_Hlx_30:AprHlx30PS:PrescaleEvent                                                 1.839e-06    3.13398e-06   2.0112e-05     3.002e-06    8.09246e-07     20000   
-apr_Hlx_30:AprHlx50TCFilter:TimeClusterFilter                                       8.486e-06    1.28862e-05   3.5653e-05    1.24855e-05   2.39502e-06     20000   
-apr_Hlx_30:TrigAprHelixFinder:AgnosticHelixFinder                                   1.108e-05    0.000122124   0.00378678     6.014e-05    0.000187214     15161   
-apr_Hlx_30:TrigAprHelixMerger:MergeHelices                                         1.0752e-05    1.55303e-05   4.3195e-05    1.4799e-05    3.23833e-06     15161   
-apr_Hlx_30:AprHlx50HSFilter:HelixFilter                                             6.157e-06    9.8121e-06    8.8058e-05     8.477e-06    5.65876e-06     15161   
-apr_Hlx_50:AprHlx50PS:PrescaleEvent                                                 2.058e-06    3.48658e-06   2.0156e-05     3.329e-06    9.52167e-07     20000   
-apr_TrkDe_50_D0200:AprTrkDe50D0200PS:PrescaleEvent                                  1.926e-06    2.99336e-06   2.0357e-05     2.837e-06    8.67058e-07     20000   
-apr_TrkDe_50_D0200:AprTrkDe50D0200TCFilter:TimeClusterFilter                        8.525e-06    1.20352e-05   3.7974e-05    1.1645e-05    2.12972e-06     20000   
-apr_TrkDe_50_D0200:AprTrkDe50D0200HSFilter:HelixFilter                              6.608e-06    9.10086e-06   4.9469e-05     8.514e-06    2.69033e-06     15161   
-apr_Hlx_50_Hlx_30:AprHlx50Hlx30PS:PrescaleEvent                                     2.099e-06    3.13693e-06   2.0095e-05     2.943e-06    8.9654e-07      20000   
-apr_Hlx_50_Hlx_30:AprHlx50Hlx30TCFilter:TimeClusterFilter                           7.892e-06    1.09678e-05   3.8623e-05    1.0549e-05    2.12834e-06     20000   
-apr_Hlx_50_Hlx_30:AprHlx50Hlx30HSFilter:MultiHelixFilter                            6.571e-06    9.69717e-06   0.000131613    9.149e-06    4.63264e-06     15161   
-apr_TwoTrkDe_50:AprTwoTrkDe50PS:PrescaleEvent                                       2.154e-06    3.29189e-06   2.0679e-05     3.111e-06    9.35157e-07     20000   
-apr_TwoTrkDe_50:AprTrkDe50MultiHelixTCFilter:TimeClusterFilter                      7.864e-06    1.08566e-05   0.00016933     1.048e-05    2.54114e-06     20000   
-apr_TwoTrkDe_50:AprTrkDe50MultiHelixHSFilter:HelixFilter                            6.023e-06    8.78572e-06    7.599e-05     7.791e-06    4.18833e-06     15161   
-apr_TwoTrkDe_80m70p_D0200:AprTwoTrkDe80m70pD0200PS:PrescaleEvent                    2.116e-06    3.0721e-06     1.98e-05      2.921e-06    8.35738e-07     20000   
-apr_TwoTrkDe_80m70p_D0200:AprTrkDe80m70pD0200MultiTrkTCFilter:TimeClusterFilter     8.048e-06    1.09355e-05    3.125e-05    1.05755e-05   2.05101e-06     20000   
-apr_TwoTrkDe_80m70p_D0200:AprTrkDe80m70pD0200MultiTrkHSFilter:HelixFilter           6.08e-06     8.07612e-06    4.928e-05     7.749e-06    1.9504e-06      15161   
-apr_TrkUe_80m70p:AprTrkUe80m70pPS:PrescaleEvent                                     2.141e-06    2.94949e-06   2.0703e-05     2.827e-06    7.31982e-07     20000   
-apr_TrkUe_80m70p:AprTrkUe80m70pTCFilter:TimeClusterFilter                           7.357e-06    9.9953e-06    3.1411e-05     9.701e-06    1.83983e-06     20000   
-apr_TrkUe_80m70p:AprTrkUe80m70pHSFilter:HelixFilter                                 5.856e-06    7.94073e-06   6.4797e-05     7.489e-06    2.39105e-06     15161   
-apr_TrkDe_70:AprTrkDe70PS:PrescaleEvent                                             2.179e-06    3.07239e-06   2.0793e-05     2.877e-06    8.63617e-07     20000   
-apr_TrkDe_70:AprTrkDe70TCFilter:TimeClusterFilter                                   7.417e-06    9.8823e-06    3.6089e-05     9.496e-06    1.98868e-06     20000   
-apr_TrkDe_70:AprTrkDe70HSFilter:HelixFilter                                         5.736e-06    7.94922e-06   6.6347e-05     7.352e-06    3.1821e-06      15161   
-apr_TrkDe_75:AprTrkDe75PS:PrescaleEvent                                             2.146e-06    3.03853e-06   2.0587e-05     2.872e-06    7.83109e-07     20000   
-apr_TrkDe_75:AprTrkDe75TCFilter:TimeClusterFilter                                   7.179e-06    9.58105e-06   0.000212424    9.252e-06    2.32261e-06     20000   
-apr_TrkDe_75:AprTrkDe75HSFilter:HelixFilter                                         5.59e-06     7.64498e-06   0.000475217    7.122e-06    4.58397e-06     15161   
-apr_TrkDe_75m70p:AprTrkDe75m70pPS:PrescaleEvent                                     2.145e-06    2.96968e-06   1.9231e-05     2.825e-06    7.30834e-07     20000   
-apr_TrkDe_75m70p:AprTrkDe75m70pTCFilter:TimeClusterFilter                           7.207e-06    9.50623e-06   0.000161706   9.2245e-06    2.01532e-06     20000   
-apr_TrkDe_75m70p:AprTrkDe75m70pHSFilter:HelixFilter                                 5.573e-06    7.43891e-06   4.4434e-05     7.029e-06    2.20317e-06     15161   
-apr_TrkDe_80m70p:AprTrkDe80m70pPS:PrescaleEvent                                     2.156e-06    2.95908e-06    1.897e-05     2.804e-06    7.48156e-07     20000   
-apr_TrkDe_80m70p:AprTrkDe80m70pTCFilter:TimeClusterFilter                           7.359e-06    9.59696e-06   0.000234041    9.332e-06    2.29919e-06     20000   
-apr_TrkDe_80m70p:AprTrkDe80m70pHSFilter:HelixFilter                                 5.519e-06    7.52439e-06   3.1244e-05     7.112e-06    2.06857e-06     15161   
-apr_TrkDe_70_D0200:AprTrkDe70D0200PS:PrescaleEvent                                  2.151e-06    2.9647e-06    2.0262e-05     2.832e-06    7.26988e-07     20000   
-apr_TrkDe_70_D0200:AprTrkDe70D0200TCFilter:TimeClusterFilter                        7.243e-06    9.50406e-06   0.000236373   9.2205e-06    2.30464e-06     20000   
-apr_TrkDe_70_D0200:AprTrkDe70D0200HSFilter:HelixFilter                              5.573e-06    7.13201e-06    2.501e-05     6.943e-06    1.44539e-06     15161   
-apr_TrkDe_75_D0200:AprTrkDe75D0200PS:PrescaleEvent                                  2.131e-06    2.85997e-06    1.496e-05    2.7345e-06    6.1503e-07      20000   
-apr_TrkDe_75_D0200:AprTrkDe75D0200TCFilter:TimeClusterFilter                        7.117e-06    9.28715e-06   2.8113e-05     9.089e-06    1.61784e-06     20000   
-apr_TrkDe_75m70p_D0200:AprTrkDe75m70pD0200PS:PrescaleEvent                          2.142e-06    2.93799e-06    2.221e-05     2.781e-06    7.54642e-07     20000   
-apr_TrkDe_75m70p_D0200:AprTrkDe75m70pD0200TCFilter:TimeClusterFilter                7.121e-06    9.36689e-06   0.000230928   9.1315e-06    2.51406e-06     20000   
-apr_TrkDe_75m70p_D0200:AprTrkDe75m70pD0200HSFilter:HelixFilter                      5.727e-06    7.43725e-06   2.9723e-05     7.253e-06    1.51727e-06     15161   
-apr_TrkDe_80m70p_D0200:AprTrkDe80m70pD0200PS:PrescaleEvent                          2.116e-06    2.83751e-06    2.096e-05     2.734e-06    6.45662e-07     20000   
-apr_TrkDe_80m70p_D0200:AprTrkDe80m70pD0200TCFilter:TimeClusterFilter                7.219e-06    9.29161e-06   3.2819e-05     9.04e-06     1.66277e-06     20000   
-apr_TrkDe_80m70p_D0200:AprTrkDe80m70pD0200HSFilter:HelixFilter                      5.654e-06    7.29624e-06   2.9242e-05     7.182e-06    1.40445e-06     15161   
-cpr_HlxUe_40:CprHlxUe40PS:PrescaleEvent                                             2.184e-06    2.99009e-06    2.384e-05     2.83e-06     7.60929e-07     20000   
-cpr_HlxUe_40:TrigCalTimePeakFinderUe:CalTimePeakFinder                             1.2633e-05    2.06925e-05   0.000241958   1.71345e-05   1.18521e-05     20000   
-cpr_HlxUe_40:CprHlxUe40TCFilter:TimeClusterFilter                                   8.445e-06    1.06529e-05   4.2332e-05    1.0366e-05    1.75723e-06     20000   
-cpr_HlxDe_50:CprHlxDe50PS:PrescaleEvent                                             2.181e-06    3.08088e-06   2.0845e-05     2.904e-06    8.11702e-07     20000   
-cpr_HlxDe_50:TrigCalTimePeakFinder:CalTimePeakFinder                               1.0367e-05    1.58368e-05   0.00024665     1.284e-05    1.10451e-05     20000   
-cpr_HlxDe_50:CprHlxDe50TCFilter:TimeClusterFilter                                   8.189e-06    1.0219e-05    3.5449e-05     9.918e-06    1.77857e-06     20000   
-cpr_TrkDe_50_D0200:CprTrkDe50D0200PS:PrescaleEvent                                  2.171e-06    2.99976e-06   2.0245e-05     2.821e-06    7.24291e-07     20000   
-cpr_TrkDe_50_D0200:CprTrkDe50D0200TCFilter:TimeClusterFilter                        7.972e-06    1.02988e-05   3.1505e-05     9.974e-06    1.86693e-06     20000   
-cpr_TrkDe_70:CprTrkDe70PS:PrescaleEvent                                             2.186e-06    3.07924e-06   2.2183e-05     2.861e-06    8.21787e-07     20000   
-cpr_TrkDe_70:CprTrkDe70TCFilter:TimeClusterFilter                                   7.38e-06     9.47708e-06   3.0263e-05     9.19e-06     1.69586e-06     20000   
-cpr_TrkDe_75:CprTrkDe75PS:PrescaleEvent                                             2.146e-06    2.90719e-06   2.1199e-05     2.748e-06    7.11141e-07     20000   
-cpr_TrkDe_75:CprTrkDe75TCFilter:TimeClusterFilter                                   7.185e-06    9.2342e-06    3.7532e-05     8.969e-06    1.67269e-06     20000   
-cpr_TrkDe_75m70p:CprTrkDe75m70pPS:PrescaleEvent                                     2.088e-06    2.87919e-06   2.8796e-05     2.727e-06    7.15588e-07     20000   
-cpr_TrkDe_75m70p:CprTrkDe75m70pTCFilter:TimeClusterFilter                           7.228e-06    9.27701e-06   2.7014e-05     9.035e-06    1.6427e-06      20000   
-cpr_TrkDe_80m70p:CprTrkDe80m70pPS:PrescaleEvent                                     2.123e-06    2.98436e-06   2.3353e-05     2.808e-06    6.95556e-07     20000   
-cpr_TrkDe_80m70p:CprTrkDe80m70pTCFilter:TimeClusterFilter                           7.088e-06    9.07252e-06   4.0425e-05     8.863e-06    1.59406e-06     20000   
-cpr_TrkDe_70_D0200:CprTrkDe70D0200PS:PrescaleEvent                                  2.167e-06    2.8628e-06    2.0109e-05     2.713e-06    6.38725e-07     20000   
-cpr_TrkDe_70_D0200:CprTrkDe70D0200TCFilter:TimeClusterFilter                        7.157e-06    9.23062e-06   2.7941e-05     8.981e-06    1.61828e-06     20000   
-cpr_TrkDe_75_D0200:CprTrkDe75D0200PS:PrescaleEvent                                  2.065e-06    2.71074e-06   2.2155e-05    2.5925e-06    6.34361e-07     20000   
-cpr_TrkDe_75_D0200:CprTrkDe75D0200TCFilter:TimeClusterFilter                        7.061e-06    9.08927e-06   2.8491e-05     8.876e-06    1.5391e-06      20000   
-cpr_TrkDe_75m70p_D0200:CprTrkDe75m70pD0200PS:PrescaleEvent                          2.077e-06    2.80344e-06   2.0361e-05     2.668e-06    6.44368e-07     20000   
-cpr_TrkDe_75m70p_D0200:CprTrkDe75m70pD0200TCFilter:TimeClusterFilter                7.164e-06    9.12114e-06   2.8505e-05     8.89e-06     1.56791e-06     20000   
-cpr_TrkDe_80m70p_D0200:CprTrkDe80m70pD0200PS:PrescaleEvent                          2.16e-06     2.89193e-06   1.9656e-05     2.74e-06     6.13031e-07     20000   
-cpr_TrkDe_80m70p_D0200:CprTrkDe80m70pD0200TCFilter:TimeClusterFilter                7.185e-06    9.25244e-06   2.8505e-05     9.033e-06    1.55654e-06     20000   
-tpr_HlxDe_30p_IPAPhi:TprHlxDe30pIPAPhiPS:PrescaleEvent                              2.211e-06    2.9809e-06    2.0533e-05     2.821e-06    7.00136e-07     20000   
-tpr_HlxDe_30p_IPAPhi:TprHlxDe30pIPAPhiTCFilter:TimeClusterFilter                    8.73e-06     1.20117e-05   0.000356542    1.115e-05    1.10668e-05     20000   
-tpr_HlxDe_30p_IPAPhi:TrigHelixFinder:RobustHelixFinder                             1.1179e-05    0.00118533     0.0464275    0.000493152   0.00215687      19849   
-tpr_HlxDe_30p_IPAPhi:TrigHelixMergerDe:MergeHelices                                1.1438e-05    1.76293e-05   0.000213274   1.6876e-05    4.11665e-06     19849   
-tpr_HlxDe_30p_IPAPhi:TprHlxDe30pIPAPhiHSFilter:HelixFilter                          6.724e-06    1.02197e-05   7.2106e-05     9.201e-06    4.97393e-06     19849   
-tpr_HlxDe_30p_IPA:TprHlxDe30pIPAPS:PrescaleEvent                                    2.259e-06    3.87599e-06   2.3229e-05     3.739e-06    8.5571e-07      20000   
-tpr_HlxDe_30p_IPA:TprHlxDe30pIPATCFilter:TimeClusterFilter                          7.725e-06    1.31508e-05   0.000326789   1.2769e-05    4.11945e-06     20000   
-tpr_HlxDe_30p_IPA:TprHlxDe30pIPAHSFilter:HelixFilter                                6.041e-06    8.47242e-06   4.3699e-05     8.062e-06    2.01412e-06     19849   
-tpr_HlxUe_50m30p:TprHlxUe50m30pPS:PrescaleEvent                                     2.199e-06    3.36493e-06   2.0742e-05     3.188e-06    7.49371e-07     20000   
-tpr_HlxUe_50m30p:TrigTimeClusterFinderUe:TimeClusterFinder                         3.9274e-05    0.00273159     0.0436715    0.00171148    0.00323329      20000   
-tpr_HlxUe_50m30p:TprHlxUe50m30pTCFilter:TimeClusterFilter                           8.222e-06    1.43838e-05   6.2688e-05    1.3767e-05    2.95863e-06     20000   
-tpr_HlxUe_50m30p:TrigHelixFinderUe:RobustHelixFinder                                9.641e-06    0.000928116    0.0281905    0.000388556   0.00164148      19822   
-tpr_HlxUe_50m30p:TrigHelixMergerUe:MergeHelices                                    1.1238e-05    1.70726e-05   8.0839e-05     1.625e-05    3.60584e-06     19822   
-tpr_HlxUe_50m30p:TprHlxUe50m30pHSFilter:HelixFilter                                 6.54e-06     1.04787e-05   8.5623e-05     8.915e-06    6.18746e-06     19822   
-tpr_HlxDe_70m50p:TprHlxDe70m50pPS:PrescaleEvent                                     2.275e-06    4.18912e-06   2.2322e-05     3.978e-06    9.01552e-07     20000   
-tpr_HlxDe_70m50p:TprHlxDe70m50pTCFilter:TimeClusterFilter                           7.629e-06    1.32388e-05   0.000277706   1.2757e-05    5.37768e-06     20000   
-tpr_HlxDe_70m50p:TprHlxDe70m50pHSFilter:HelixFilter                                 6.335e-06    9.38814e-06   0.000573816    8.383e-06    5.83124e-06     19849   
-tpr_TrkDe_50_D0200:TprTrkDe50D0200PS:PrescaleEvent                                  2.293e-06    3.60196e-06   2.0417e-05    3.4095e-06    7.65695e-07     20000   
-tpr_TrkDe_50_D0200:TprTrkDe50D0200TCFilter:TimeClusterFilter                        8.105e-06    1.20729e-05   0.000284738   1.16655e-05   5.11312e-06     20000   
-tpr_TrkDe_50_D0200:TprTrkDe50D0200HSFilter:HelixFilter                              6.163e-06    8.49863e-06   6.6733e-05     7.832e-06    2.91719e-06     19930   
-tpr_TrkDe_80m70p:TprTrkDe80m70pPS:PrescaleEvent                                     2.259e-06    3.35231e-06   1.9876e-05     3.11e-06     8.44004e-07     20000   
-tpr_TrkDe_80m70p:TprTrkDe80m70pTCFilter:TimeClusterFilter                           7.453e-06    1.13096e-05   0.000354282   1.0605e-05    6.27893e-06     20000   
-tpr_TrkDe_80m70p:TprTrkDe80m70pHSFilter:HelixFilter                                 5.829e-06    8.3546e-06    8.2277e-05     7.52e-06     3.79807e-06     19849   
-tpr_TrkDe_80m70p_D0200:TprTrkDe80m70pD0200PS:PrescaleEvent                          2.225e-06    3.0867e-06    2.0551e-05     2.944e-06    6.8005e-07      20000   
-tpr_TrkDe_80m70p_D0200:TprTrkDe80m70pD0200TCFilter:TimeClusterFilter                7.29e-06     1.08273e-05   0.000273068   1.01695e-05   8.47991e-06     20000   
-tpr_TrkDe_80m70p_D0200:TprTrkDe80m70pD0200HSFilter:HelixFilter                      5.812e-06    7.72923e-06   3.2448e-05     7.383e-06    1.91645e-06     19849   
-[art]:TriggerResults:TriggerResultInserter                                          4.248e-06    5.71586e-06   2.6942e-05     5.333e-06    1.32191e-06     20000   
-apr_proton_p150:AprProtonP150TriggerInfoMerger:MergeTriggerInfo                    2.0359e-05    3.51018e-05   0.00016032    3.2417e-05    1.09815e-05     11394   
-mpr_TrkDe_80m70p_D0200:TrigMprKSFDe:LoopHelixFit                                   0.000204271   0.00974626     0.0590644    0.00783587    0.00721261      9952    
-mpr_TrkDe_80m70p_D0200:MprTrkDe80m70pD0200KSFilter:KalSeedFilter                    9.658e-06    2.96237e-05   0.000118758   2.7668e-05    1.22764e-05     9952    
-apr_TC_calo:AprTCCaloTriggerInfoMerger:MergeTriggerInfo                            2.2928e-05    3.16912e-05   6.8477e-05    2.9868e-05    8.49573e-06     1947    
-calo_cluster_60:CaloCluster60TriggerInfoMerger:MergeTriggerInfo                    1.3643e-05    2.04049e-05    7.193e-05    1.82065e-05   6.63476e-06     1376    
-calo_cluster_50:CaloCluster50TriggerInfoMerger:MergeTriggerInfo                    1.3224e-05    2.17352e-05   7.1151e-05    1.92825e-05   7.31696e-06     3536    
-cpr_HlxUe_40:TrigCalHelixFinderUe:CalHelixFinder                                   3.6841e-05    0.000178904   0.00161902    0.00013069    0.000152756     1603    
-cpr_HlxUe_40:TrigCalHelixMergerUe:MergeHelices                                     1.1539e-05    1.76013e-05   4.5293e-05    1.7148e-05    3.21456e-06     1603    
-cpr_HlxUe_40:CprHlxUe40HSFilter:HelixFilter                                         6.644e-06    1.02623e-05   7.3853e-05     9.595e-06    4.66746e-06     1603    
-cpr_HlxDe_50:TrigCalHelixFinderDe:CalHelixFinder                                   2.9595e-05    0.00017595    0.00182861    0.000122229   0.000166288     1694    
-cpr_HlxDe_50:TrigCalHelixMergerDe:MergeHelices                                     1.1223e-05    1.7123e-05    3.9862e-05    1.67605e-05   3.13409e-06     1694    
-cpr_HlxDe_50:CprHlxDe50HSFilter:HelixFilter                                         6.815e-06    1.05935e-05   6.2683e-05    9.6515e-06    4.99118e-06     1694    
-cpr_TrkDe_50_D0200:CprTrkDe50D0200HSFilter:HelixFilter                              6.778e-06    9.88616e-06   3.1722e-05    9.6235e-06    2.16099e-06     1694    
-cpr_TrkDe_70:CprTrkDe70HSFilter:HelixFilter                                         6.313e-06    9.3723e-06    4.9037e-05     8.999e-06    3.08376e-06     1694    
-cpr_TrkDe_75:CprTrkDe75HSFilter:HelixFilter                                         5.957e-06    8.6814e-06    2.7126e-05    8.4725e-06    1.94092e-06     1694    
-cpr_TrkDe_75m70p:CprTrkDe75m70pHSFilter:HelixFilter                                 6.196e-06    8.70378e-06   2.6273e-05     8.516e-06    1.76447e-06     1694    
-cpr_TrkDe_80m70p:CprTrkDe80m70pHSFilter:HelixFilter                                 6.092e-06    8.65738e-06   2.3946e-05    8.4935e-06    1.76375e-06     1694    
-cpr_TrkDe_70_D0200:CprTrkDe70D0200HSFilter:HelixFilter                              5.987e-06    8.41987e-06   2.9143e-05     8.254e-06    1.56934e-06     1694    
-cpr_TrkDe_75_D0200:CprTrkDe75D0200HSFilter:HelixFilter                              5.95e-06     8.44228e-06   2.8844e-05    8.4145e-06    1.60206e-06     1694    
-cpr_TrkDe_75m70p_D0200:CprTrkDe75m70pD0200HSFilter:HelixFilter                      6.233e-06    8.67424e-06   2.7533e-05    8.5225e-06    1.53503e-06     1694    
-cpr_TrkDe_80m70p_D0200:CprTrkDe80m70pD0200HSFilter:HelixFilter                      5.813e-06    8.3445e-06    2.1554e-05    8.1785e-06    1.52019e-06     1694    
-tpr_HlxDe_70m50p:TprHlxDe70m50pTriggerInfoMerger:MergeTriggerInfo                  1.6764e-05    2.58586e-05   8.3544e-05    2.3475e-05    9.27812e-06      829    
-tpr_TrkDe_50_D0200:TrigKSFDe:LoopHelixFit                                          0.000226173   0.00206071     0.0066317    0.00187341    0.00107319      1071    
-tpr_TrkDe_50_D0200:TprTrkDe50D0200KSFilter:KalSeedFilter                            9.455e-06    1.9411e-05    4.3867e-05    1.8926e-05    5.73151e-06     1071    
-apr_proton_p250:AprProtonP250TriggerInfoMerger:MergeTriggerInfo                    1.6961e-05    2.08745e-05   5.5203e-05    2.05815e-05   2.90341e-06     1252    
-apr_proton_p335:AprProtonP335TriggerInfoMerger:MergeTriggerInfo                    1.6506e-05    2.00165e-05   3.4013e-05     1.969e-05    2.92151e-06      301    
-apr_Hlx_30:AprHlx30TriggerInfoMerger:MergeTriggerInfo                              1.7855e-05    2.65167e-05   7.4773e-05    2.4198e-05    8.27366e-06      798    
-apr_Hlx_50:AprHlx50TriggerInfoMerger:MergeTriggerInfo                              1.5914e-05    1.96708e-05   5.3524e-05    1.94335e-05   2.81909e-06      798    
-apr_TrkDe_50_D0200:TrigAprKSF:LoopHelixFit                                         0.000233556   0.00158213    0.00656719    0.00135746    0.00120858       617    
-apr_TrkDe_50_D0200:AprTrkDe50D0200KSFilter:KalSeedFilter                            8.849e-06    1.60742e-05   5.1872e-05    1.4316e-05    5.29225e-06      617    
-apr_TrkDe_50_D0200:AprTrkDe50D0200TriggerInfoMerger:MergeTriggerInfo               2.6474e-05    3.24801e-05   6.3824e-05    3.1218e-05    5.67632e-06      103    
-apr_TrkDe_70:AprTrkDe70KSFilter:KalSeedFilter                                       6.785e-06    1.04542e-05   2.4375e-05     9.239e-06    3.32084e-06      465    
-tpr_TrkDe_50_D0200:TprTrkDe50D0200TriggerInfoMerger:MergeTriggerInfo               2.5262e-05    3.31341e-05   6.1219e-05    3.1533e-05    6.40516e-06      149    
-tpr_TrkDe_80m70p:TrigKSFDe:LoopHelixFit                                            0.000350149   0.00148433    0.00310279    0.00135152    0.000673357      46     
-tpr_TrkDe_80m70p:TprTrkDe80m70pKSFilter:KalSeedFilter                               6.897e-06    1.14987e-05   3.0154e-05     1.149e-05    3.74533e-06      576    
-tpr_HlxUe_50m30p:TprHlxUe50m30pTriggerInfoMerger:MergeTriggerInfo                  1.9209e-05    3.12629e-05   8.7114e-05    2.7834e-05    9.95974e-06     1065    
-apr_TrkUe_80m70p:TrigAprUeKSF:LoopHelixFit                                         0.000222577    0.0012348    0.00643646    0.000943385   0.00102035       358    
-apr_TrkUe_80m70p:AprTrkUe80m70pKSFilter:KalSeedFilter                               8.949e-06    1.3454e-05     2.914e-05    1.2378e-05    3.46746e-06      358    
-apr_TrkDe_75:AprTrkDe75KSFilter:KalSeedFilter                                       6.236e-06    8.37696e-06   1.8335e-05     7.77e-06     2.02859e-06      409    
-apr_TrkDe_75m70p:AprTrkDe75m70pKSFilter:KalSeedFilter                               6.212e-06    8.27749e-06   3.4199e-05     7.629e-06    2.25275e-06      439    
-apr_TrkDe_80m70p:AprTrkDe80m70pKSFilter:KalSeedFilter                               6.164e-06    8.14076e-06    2.385e-05     7.593e-06    2.02631e-06      358    
-apr_TrkDe_75_D0200:AprTrkDe75D0200KSFilter:KalSeedFilter                            5.708e-06    8.03767e-06   2.1835e-05     7.411e-06    2.25163e-06      409    
-tpr_TrkDe_80m70p_D0200:TprTrkDe80m70pD0200KSFilter:KalSeedFilter                    6.598e-06    1.05507e-05    2.448e-05     9.976e-06    2.94394e-06      376    
-calo_cluster_80:CaloCluster80TriggerInfoMerger:MergeTriggerInfo                    1.6291e-05    2.20162e-05   5.8283e-05    2.0059e-05    6.48655e-06      285    
-calo_cluster_75:CaloCluster75TriggerInfoMerger:MergeTriggerInfo                    1.4773e-05    1.92478e-05   6.1941e-05    1.78475e-05   5.07983e-06      440    
-calo_cluster_70:CaloCluster70TriggerInfoMerger:MergeTriggerInfo                    1.3814e-05    1.9016e-05    5.3314e-05    1.7774e-05    4.74303e-06      653    
-tpr_TrkDe_50_D0200:TrigHelixFinder:RobustHelixFinder                               1.0662e-05    5.28543e-05   0.000368845   3.0123e-05    7.33929e-05      81     
-tpr_TrkDe_50_D0200:TrigHelixMergerDe:MergeHelices                                  1.2361e-05    1.62058e-05   2.4762e-05    1.6117e-05    2.20367e-06      81     
-calo_photon:CaloPhotonTriggerInfoMerger:MergeTriggerInfo                            1.445e-05    1.81937e-05   3.4747e-05    1.77385e-05   2.48501e-06      356    
-tpr_HlxDe_30p_IPA:TprHlxDe30pIPATriggerInfoMerger:MergeTriggerInfo                 1.6978e-05    2.9202e-05    5.9954e-05    2.64225e-05   8.8496e-06       378    
-apr_TrkDe_70:TrigAprKSF:LoopHelixFit                                               0.000221289   0.00132904    0.00656032    0.000924668   0.00115439       158    
-mpr_TrkDe_80m70p_D0200:MprTrkDe80m70pD0200TriggerInfoMerger:MergeTriggerInfo       2.8382e-05    4.31853e-05    8.814e-05    3.9389e-05    1.44251e-05      134    
-cpr_HlxDe_50:CprHlxDe50TriggerInfoMerger:MergeTriggerInfo                          2.6893e-05    3.40624e-05   6.1462e-05    3.07845e-05   8.30912e-06      68     
-cpr_TrkDe_50_D0200:TrigCalSeedFitDe:LoopHelixFit                                   0.000252724   0.00158529    0.00593971     0.0016133    0.00119816       65     
-cpr_TrkDe_50_D0200:CprTrkDe50D0200KSFilter:KalSeedFilter                           1.0428e-05    1.72377e-05   4.0874e-05    1.6735e-05    5.49459e-06      65     
-cpr_TrkDe_70:CprTrkDe70KSFilter:KalSeedFilter                                       7.205e-06    1.06828e-05   2.2015e-05     9.319e-06    3.45465e-06      51     
-cpr_TrkDe_75:CprTrkDe75KSFilter:KalSeedFilter                                       6.836e-06    9.38956e-06   1.3815e-05     8.725e-06    2.22202e-06      45     
-cpr_TrkDe_75m70p:CprTrkDe75m70pKSFilter:KalSeedFilter                               6.994e-06    9.31662e-06   1.2942e-05     8.548e-06    1.98484e-06      45     
-cpr_TrkDe_80m70p:CprTrkDe80m70pKSFilter:KalSeedFilter                               6.84e-06     9.15181e-06   1.3709e-05     8.525e-06    2.0649e-06       47     
-cpr_TrkDe_70_D0200:CprTrkDe70D0200KSFilter:KalSeedFilter                            6.469e-06    8.9751e-06    1.2821e-05     8.505e-06    1.95097e-06      29     
-cpr_TrkDe_75_D0200:CprTrkDe75D0200KSFilter:KalSeedFilter                            6.779e-06    9.11196e-06   1.2848e-05    8.4675e-06    1.82805e-06      28     
-cpr_TrkDe_75m70p_D0200:CprTrkDe75m70pD0200KSFilter:KalSeedFilter                    6.761e-06    9.95166e-06   2.0978e-05     8.028e-06    3.73764e-06      29     
-cpr_TrkDe_80m70p_D0200:CprTrkDe80m70pD0200KSFilter:KalSeedFilter                    6.649e-06    9.18317e-06   1.9023e-05     8.113e-06    2.62332e-06      29     
-apr_TrkDe_70_D0200:AprTrkDe70D0200KSFilter:KalSeedFilter                            6.301e-06    8.06678e-06   1.7045e-05     7.572e-06    1.76332e-06      133    
-apr_TrkDe_75m70p_D0200:AprTrkDe75m70pD0200KSFilter:KalSeedFilter                    5.742e-06    7.95768e-06   1.9505e-05    7.4095e-06    2.06283e-06      128    
-apr_TrkDe_80m70p_D0200:AprTrkDe80m70pD0200KSFilter:KalSeedFilter                    6.463e-06    8.50023e-06   2.7381e-05     7.385e-06    3.41272e-06      93     
-tpr_HlxDe_30p_IPAPhi:TprHlxDe30pIPAPhiTriggerInfoMerger:MergeTriggerInfo           2.2599e-05    3.0884e-05    5.6089e-05    2.9848e-05    6.67847e-06      81     
-calo_RMC:CaloRMCTriggerInfoMerger:MergeTriggerInfo                                 1.5537e-05    1.79738e-05   2.1283e-05    1.8128e-05    1.5528e-06       41     
-calo_NNCE:CaloNNCETriggerInfoMerger:MergeTriggerInfo                               1.5447e-05    1.79746e-05    2.099e-05    1.8225e-05    1.56489e-06      32     
-apr_Hlx_50_Hlx_30:AprHlx50Hlx30TriggerInfoMerger:MergeTriggerInfo                  2.0664e-05    2.96724e-05   4.2211e-05    2.85855e-05   5.70802e-06      20     
-apr_TwoTrkDe_50:AprTrkDe50MultiHelixKSFilter:KalSeedFilter                          7.548e-06    1.20626e-05   2.4461e-05     9.763e-06    4.5862e-06       33     
-cpr_TrkDe_50_D0200:CprTrkDe50D0200TriggerInfoMerger:MergeTriggerInfo               2.8442e-05    3.36607e-05    3.948e-05    3.3809e-05    3.65372e-06      16     
-apr_TrkDe_70:AprTrkDe70TriggerInfoMerger:MergeTriggerInfo                          2.1144e-05    2.83998e-05   4.2588e-05    2.7092e-05    6.13012e-06      14     
-apr_TwoTrkDe_50:TrigAprKSF:LoopHelixFit                                            0.00136171    0.00187355    0.00238539    0.00187355    0.000511842       2     
-apr_TwoTrkDe_80m70p_D0200:AprTrkDe80m70pD0200MultiTrkKSFilter:KalSeedFilter         7.322e-06    8.97811e-06   1.7748e-05     8.013e-06    3.12517e-06       9     
-apr_TrkDe_75:AprTrkDe75TriggerInfoMerger:MergeTriggerInfo                          2.0059e-05    2.31941e-05    2.673e-05    2.3415e-05    2.31319e-06       7     
-apr_TrkDe_75m70p:AprTrkDe75m70pTriggerInfoMerger:MergeTriggerInfo                  1.9775e-05    2.24353e-05   2.5781e-05    2.2322e-05    2.05541e-06       7     
-apr_TrkDe_80m70p:AprTrkDe80m70pTriggerInfoMerger:MergeTriggerInfo                   2.029e-05    2.30898e-05   2.5337e-05     2.303e-05    1.91461e-06       5     
-tpr_TrkDe_80m70p:TprTrkDe80m70pTriggerInfoMerger:MergeTriggerInfo                  2.4739e-05    2.66128e-05   2.8214e-05    2.6584e-05    1.0917e-06        6     
-tpr_TrkDe_80m70p_D0200:TprTrkDe80m70pD0200TriggerInfoMerger:MergeTriggerInfo       2.3559e-05    2.4428e-05    2.5297e-05    2.4428e-05     8.69e-07         2     
-cpr_TrkDe_70:CprTrkDe70TriggerInfoMerger:MergeTriggerInfo                           2.143e-05    2.43097e-05    2.735e-05    2.44975e-05   2.08801e-06       6     
-cpr_TrkDe_75:CprTrkDe75TriggerInfoMerger:MergeTriggerInfo                          2.0671e-05    2.34507e-05   2.6064e-05    2.3617e-05    2.20482e-06       3     
-cpr_TrkDe_75m70p:CprTrkDe75m70pTriggerInfoMerger:MergeTriggerInfo                  2.1161e-05    2.31693e-05   2.5076e-05    2.3271e-05    1.59991e-06       3     
-cpr_TrkDe_70_D0200:CprTrkDe70D0200TriggerInfoMerger:MergeTriggerInfo               1.9712e-05    2.2882e-05    2.5429e-05    2.3124e-05    2.03995e-06       6     
-cpr_TrkDe_75_D0200:CprTrkDe75D0200TriggerInfoMerger:MergeTriggerInfo               1.9768e-05    2.87933e-05   3.5178e-05    3.1434e-05    6.56236e-06       3     
-cpr_TrkDe_75m70p_D0200:CprTrkDe75m70pD0200TriggerInfoMerger:MergeTriggerInfo       2.2015e-05    2.5353e-05    2.9541e-05    2.4503e-05    3.13071e-06       3     
-apr_TrkDe_70_D0200:AprTrkDe70D0200TriggerInfoMerger:MergeTriggerInfo               1.9249e-05    2.69755e-05   3.5036e-05    2.68085e-05   7.51075e-06       4     
-apr_TrkDe_75_D0200:AprTrkDe75D0200TriggerInfoMerger:MergeTriggerInfo               1.8758e-05    2.57937e-05   4.1355e-05    2.12625e-05   8.38735e-06       6     
-apr_TrkDe_75m70p_D0200:AprTrkDe75m70pD0200TriggerInfoMerger:MergeTriggerInfo       2.0007e-05    2.48213e-05   2.9668e-05    2.4789e-05    3.94415e-06       3     
-apr_TrkDe_80m70p_D0200:AprTrkDe80m70pD0200TriggerInfoMerger:MergeTriggerInfo       1.9423e-05    2.2381e-05    2.5339e-05    2.2381e-05     2.958e-06        2     
-cpr_TrkDe_70:TrigCalSeedFitDe:LoopHelixFit                                         0.000406554    0.001416     0.00213764     0.0017038    0.000735429       3     
-apr_TrkUe_80m70p:AprTrkUe80m70pTriggerInfoMerger:MergeTriggerInfo                  2.8221e-05    3.31622e-05   4.0752e-05    3.2957e-05    4.54415e-06       5     
-apr_TwoTrkDe_50:AprTrkDe50MultiHelixTriggerInfoMerger:MergeTriggerInfo             2.3628e-05    2.3915e-05    2.4202e-05    2.3915e-05     2.87e-07         2     
+source:RootInput(read)                                                             0.000100786   0.00050147     0.0778257    0.000145223   0.00347814      20000   
+lumiStream:ProcessCFOData:EventHeaderFromCFOFragment                               2.2175e-05    3.09192e-05   0.000283277   2.90775e-05   6.90449e-06     20000   
+lumiStream:LumiStreamPS:PrescaleEvent                                               9.677e-06    8.48299e-05    0.110325     1.3244e-05    0.00181722      20000   
+lumiStream:CaloHitMakerFast:CaloHitMakerFast                                       0.000123955   0.000916073    0.078271     0.000710915   0.00155378      20000   
+lumiStream:CaloClusterFast:CaloClusterFast                                          1.087e-05    7.55975e-05   0.00117467     6.182e-05    5.0872e-05      20000   
+lumiStream:TrigMakeSD:StrawDigisFromArtdaqFragments                                 9.534e-06    1.31668e-05   9.5382e-05    1.2422e-05    2.80222e-06     20000   
+lumiStream:TrigMakeSH:StrawHitReco                                                 5.8686e-05    0.000683095     0.9462      0.000549142   0.00669672      20000   
+lumiStream:TrigMakePH:CombineStrawHits                                             1.0837e-05    0.000107912   0.000958083   8.35325e-05   8.47797e-05     20000   
+lumiStream:TrigFlagPH:DeltaFinder                                                  2.7961e-05    0.000413024   0.00678979    0.000265718   0.000468562     20000   
+lumiStream:TrigTZClusterFinder:TZClusterFinder                                     2.3413e-05    0.000124715   0.000986323   9.18195e-05   0.000100846     20000   
+lumiStream:LumiBuffer:LumiStreamFilter                                             3.5416e-05    4.51082e-05   0.000256139   4.33725e-05   7.77546e-06     20000   
+calo_N0Source:CaloN0SourcePS:PrescaleEvent                                          3.133e-06    4.33635e-06   2.1731e-05     4.178e-06    8.72634e-07     20000   
+minBias_CDCount:MinBiasCDCountPS:PrescaleEvent                                      2.041e-06    2.87039e-06   2.2148e-05     2.723e-06    7.08697e-07     20000   
+minBias_SDCount:MinBiasSDCountPS:PrescaleEvent                                      1.928e-06    2.81904e-06   2.6207e-05     2.657e-06    7.52395e-07     20000   
+cst_CosmicTrackSeed:CstCosmicTrackSeedPS:PrescaleEvent                              2.005e-06    2.78865e-06   3.2349e-05     2.636e-06    7.72244e-07     20000   
+apr_TC_calo:AprTCCaloPS:PrescaleEvent                                               2.143e-06    2.88601e-06   2.0955e-05     2.695e-06    7.66967e-07     20000   
+apr_TC_calo:AprTCCaloTCFilter:TimeClusterFilter                                    1.2172e-05    1.56614e-05   6.9588e-05    1.5232e-05    2.69437e-06     20000   
+apr_TC:AprTCPS:PrescaleEvent                                                        2.298e-06    3.06304e-06   1.9845e-05     2.937e-06    6.94362e-07     20000   
+cst_TimeCluster:CstTimeClusterPS:PrescaleEvent                                      2.014e-06    2.76221e-06   1.9499e-05     2.601e-06    6.98141e-07     20000   
+calo_cluster_80:CaloCluster80PS:PrescaleEvent                                       1.982e-06    2.72098e-06   3.1456e-05     2.569e-06    7.41894e-07     20000   
+calo_cluster_80:CaloCluster80Filter:CaloClusterCounterFilter                        5.848e-06    7.83491e-06   3.1422e-05     7.452e-06    1.62636e-06     20000   
+calo_cluster_75:CaloCluster75PS:PrescaleEvent                                       2.249e-06    3.05532e-06   2.1023e-05     2.884e-06    7.71359e-07     20000   
+calo_cluster_75:CaloCluster75Filter:CaloClusterCounterFilter                        4.736e-06    6.18122e-06   2.7549e-05     5.932e-06    1.26839e-06     20000   
+calo_cluster_70:CaloCluster70PS:PrescaleEvent                                       2.099e-06    2.78059e-06    2.185e-05     2.635e-06    7.14596e-07     20000   
+calo_cluster_70:CaloCluster70Filter:CaloClusterCounterFilter                        4.49e-06     5.8122e-06    2.6193e-05     5.556e-06    1.21209e-06     20000   
+calo_cluster_60:CaloCluster60PS:PrescaleEvent                                       2.098e-06    2.76457e-06   1.8971e-05    2.6195e-06    6.67275e-07     20000   
+calo_cluster_60:CaloCluster60Filter:CaloClusterCounterFilter                        4.576e-06    5.91012e-06   4.2163e-05     5.648e-06    1.22563e-06     20000   
+calo_cluster_50:CaloCluster50PS:PrescaleEvent                                       2.108e-06    2.73041e-06   1.9645e-05     2.592e-06    6.70475e-07     20000   
+calo_cluster_50:CaloCluster50Filter:CaloClusterCounterFilter                        4.303e-06    5.68467e-06   2.3044e-05     5.434e-06    1.13956e-06     20000   
+calo_RMC:CaloRMCPS:PrescaleEvent                                                    2.214e-06    2.92397e-06   2.0579e-05     2.784e-06    6.86973e-07     20000   
+calo_RMC:CaloRMCFilter:CaloClusterCounterFilter                                     4.431e-06    5.8673e-06    2.6104e-05    5.6055e-06    1.21026e-06     20000   
+calo_cosmic:CaloCosmicPS:PrescaleEvent                                              2.127e-06    2.76185e-06   2.0379e-05     2.617e-06    6.85912e-07     20000   
+calo_cosmic:CaloCosmicFilter:CaloCosmicCalib                                        4.932e-06    6.42647e-06   3.0022e-05    6.1095e-06    1.34784e-06     20000   
+calo_NNCE:CaloNNCEPS:PrescaleEvent                                                  2.148e-06    2.76737e-06   1.9579e-05     2.629e-06     6.849e-07      20000   
+calo_NNCE:CaloNNCEEval:CaloNNEval                                                   7.815e-06    1.14189e-05   8.1911e-05    1.07725e-05   2.73178e-06     20000   
+calo_NNCE:CaloNNCEFilter:FilterEcalNNTrigger                                        7.432e-06    9.65533e-06   4.0176e-05    9.0925e-06    1.92601e-06     20000   
+calo_photon:CaloPhotonPS:PrescaleEvent                                              2.178e-06    2.85395e-06   1.9498e-05     2.704e-06    6.3636e-07      20000   
+calo_photon:CaloPhotonFilter:CaloLikelihood                                         6.235e-06    9.32209e-06   5.8856e-05     7.988e-06    3.47312e-06     20000   
+mpr_TrkDe_80m70p_D0200:MprTrkDe80m70pD0200PS:PrescaleEvent                          2.251e-06    3.08165e-06   2.3528e-05     2.915e-06    7.40511e-07     20000   
+mpr_TrkDe_80m70p_D0200:TrigTimeClusterFinder:TimeClusterFinder                     4.2113e-05    0.00272432     0.0420539    0.00171179    0.00322977      20000   
+mpr_TrkDe_80m70p_D0200:MprTrkDe80m70pD0200TCFilter:TimeClusterFilter               1.0243e-05    1.58344e-05   6.3939e-05    1.5242e-05    3.42939e-06     20000   
+mpr_TrkDe_80m70p_D0200:TrigRobustMultiHelixFinder:RobustMultiHelixFinder           1.9085e-05    0.00392033     0.141178     0.00173893    0.00677928      19849   
+mpr_TrkDe_80m70p_D0200:TrigMprHelixMergerDe:MergeHelices                            1.845e-05    8.90067e-05   0.00173918    4.3756e-05    0.000121339     19849   
+mpr_TrkDe_80m70p_D0200:MprTrkDe80m70pD0200HSFilter:HelixFilter                      7.087e-06    4.26625e-05   0.000318185   3.0109e-05    4.0888e-05      19849   
+apr_proton_p150:AprProtonP150PS:PrescaleEvent                                       2.441e-06    5.28483e-06   2.2939e-05     4.975e-06    1.51668e-06     20000   
+apr_proton_p150:AprProtonTCFilter:TimeClusterFilter                                 9.296e-06    1.67179e-05   4.7231e-05    1.5994e-05    4.2725e-06      20000   
+apr_proton_p150:TrigAprProtonHelixFinder:AgnosticHelixFinder                       1.2344e-05    0.00040531     0.015371     0.000193125   0.000690708     17990   
+apr_proton_p150:TrigAprProtonHelixMerger:MergeHelices                              1.1254e-05    4.25553e-05   0.000410313   2.94025e-05   3.81561e-05     17990   
+apr_proton_p150:AprProtonP150HSFilter:HelixFilter                                   6.83e-06     3.62158e-05   0.000206068   3.07795e-05   2.80534e-05     17990   
+apr_proton_p250:AprProtonP250PS:PrescaleEvent                                       2.226e-06    4.36442e-06   2.3066e-05     4.188e-06    1.12383e-06     20000   
+apr_proton_p250:AprProtonP250HSFilter:HelixFilter                                   5.755e-06    1.01523e-05   8.2205e-05    9.1515e-06    3.82998e-06     17990   
+apr_proton_p335:AprProtonP335PS:PrescaleEvent                                       1.913e-06    3.49572e-06   2.1753e-05     3.356e-06    9.32772e-07     20000   
+apr_proton_p335:AprProtonP335HSFilter:HelixFilter                                   5.418e-06    8.38027e-06   4.1612e-05    7.8775e-06    2.38324e-06     17990   
+apr_Hlx_30:AprHlx30PS:PrescaleEvent                                                 1.941e-06    3.21463e-06   3.3776e-05     3.033e-06    9.09899e-07     20000   
+apr_Hlx_30:AprHlx50TCFilter:TimeClusterFilter                                       8.387e-06    1.30263e-05   0.000260622   1.2517e-05    3.11604e-06     20000   
+apr_Hlx_30:TrigAprHelixFinder:AgnosticHelixFinder                                  1.0686e-05    0.000121167    0.0038667    5.9853e-05    0.000185681     15179   
+apr_Hlx_30:TrigAprHelixMerger:MergeHelices                                          1.078e-05    1.58863e-05   0.000255286   1.5067e-05    4.22155e-06     15179   
+apr_Hlx_30:AprHlx50HSFilter:HelixFilter                                             6.174e-06    9.82123e-06    9.884e-05     8.409e-06    5.82338e-06     15179   
+apr_Hlx_50:AprHlx50PS:PrescaleEvent                                                 2.12e-06     3.47032e-06   2.0768e-05     3.29e-06     9.81613e-07     20000   
+apr_TrkDe_50_D0200:AprTrkDe50D0200PS:PrescaleEvent                                  1.955e-06    2.97117e-06   2.0525e-05     2.801e-06    8.41056e-07     20000   
+apr_TrkDe_50_D0200:AprTrkDe50D0200TCFilter:TimeClusterFilter                        8.46e-06     1.21829e-05   4.9271e-05    1.1713e-05    2.3712e-06      20000   
+apr_TrkDe_50_D0200:AprTrkDe50D0200HSFilter:HelixFilter                              6.57e-06     9.09261e-06   4.7828e-05     8.497e-06    2.7577e-06      15179   
+apr_Hlx_50_Hlx_30:AprHlx50Hlx30PS:PrescaleEvent                                     2.17e-06     3.13844e-06   1.9688e-05     2.937e-06    9.07767e-07     20000   
+apr_Hlx_50_Hlx_30:AprHlx50Hlx30TCFilter:TimeClusterFilter                           7.863e-06    1.10461e-05   0.000260515   1.0517e-05    3.30609e-06     20000   
+apr_Hlx_50_Hlx_30:AprHlx50Hlx30HSFilter:MultiHelixFilter                            6.621e-06    9.80061e-06   0.00014006     9.045e-06    4.78173e-06     15179   
+apr_TwoTrkDe_50:AprTwoTrkDe50PS:PrescaleEvent                                       2.215e-06    3.25838e-06   2.0669e-05     3.061e-06    9.28604e-07     20000   
+apr_TwoTrkDe_50:AprTrkDe50MultiHelixTCFilter:TimeClusterFilter                      7.893e-06    1.08215e-05   3.1623e-05    1.0441e-05    2.12652e-06     20000   
+apr_TwoTrkDe_50:AprTrkDe50MultiHelixHSFilter:HelixFilter                            5.995e-06    8.84164e-06   6.8864e-05     7.855e-06    4.24499e-06     15179   
+apr_TwoTrkDe_80m70p_D0200:AprTwoTrkDe80m70pD0200PS:PrescaleEvent                    2.211e-06    3.11137e-06   2.0792e-05     2.95e-06      8.36e-07       20000   
+apr_TwoTrkDe_80m70p_D0200:AprTrkDe80m70pD0200MultiTrkTCFilter:TimeClusterFilter     8.066e-06    1.10603e-05   3.5983e-05    1.0654e-05    2.17005e-06     20000   
+apr_TwoTrkDe_80m70p_D0200:AprTrkDe80m70pD0200MultiTrkHSFilter:HelixFilter           6.059e-06    8.18484e-06   5.2889e-05     7.87e-06     2.0275e-06      15179   
+apr_TrkUe_80m70p:AprTrkUe80m70pPS:PrescaleEvent                                     2.149e-06    2.94161e-06   2.1495e-05     2.796e-06    7.95451e-07     20000   
+apr_TrkUe_80m70p:AprTrkUe80m70pTCFilter:TimeClusterFilter                           7.292e-06    1.00238e-05   4.0079e-05     9.661e-06    1.99588e-06     20000   
+apr_TrkUe_80m70p:AprTrkUe80m70pHSFilter:HelixFilter                                 5.862e-06    8.01484e-06    7.131e-05     7.51e-06     2.49326e-06     15179   
+apr_TrkDe_70:AprTrkDe70PS:PrescaleEvent                                             2.236e-06    3.1001e-06     2.059e-05     2.901e-06    8.60645e-07     20000   
+apr_TrkDe_70:AprTrkDe70TCFilter:TimeClusterFilter                                   7.357e-06    9.94721e-06    3.188e-05    9.5155e-06    2.09882e-06     20000   
+apr_TrkDe_70:AprTrkDe70HSFilter:HelixFilter                                         5.718e-06    8.03936e-06    8.412e-05     7.395e-06    3.3657e-06      15179   
+apr_TrkDe_75:AprTrkDe75PS:PrescaleEvent                                             2.208e-06    3.09459e-06   1.8674e-05     2.927e-06    7.84564e-07     20000   
+apr_TrkDe_75:AprTrkDe75TCFilter:TimeClusterFilter                                   7.128e-06    9.61689e-06   3.1883e-05     9.25e-06     2.00221e-06     20000   
+apr_TrkDe_75:AprTrkDe75HSFilter:HelixFilter                                         5.542e-06    7.61612e-06   4.9076e-05     7.126e-06    2.70688e-06     15179   
+apr_TrkDe_75m70p:AprTrkDe75m70pPS:PrescaleEvent                                     2.172e-06    2.97583e-06   2.0336e-05     2.828e-06    7.87643e-07     20000   
+apr_TrkDe_75m70p:AprTrkDe75m70pTCFilter:TimeClusterFilter                           7.105e-06    9.47024e-06   3.7976e-05     9.123e-06    1.95388e-06     20000   
+apr_TrkDe_75m70p:AprTrkDe75m70pHSFilter:HelixFilter                                 5.558e-06    7.5799e-06    4.1656e-05     7.138e-06    2.34945e-06     15179   
+apr_TrkDe_80m70p:AprTrkDe80m70pPS:PrescaleEvent                                     2.215e-06    2.98923e-06    2.011e-05     2.818e-06    7.67243e-07     20000   
+apr_TrkDe_80m70p:AprTrkDe80m70pTCFilter:TimeClusterFilter                           7.153e-06    9.55349e-06   0.000167103   9.2765e-06    2.12965e-06     20000   
+apr_TrkDe_80m70p:AprTrkDe80m70pHSFilter:HelixFilter                                 5.582e-06    7.47633e-06   3.7447e-05     7.106e-06    2.15583e-06     15179   
+apr_TrkDe_70_D0200:AprTrkDe70D0200PS:PrescaleEvent                                  2.194e-06    2.92179e-06   2.0201e-05     2.776e-06    7.13059e-07     20000   
+apr_TrkDe_70_D0200:AprTrkDe70D0200TCFilter:TimeClusterFilter                        7.116e-06    9.48903e-06   3.1054e-05     9.235e-06    1.8108e-06      20000   
+apr_TrkDe_70_D0200:AprTrkDe70D0200HSFilter:HelixFilter                              5.604e-06    7.31636e-06   2.7086e-05     7.047e-06    1.66656e-06     15179   
+apr_TrkDe_75_D0200:AprTrkDe75D0200PS:PrescaleEvent                                  2.189e-06    2.93782e-06   2.0338e-05      2.8e-06     7.64135e-07     20000   
+apr_TrkDe_75_D0200:AprTrkDe75D0200TCFilter:TimeClusterFilter                        6.918e-06    9.20307e-06   4.5136e-05     8.923e-06    1.79597e-06     20000   
+apr_TrkDe_75m70p_D0200:AprTrkDe75m70pD0200PS:PrescaleEvent                          2.198e-06    2.94332e-06   2.3368e-05      2.8e-06     7.77572e-07     20000   
+apr_TrkDe_75m70p_D0200:AprTrkDe75m70pD0200TCFilter:TimeClusterFilter                7.062e-06    9.31515e-06   4.7319e-05     9.061e-06    1.83957e-06     20000   
+apr_TrkDe_75m70p_D0200:AprTrkDe75m70pD0200HSFilter:HelixFilter                      5.72e-06     7.5359e-06    3.2196e-05     7.394e-06    1.63442e-06     15179   
+apr_TrkDe_80m70p_D0200:AprTrkDe80m70pD0200PS:PrescaleEvent                          2.18e-06     2.87177e-06   2.0156e-05    2.7405e-06    7.21796e-07     20000   
+apr_TrkDe_80m70p_D0200:AprTrkDe80m70pD0200TCFilter:TimeClusterFilter                 7.2e-06     9.33859e-06   3.9004e-05     9.104e-06    1.74447e-06     20000   
+apr_TrkDe_80m70p_D0200:AprTrkDe80m70pD0200HSFilter:HelixFilter                      5.537e-06    7.26037e-06   3.1191e-05     7.116e-06    1.59041e-06     15179   
+cpr_HlxUe_40:CprHlxUe40PS:PrescaleEvent                                             2.288e-06    3.10236e-06   2.3776e-05    2.9305e-06    8.13451e-07     20000   
+cpr_HlxUe_40:TrigCalTimePeakFinderUe:CalTimePeakFinder                             1.3057e-05    2.12457e-05   0.000244576   1.77795e-05   1.18083e-05     20000   
+cpr_HlxUe_40:CprHlxUe40TCFilter:TimeClusterFilter                                   8.414e-06    1.07492e-05   3.6825e-05    1.0454e-05    1.92353e-06     20000   
+cpr_HlxDe_50:CprHlxDe50PS:PrescaleEvent                                             2.264e-06    3.11418e-06   1.9863e-05     2.92e-06     8.35244e-07     20000   
+cpr_HlxDe_50:TrigCalTimePeakFinder:CalTimePeakFinder                                1.084e-05    1.63066e-05   0.000253144   1.3369e-05    1.11076e-05     20000   
+cpr_HlxDe_50:CprHlxDe50TCFilter:TimeClusterFilter                                   7.984e-06    1.02299e-05   3.4917e-05     9.955e-06    1.84592e-06     20000   
+cpr_TrkDe_50_D0200:CprTrkDe50D0200PS:PrescaleEvent                                  2.241e-06    3.0975e-06    2.0007e-05    2.9105e-06    7.9855e-07      20000   
+cpr_TrkDe_50_D0200:CprTrkDe50D0200TCFilter:TimeClusterFilter                        7.935e-06    1.02394e-05   4.6434e-05     9.898e-06    1.96595e-06     20000   
+cpr_TrkDe_70:CprTrkDe70PS:PrescaleEvent                                             2.303e-06    3.13582e-06   2.1126e-05     2.952e-06    8.32067e-07     20000   
+cpr_TrkDe_70:CprTrkDe70TCFilter:TimeClusterFilter                                   7.364e-06    9.63553e-06    2.884e-05     9.336e-06    1.89184e-06     20000   
+cpr_TrkDe_75:CprTrkDe75PS:PrescaleEvent                                             2.225e-06    2.98719e-06   1.9746e-05     2.812e-06    7.35037e-07     20000   
+cpr_TrkDe_75:CprTrkDe75TCFilter:TimeClusterFilter                                   7.087e-06    9.30261e-06   3.2383e-05     9.059e-06    1.80954e-06     20000   
+cpr_TrkDe_75m70p:CprTrkDe75m70pPS:PrescaleEvent                                     2.129e-06    2.95082e-06   1.9698e-05     2.805e-06    7.05409e-07     20000   
+cpr_TrkDe_75m70p:CprTrkDe75m70pTCFilter:TimeClusterFilter                           7.131e-06    9.24494e-06   6.0453e-05    9.0435e-06    1.77499e-06     20000   
+cpr_TrkDe_80m70p:CprTrkDe80m70pPS:PrescaleEvent                                     2.22e-06     3.10209e-06   2.6583e-05     2.945e-06    7.91096e-07     20000   
+cpr_TrkDe_80m70p:CprTrkDe80m70pTCFilter:TimeClusterFilter                           7.008e-06    9.11793e-06   2.8765e-05     8.895e-06    1.71609e-06     20000   
+cpr_TrkDe_70_D0200:CprTrkDe70D0200PS:PrescaleEvent                                  2.199e-06    2.92814e-06   2.0289e-05     2.807e-06    6.16569e-07     20000   
+cpr_TrkDe_70_D0200:CprTrkDe70D0200TCFilter:TimeClusterFilter                        7.091e-06    9.09131e-06    3.577e-05     8.86e-06     1.68405e-06     20000   
+cpr_TrkDe_75_D0200:CprTrkDe75D0200PS:PrescaleEvent                                  2.147e-06    2.83764e-06   1.9513e-05     2.705e-06    6.30213e-07     20000   
+cpr_TrkDe_75_D0200:CprTrkDe75D0200TCFilter:TimeClusterFilter                        6.986e-06    9.04948e-06    4.42e-05      8.83e-06     1.73953e-06     20000   
+cpr_TrkDe_75m70p_D0200:CprTrkDe75m70pD0200PS:PrescaleEvent                          2.151e-06    2.88701e-06   1.9361e-05     2.736e-06    6.96971e-07     20000   
+cpr_TrkDe_75m70p_D0200:CprTrkDe75m70pD0200TCFilter:TimeClusterFilter                7.164e-06    9.31798e-06   3.0525e-05    9.0595e-06    1.85279e-06     20000   
+cpr_TrkDe_80m70p_D0200:CprTrkDe80m70pD0200PS:PrescaleEvent                          2.252e-06    2.92643e-06   2.0628e-05     2.803e-06    6.80679e-07     20000   
+cpr_TrkDe_80m70p_D0200:CprTrkDe80m70pD0200TCFilter:TimeClusterFilter                7.209e-06    9.20228e-06   3.0396e-05    8.9655e-06    1.71498e-06     20000   
+tpr_HlxDe_30p_IPAPhi:TprHlxDe30pIPAPhiPS:PrescaleEvent                              2.294e-06    3.07986e-06   2.0152e-05      2.9e-06     7.31596e-07     20000   
+tpr_HlxDe_30p_IPAPhi:TprHlxDe30pIPAPhiTCFilter:TimeClusterFilter                    8.709e-06    1.19896e-05   0.000329524   1.1163e-05    1.04126e-05     20000   
+tpr_HlxDe_30p_IPAPhi:TrigHelixFinder:RobustHelixFinder                              1.071e-05    0.00118476     0.0465404    0.000494709   0.00215076      19849   
+tpr_HlxDe_30p_IPAPhi:TrigHelixMergerDe:MergeHelices                                1.1587e-05    1.83124e-05   0.000286186   1.7457e-05    5.11361e-06     19849   
+tpr_HlxDe_30p_IPAPhi:TprHlxDe30pIPAPhiHSFilter:HelixFilter                          6.751e-06    1.0287e-05    8.6589e-05     9.182e-06    5.13887e-06     19849   
+tpr_HlxDe_30p_IPA:TprHlxDe30pIPAPS:PrescaleEvent                                    2.33e-06     3.91154e-06   2.0982e-05     3.747e-06    8.91417e-07     20000   
+tpr_HlxDe_30p_IPA:TprHlxDe30pIPATCFilter:TimeClusterFilter                          7.644e-06    1.3377e-05    0.000249304   1.2859e-05    3.77604e-06     20000   
+tpr_HlxDe_30p_IPA:TprHlxDe30pIPAHSFilter:HelixFilter                                6.018e-06    8.47921e-06   5.2617e-05     8.006e-06    2.08203e-06     19849   
+tpr_HlxUe_50m30p:TprHlxUe50m30pPS:PrescaleEvent                                     2.235e-06    3.3665e-06    2.1716e-05     3.166e-06    7.5811e-07      20000   
+tpr_HlxUe_50m30p:TrigTimeClusterFinderUe:TimeClusterFinder                         3.9557e-05    0.00270901     0.0437297    0.00169894    0.00320882      20000   
+tpr_HlxUe_50m30p:TprHlxUe50m30pTCFilter:TimeClusterFilter                           8.478e-06    1.49436e-05   0.00050877    1.4211e-05    5.42392e-06     20000   
+tpr_HlxUe_50m30p:TrigHelixFinderUe:RobustHelixFinder                                9.844e-06    0.000928774    0.0252648    0.000388301    0.0016366      19822   
+tpr_HlxUe_50m30p:TrigHelixMergerUe:MergeHelices                                     1.13e-05     1.78819e-05   0.00026207    1.69255e-05   5.0676e-06      19822   
+tpr_HlxUe_50m30p:TprHlxUe50m30pHSFilter:HelixFilter                                 6.386e-06    1.06584e-05   0.000102441    9.019e-06    6.41868e-06     19822   
+tpr_HlxDe_70m50p:TprHlxDe70m50pPS:PrescaleEvent                                     2.309e-06    4.32093e-06   2.2383e-05     4.115e-06    1.00679e-06     20000   
+tpr_HlxDe_70m50p:TprHlxDe70m50pTCFilter:TimeClusterFilter                           7.619e-06    1.34112e-05   0.000266472   1.28275e-05   5.24243e-06     20000   
+tpr_HlxDe_70m50p:TprHlxDe70m50pHSFilter:HelixFilter                                 6.347e-06    9.46832e-06   7.6101e-05     8.468e-06    4.40171e-06     19849   
+tpr_TrkDe_50_D0200:TprTrkDe50D0200PS:PrescaleEvent                                  2.433e-06    3.68138e-06   2.1032e-05     3.47e-06     8.65272e-07     20000   
+tpr_TrkDe_50_D0200:TprTrkDe50D0200TCFilter:TimeClusterFilter                        8.06e-06     1.21517e-05   0.000320506   1.1633e-05    6.34792e-06     20000   
+tpr_TrkDe_50_D0200:TprTrkDe50D0200HSFilter:HelixFilter                              6.052e-06    8.55499e-06    6.617e-05     7.895e-06    3.03277e-06     19930   
+tpr_TrkDe_80m70p:TprTrkDe80m70pPS:PrescaleEvent                                     2.242e-06    3.33511e-06    2.154e-05     3.11e-06     8.48504e-07     20000   
+tpr_TrkDe_80m70p:TprTrkDe80m70pTCFilter:TimeClusterFilter                           7.462e-06    1.14446e-05   0.000288296   1.0649e-05    6.85217e-06     20000   
+tpr_TrkDe_80m70p:TprTrkDe80m70pHSFilter:HelixFilter                                 5.842e-06    8.35392e-06   7.9401e-05     7.47e-06     3.92185e-06     19849   
+tpr_TrkDe_80m70p_D0200:TprTrkDe80m70pD0200PS:PrescaleEvent                          2.252e-06    3.16255e-06   2.1499e-05     2.984e-06    7.48719e-07     20000   
+tpr_TrkDe_80m70p_D0200:TprTrkDe80m70pD0200TCFilter:TimeClusterFilter                7.515e-06    1.07942e-05   0.000286617   1.0188e-05    6.97593e-06     20000   
+tpr_TrkDe_80m70p_D0200:TprTrkDe80m70pD0200HSFilter:HelixFilter                      5.759e-06    7.78282e-06    6.894e-05     7.389e-06    2.06377e-06     19849   
+[art]:TriggerResults:TriggerResultInserter                                          4.518e-06    5.95488e-06   2.5169e-05    5.4905e-06    1.36958e-06     20000   
+apr_proton_p150:AprProtonP150TriggerInfoMerger:MergeTriggerInfo                    1.9846e-05    3.63936e-05   0.00011296     3.354e-05    1.15577e-05     11394   
+mpr_TrkDe_80m70p_D0200:TrigMprKSFDe:LoopHelixFit                                   0.000209053   0.00977155     0.0592095    0.00785836    0.00723596      9952    
+mpr_TrkDe_80m70p_D0200:MprTrkDe80m70pD0200KSFilter:KalSeedFilter                    9.847e-06    3.02606e-05   0.000118683   2.80815e-05   1.23849e-05     9952    
+apr_TC_calo:AprTCCaloTriggerInfoMerger:MergeTriggerInfo                            2.3389e-05    3.25447e-05   6.7967e-05    3.07805e-05   8.84051e-06     2078    
+calo_cluster_60:CaloCluster60TriggerInfoMerger:MergeTriggerInfo                    1.3924e-05    2.06515e-05   6.1034e-05    1.8244e-05    6.86513e-06     1376    
+calo_cluster_50:CaloCluster50TriggerInfoMerger:MergeTriggerInfo                    1.3449e-05    2.19905e-05   5.9393e-05    1.9461e-05    7.58576e-06     3536    
+cpr_HlxUe_40:TrigCalHelixFinderUe:CalHelixFinder                                   3.8242e-05    0.000179023   0.00164815    0.000130089   0.000152836     1603    
+cpr_HlxUe_40:TrigCalHelixMergerUe:MergeHelices                                     1.1833e-05    1.7754e-05    3.6603e-05    1.7246e-05    3.33748e-06     1603    
+cpr_HlxUe_40:CprHlxUe40HSFilter:HelixFilter                                         6.816e-06    1.03184e-05   7.6296e-05     9.535e-06    4.79302e-06     1603    
+cpr_HlxDe_50:TrigCalHelixFinderDe:CalHelixFinder                                   2.8884e-05    0.000176507   0.00184335    0.000122522   0.00016696      1694    
+cpr_HlxDe_50:TrigCalHelixMergerDe:MergeHelices                                     1.1347e-05    1.73991e-05   4.0298e-05    1.6836e-05    3.45423e-06     1694    
+cpr_HlxDe_50:CprHlxDe50HSFilter:HelixFilter                                         6.588e-06    1.0568e-05    5.7392e-05    9.6135e-06    4.89773e-06     1694    
+cpr_TrkDe_50_D0200:CprTrkDe50D0200HSFilter:HelixFilter                              6.786e-06    9.97946e-06   3.5593e-05    9.6445e-06    2.29182e-06     1694    
+cpr_TrkDe_70:CprTrkDe70HSFilter:HelixFilter                                         6.324e-06    9.45232e-06   4.8058e-05     8.905e-06    3.10448e-06     1694    
+cpr_TrkDe_75:CprTrkDe75HSFilter:HelixFilter                                         6.073e-06    8.75518e-06   2.5674e-05     8.447e-06    2.14345e-06     1694    
+cpr_TrkDe_75m70p:CprTrkDe75m70pHSFilter:HelixFilter                                 6.158e-06    8.75348e-06   2.7799e-05     8.481e-06    1.92204e-06     1694    
+cpr_TrkDe_80m70p:CprTrkDe80m70pHSFilter:HelixFilter                                 6.218e-06    8.77823e-06   2.2225e-05     8.506e-06    1.8072e-06      1694    
+cpr_TrkDe_70_D0200:CprTrkDe70D0200HSFilter:HelixFilter                              5.941e-06    8.40273e-06   2.2811e-05     8.273e-06    1.53356e-06     1694    
+cpr_TrkDe_75_D0200:CprTrkDe75D0200HSFilter:HelixFilter                              5.799e-06    8.36015e-06   2.6411e-05    8.2285e-06    1.74131e-06     1694    
+cpr_TrkDe_75m70p_D0200:CprTrkDe75m70pD0200HSFilter:HelixFilter                      6.075e-06    8.46335e-06   3.3076e-05     8.342e-06    1.67369e-06     1694    
+cpr_TrkDe_80m70p_D0200:CprTrkDe80m70pD0200HSFilter:HelixFilter                      6.081e-06    8.49531e-06   2.9568e-05     8.317e-06    1.82138e-06     1694    
+tpr_HlxDe_70m50p:TprHlxDe70m50pTriggerInfoMerger:MergeTriggerInfo                  1.7159e-05    2.67147e-05   7.4951e-05     2.431e-05    9.78114e-06      829    
+tpr_TrkDe_50_D0200:TrigKSFDe:LoopHelixFit                                          0.000226422   0.00206567     0.006781     0.00188919    0.00107748      1071    
+tpr_TrkDe_50_D0200:TprTrkDe50D0200KSFilter:KalSeedFilter                            9.985e-06    2.00985e-05    4.392e-05    1.9262e-05    6.05831e-06     1071    
+apr_proton_p250:AprProtonP250TriggerInfoMerger:MergeTriggerInfo                     1.667e-05    2.10255e-05   4.4828e-05    2.05715e-05   3.4267e-06      1252    
+apr_proton_p335:AprProtonP335TriggerInfoMerger:MergeTriggerInfo                    1.6299e-05    1.95861e-05   3.5387e-05    1.9452e-05    2.81473e-06      301    
+apr_Hlx_30:AprHlx30TriggerInfoMerger:MergeTriggerInfo                              1.7599e-05    2.71231e-05   7.0171e-05    2.4889e-05    8.35256e-06      798    
+apr_Hlx_50:AprHlx50TriggerInfoMerger:MergeTriggerInfo                              1.5836e-05    1.95697e-05   4.7044e-05    1.92865e-05   2.72946e-06      798    
+apr_TrkDe_50_D0200:TrigAprKSF:LoopHelixFit                                         0.000241122   0.00158784    0.00649054    0.00135822    0.00121428       618    
+apr_TrkDe_50_D0200:AprTrkDe50D0200KSFilter:KalSeedFilter                            9.255e-06    1.67953e-05   4.7163e-05    1.5138e-05    5.6337e-06       618    
+apr_TrkDe_50_D0200:AprTrkDe50D0200TriggerInfoMerger:MergeTriggerInfo               2.6292e-05    3.36156e-05   6.4112e-05    3.2838e-05    6.05722e-06      103    
+apr_TrkDe_70:AprTrkDe70KSFilter:KalSeedFilter                                       6.417e-06    1.05526e-05   2.6832e-05     9.228e-06    3.53073e-06      466    
+tpr_TrkDe_50_D0200:TprTrkDe50D0200TriggerInfoMerger:MergeTriggerInfo               2.6479e-05    3.47451e-05   7.2103e-05    3.3386e-05    7.81288e-06      149    
+tpr_TrkDe_80m70p:TrigKSFDe:LoopHelixFit                                            0.000364591   0.00148938    0.00319567    0.00136072    0.00068644       46     
+tpr_TrkDe_80m70p:TprTrkDe80m70pKSFilter:KalSeedFilter                               6.698e-06    1.17316e-05   4.0552e-05    1.1577e-05    4.2594e-06       576    
+tpr_HlxUe_50m30p:TprHlxUe50m30pTriggerInfoMerger:MergeTriggerInfo                  1.9717e-05    3.21786e-05   7.8763e-05    2.9556e-05    9.55424e-06     1065    
+apr_TrkUe_80m70p:TrigAprUeKSF:LoopHelixFit                                         0.000221688   0.00123381    0.00607173    0.000947886   0.00101245       358    
+apr_TrkUe_80m70p:AprTrkUe80m70pKSFilter:KalSeedFilter                               8.758e-06    1.39953e-05   4.4573e-05    1.2663e-05    4.12005e-06      358    
+apr_TrkDe_75:AprTrkDe75KSFilter:KalSeedFilter                                       6.189e-06    8.35863e-06   1.9191e-05    7.6695e-06    2.18481e-06      410    
+apr_TrkDe_75m70p:AprTrkDe75m70pKSFilter:KalSeedFilter                               5.893e-06    8.17933e-06   2.3748e-05     7.593e-06    2.12039e-06      440    
+apr_TrkDe_80m70p:AprTrkDe80m70pKSFilter:KalSeedFilter                               5.926e-06    7.93909e-06    1.962e-05     7.496e-06    2.04764e-06      358    
+apr_TrkDe_75_D0200:AprTrkDe75D0200KSFilter:KalSeedFilter                            5.765e-06    8.05086e-06   2.4537e-05     7.413e-06    2.19523e-06      410    
+tpr_TrkDe_80m70p_D0200:TprTrkDe80m70pD0200KSFilter:KalSeedFilter                    6.242e-06    1.06661e-05   2.8086e-05    1.06705e-05   3.22957e-06      376    
+calo_cluster_80:CaloCluster80TriggerInfoMerger:MergeTriggerInfo                    1.6437e-05    2.19441e-05   5.4684e-05    2.0083e-05    5.92272e-06      285    
+calo_cluster_75:CaloCluster75TriggerInfoMerger:MergeTriggerInfo                    1.4766e-05    1.94437e-05   6.0214e-05    1.7919e-05    5.35306e-06      440    
+calo_cluster_70:CaloCluster70TriggerInfoMerger:MergeTriggerInfo                    1.4415e-05    1.91968e-05   6.5969e-05    1.7763e-05    5.25522e-06      653    
+tpr_TrkDe_50_D0200:TrigHelixFinder:RobustHelixFinder                               1.0531e-05    4.31709e-05   0.00048579    2.7981e-05    6.68444e-05      81     
+tpr_TrkDe_50_D0200:TrigHelixMergerDe:MergeHelices                                  1.2025e-05    1.7317e-05    3.2826e-05    1.6573e-05    3.67004e-06      81     
+calo_photon:CaloPhotonTriggerInfoMerger:MergeTriggerInfo                           1.4493e-05    1.84643e-05   3.5837e-05    1.80865e-05   2.66175e-06      356    
+tpr_HlxDe_30p_IPA:TprHlxDe30pIPATriggerInfoMerger:MergeTriggerInfo                  1.761e-05    2.98173e-05   6.5787e-05    2.79605e-05   8.84948e-06      378    
+apr_TrkDe_70:TrigAprKSF:LoopHelixFit                                               0.000216124   0.00132459    0.00620989    0.000900837   0.00113418       158    
+mpr_TrkDe_80m70p_D0200:MprTrkDe80m70pD0200TriggerInfoMerger:MergeTriggerInfo       2.9223e-05    4.41143e-05   8.3157e-05    4.00655e-05   1.46693e-05      134    
+cpr_HlxDe_50:CprHlxDe50TriggerInfoMerger:MergeTriggerInfo                           2.571e-05    3.43881e-05   6.8134e-05    3.1577e-05    7.90802e-06      72     
+cpr_TrkDe_50_D0200:TrigCalSeedFitDe:LoopHelixFit                                   0.000265859   0.00157766    0.00591358    0.00159827    0.00116726       69     
+cpr_TrkDe_50_D0200:CprTrkDe50D0200KSFilter:KalSeedFilter                           1.1299e-05    1.80425e-05   3.9201e-05    1.7687e-05    5.91306e-06      69     
+cpr_TrkDe_70:CprTrkDe70KSFilter:KalSeedFilter                                       7.117e-06    1.07657e-05   2.2764e-05     9.645e-06    3.28061e-06      53     
+cpr_TrkDe_75:CprTrkDe75KSFilter:KalSeedFilter                                       6.641e-06    9.41554e-06   1.5254e-05     8.914e-06    2.30263e-06      48     
+cpr_TrkDe_75m70p:CprTrkDe75m70pKSFilter:KalSeedFilter                               6.711e-06    9.31419e-06   1.3295e-05    8.8195e-06    2.05004e-06      48     
+cpr_TrkDe_80m70p:CprTrkDe80m70pKSFilter:KalSeedFilter                               6.61e-06     9.17842e-06   1.3549e-05     8.567e-06    2.10975e-06      50     
+cpr_TrkDe_70_D0200:CprTrkDe70D0200KSFilter:KalSeedFilter                            6.565e-06    9.69703e-06   2.1815e-05    8.7615e-06    3.62136e-06      30     
+cpr_TrkDe_75_D0200:CprTrkDe75D0200KSFilter:KalSeedFilter                            6.574e-06    9.24541e-06   2.2771e-05     8.479e-06    3.08355e-06      29     
+cpr_TrkDe_75m70p_D0200:CprTrkDe75m70pD0200KSFilter:KalSeedFilter                    6.802e-06    9.95563e-06   1.9684e-05     9.368e-06    3.22438e-06      30     
+cpr_TrkDe_80m70p_D0200:CprTrkDe80m70pD0200KSFilter:KalSeedFilter                    6.646e-06    9.57873e-06   1.8338e-05     8.281e-06    3.05261e-06      30     
+apr_TrkDe_70_D0200:AprTrkDe70D0200KSFilter:KalSeedFilter                            5.925e-06    8.17125e-06   2.7024e-05     7.277e-06    2.85295e-06      133    
+apr_TrkDe_75m70p_D0200:AprTrkDe75m70pD0200KSFilter:KalSeedFilter                    5.713e-06    8.04223e-06   1.7737e-05     7.379e-06    2.22976e-06      128    
+apr_TrkDe_80m70p_D0200:AprTrkDe80m70pD0200KSFilter:KalSeedFilter                    5.783e-06    7.92761e-06   1.9941e-05     7.146e-06    2.52812e-06      93     
+tpr_HlxDe_30p_IPAPhi:TprHlxDe30pIPAPhiTriggerInfoMerger:MergeTriggerInfo           2.3004e-05    3.30076e-05   7.4929e-05    3.0435e-05    9.50031e-06      81     
+calo_RMC:CaloRMCTriggerInfoMerger:MergeTriggerInfo                                 1.5678e-05    1.83254e-05    2.245e-05    1.8649e-05    1.57783e-06      41     
+calo_NNCE:CaloNNCETriggerInfoMerger:MergeTriggerInfo                               1.5323e-05    1.80836e-05    2.217e-05    1.86015e-05   1.71981e-06      32     
+apr_Hlx_50_Hlx_30:AprHlx50Hlx30TriggerInfoMerger:MergeTriggerInfo                  2.0452e-05    3.06606e-05   4.6022e-05     3.006e-05    5.9866e-06       20     
+apr_TwoTrkDe_50:AprTrkDe50MultiHelixKSFilter:KalSeedFilter                          7.301e-06    1.16398e-05   2.4987e-05     9.69e-06     4.51286e-06      33     
+cpr_TrkDe_50_D0200:CprTrkDe50D0200TriggerInfoMerger:MergeTriggerInfo               2.8272e-05    3.44842e-05   4.2618e-05    3.4701e-05    4.11662e-06      17     
+apr_TrkDe_70:AprTrkDe70TriggerInfoMerger:MergeTriggerInfo                          2.1491e-05    2.82068e-05   3.9188e-05    2.67925e-05   5.36989e-06      14     
+apr_TwoTrkDe_50:TrigAprKSF:LoopHelixFit                                            0.00135565    0.00186758     0.0023795    0.00186758    0.000511925       2     
+apr_TwoTrkDe_80m70p_D0200:AprTrkDe80m70pD0200MultiTrkKSFilter:KalSeedFilter         7.275e-06    8.83644e-06   1.6164e-05     8.089e-06    2.62855e-06       9     
+apr_TrkDe_75:AprTrkDe75TriggerInfoMerger:MergeTriggerInfo                          2.0474e-05    2.27416e-05    2.631e-05    2.1973e-05    2.23435e-06       7     
+apr_TrkDe_75m70p:AprTrkDe75m70pTriggerInfoMerger:MergeTriggerInfo                  2.0086e-05    2.23487e-05   2.6831e-05    2.1173e-05    2.75469e-06       7     
+apr_TrkDe_80m70p:AprTrkDe80m70pTriggerInfoMerger:MergeTriggerInfo                  1.9947e-05    2.29632e-05   2.6877e-05    2.1275e-05    2.72349e-06       5     
+tpr_TrkDe_80m70p:TprTrkDe80m70pTriggerInfoMerger:MergeTriggerInfo                  2.1526e-05    2.72355e-05   3.0089e-05    2.78325e-05   2.74466e-06       6     
+tpr_TrkDe_80m70p_D0200:TprTrkDe80m70pD0200TriggerInfoMerger:MergeTriggerInfo       2.0455e-05    2.3265e-05    2.6075e-05    2.3265e-05     2.81e-06         2     
+cpr_TrkDe_70:CprTrkDe70TriggerInfoMerger:MergeTriggerInfo                          2.1394e-05    2.40988e-05   2.7999e-05    2.4092e-05    2.33127e-06       6     
+cpr_TrkDe_75:CprTrkDe75TriggerInfoMerger:MergeTriggerInfo                          2.1019e-05    2.34393e-05   2.6816e-05    2.2483e-05    2.46133e-06       3     
+cpr_TrkDe_75m70p:CprTrkDe75m70pTriggerInfoMerger:MergeTriggerInfo                  2.0888e-05    2.30487e-05   2.5981e-05    2.2277e-05    2.14961e-06       3     
+cpr_TrkDe_70_D0200:CprTrkDe70D0200TriggerInfoMerger:MergeTriggerInfo               2.0494e-05    2.22823e-05   2.4331e-05    2.1786e-05    1.50223e-06       6     
+cpr_TrkDe_75_D0200:CprTrkDe75D0200TriggerInfoMerger:MergeTriggerInfo               1.9926e-05    2.8588e-05    3.5448e-05     3.039e-05    6.46367e-06       3     
+cpr_TrkDe_75m70p_D0200:CprTrkDe75m70pD0200TriggerInfoMerger:MergeTriggerInfo        2.129e-05    2.57117e-05   2.9756e-05    2.6089e-05    3.46651e-06       3     
+apr_TrkDe_70_D0200:AprTrkDe70D0200TriggerInfoMerger:MergeTriggerInfo               1.9636e-05    2.56605e-05   3.3753e-05    2.46265e-05   5.77938e-06       4     
+apr_TrkDe_75_D0200:AprTrkDe75D0200TriggerInfoMerger:MergeTriggerInfo               1.9991e-05    2.28385e-05   3.0607e-05    2.0685e-05    3.87676e-06       6     
+apr_TrkDe_75m70p_D0200:AprTrkDe75m70pD0200TriggerInfoMerger:MergeTriggerInfo       1.9319e-05    2.4518e-05    3.0335e-05     2.39e-05     4.51844e-06       3     
+apr_TrkDe_80m70p_D0200:AprTrkDe80m70pD0200TriggerInfoMerger:MergeTriggerInfo       1.9639e-05     2.246e-05    2.5281e-05     2.246e-05     2.821e-06        2     
+cpr_TrkDe_70:TrigCalSeedFitDe:LoopHelixFit                                         0.000407438    0.0014373     0.0021686    0.00173585    0.000749343       3     
+apr_TrkUe_80m70p:AprTrkUe80m70pTriggerInfoMerger:MergeTriggerInfo                  2.8945e-05    3.38074e-05   3.9249e-05    3.4313e-05    3.71877e-06       5     
+apr_TwoTrkDe_50:AprTrkDe50MultiHelixTriggerInfoMerger:MergeTriggerInfo             2.3864e-05    2.39245e-05   2.3985e-05    2.39245e-05    6.05e-08         2     
 =====================================================================================================================================================================
 DbEngine::endJob
-    Total time in reading DB: 0.555526 s
+    Total time in reading DB: 0.626203 s
     Total time waiting for locks: 1e-06 s
-    Total time in locks: 0.480174 s
-    valcache memory: 483151 b
+    Total time in locks: 0.515709 s
+    valcache memory: 558161 b
   Database cache stats:
     cache nTable : 11
     cache HWM    : 1364957 b
@@ -678,9 +678,9 @@ TrigReport        160      20000          0      20000          0 cpr_TrkDe_80m7
 TrigReport        161      20000          3      19997          0 cpr_TrkDe_75m70p
 TrigReport        162      20000          3      19997          0 cpr_TrkDe_75
 TrigReport        163      20000          6      19994          0 cpr_TrkDe_70
-TrigReport        175      20000         16      19984          0 cpr_TrkDe_50_D0200
-TrigReport        180      20000         68      19932          0 cpr_HlxDe_50
-TrigReport        181      20000         27      19973          0 cpr_HlxUe_40
+TrigReport        175      20000         17      19983          0 cpr_TrkDe_50_D0200
+TrigReport        180      20000         72      19928          0 cpr_HlxDe_50
+TrigReport        181      20000         28      19972          0 cpr_HlxUe_40
 TrigReport        200      20000          2      19998          0 apr_TrkDe_80m70p_D0200
 TrigReport        201      20000          3      19997          0 apr_TrkDe_75m70p_D0200
 TrigReport        202      20000          6      19994          0 apr_TrkDe_75_D0200
@@ -711,7 +711,7 @@ TrigReport        428      20000        440      19560          0 calo_cluster_7
 TrigReport        429      20000        285      19715          0 calo_cluster_80
 TrigReport        500      20000          0      20000          0 cst_TimeCluster
 TrigReport        510      20000          0      20000          0 apr_TC
-TrigReport        511      20000       1947      18053          0 apr_TC_calo
+TrigReport        511      20000       2078      17922          0 apr_TC_calo
 TrigReport        520      20000          0      20000          0 cst_CosmicTrackSeed
 TrigReport        600      20000          0      20000          0 minBias_SDCount
 TrigReport        610      20000          0      20000          0 minBias_CDCount
@@ -732,10 +732,10 @@ TrigReport        266      20000      20000          0          0 TrigMakeSH
 TrigReport        266      20000      20000          0          0 TrigMakePH
 TrigReport        266      20000      20000          0          0 TrigFlagPH
 TrigReport        266      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        266      20000      15161       4839          0 AprHlx50TCFilter
-TrigReport        266      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        266      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        266      15161        798      14363          0 AprHlx50HSFilter
+TrigReport        266      20000      15179       4821          0 AprHlx50TCFilter
+TrigReport        266      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        266      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        266      15179        798      14381          0 AprHlx50HSFilter
 TrigReport        266        798        798          0          0 AprHlx30TriggerInfoMerger
 
 TrigReport ---------- Modules in path: apr_Hlx_50 ------------
@@ -749,10 +749,10 @@ TrigReport        265      20000      20000          0          0 TrigMakeSH
 TrigReport        265      20000      20000          0          0 TrigMakePH
 TrigReport        265      20000      20000          0          0 TrigFlagPH
 TrigReport        265      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        265      20000      15161       4839          0 AprHlx50TCFilter
-TrigReport        265      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        265      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        265      15161        798      14363          0 AprHlx50HSFilter
+TrigReport        265      20000      15179       4821          0 AprHlx50TCFilter
+TrigReport        265      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        265      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        265      15179        798      14381          0 AprHlx50HSFilter
 TrigReport        265        798        798          0          0 AprHlx50TriggerInfoMerger
 
 TrigReport ---------- Modules in path: apr_Hlx_50_Hlx_30 ------------
@@ -766,10 +766,10 @@ TrigReport        255      20000      20000          0          0 TrigMakeSH
 TrigReport        255      20000      20000          0          0 TrigMakePH
 TrigReport        255      20000      20000          0          0 TrigFlagPH
 TrigReport        255      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        255      20000      15161       4839          0 AprHlx50Hlx30TCFilter
-TrigReport        255      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        255      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        255      15161         20      15141          0 AprHlx50Hlx30HSFilter
+TrigReport        255      20000      15179       4821          0 AprHlx50Hlx30TCFilter
+TrigReport        255      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        255      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        255      15179         20      15159          0 AprHlx50Hlx30HSFilter
 TrigReport        255         20         20          0          0 AprHlx50Hlx30TriggerInfoMerger
 
 TrigReport ---------- Modules in path: apr_TC ------------
@@ -797,8 +797,8 @@ TrigReport        511      20000      20000          0          0 TrigMakeSH
 TrigReport        511      20000      20000          0          0 TrigMakePH
 TrigReport        511      20000      20000          0          0 TrigFlagPH
 TrigReport        511      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        511      20000       1947      18053          0 AprTCCaloTCFilter
-TrigReport        511       1947       1947          0          0 AprTCCaloTriggerInfoMerger
+TrigReport        511      20000       2078      17922          0 AprTCCaloTCFilter
+TrigReport        511       2078       2078          0          0 AprTCCaloTriggerInfoMerger
 
 TrigReport ---------- Modules in path: apr_TrkDe_50_D0200 ------------
 TrigReport    Path ID    Visited     Passed     Failed      Error Name
@@ -811,12 +811,12 @@ TrigReport        260      20000      20000          0          0 TrigMakeSH
 TrigReport        260      20000      20000          0          0 TrigMakePH
 TrigReport        260      20000      20000          0          0 TrigFlagPH
 TrigReport        260      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        260      20000      15161       4839          0 AprTrkDe50D0200TCFilter
-TrigReport        260      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        260      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        260      15161        617      14544          0 AprTrkDe50D0200HSFilter
-TrigReport        260        617        617          0          0 TrigAprKSF
-TrigReport        260        617        103        514          0 AprTrkDe50D0200KSFilter
+TrigReport        260      20000      15179       4821          0 AprTrkDe50D0200TCFilter
+TrigReport        260      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        260      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        260      15179        618      14561          0 AprTrkDe50D0200HSFilter
+TrigReport        260        618        618          0          0 TrigAprKSF
+TrigReport        260        618        103        515          0 AprTrkDe50D0200KSFilter
 TrigReport        260        103        103          0          0 AprTrkDe50D0200TriggerInfoMerger
 
 TrigReport ---------- Modules in path: apr_TrkDe_70 ------------
@@ -830,12 +830,12 @@ TrigReport        213      20000      20000          0          0 TrigMakeSH
 TrigReport        213      20000      20000          0          0 TrigMakePH
 TrigReport        213      20000      20000          0          0 TrigFlagPH
 TrigReport        213      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        213      20000      15161       4839          0 AprTrkDe70TCFilter
-TrigReport        213      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        213      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        213      15161        465      14696          0 AprTrkDe70HSFilter
-TrigReport        213        465        465          0          0 TrigAprKSF
-TrigReport        213        465         14        451          0 AprTrkDe70KSFilter
+TrigReport        213      20000      15179       4821          0 AprTrkDe70TCFilter
+TrigReport        213      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        213      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        213      15179        466      14713          0 AprTrkDe70HSFilter
+TrigReport        213        466        466          0          0 TrigAprKSF
+TrigReport        213        466         14        452          0 AprTrkDe70KSFilter
 TrigReport        213         14         14          0          0 AprTrkDe70TriggerInfoMerger
 
 TrigReport ---------- Modules in path: apr_TrkDe_70_D0200 ------------
@@ -849,10 +849,10 @@ TrigReport        203      20000      20000          0          0 TrigMakeSH
 TrigReport        203      20000      20000          0          0 TrigMakePH
 TrigReport        203      20000      20000          0          0 TrigFlagPH
 TrigReport        203      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        203      20000      15161       4839          0 AprTrkDe70D0200TCFilter
-TrigReport        203      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        203      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        203      15161        133      15028          0 AprTrkDe70D0200HSFilter
+TrigReport        203      20000      15179       4821          0 AprTrkDe70D0200TCFilter
+TrigReport        203      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        203      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        203      15179        133      15046          0 AprTrkDe70D0200HSFilter
 TrigReport        203        133        133          0          0 TrigAprKSF
 TrigReport        203        133          4        129          0 AprTrkDe70D0200KSFilter
 TrigReport        203          4          4          0          0 AprTrkDe70D0200TriggerInfoMerger
@@ -868,12 +868,12 @@ TrigReport        212      20000      20000          0          0 TrigMakeSH
 TrigReport        212      20000      20000          0          0 TrigMakePH
 TrigReport        212      20000      20000          0          0 TrigFlagPH
 TrigReport        212      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        212      20000      15161       4839          0 AprTrkDe75TCFilter
-TrigReport        212      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        212      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        212      15161        409      14752          0 AprTrkDe75HSFilter
-TrigReport        212        409        409          0          0 TrigAprKSF
-TrigReport        212        409          7        402          0 AprTrkDe75KSFilter
+TrigReport        212      20000      15179       4821          0 AprTrkDe75TCFilter
+TrigReport        212      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        212      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        212      15179        410      14769          0 AprTrkDe75HSFilter
+TrigReport        212        410        410          0          0 TrigAprKSF
+TrigReport        212        410          7        403          0 AprTrkDe75KSFilter
 TrigReport        212          7          7          0          0 AprTrkDe75TriggerInfoMerger
 
 TrigReport ---------- Modules in path: apr_TrkDe_75_D0200 ------------
@@ -887,12 +887,12 @@ TrigReport        202      20000      20000          0          0 TrigMakeSH
 TrigReport        202      20000      20000          0          0 TrigMakePH
 TrigReport        202      20000      20000          0          0 TrigFlagPH
 TrigReport        202      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        202      20000      15161       4839          0 AprTrkDe75D0200TCFilter
-TrigReport        202      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        202      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        202      15161        409      14752          0 AprTrkDe75HSFilter
-TrigReport        202        409        409          0          0 TrigAprKSF
-TrigReport        202        409          6        403          0 AprTrkDe75D0200KSFilter
+TrigReport        202      20000      15179       4821          0 AprTrkDe75D0200TCFilter
+TrigReport        202      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        202      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        202      15179        410      14769          0 AprTrkDe75HSFilter
+TrigReport        202        410        410          0          0 TrigAprKSF
+TrigReport        202        410          6        404          0 AprTrkDe75D0200KSFilter
 TrigReport        202          6          6          0          0 AprTrkDe75D0200TriggerInfoMerger
 
 TrigReport ---------- Modules in path: apr_TrkDe_75m70p ------------
@@ -906,12 +906,12 @@ TrigReport        211      20000      20000          0          0 TrigMakeSH
 TrigReport        211      20000      20000          0          0 TrigMakePH
 TrigReport        211      20000      20000          0          0 TrigFlagPH
 TrigReport        211      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        211      20000      15161       4839          0 AprTrkDe75m70pTCFilter
-TrigReport        211      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        211      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        211      15161        439      14722          0 AprTrkDe75m70pHSFilter
-TrigReport        211        439        439          0          0 TrigAprKSF
-TrigReport        211        439          7        432          0 AprTrkDe75m70pKSFilter
+TrigReport        211      20000      15179       4821          0 AprTrkDe75m70pTCFilter
+TrigReport        211      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        211      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        211      15179        440      14739          0 AprTrkDe75m70pHSFilter
+TrigReport        211        440        440          0          0 TrigAprKSF
+TrigReport        211        440          7        433          0 AprTrkDe75m70pKSFilter
 TrigReport        211          7          7          0          0 AprTrkDe75m70pTriggerInfoMerger
 
 TrigReport ---------- Modules in path: apr_TrkDe_75m70p_D0200 ------------
@@ -925,10 +925,10 @@ TrigReport        201      20000      20000          0          0 TrigMakeSH
 TrigReport        201      20000      20000          0          0 TrigMakePH
 TrigReport        201      20000      20000          0          0 TrigFlagPH
 TrigReport        201      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        201      20000      15161       4839          0 AprTrkDe75m70pD0200TCFilter
-TrigReport        201      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        201      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        201      15161        128      15033          0 AprTrkDe75m70pD0200HSFilter
+TrigReport        201      20000      15179       4821          0 AprTrkDe75m70pD0200TCFilter
+TrigReport        201      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        201      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        201      15179        128      15051          0 AprTrkDe75m70pD0200HSFilter
 TrigReport        201        128        128          0          0 TrigAprKSF
 TrigReport        201        128          3        125          0 AprTrkDe75m70pD0200KSFilter
 TrigReport        201          3          3          0          0 AprTrkDe75m70pD0200TriggerInfoMerger
@@ -944,10 +944,10 @@ TrigReport        210      20000      20000          0          0 TrigMakeSH
 TrigReport        210      20000      20000          0          0 TrigMakePH
 TrigReport        210      20000      20000          0          0 TrigFlagPH
 TrigReport        210      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        210      20000      15161       4839          0 AprTrkDe80m70pTCFilter
-TrigReport        210      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        210      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        210      15161        358      14803          0 AprTrkDe80m70pHSFilter
+TrigReport        210      20000      15179       4821          0 AprTrkDe80m70pTCFilter
+TrigReport        210      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        210      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        210      15179        358      14821          0 AprTrkDe80m70pHSFilter
 TrigReport        210        358        358          0          0 TrigAprKSF
 TrigReport        210        358          5        353          0 AprTrkDe80m70pKSFilter
 TrigReport        210          5          5          0          0 AprTrkDe80m70pTriggerInfoMerger
@@ -963,10 +963,10 @@ TrigReport        200      20000      20000          0          0 TrigMakeSH
 TrigReport        200      20000      20000          0          0 TrigMakePH
 TrigReport        200      20000      20000          0          0 TrigFlagPH
 TrigReport        200      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        200      20000      15161       4839          0 AprTrkDe80m70pD0200TCFilter
-TrigReport        200      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        200      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        200      15161         93      15068          0 AprTrkDe80m70pD0200HSFilter
+TrigReport        200      20000      15179       4821          0 AprTrkDe80m70pD0200TCFilter
+TrigReport        200      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        200      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        200      15179         93      15086          0 AprTrkDe80m70pD0200HSFilter
 TrigReport        200         93         93          0          0 TrigAprKSF
 TrigReport        200         93          2         91          0 AprTrkDe80m70pD0200KSFilter
 TrigReport        200          2          2          0          0 AprTrkDe80m70pD0200TriggerInfoMerger
@@ -982,10 +982,10 @@ TrigReport        230      20000      20000          0          0 TrigMakeSH
 TrigReport        230      20000      20000          0          0 TrigMakePH
 TrigReport        230      20000      20000          0          0 TrigFlagPH
 TrigReport        230      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        230      20000      15161       4839          0 AprTrkUe80m70pTCFilter
-TrigReport        230      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        230      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        230      15161        358      14803          0 AprTrkUe80m70pHSFilter
+TrigReport        230      20000      15179       4821          0 AprTrkUe80m70pTCFilter
+TrigReport        230      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        230      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        230      15179        358      14821          0 AprTrkUe80m70pHSFilter
 TrigReport        230        358        358          0          0 TrigAprUeKSF
 TrigReport        230        358          5        353          0 AprTrkUe80m70pKSFilter
 TrigReport        230          5          5          0          0 AprTrkUe80m70pTriggerInfoMerger
@@ -1001,10 +1001,10 @@ TrigReport        250      20000      20000          0          0 TrigMakeSH
 TrigReport        250      20000      20000          0          0 TrigMakePH
 TrigReport        250      20000      20000          0          0 TrigFlagPH
 TrigReport        250      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        250      20000      15161       4839          0 AprTrkDe50MultiHelixTCFilter
-TrigReport        250      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        250      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        250      15161         33      15128          0 AprTrkDe50MultiHelixHSFilter
+TrigReport        250      20000      15179       4821          0 AprTrkDe50MultiHelixTCFilter
+TrigReport        250      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        250      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        250      15179         33      15146          0 AprTrkDe50MultiHelixHSFilter
 TrigReport        250         33         33          0          0 TrigAprKSF
 TrigReport        250         33          2         31          0 AprTrkDe50MultiHelixKSFilter
 TrigReport        250          2          2          0          0 AprTrkDe50MultiHelixTriggerInfoMerger
@@ -1020,10 +1020,10 @@ TrigReport        240      20000      20000          0          0 TrigMakeSH
 TrigReport        240      20000      20000          0          0 TrigMakePH
 TrigReport        240      20000      20000          0          0 TrigFlagPH
 TrigReport        240      20000      20000          0          0 TrigTZClusterFinder
-TrigReport        240      20000      15161       4839          0 AprTrkDe80m70pD0200MultiTrkTCFilter
-TrigReport        240      15161      15161          0          0 TrigAprHelixFinder
-TrigReport        240      15161      15161          0          0 TrigAprHelixMerger
-TrigReport        240      15161          9      15152          0 AprTrkDe80m70pD0200MultiTrkHSFilter
+TrigReport        240      20000      15179       4821          0 AprTrkDe80m70pD0200MultiTrkTCFilter
+TrigReport        240      15179      15179          0          0 TrigAprHelixFinder
+TrigReport        240      15179      15179          0          0 TrigAprHelixMerger
+TrigReport        240      15179          9      15170          0 AprTrkDe80m70pD0200MultiTrkHSFilter
 TrigReport        240          9          9          0          0 TrigAprKSF
 TrigReport        240          9          0          9          0 AprTrkDe80m70pD0200MultiTrkKSFilter
 TrigReport        240          0          0          0          0 AprTrkDe80m70pD0200MultiTrkTriggerInfoMerger
@@ -1182,8 +1182,8 @@ TrigReport        180      20000      20000          0          0 TrigCalTimePea
 TrigReport        180      20000       1694      18306          0 CprHlxDe50TCFilter
 TrigReport        180       1694       1694          0          0 TrigCalHelixFinderDe
 TrigReport        180       1694       1694          0          0 TrigCalHelixMergerDe
-TrigReport        180       1694         68       1626          0 CprHlxDe50HSFilter
-TrigReport        180         68         68          0          0 CprHlxDe50TriggerInfoMerger
+TrigReport        180       1694         72       1622          0 CprHlxDe50HSFilter
+TrigReport        180         72         72          0          0 CprHlxDe50TriggerInfoMerger
 
 TrigReport ---------- Modules in path: cpr_HlxUe_40 ------------
 TrigReport    Path ID    Visited     Passed     Failed      Error Name
@@ -1199,7 +1199,7 @@ TrigReport        181      20000      20000          0          0 TrigCalTimePea
 TrigReport        181      20000       1603      18397          0 CprHlxUe40TCFilter
 TrigReport        181       1603       1603          0          0 TrigCalHelixFinderUe
 TrigReport        181       1603       1603          0          0 TrigCalHelixMergerUe
-TrigReport        181       1603         27       1576          0 CprHlxUe40HSFilter
+TrigReport        181       1603         28       1575          0 CprHlxUe40HSFilter
 
 TrigReport ---------- Modules in path: cpr_TrkDe_50_D0200 ------------
 TrigReport    Path ID    Visited     Passed     Failed      Error Name
@@ -1215,10 +1215,10 @@ TrigReport        175      20000      20000          0          0 TrigCalTimePea
 TrigReport        175      20000       1694      18306          0 CprTrkDe50D0200TCFilter
 TrigReport        175       1694       1694          0          0 TrigCalHelixFinderDe
 TrigReport        175       1694       1694          0          0 TrigCalHelixMergerDe
-TrigReport        175       1694         65       1629          0 CprTrkDe50D0200HSFilter
-TrigReport        175         65         65          0          0 TrigCalSeedFitDe
-TrigReport        175         65         16         49          0 CprTrkDe50D0200KSFilter
-TrigReport        175         16         16          0          0 CprTrkDe50D0200TriggerInfoMerger
+TrigReport        175       1694         69       1625          0 CprTrkDe50D0200HSFilter
+TrigReport        175         69         69          0          0 TrigCalSeedFitDe
+TrigReport        175         69         17         52          0 CprTrkDe50D0200KSFilter
+TrigReport        175         17         17          0          0 CprTrkDe50D0200TriggerInfoMerger
 
 TrigReport ---------- Modules in path: cpr_TrkDe_70 ------------
 TrigReport    Path ID    Visited     Passed     Failed      Error Name
@@ -1234,9 +1234,9 @@ TrigReport        163      20000      20000          0          0 TrigCalTimePea
 TrigReport        163      20000       1694      18306          0 CprTrkDe70TCFilter
 TrigReport        163       1694       1694          0          0 TrigCalHelixFinderDe
 TrigReport        163       1694       1694          0          0 TrigCalHelixMergerDe
-TrigReport        163       1694         51       1643          0 CprTrkDe70HSFilter
-TrigReport        163         51         51          0          0 TrigCalSeedFitDe
-TrigReport        163         51          6         45          0 CprTrkDe70KSFilter
+TrigReport        163       1694         53       1641          0 CprTrkDe70HSFilter
+TrigReport        163         53         53          0          0 TrigCalSeedFitDe
+TrigReport        163         53          6         47          0 CprTrkDe70KSFilter
 TrigReport        163          6          6          0          0 CprTrkDe70TriggerInfoMerger
 
 TrigReport ---------- Modules in path: cpr_TrkDe_70_D0200 ------------
@@ -1253,9 +1253,9 @@ TrigReport        153      20000      20000          0          0 TrigCalTimePea
 TrigReport        153      20000       1694      18306          0 CprTrkDe70D0200TCFilter
 TrigReport        153       1694       1694          0          0 TrigCalHelixFinderDe
 TrigReport        153       1694       1694          0          0 TrigCalHelixMergerDe
-TrigReport        153       1694         29       1665          0 CprTrkDe70D0200HSFilter
-TrigReport        153         29         29          0          0 TrigCalSeedFitDe
-TrigReport        153         29          6         23          0 CprTrkDe70D0200KSFilter
+TrigReport        153       1694         30       1664          0 CprTrkDe70D0200HSFilter
+TrigReport        153         30         30          0          0 TrigCalSeedFitDe
+TrigReport        153         30          6         24          0 CprTrkDe70D0200KSFilter
 TrigReport        153          6          6          0          0 CprTrkDe70D0200TriggerInfoMerger
 
 TrigReport ---------- Modules in path: cpr_TrkDe_75 ------------
@@ -1272,9 +1272,9 @@ TrigReport        162      20000      20000          0          0 TrigCalTimePea
 TrigReport        162      20000       1694      18306          0 CprTrkDe75TCFilter
 TrigReport        162       1694       1694          0          0 TrigCalHelixFinderDe
 TrigReport        162       1694       1694          0          0 TrigCalHelixMergerDe
-TrigReport        162       1694         45       1649          0 CprTrkDe75HSFilter
-TrigReport        162         45         45          0          0 TrigCalSeedFitDe
-TrigReport        162         45          3         42          0 CprTrkDe75KSFilter
+TrigReport        162       1694         48       1646          0 CprTrkDe75HSFilter
+TrigReport        162         48         48          0          0 TrigCalSeedFitDe
+TrigReport        162         48          3         45          0 CprTrkDe75KSFilter
 TrigReport        162          3          3          0          0 CprTrkDe75TriggerInfoMerger
 
 TrigReport ---------- Modules in path: cpr_TrkDe_75_D0200 ------------
@@ -1291,9 +1291,9 @@ TrigReport        152      20000      20000          0          0 TrigCalTimePea
 TrigReport        152      20000       1694      18306          0 CprTrkDe75D0200TCFilter
 TrigReport        152       1694       1694          0          0 TrigCalHelixFinderDe
 TrigReport        152       1694       1694          0          0 TrigCalHelixMergerDe
-TrigReport        152       1694         28       1666          0 CprTrkDe75D0200HSFilter
-TrigReport        152         28         28          0          0 TrigCalSeedFitDe
-TrigReport        152         28          3         25          0 CprTrkDe75D0200KSFilter
+TrigReport        152       1694         29       1665          0 CprTrkDe75D0200HSFilter
+TrigReport        152         29         29          0          0 TrigCalSeedFitDe
+TrigReport        152         29          3         26          0 CprTrkDe75D0200KSFilter
 TrigReport        152          3          3          0          0 CprTrkDe75D0200TriggerInfoMerger
 
 TrigReport ---------- Modules in path: cpr_TrkDe_75m70p ------------
@@ -1310,9 +1310,9 @@ TrigReport        161      20000      20000          0          0 TrigCalTimePea
 TrigReport        161      20000       1694      18306          0 CprTrkDe75m70pTCFilter
 TrigReport        161       1694       1694          0          0 TrigCalHelixFinderDe
 TrigReport        161       1694       1694          0          0 TrigCalHelixMergerDe
-TrigReport        161       1694         45       1649          0 CprTrkDe75m70pHSFilter
-TrigReport        161         45         45          0          0 TrigCalSeedFitDe
-TrigReport        161         45          3         42          0 CprTrkDe75m70pKSFilter
+TrigReport        161       1694         48       1646          0 CprTrkDe75m70pHSFilter
+TrigReport        161         48         48          0          0 TrigCalSeedFitDe
+TrigReport        161         48          3         45          0 CprTrkDe75m70pKSFilter
 TrigReport        161          3          3          0          0 CprTrkDe75m70pTriggerInfoMerger
 
 TrigReport ---------- Modules in path: cpr_TrkDe_75m70p_D0200 ------------
@@ -1329,9 +1329,9 @@ TrigReport        151      20000      20000          0          0 TrigCalTimePea
 TrigReport        151      20000       1694      18306          0 CprTrkDe75m70pD0200TCFilter
 TrigReport        151       1694       1694          0          0 TrigCalHelixFinderDe
 TrigReport        151       1694       1694          0          0 TrigCalHelixMergerDe
-TrigReport        151       1694         29       1665          0 CprTrkDe75m70pD0200HSFilter
-TrigReport        151         29         29          0          0 TrigCalSeedFitDe
-TrigReport        151         29          3         26          0 CprTrkDe75m70pD0200KSFilter
+TrigReport        151       1694         30       1664          0 CprTrkDe75m70pD0200HSFilter
+TrigReport        151         30         30          0          0 TrigCalSeedFitDe
+TrigReport        151         30          3         27          0 CprTrkDe75m70pD0200KSFilter
 TrigReport        151          3          3          0          0 CprTrkDe75m70pD0200TriggerInfoMerger
 
 TrigReport ---------- Modules in path: cpr_TrkDe_80m70p ------------
@@ -1348,9 +1348,9 @@ TrigReport        160      20000      20000          0          0 TrigCalTimePea
 TrigReport        160      20000       1694      18306          0 CprTrkDe80m70pTCFilter
 TrigReport        160       1694       1694          0          0 TrigCalHelixFinderDe
 TrigReport        160       1694       1694          0          0 TrigCalHelixMergerDe
-TrigReport        160       1694         47       1647          0 CprTrkDe80m70pHSFilter
-TrigReport        160         47         47          0          0 TrigCalSeedFitDe
-TrigReport        160         47          0         47          0 CprTrkDe80m70pKSFilter
+TrigReport        160       1694         50       1644          0 CprTrkDe80m70pHSFilter
+TrigReport        160         50         50          0          0 TrigCalSeedFitDe
+TrigReport        160         50          0         50          0 CprTrkDe80m70pKSFilter
 TrigReport        160          0          0          0          0 CprTrkDe80m70pTriggerInfoMerger
 
 TrigReport ---------- Modules in path: cpr_TrkDe_80m70p_D0200 ------------
@@ -1367,9 +1367,9 @@ TrigReport        150      20000      20000          0          0 TrigCalTimePea
 TrigReport        150      20000       1694      18306          0 CprTrkDe80m70pD0200TCFilter
 TrigReport        150       1694       1694          0          0 TrigCalHelixFinderDe
 TrigReport        150       1694       1694          0          0 TrigCalHelixMergerDe
-TrigReport        150       1694         29       1665          0 CprTrkDe80m70pD0200HSFilter
-TrigReport        150         29         29          0          0 TrigCalSeedFitDe
-TrigReport        150         29          0         29          0 CprTrkDe80m70pD0200KSFilter
+TrigReport        150       1694         30       1664          0 CprTrkDe80m70pD0200HSFilter
+TrigReport        150         30         30          0          0 TrigCalSeedFitDe
+TrigReport        150         30          0         30          0 CprTrkDe80m70pD0200KSFilter
 TrigReport        150          0          0          0          0 CprTrkDe80m70pD0200TriggerInfoMerger
 
 TrigReport ---------- Modules in path: cst_CosmicTrackSeed ------------
@@ -1571,13 +1571,13 @@ TrigReport ---------- Module summary ------------
 TrigReport    Visited        Run     Passed     Failed      Error Name
 TrigReport      20000      20000      20000          0          0 AprHlx30PS
 TrigReport        798        798        798          0          0 AprHlx30TriggerInfoMerger
-TrigReport      30322      15161        798      14363          0 AprHlx50HSFilter
-TrigReport      15161      15161         20      15141          0 AprHlx50Hlx30HSFilter
+TrigReport      30358      15179        798      14381          0 AprHlx50HSFilter
+TrigReport      15179      15179         20      15159          0 AprHlx50Hlx30HSFilter
 TrigReport      20000      20000      20000          0          0 AprHlx50Hlx30PS
-TrigReport      20000      20000      15161       4839          0 AprHlx50Hlx30TCFilter
+TrigReport      20000      20000      15179       4821          0 AprHlx50Hlx30TCFilter
 TrigReport         20         20         20          0          0 AprHlx50Hlx30TriggerInfoMerger
 TrigReport      20000      20000      20000          0          0 AprHlx50PS
-TrigReport      40000      20000      15161       4839          0 AprHlx50TCFilter
+TrigReport      40000      20000      15179       4821          0 AprHlx50TCFilter
 TrigReport        798        798        798          0          0 AprHlx50TriggerInfoMerger
 TrigReport      17990      17990      11394       6596          0 AprProtonP150HSFilter
 TrigReport      20000      20000      20000          0          0 AprProtonP150PS
@@ -1590,67 +1590,67 @@ TrigReport      20000      20000      20000          0          0 AprProtonP335P
 TrigReport        301        301        301          0          0 AprProtonP335TriggerInfoMerger
 TrigReport      60000      20000      17990       2010          0 AprProtonTCFilter
 TrigReport      20000      20000      20000          0          0 AprTCCaloPS
-TrigReport      20000      20000       1947      18053          0 AprTCCaloTCFilter
-TrigReport       1947       1947       1947          0          0 AprTCCaloTriggerInfoMerger
+TrigReport      20000      20000       2078      17922          0 AprTCCaloTCFilter
+TrigReport       2078       2078       2078          0          0 AprTCCaloTriggerInfoMerger
 TrigReport      20000      20000          0      20000          0 AprTCPS
 TrigReport          0          0          0          0          0 AprTCTCFilter
 TrigReport          0          0          0          0          0 AprTCTriggerInfoMerger
-TrigReport      15161      15161        617      14544          0 AprTrkDe50D0200HSFilter
-TrigReport        617        617        103        514          0 AprTrkDe50D0200KSFilter
+TrigReport      15179      15179        618      14561          0 AprTrkDe50D0200HSFilter
+TrigReport        618        618        103        515          0 AprTrkDe50D0200KSFilter
 TrigReport      20000      20000      20000          0          0 AprTrkDe50D0200PS
-TrigReport      20000      20000      15161       4839          0 AprTrkDe50D0200TCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkDe50D0200TCFilter
 TrigReport        103        103        103          0          0 AprTrkDe50D0200TriggerInfoMerger
-TrigReport      15161      15161         33      15128          0 AprTrkDe50MultiHelixHSFilter
+TrigReport      15179      15179         33      15146          0 AprTrkDe50MultiHelixHSFilter
 TrigReport         33         33          2         31          0 AprTrkDe50MultiHelixKSFilter
-TrigReport      20000      20000      15161       4839          0 AprTrkDe50MultiHelixTCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkDe50MultiHelixTCFilter
 TrigReport          2          2          2          0          0 AprTrkDe50MultiHelixTriggerInfoMerger
-TrigReport      15161      15161        133      15028          0 AprTrkDe70D0200HSFilter
+TrigReport      15179      15179        133      15046          0 AprTrkDe70D0200HSFilter
 TrigReport        133        133          4        129          0 AprTrkDe70D0200KSFilter
 TrigReport      20000      20000      20000          0          0 AprTrkDe70D0200PS
-TrigReport      20000      20000      15161       4839          0 AprTrkDe70D0200TCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkDe70D0200TCFilter
 TrigReport          4          4          4          0          0 AprTrkDe70D0200TriggerInfoMerger
-TrigReport      15161      15161        465      14696          0 AprTrkDe70HSFilter
-TrigReport        465        465         14        451          0 AprTrkDe70KSFilter
+TrigReport      15179      15179        466      14713          0 AprTrkDe70HSFilter
+TrigReport        466        466         14        452          0 AprTrkDe70KSFilter
 TrigReport      20000      20000      20000          0          0 AprTrkDe70PS
-TrigReport      20000      20000      15161       4839          0 AprTrkDe70TCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkDe70TCFilter
 TrigReport         14         14         14          0          0 AprTrkDe70TriggerInfoMerger
-TrigReport        409        409          6        403          0 AprTrkDe75D0200KSFilter
+TrigReport        410        410          6        404          0 AprTrkDe75D0200KSFilter
 TrigReport      20000      20000      20000          0          0 AprTrkDe75D0200PS
-TrigReport      20000      20000      15161       4839          0 AprTrkDe75D0200TCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkDe75D0200TCFilter
 TrigReport          6          6          6          0          0 AprTrkDe75D0200TriggerInfoMerger
-TrigReport      30322      15161        409      14752          0 AprTrkDe75HSFilter
-TrigReport        409        409          7        402          0 AprTrkDe75KSFilter
+TrigReport      30358      15179        410      14769          0 AprTrkDe75HSFilter
+TrigReport        410        410          7        403          0 AprTrkDe75KSFilter
 TrigReport      20000      20000      20000          0          0 AprTrkDe75PS
-TrigReport      20000      20000      15161       4839          0 AprTrkDe75TCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkDe75TCFilter
 TrigReport          7          7          7          0          0 AprTrkDe75TriggerInfoMerger
-TrigReport      15161      15161        128      15033          0 AprTrkDe75m70pD0200HSFilter
+TrigReport      15179      15179        128      15051          0 AprTrkDe75m70pD0200HSFilter
 TrigReport        128        128          3        125          0 AprTrkDe75m70pD0200KSFilter
 TrigReport      20000      20000      20000          0          0 AprTrkDe75m70pD0200PS
-TrigReport      20000      20000      15161       4839          0 AprTrkDe75m70pD0200TCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkDe75m70pD0200TCFilter
 TrigReport          3          3          3          0          0 AprTrkDe75m70pD0200TriggerInfoMerger
-TrigReport      15161      15161        439      14722          0 AprTrkDe75m70pHSFilter
-TrigReport        439        439          7        432          0 AprTrkDe75m70pKSFilter
+TrigReport      15179      15179        440      14739          0 AprTrkDe75m70pHSFilter
+TrigReport        440        440          7        433          0 AprTrkDe75m70pKSFilter
 TrigReport      20000      20000      20000          0          0 AprTrkDe75m70pPS
-TrigReport      20000      20000      15161       4839          0 AprTrkDe75m70pTCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkDe75m70pTCFilter
 TrigReport          7          7          7          0          0 AprTrkDe75m70pTriggerInfoMerger
-TrigReport      15161      15161         93      15068          0 AprTrkDe80m70pD0200HSFilter
+TrigReport      15179      15179         93      15086          0 AprTrkDe80m70pD0200HSFilter
 TrigReport         93         93          2         91          0 AprTrkDe80m70pD0200KSFilter
-TrigReport      15161      15161          9      15152          0 AprTrkDe80m70pD0200MultiTrkHSFilter
+TrigReport      15179      15179          9      15170          0 AprTrkDe80m70pD0200MultiTrkHSFilter
 TrigReport          9          9          0          9          0 AprTrkDe80m70pD0200MultiTrkKSFilter
-TrigReport      20000      20000      15161       4839          0 AprTrkDe80m70pD0200MultiTrkTCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkDe80m70pD0200MultiTrkTCFilter
 TrigReport          0          0          0          0          0 AprTrkDe80m70pD0200MultiTrkTriggerInfoMerger
 TrigReport      20000      20000      20000          0          0 AprTrkDe80m70pD0200PS
-TrigReport      20000      20000      15161       4839          0 AprTrkDe80m70pD0200TCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkDe80m70pD0200TCFilter
 TrigReport          2          2          2          0          0 AprTrkDe80m70pD0200TriggerInfoMerger
-TrigReport      15161      15161        358      14803          0 AprTrkDe80m70pHSFilter
+TrigReport      15179      15179        358      14821          0 AprTrkDe80m70pHSFilter
 TrigReport        358        358          5        353          0 AprTrkDe80m70pKSFilter
 TrigReport      20000      20000      20000          0          0 AprTrkDe80m70pPS
-TrigReport      20000      20000      15161       4839          0 AprTrkDe80m70pTCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkDe80m70pTCFilter
 TrigReport          5          5          5          0          0 AprTrkDe80m70pTriggerInfoMerger
-TrigReport      15161      15161        358      14803          0 AprTrkUe80m70pHSFilter
+TrigReport      15179      15179        358      14821          0 AprTrkUe80m70pHSFilter
 TrigReport        358        358          5        353          0 AprTrkUe80m70pKSFilter
 TrigReport      20000      20000      20000          0          0 AprTrkUe80m70pPS
-TrigReport      20000      20000      15161       4839          0 AprTrkUe80m70pTCFilter
+TrigReport      20000      20000      15179       4821          0 AprTrkUe80m70pTCFilter
 TrigReport          5          5          5          0          0 AprTrkUe80m70pTriggerInfoMerger
 TrigReport      20000      20000      20000          0          0 AprTwoTrkDe50PS
 TrigReport      20000      20000      20000          0          0 AprTwoTrkDe80m70pD0200PS
@@ -1686,55 +1686,55 @@ TrigReport        356        356        356          0          0 CaloPhotonTrig
 TrigReport      20000      20000         41      19959          0 CaloRMCFilter
 TrigReport      20000      20000      20000          0          0 CaloRMCPS
 TrigReport         41         41         41          0          0 CaloRMCTriggerInfoMerger
-TrigReport       1694       1694         68       1626          0 CprHlxDe50HSFilter
+TrigReport       1694       1694         72       1622          0 CprHlxDe50HSFilter
 TrigReport      20000      20000      20000          0          0 CprHlxDe50PS
 TrigReport      20000      20000       1694      18306          0 CprHlxDe50TCFilter
-TrigReport         68         68         68          0          0 CprHlxDe50TriggerInfoMerger
-TrigReport       1603       1603         27       1576          0 CprHlxUe40HSFilter
+TrigReport         72         72         72          0          0 CprHlxDe50TriggerInfoMerger
+TrigReport       1603       1603         28       1575          0 CprHlxUe40HSFilter
 TrigReport      20000      20000      20000          0          0 CprHlxUe40PS
 TrigReport      20000      20000       1603      18397          0 CprHlxUe40TCFilter
-TrigReport       1694       1694         65       1629          0 CprTrkDe50D0200HSFilter
-TrigReport         65         65         16         49          0 CprTrkDe50D0200KSFilter
+TrigReport       1694       1694         69       1625          0 CprTrkDe50D0200HSFilter
+TrigReport         69         69         17         52          0 CprTrkDe50D0200KSFilter
 TrigReport      20000      20000      20000          0          0 CprTrkDe50D0200PS
 TrigReport      20000      20000       1694      18306          0 CprTrkDe50D0200TCFilter
-TrigReport         16         16         16          0          0 CprTrkDe50D0200TriggerInfoMerger
-TrigReport       1694       1694         29       1665          0 CprTrkDe70D0200HSFilter
-TrigReport         29         29          6         23          0 CprTrkDe70D0200KSFilter
+TrigReport         17         17         17          0          0 CprTrkDe50D0200TriggerInfoMerger
+TrigReport       1694       1694         30       1664          0 CprTrkDe70D0200HSFilter
+TrigReport         30         30          6         24          0 CprTrkDe70D0200KSFilter
 TrigReport      20000      20000      20000          0          0 CprTrkDe70D0200PS
 TrigReport      20000      20000       1694      18306          0 CprTrkDe70D0200TCFilter
 TrigReport          6          6          6          0          0 CprTrkDe70D0200TriggerInfoMerger
-TrigReport       1694       1694         51       1643          0 CprTrkDe70HSFilter
-TrigReport         51         51          6         45          0 CprTrkDe70KSFilter
+TrigReport       1694       1694         53       1641          0 CprTrkDe70HSFilter
+TrigReport         53         53          6         47          0 CprTrkDe70KSFilter
 TrigReport      20000      20000      20000          0          0 CprTrkDe70PS
 TrigReport      20000      20000       1694      18306          0 CprTrkDe70TCFilter
 TrigReport          6          6          6          0          0 CprTrkDe70TriggerInfoMerger
-TrigReport       1694       1694         28       1666          0 CprTrkDe75D0200HSFilter
-TrigReport         28         28          3         25          0 CprTrkDe75D0200KSFilter
+TrigReport       1694       1694         29       1665          0 CprTrkDe75D0200HSFilter
+TrigReport         29         29          3         26          0 CprTrkDe75D0200KSFilter
 TrigReport      20000      20000      20000          0          0 CprTrkDe75D0200PS
 TrigReport      20000      20000       1694      18306          0 CprTrkDe75D0200TCFilter
 TrigReport          3          3          3          0          0 CprTrkDe75D0200TriggerInfoMerger
-TrigReport       1694       1694         45       1649          0 CprTrkDe75HSFilter
-TrigReport         45         45          3         42          0 CprTrkDe75KSFilter
+TrigReport       1694       1694         48       1646          0 CprTrkDe75HSFilter
+TrigReport         48         48          3         45          0 CprTrkDe75KSFilter
 TrigReport      20000      20000      20000          0          0 CprTrkDe75PS
 TrigReport      20000      20000       1694      18306          0 CprTrkDe75TCFilter
 TrigReport          3          3          3          0          0 CprTrkDe75TriggerInfoMerger
-TrigReport       1694       1694         29       1665          0 CprTrkDe75m70pD0200HSFilter
-TrigReport         29         29          3         26          0 CprTrkDe75m70pD0200KSFilter
+TrigReport       1694       1694         30       1664          0 CprTrkDe75m70pD0200HSFilter
+TrigReport         30         30          3         27          0 CprTrkDe75m70pD0200KSFilter
 TrigReport      20000      20000      20000          0          0 CprTrkDe75m70pD0200PS
 TrigReport      20000      20000       1694      18306          0 CprTrkDe75m70pD0200TCFilter
 TrigReport          3          3          3          0          0 CprTrkDe75m70pD0200TriggerInfoMerger
-TrigReport       1694       1694         45       1649          0 CprTrkDe75m70pHSFilter
-TrigReport         45         45          3         42          0 CprTrkDe75m70pKSFilter
+TrigReport       1694       1694         48       1646          0 CprTrkDe75m70pHSFilter
+TrigReport         48         48          3         45          0 CprTrkDe75m70pKSFilter
 TrigReport      20000      20000      20000          0          0 CprTrkDe75m70pPS
 TrigReport      20000      20000       1694      18306          0 CprTrkDe75m70pTCFilter
 TrigReport          3          3          3          0          0 CprTrkDe75m70pTriggerInfoMerger
-TrigReport       1694       1694         29       1665          0 CprTrkDe80m70pD0200HSFilter
-TrigReport         29         29          0         29          0 CprTrkDe80m70pD0200KSFilter
+TrigReport       1694       1694         30       1664          0 CprTrkDe80m70pD0200HSFilter
+TrigReport         30         30          0         30          0 CprTrkDe80m70pD0200KSFilter
 TrigReport      20000      20000      20000          0          0 CprTrkDe80m70pD0200PS
 TrigReport      20000      20000       1694      18306          0 CprTrkDe80m70pD0200TCFilter
 TrigReport          0          0          0          0          0 CprTrkDe80m70pD0200TriggerInfoMerger
-TrigReport       1694       1694         47       1647          0 CprTrkDe80m70pHSFilter
-TrigReport         47         47          0         47          0 CprTrkDe80m70pKSFilter
+TrigReport       1694       1694         50       1644          0 CprTrkDe80m70pHSFilter
+TrigReport         50         50          0         50          0 CprTrkDe80m70pKSFilter
 TrigReport      20000      20000      20000          0          0 CprTrkDe80m70pPS
 TrigReport      20000      20000       1694      18306          0 CprTrkDe80m70pTCFilter
 TrigReport          0          0          0          0          0 CprTrkDe80m70pTriggerInfoMerger
@@ -1792,9 +1792,9 @@ TrigReport        576        576          6        570          0 TprTrkDe80m70p
 TrigReport      20000      20000      20000          0          0 TprTrkDe80m70pPS
 TrigReport      20000      20000      19849        151          0 TprTrkDe80m70pTCFilter
 TrigReport          6          6          6          0          0 TprTrkDe80m70pTriggerInfoMerger
-TrigReport     227415      15161      15161          0          0 TrigAprHelixFinder
-TrigReport     227415      15161      15161          0          0 TrigAprHelixMerger
-TrigReport       3093        777        777          0          0 TrigAprKSF
+TrigReport     227685      15179      15179          0          0 TrigAprHelixFinder
+TrigReport     227685      15179      15179          0          0 TrigAprHelixMerger
+TrigReport       3098        778        778          0          0 TrigAprKSF
 TrigReport      53970      17990      17990          0          0 TrigAprProtonHelixFinder
 TrigReport      53970      17990      17990          0          0 TrigAprProtonHelixMerger
 TrigReport        358        358        358          0          0 TrigAprUeKSF
@@ -1802,7 +1802,7 @@ TrigReport      16940       1694       1694          0          0 TrigCalHelixFi
 TrigReport       1603       1603       1603          0          0 TrigCalHelixFinderUe
 TrigReport      16940       1694       1694          0          0 TrigCalHelixMergerDe
 TrigReport       1603       1603       1603          0          0 TrigCalHelixMergerUe
-TrigReport        368         68         68          0          0 TrigCalSeedFitDe
+TrigReport        387         72         72          0          0 TrigCalSeedFitDe
 TrigReport     200000      20000      20000          0          0 TrigCalTimePeakFinder
 TrigReport      20000      20000      20000          0          0 TrigCalTimePeakFinderUe
 TrigReport     780000      20000      20000          0          0 TrigFlagPH
@@ -1824,9 +1824,9 @@ TrigReport     140000      20000      20000          0          0 TrigTimeCluste
 TrigReport      20000      20000      20000          0          0 TrigTimeClusterFinderUe
 
 TimeReport ---------- Time summary [sec] -------
-TimeReport CPU = 490.728441 Real = 493.420742
+TimeReport CPU = 490.888832 Real = 502.530037
 
 MemReport  ---------- Memory summary [base-10 MB] ------
-MemReport  VmPeak = 4294.73 VmHWM = 648.339
+MemReport  VmPeak = 4294.85 VmHWM = 647.119
 
 Art has completed and will exit with status 0.
