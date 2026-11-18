@@ -1,9 +1,9 @@
 BEGIN_PROLOG
 
 TrigDAQProducers : {
-  ProcessCFOData : {
+  EWMProducer : {
     module_type : EventHeaderFromCFOFragment
-    cfoTag : "CFOBoardReader"
+    cfoTag : "daq:CFO"
     createEWM : true
     diagLevel : 0
   }

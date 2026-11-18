@@ -1,7 +1,7 @@
 BEGIN_PROLOG
 
 TrigTrkProducers : {
-  TrigMakeSD: {
+  makeSD: {
     @table::DAQ.producers.makeSD
   }
 
@@ -23,7 +23,7 @@ TrigTrkProducers : {
     FilterHits              : false
     WriteStrawHitCollection : false
     StrawDigiADCWaveformCollectionTag : "notUsed"
-    StrawDigiCollectionTag : "TrigMakeSD"
+    StrawDigiCollectionTag : "makeSD"
   }
 
   TrigMakePH: {
