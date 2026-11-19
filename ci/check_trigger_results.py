@@ -3,8 +3,9 @@
 import sys
 from math import sqrt
 
- # Should run in every event, previous was ProcessCFOData/EWMProducer
- TIMING_REF_MODULE = "LumiStreamPS"
+# Should run in every event, previous was ProcessCFOData/EWMProducer
+TIMING_REF_MODULE = "LumiStreamPS"
+
 
 # --------------------------------------------------------------
 # Fill the log results
