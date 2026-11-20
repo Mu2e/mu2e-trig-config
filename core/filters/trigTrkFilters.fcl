@@ -25,7 +25,6 @@ TrigTrkFilters : {
         debugMode      : false
         debugBits      : []
         fillHistograms : false
-	channelsToSkip : []
     }
 }
 
