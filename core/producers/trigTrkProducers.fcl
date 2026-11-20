@@ -117,7 +117,7 @@ TrigTrkProducers : {
   # Hit-making for commissioning
   TrigComMakeSH: {
       @table::TrkHitReco.producers.makeSH
-      FitType                           : 1
+      FitType                           : 5 # firmware fit; TrigMakeSD does not save waveforms
       FilterHits                        : false
       WriteStrawHitCollection           : true
       MinimumTime                       : 0
@@ -127,7 +127,7 @@ TrigTrkProducers : {
       MinimumRadius                     : 350.0
       MaximumRadius                     : 750.0
       StrawDigiCollectionTag            : "TrigMakeSD"
-      StrawDigiADCWaveformCollectionTag: "TrigMakeSD"
+      StrawDigiADCWaveformCollectionTag: "notUsed"
       ProtonBunchTimeTag                : "EWMProducer"
       EventWindowMarker                 : "EWMProducer"
       UseCalorimeter                    : false
