@@ -477,7 +477,7 @@ TrigAprFilters:{
       maxD0: 600
       minAbsLambda: 50
       minD0: -600
-      minMomentum: 80
+      minMomentum: 70 # upstream e+ has positive helicity
     }
     negHelicitySelection: {
       @table::AprHelixSelections_neg
@@ -485,7 +485,7 @@ TrigAprFilters:{
       maxD0: 600
       minAbsLambda: 50
       minD0: -600
-      minMomentum: 70
+      minMomentum: 80 # upstream e- has negative helicity
     }
   }
   AprTrkUe80m70pTCFilter : {

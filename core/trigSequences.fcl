@@ -159,7 +159,7 @@ TrigTrkPaths:{
     AprTrkDe75D0200PS, @sequence::TrigRecoSequences.calReco,
     @sequence::TrigRecoSequences.trkPrepareHits,
     TrigTZClusterFinder, AprTrkDe75D0200TCFilter, TrigAprHelixFinder,
-    TrigAprHelixMerger, AprTrkDe75HSFilter, @sequence::TrigRecoSequences.aprKSFDeSequence,
+    TrigAprHelixMerger, AprTrkDe75D0200HSFilter, @sequence::TrigRecoSequences.aprKSFDeSequence,
     AprTrkDe75D0200KSFilter, AprTrkDe75D0200TriggerInfoMerger ]
   apr_TrkDe_70_D0200          : [ @sequence::TrigRecoSequences.cfoDataGen,
     AprTrkDe70D0200PS, @sequence::TrigRecoSequences.calReco,
@@ -228,8 +228,8 @@ TrigTrkPaths:{
   apr_Hlx_30                  : [ @sequence::TrigRecoSequences.cfoDataGen,
     AprHlx30PS, @sequence::TrigRecoSequences.calReco,
     @sequence::TrigRecoSequences.trkPrepareHits,
-    TrigTZClusterFinder, AprHlx50TCFilter, TrigAprHelixFinder,
-    TrigAprHelixMerger, AprHlx50HSFilter, AprHlx30TriggerInfoMerger ]
+    TrigTZClusterFinder, AprHlx30TCFilter, TrigAprHelixFinder,
+    TrigAprHelixMerger, AprHlx30HSFilter, AprHlx30TriggerInfoMerger ]
 
   apr_proton_p335             : [ @sequence::TrigRecoSequences.cfoDataGen,
     AprProtonP335PS, @sequence::TrigRecoSequences.calReco,
